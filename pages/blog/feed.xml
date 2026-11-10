@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Chatberry Blog</title>
+    <link>/pages/blog/page.html</link>
+    <description>Guides and playbooks on WhatsApp, AI and automation for hospitals, clinics and growing businesses.</description>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="/pages/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>WhatsApp Business API Pricing in India (2026 Guide)</title>
+      <link>/pages/blog/whatsapp-business-api-pricing-india/page.html</link>
+      <guid isPermaLink="true">/pages/blog/whatsapp-business-api-pricing-india/page.html</guid>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Chatberry Team</dc:creator>
+      <category>WhatsApp Business API</category>
+      <description>WhatsApp Business API pricing in India for 2026: Meta's per-message rates, platform fees and how to calculate your monthly messaging costs.</description>
+      <content:encoded><![CDATA[<p>WhatsApp has become an important channel for businesses that want to generate leads, run marketing campaigns and automate customer support. But before adopting the WhatsApp Business API, most businesses ask one question: <strong>how much does the WhatsApp Business API actually cost in India?</strong></p>
+<p>The answer depends on more than the number of messages you send. Your total cost combines Meta's messaging charges, which vary by message category, with the software fees of your WhatsApp Business API provider. This guide explains both for 2026, with the latest India rates, worked cost calculations and what to compare when choosing a provider.</p>
+<h2 id="what-is-the-whatsapp-business-api">What is the WhatsApp Business API?</h2>
+<p>The WhatsApp Business API, also known as the WhatsApp Business Platform, lets businesses communicate with customers at scale through approved business messaging solutions.</p>
+<p>Unlike the regular WhatsApp Business App, the API is built for businesses that need multiple team members, automated conversations, integrations and campaign management. With it, businesses can:</p>
+<ul><li>Send approved marketing campaigns to opted-in customers.</li><li>Automate customer conversations using chatbots and AI agents.</li><li>Manage many customer conversations through a shared team inbox.</li><li>Send order updates, reminders and notifications.</li><li>Connect WhatsApp with CRM and business applications.</li><li>Track campaign delivery, engagement and customer responses.</li><li>Build automated customer journeys and follow-up workflows.</li></ul>
+<p>Businesses can connect through Meta's Cloud API directly or use a WhatsApp Business API platform that adds software and management capabilities on top. If you are new to it, our <a href="/pages/blog/getting-started-with-whatsapp-automation/page.html">practical guide to WhatsApp automation</a> covers what to automate first.</p>
+<h2 id="how-much-does-the-whatsapp-business-api-cost-in-india-in-202">How much does the WhatsApp Business API cost in India in 2026?</h2>
+<p>WhatsApp Business API pricing has two separate cost components:</p>
+<ul><li><strong>Meta messaging charges:</strong> the fees Meta applies to eligible delivered messages.</li><li><strong>Platform charges:</strong> the software or service fees charged by your WhatsApp Business API provider.</li></ul>
+<p>Your total cost depends on your message volume, the message category, the recipient's country and the pricing structure of your chosen platform.</p>
+<h3>Meta WhatsApp Business API message rates in India</h3>
+<p>Meta uses a per-message pricing model. The rate depends on the message category and the country code of the recipient. These are the India rates effective October 1, 2026:</p>
+<div class="bl-table"><table><thead><tr><th>Message category</th><th>Price per delivered message</th></tr></thead><tbody><tr><td>Marketing</td><td>₹0.8631</td></tr><tr><td>Utility</td><td>₹0.115</td></tr><tr><td>Authentication</td><td>₹0.115</td></tr><tr><td>Service</td><td>First 1,000 free monthly per number, then ₹0.115</td></tr></tbody></table></div>
+<p>These are Meta's base rates in INR, before applicable taxes and any separate provider fees. Always check <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">Meta's latest pricing</a> before calculating your actual costs.</p>
+<h3>1. Marketing messages</h3>
+<p>Marketing messages promote products, services, offers and business announcements. Common examples include:</p>
+<ul><li>Promotional offers and discounts.</li><li>New product announcements.</li><li>Festival and seasonal campaigns.</li><li>Product recommendations.</li><li>Customer re-engagement campaigns.</li><li>Special announcements and event promotions.</li></ul>
+<p>Meta's India rate: <strong>₹0.8631 per delivered marketing message</strong>.</p>
+<div class="bl-table"><table><thead><tr><th class="bl-num">Delivered messages</th><th class="bl-num">Meta messaging cost</th></tr></thead><tbody><tr><td class="bl-num">100</td><td class="bl-num">₹86.31</td></tr><tr><td class="bl-num">500</td><td class="bl-num">₹431.55</td></tr><tr><td class="bl-num">1,000</td><td class="bl-num">₹863.10</td></tr><tr><td class="bl-num">5,000</td><td class="bl-num">₹4,315.50</td></tr><tr><td class="bl-num">10,000</td><td class="bl-num">₹8,631</td></tr></tbody></table></div>
+<p>Marketing messages are charged when delivered. Undelivered messages are not charged as delivered marketing messages.</p>
+<h3>2. Utility messages</h3>
+<p>Utility messages are transactional communications about an existing interaction, transaction or request. Common examples include:</p>
+<ul><li>Order confirmations.</li><li>Payment confirmations.</li><li>Delivery updates.</li><li>Booking confirmations.</li><li>Appointment reminders.</li><li>Subscription notifications.</li></ul>
+<p>Meta's India rate: <strong>₹0.115 per delivered utility message</strong>.</p>
+<div class="bl-table"><table><thead><tr><th class="bl-num">Delivered messages</th><th class="bl-num">Meta messaging cost</th></tr></thead><tbody><tr><td class="bl-num">100</td><td class="bl-num">₹11.50</td></tr><tr><td class="bl-num">500</td><td class="bl-num">₹57.50</td></tr><tr><td class="bl-num">1,000</td><td class="bl-num">₹115</td></tr><tr><td class="bl-num">5,000</td><td class="bl-num">₹575</td></tr><tr><td class="bl-num">10,000</td><td class="bl-num">₹1,150</td></tr></tbody></table></div>
+<p><strong>Important:</strong> since October 1, 2026, utility template messages are chargeable even when delivered within an open 24-hour customer service window.</p>
+<h3>3. Authentication messages</h3>
+<p>Authentication messages help businesses verify customer identities through one-time passwords and verification codes. Common examples include:</p>
+<ul><li>Login verification codes.</li><li>Account verification.</li><li>Registration OTPs.</li><li>Identity verification codes.</li></ul>
+<p>Meta's India rate: <strong>₹0.115 per delivered authentication message</strong>.</p>
+<div class="bl-table"><table><thead><tr><th class="bl-num">Delivered messages</th><th class="bl-num">Meta messaging cost</th></tr></thead><tbody><tr><td class="bl-num">100</td><td class="bl-num">₹11.50</td></tr><tr><td class="bl-num">500</td><td class="bl-num">₹57.50</td></tr><tr><td class="bl-num">1,000</td><td class="bl-num">₹115</td></tr><tr><td class="bl-num">5,000</td><td class="bl-num">₹575</td></tr><tr><td class="bl-num">10,000</td><td class="bl-num">₹1,150</td></tr></tbody></table></div>
+<p>Authentication pricing can differ for international authentication messages. Businesses sending OTPs across countries should check the rate for each recipient market.</p>
+<h3>4. Service messages</h3>
+<p>Service messages are non-template replies businesses send when customers start a conversation. For example, when a customer asks about a product on WhatsApp, your support team or AI agent can reply within the customer service window.</p>
+<p>Meta provides this service-message allowance in India:</p>
+<ul><li><strong>First 1,000 service messages</strong> per business phone number per month: free.</li><li><strong>Additional service messages:</strong> ₹0.115 per delivered message.</li></ul>
+<p>For example, if a business sends 2,000 service replies in a month, the first 1,000 are free and the remaining 1,000 cost ₹115. The allowance applies per business phone number, not as one shared allowance across all numbers.</p>
+<h2 id="what-is-the-24-hour-customer-service-window">What is the 24-hour customer service window?</h2>
+<p>The 24-hour customer service window opens when a customer sends a message to your business on WhatsApp, and it resets each time the customer sends another message.</p>
+<p>During this window, businesses can reply with non-template messages such as text, images and other supported formats. Outside it, businesses generally need an approved message template to start or continue the conversation.</p>
+<p>The pricing distinction matters:</p>
+<ul><li>Non-template service replies: the first 1,000 each month are free per number; additional replies are charged at the service rate.</li><li>Utility template messages: charged at the utility rate, including within the open service window under the October 2026 pricing rules.</li><li>Marketing and authentication templates: charged at their own category rates.</li></ul>
+<p>Understanding this distinction helps you estimate messaging expenses more accurately.</p>
+<h2 id="how-much-does-the-whatsapp-business-api-cost-for-1-000-messa">How much does the WhatsApp Business API cost for 1,000 messages?</h2>
+<p>Here is the Meta messaging cost for 1,000 delivered messages in each category:</p>
+<div class="bl-table"><table><thead><tr><th>Message category</th><th>Cost of 1,000 messages</th></tr></thead><tbody><tr><td>Marketing</td><td>₹863.10</td></tr><tr><td>Utility</td><td>₹115</td></tr><tr><td>Authentication</td><td>₹115</td></tr><tr><td>Service</td><td>Free, within the first 1,000 monthly messages per number</td></tr></tbody></table></div>
+<p>So a business that sends 1,000 messages in each of the four categories pays an estimated Meta messaging cost of:</p>
+<p><strong>₹863.10 + ₹115 + ₹115 + ₹0 = ₹1,093.10</strong></p>
+<p>This excludes applicable taxes and any software platform charges. These figures count delivered messages, not customers: one customer may receive several messages during a campaign or customer journey.</p>
+<h2 id="does-the-whatsapp-business-api-have-a-monthly-subscription-f">Does the WhatsApp Business API have a monthly subscription fee?</h2>
+<p>Meta messaging charges and software subscription fees are two different things. Meta charges for eligible messages according to its pricing model; WhatsApp Business API providers set their own pricing on top. Depending on the provider, you may see:</p>
+<ul><li>Monthly subscription plans.</li><li>Annual subscription plans.</li><li>Per-agent charges.</li><li>Per-number charges.</li><li>Platform usage fees.</li><li>Additional automation or integration charges.</li><li>Markups on Meta messaging rates.</li></ul>
+<p>Some providers offer fixed monthly plans, while others follow a pay-as-you-go model. Before selecting one, understand exactly what is included in the advertised price.</p>
+<h2 id="what-to-compare-between-whatsapp-business-api-providers">What to compare between WhatsApp Business API providers</h2>
+<p>Choosing a provider on its advertised monthly price alone can be misleading. Two providers can price very differently even though they use the same Meta messaging infrastructure. Compare these factors:</p>
+<h3>1. Platform subscription fees</h3>
+<p>Check whether the provider charges a monthly or annual subscription. If you are just starting with WhatsApp automation, a fixed subscription can raise your initial operating costs.</p>
+<h3>2. Additional agent charges</h3>
+<p>If several employees need access to the same WhatsApp inbox, check whether each additional agent is charged separately.</p>
+<h3>3. Additional WhatsApp numbers</h3>
+<p>Businesses with multiple departments, brands or teams may need more than one WhatsApp number. Check whether each number carries a separate platform fee.</p>
+<h3>4. Automation and AI features</h3>
+<p>Some platforms offer basic messaging only, while others include:</p>
+<ul><li>AI-powered customer replies.</li><li>Automated lead qualification.</li><li>Workflow automation.</li><li>Customer segmentation.</li><li>Automated follow-ups.</li><li>Knowledge base integration.</li><li>Customer analytics.</li></ul>
+<p>Check whether these capabilities are included or sold as add-ons.</p>
+<h3>5. Integrations</h3>
+<p>If your business uses Shopify, WooCommerce, Google Sheets, payment gateways or CRM applications, check which integrations are available and whether they cost extra.</p>
+<h3>6. Pricing transparency</h3>
+<p>Find out whether the provider passes on Meta's messaging rates as they are or adds its own markup. Always ask for platform charges and messaging charges as separate line items.</p>
+<h2 id="how-to-calculate-your-monthly-whatsapp-business-api-expenses">How to calculate your monthly WhatsApp Business API expenses</h2>
+<p>Before choosing a provider, estimate your expected monthly message volume. Take a business that sends:</p>
+<div class="bl-table"><table><thead><tr><th>Message category</th><th class="bl-num">Monthly volume</th></tr></thead><tbody><tr><td>Marketing</td><td class="bl-num">5,000</td></tr><tr><td>Utility</td><td class="bl-num">2,000</td></tr><tr><td>Authentication</td><td class="bl-num">1,000</td></tr><tr><td>Service replies</td><td class="bl-num">2,000</td></tr></tbody></table></div>
+<p>Its estimated Meta charges are:</p>
+<div class="bl-table"><table><thead><tr><th>Message category</th><th>Calculation</th><th class="bl-num">Cost</th></tr></thead><tbody><tr><td>Marketing</td><td>5,000 × ₹0.8631</td><td class="bl-num">₹4,315.50</td></tr><tr><td>Utility</td><td>2,000 × ₹0.115</td><td class="bl-num">₹230</td></tr><tr><td>Authentication</td><td>1,000 × ₹0.115</td><td class="bl-num">₹115</td></tr><tr><td>Service</td><td>1,000 free + 1,000 × ₹0.115</td><td class="bl-num">₹115</td></tr><tr><td><strong>Total</strong></td><td></td><td class="bl-num"><strong>₹4,775.50</strong></td></tr></tbody></table></div>
+<p>The estimated Meta messaging cost is <strong>₹4,775.50</strong> before applicable taxes and platform charges. This is an illustrative calculation: your actual bill depends on delivered messages, message categories, rate-card changes and your provider's fees.</p>
+<h2 id="how-wisemelon-makes-whatsapp-business-api-pricing-simpler">How Chatberry makes WhatsApp Business API pricing simpler</h2>
+<p>Choosing a WhatsApp Business API provider should not mean committing to an expensive subscription before you know how much you will use the platform.</p>
+<p>Chatberry uses a <a href="/pages/pricing/page.html">pay-as-you-go pricing model</a>, so businesses can get started without a fixed monthly platform subscription. It brings messaging, automation, customer management and business intelligence together in one connected platform.</p>
+<h3>What you can do with Chatberry</h3>
+<ul><li><strong><a href="/pages/products/campaigns/page.html">WhatsApp campaign management</a>:</strong> create and send bulk WhatsApp campaigns, schedule messages and manage customer communication from one place.</li><li><strong><a href="/pages/products/ai-agents/page.html">AI agents</a>:</strong> answer customer questions, understand business information, qualify leads and automate repetitive conversations.</li><li><strong><a href="/pages/products/customer-os/page.html">CRM and lead management</a>:</strong> capture leads, organise customer information and manage follow-ups without switching between applications.</li><li><strong><a href="/pages/products/workflow-orchestration/page.html">Workflow automation</a>:</strong> build automated workflows with triggers, actions, APIs and webhooks that connect your business processes.</li><li><strong><a href="/pages/products/knowledge-base/page.html">Knowledge base</a>:</strong> train AI agents on your business documents and connected information so they give relevant answers.</li><li><strong><a href="/pages/products/analytics-bi/page.html">Analytics and business intelligence</a>:</strong> monitor campaign performance, customer engagement, team activity and business insights.</li><li><strong><a href="/pages/products/webviews/page.html">Webviews and interactive experiences</a>:</strong> create interactive customer experiences for bookings, orders, payments and more.</li></ul>
+<h3>Start with free credits</h3>
+<p>You can explore Chatberry without committing to a fixed monthly platform subscription:</p>
+<ul><li>Get free credits when you sign up.</li><li>No credit card required to sign up.</li><li>Pay as you go.</li><li>Explore WhatsApp marketing and business automation features.</li></ul>
+<p>Meta messaging charges and platform usage are separate cost components, so review the applicable usage terms when estimating your total expenses.</p>
+<p><a href="https://app.prisim.co.in/" target="_blank" rel="noopener">Get started with Chatberry</a> and see how campaigns, CRM, AI agents and business automation work together.</p>
+<h2 id="final-thoughts">Final thoughts</h2>
+<p>WhatsApp Business API pricing is not just the cost of sending a message. Consider Meta's messaging charges, platform fees, automation capabilities, integrations and the overall value your provider delivers. Understanding these costs before you choose a platform helps you make a better decision and avoid unexpected expenses.</p>
+<p>If you want a platform that combines WhatsApp campaigns, CRM, AI agents, workflow automation and business intelligence without a mandatory fixed monthly subscription, Chatberry is worth exploring.</p>
+<h2 id="frequently-asked-questions-about-whatsapp-business-api-prici">Frequently asked questions about WhatsApp Business API pricing</h2>
+<h3>How much does the WhatsApp Business API cost in India?</h3>
+<p>Meta's October 2026 India rates are ₹0.8631 for marketing messages and ₹0.115 for utility and authentication messages. Service replies include 1,000 free messages per business phone number each month, then ₹0.115 per delivered message. Provider fees and applicable taxes may be additional.</p>
+<h3>Is the WhatsApp Business API free?</h3>
+<p>There is no universal free monthly plan for the WhatsApp Business API. Meta messaging charges apply under its pricing rules. Some providers offer free credits, trials or pay-as-you-go plans.</p>
+<h3>How much do 1,000 WhatsApp marketing messages cost?</h3>
+<p>At Meta's India marketing rate of ₹0.8631 per delivered message, 1,000 delivered marketing messages cost ₹863.10 before applicable taxes and platform fees.</p>
+<h3>Does WhatsApp charge for incoming messages?</h3>
+<p>Messages customers send to your business are not charged as business-initiated messages. Your messaging costs depend on the messages your business sends and the current pricing rules.</p>
+<h3>Are WhatsApp service replies free?</h3>
+<p>The first 1,000 service messages per business phone number per month are free in India. Additional delivered service messages cost ₹0.115 each under the October 2026 rate card.</p>
+<h3>Are utility messages free within the 24-hour window?</h3>
+<p>No. From October 1, 2026, utility template messages are chargeable even within an open 24-hour customer service window.</p>
+<h3>Do WhatsApp API providers charge additional fees?</h3>
+<p>Yes. Providers may charge platform subscriptions, usage fees, agent fees, number fees or other service charges, and their pricing structures vary.</p>
+<h3>Can I use the WhatsApp Business API without a monthly subscription?</h3>
+<p>Yes. Some providers, including Chatberry, offer pay-as-you-go pricing instead of a mandatory fixed monthly subscription. Check whether the provider has additional usage or feature charges.</p>
+<h3>What is the difference between WhatsApp Business App and API pricing?</h3>
+<p>The WhatsApp Business App is designed for smaller businesses and everyday customer communication. The WhatsApp Business Platform is built for businesses that need scalable messaging, integrations, automated workflows and multi-agent communication. Their capabilities and pricing models differ.</p>
+<h3>How can I reduce WhatsApp Business API expenses?</h3>
+<ul><li>Send relevant campaigns to opted-in customers.</li><li>Keep customer segments accurate.</li><li>Avoid unnecessary duplicate messages.</li><li>Use the correct template categories.</li><li>Automate repetitive customer support.</li><li>Monitor delivered messages and campaign performance.</li><li>Compare platform fees before choosing a provider.</li></ul>]]></content:encoded>
+    </item>
+    <item>
+      <title>Getting Started with WhatsApp Automation: A Practical Guide</title>
+      <link>/pages/blog/getting-started-with-whatsapp-automation/page.html</link>
+      <guid isPermaLink="true">/pages/blog/getting-started-with-whatsapp-automation/page.html</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
+      <dc:creator>Chatberry Team</dc:creator>
+      <category>WhatsApp Business API</category>
+      <description>What to automate first on WhatsApp, how to build your first journey on the official Business Platform, and how to measure whether it works.</description>
+      <content:encoded><![CDATA[<p>Most businesses already talk to customers on WhatsApp. The problem is that every conversation is handled by hand: someone reads the message, looks up the customer, types a reply and remembers to follow up. <strong>WhatsApp automation</strong> takes the predictable parts of that work off your team, so people can spend their time on the conversations that need them.</p>
+<p>This guide walks through what to automate first, how to set it up on the official WhatsApp Business Platform, and how to know it is working.</p>
+<h2 id="what-whatsapp-automation-actually-means">What WhatsApp automation actually means</h2>
+<p>Automation is not a chatbot that tries to answer everything. It is a set of rules and journeys that react to events — a new lead, a booked appointment, an abandoned cart — and send the right message at the right moment.</p>
+<blockquote><p>Automate the predictable. Keep people for the exceptions.</p></blockquote>
+<p>A good setup usually combines three layers:</p>
+<ul>
+<li><strong>Triggers</strong> — something happens in your business, such as a form submission or a payment.</li>
+<li><strong>Journeys</strong> — a sequence of messages, waits and decisions that follows from the trigger.</li>
+<li><strong>Handoff</strong> — a clear path to a human agent when the customer needs one.</li>
+</ul>
+<h2 id="five-steps-to-your-first-automated-journey">Five steps to your first automated journey</h2>
+<ol>
+<li>Connect an official WhatsApp Business API number.</li>
+<li>Pick one high-volume, predictable conversation, such as appointment reminders.</li>
+<li>Write and submit the message templates Meta needs to approve.</li>
+<li>Build the journey: trigger, messages, waits and a human handoff.</li>
+<li>Launch to a small group, measure, then widen it.</li>
+</ol>
+<h3>Choosing the first use case</h3>
+<p>Start where volume is high and the answer is usually the same. Confirmations, reminders and order updates are ideal: they are easy to template, customers expect them, and the time saved is immediate.</p>
+<h4>Signs a conversation is ready to automate</h4>
+<ul>
+<li>Your team sends the same reply many times a day.</li>
+<li>The information comes from a system you already have.</li>
+<li>A delay costs you something — a missed booking, a lost cart.</li>
+</ul>
+<h3>Templates, sessions and costs</h3>
+<p>Business-initiated messages on the WhatsApp Business Platform use pre-approved templates, while replies inside an open customer session can be free-form. Meta's <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">WhatsApp pricing documentation</a> explains how each category is charged. For India rates and worked cost examples, see our <a href="/pages/blog/whatsapp-business-api-pricing-india/page.html">WhatsApp Business API pricing guide</a>.</p>
+<div class="bl-table"><table>
+<thead><tr><th>Message type</th><th>Who starts it</th><th>Typical use</th><th>Needs a template?</th></tr></thead>
+<tbody>
+<tr><td>Marketing</td><td>Business</td><td>Offers, announcements, re-engagement</td><td>Yes</td></tr>
+<tr><td>Utility</td><td>Business</td><td>Order updates, reminders, confirmations</td><td>Yes</td></tr>
+<tr><td>Authentication</td><td>Business</td><td>One-time passcodes</td><td>Yes</td></tr>
+<tr><td>Service</td><td>Customer</td><td>Replies inside an open conversation</td><td>No</td></tr>
+</tbody>
+</table></div>
+<h2 id="measuring-whether-it-works">Measuring whether it works</h2>
+<p>Don't measure success by how many messages you send. Measure the outcome the journey was built for: fewer no-shows, faster first replies, more recovered carts, less time spent on repetitive questions.</p>
+<p>When you are ready to try it on your own number, see how credits work on our <a href="/pages/pricing/page.html">pricing page</a> — you can start free and pay as you go.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

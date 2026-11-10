@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Journey Builder &amp; Webviews | Chatberry</title>
+<meta name="description" content="Create AI-powered Webviews, publish interactive pages, share them through WhatsApp and other touchpoints, and understand customer behaviour with Chatberry.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chatberry">
+<meta property="og:title" content="Chatberry Customer Journeys — Create experiences your customers can actually use.">
+<meta property="og:description" content="Build Webviews with AI, share them in WhatsApp conversations, see what customers do and guide the next step.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="page.css">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="frame">
+
+  <!-- chrome:nav -->
+  <link rel="stylesheet" href="/theme.css">
+  <div class="wmnav-space" aria-hidden="true"></div>
+  <div id="wm-nav"></div>
+  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
+  <!-- /chrome:nav -->
+
+  <main class="cos cj" id="top">
+
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
+      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2.5l2 11h10.5l2-8H7"/><circle cx="9.5" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-tap" viewBox="0 0 24 24"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11M12 10.5V9a1.5 1.5 0 0 1 3 0v2M15 10.5a1.5 1.5 0 0 1 3 0V15a6 6 0 0 1-6 6h-1a6 6 0 0 1-5-2.7L4 15.5a1.5 1.5 0 0 1 2.5-1.7L9 16"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
+      <symbol id="i-flow" viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M6.5 10v4a3 3 0 0 0 3 3H14"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5 15.5 12 10 15.5Z"/></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 4 2.5 9 12 14l9.5-5Z"/><path d="M6.5 11.2v4.3c1.4 1.3 3.4 2 5.5 2s4.1-.7 5.5-2v-4.3M21.5 9v5"/></symbol>
+      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h14a1.5 1.5 0 0 1 1.5 1.5V10a2 2 0 0 0 0 4v2.5A1.5 1.5 0 0 1 19 18H5a1.5 1.5 0 0 1-1.5-1.5V14a2 2 0 0 0 0-4Z"/><path d="M14 7v2M14 11v2M14 15v2"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+    </defs></svg>
+
+    <!-- ============ 01 HERO — a message, a tap, an experience ============ -->
+    <section class="cos-hero" id="overview" aria-labelledby="cj-h1">
+      <div class="cos-hero__grid" aria-hidden="true"></div>
+
+      <div class="cj-head rv">
+        <p class="cos-eyebrow">Customer Journeys</p>
+        <h1 class="cos-h1" id="cj-h1">Create experiences <br><span class="dim">your customers can actually use.</span></h1>
+        <p class="cos-hero__intro">Build interactive web experiences with AI, publish them through Chatberry, and share them wherever your customers connect with your business.</p>
+        <div class="cos-cta">
+          <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Create Your First Webview <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--line btn--lg" href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true">Book a Demo</a>
+        </div>
+      </div>
+
+      <figure class="cj-hero rv" id="hero" style="--d:.15s" aria-labelledby="heroCap">
+        <figcaption class="sr-only" id="heroCap">WhatsApp conversation opening a Chatberry product catalogue Webview. A store messages "Explore our new collection" with an Explore Products button. Tapping it opens the catalogue in a browser view: four products with prices, a selected linen shirt with sizes, and Add to cart and Ask a question actions.</figcaption>
+        <div class="wm-phone cj-phone">
+          <div class="wm-phone__screen"><div class="wm-phone__ui">
+            <div class="wa-chat">
+              <div class="wa-head"><div class="wm-status"></div><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">B</span><span class="wa-top__who"><b>Brightway Store</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
+              <div class="wa-body">
+                <p class="wa-day">Today</p>
+                <div class="wa-msg wa-msg--in wa-card" data-at="1">
+                  <span class="wa-card__media cj-media" aria-hidden="true"></span>
+                  <p class="wa-card__body"><b class="wa-card__title">Explore our new collection</b>Hi Maya, the spring range is in. Have a look and ask us anything.<span class="wa-meta">10:24</span></p>
+                  <div class="wa-btns"><span class="wa-btn" data-lit="2"><i class="wa-i wa-i--link"></i>Explore Products</span></div>
+                </div>
+              </div>
+              <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
+            </div>
+          </div></div>
+          <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+        </div>
+        <div class="cj-tap" aria-hidden="true" data-lit="2"><span><svg class="i"><use href="#i-tap"/></svg></span><i></i></div>
+        <div class="wm-phone cj-phone">
+          <div class="wm-phone__screen"><div class="wm-phone__ui">
+            <div class="wa-web">
+              <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Brightway Store</b><small><i class="wa-i wa-i--lock"></i>brightway.shop/spring</small></span><i class="wa-i wa-i--dots"></i></div>
+              <div class="wa-web__page">
+                <div class="cj-cat" data-at="3">
+                  <p class="cj-cat__h"><b>Spring collection</b><span>12 items</span></p>
+                  <ul class="cj-grid">
+                    <li class="is-sel"><span class="cj-pi cj-pi--a"></span><b>Linen shirt</b><em>$48</em></li>
+                    <li><span class="cj-pi cj-pi--b"></span><b>Canvas tote</b><em>$32</em></li>
+                    <li><span class="cj-pi cj-pi--c"></span><b>Cotton tee</b><em>$24</em></li>
+                    <li><span class="cj-pi cj-pi--d"></span><b>Chino shorts</b><em>$40</em></li>
+                  </ul>
+                  <div class="cj-pd">
+                    <p><b>Linen shirt</b> &middot; Sand</p>
+                    <p class="cj-sizes"><span>S</span><span class="is-on">M</span><span>L</span><span>XL</span></p>
+                    <p class="cj-acts"><span class="cj-btn"><svg class="i"><use href="#i-cart"/></svg>Add to cart</span><span class="cj-btn cj-btn--line">Ask a question</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+        </div>
+        <p class="cj-note">Opens from the chat in a browser view; the exact behaviour depends on the device and WhatsApp.</p>
+      </figure>
+    </section>
+
+    <!-- ============ 02 THE PROBLEM — three different frictions ============ -->
+    <section class="cos-sec" id="problem" aria-labelledby="pr-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">The problem</p>
+        <h2 class="cos-h2" id="pr-h">Your customers shouldn&rsquo;t have to work <br><span class="dim">to take the next step.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Customers may start with a message, but extra steps, generic pages and missing behaviour insights make the journey harder to complete.</p>
+        </div>
+      </div>
+
+      <div class="cj-pr rv" style="--d:.1s">
+        <article class="cj-pr__i cj-pr__i--a">
+          <div class="cj-pr__v" aria-hidden="true">
+            <div class="cj-clut">
+              <p class="cj-clut__nav"><i></i><i></i><i></i><i></i><i></i><i></i></p>
+              <p class="cj-clut__pop">Sign up for 10% off! <b>&times;</b></p>
+              <p class="cj-clut__row"><i></i><i></i><i></i></p>
+              <p class="cj-clut__q"><svg class="i"><use href="#i-search"/></svg>Where was the shirt?</p>
+            </div>
+          </div>
+          <h3>Leaving the conversation creates friction</h3>
+          <p>A customer gets a message, then has to navigate a website, search for the right page or work through a long process to continue.</p>
+        </article>
+        <article class="cj-pr__i cj-pr__i--b">
+          <div class="cj-pr__v cj-pr__v--three" aria-hidden="true">
+            <span class="cj-mini"><svg class="i"><use href="#i-box"/></svg>Catalogue</span>
+            <span class="cj-mini"><svg class="i"><use href="#i-cap"/></svg>Online class</span>
+            <span class="cj-mini"><svg class="i"><use href="#i-cal"/></svg>Booking</span>
+          </div>
+          <h3>Generic pages don&rsquo;t fit every interaction</h3>
+          <p>A product catalogue, a class registration, a booking and an enquiry form each need a different experience.</p>
+        </article>
+        <article class="cj-pr__i cj-pr__i--c">
+          <div class="cj-pr__v" aria-hidden="true">
+            <ol class="cj-drop">
+              <li><i></i>Opened</li>
+              <li><i></i>Browsed</li>
+              <li><i></i>Started form</li>
+              <li class="is-x"><i><svg class="i"><use href="#i-x"/></svg></i>Left</li>
+            </ol>
+            <p class="cj-drop__q">&ldquo;Where did they stop?&rdquo;</p>
+          </div>
+          <h3>Customer interest gets lost</h3>
+          <p>Someone clicks, browses or starts a form, but the business may not know where they stopped or what to do next.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 03 AI WEBVIEWS — a prompt becomes a page ============ -->
+    <section class="cos-sec cj-tint cj-tint--green" id="create" aria-labelledby="cr-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">AI Webviews</p>
+        <h2 class="cos-h2" id="cr-h">From an idea <br><span class="dim">to a live experience.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Describe the experience you want. Use AI to build and customise your Webview, then publish it through Chatberry.</p>
+          <div class="cos-cta cj-cta-sm">
+            <a class="btn btn--lime" href="https://app.prisim.co.in/">Start Creating <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--line" href="/pages/products/webviews/page.html">Explore Webviews</a>
+          </div>
+        </div>
+      </div>
+
+      <figure class="cj-ai rv" id="ai" style="--d:.1s" aria-labelledby="aiCap">
+        <figcaption class="sr-only" id="aiCap">On the left, an AI creation panel with the prompt "Create a product catalogue with product details and enquiry buttons", page type catalogue, and three completed steps. On the right, the generated catalogue preview with a header, four products with prices and an Enquire button on each, ready to publish.</figcaption>
+        <div class="app cj-prompt">
+          <p class="app__top app__top--slim"><span class="cj-mark"><svg class="i"><use href="#i-spark"/></svg></span><span class="app__crumb"><b>New Webview</b></span></p>
+          <div class="cj-prompt__b">
+            <p class="ui-label">Describe it</p>
+            <p class="cj-ta">Create a product catalogue with product details and enquiry buttons.</p>
+            <p class="cj-opts"><span class="is-on">Catalogue</span><span>Booking</span><span>Registration</span><span>Form</span></p>
+            <ol class="cj-gen">
+              <li data-lit="1"><svg class="i"><use href="#i-check"/></svg>Layout created</li>
+              <li data-lit="2"><svg class="i"><use href="#i-check"/></svg>Products and details added</li>
+              <li data-lit="3"><svg class="i"><use href="#i-check"/></svg>Enquiry buttons connected</li>
+            </ol>
+          </div>
+        </div>
+        <div class="app cj-prev" data-lit="2">
+          <p class="cj-prev__top"><span class="cj-dots"><i></i><i></i><i></i></span><span class="cj-bar__u"><svg class="i"><use href="#i-lock"/></svg>brightway.shop/spring</span><span class="cj-st">Preview</span><span class="cj-btn cj-btn--sm">Publish</span></p>
+          <div class="cj-prev__b">
+            <div class="cj-prev__hero"><b>Spring collection</b><span>Light fabrics for warmer days</span></div>
+            <ul class="cj-prev__g">
+              <li><span class="cj-pi cj-pi--a"></span><b>Linen shirt</b><small>Sand &middot; S&ndash;XL</small><em>$48</em><span class="cj-btn cj-btn--xs">Enquire</span></li>
+              <li><span class="cj-pi cj-pi--b"></span><b>Canvas tote</b><small>Natural</small><em>$32</em><span class="cj-btn cj-btn--xs">Enquire</span></li>
+              <li><span class="cj-pi cj-pi--c"></span><b>Cotton tee</b><small>White &middot; S&ndash;XL</small><em>$24</em><span class="cj-btn cj-btn--xs">Enquire</span></li>
+              <li><span class="cj-pi cj-pi--d"></span><b>Chino shorts</b><small>Olive</small><em>$40</em><span class="cj-btn cj-btn--xs">Enquire</span></li>
+            </ul>
+          </div>
+        </div>
+      </figure>
+      <ol class="cj-seq rv" aria-label="Describe, create, customise, publish">
+        <li><span>1</span>Describe</li><li><span>2</span>Create</li><li><span>3</span>Customise</li><li class="is-end"><span>4</span>Publish</li>
+      </ol>
+      <p class="cj-fine cj-fine--c rv"><span>Also works for</span><span class="cj-chip">Event registration</span><span class="cj-chip">Service booking</span><span class="cj-chip">Course information</span><span class="cj-chip">Lead enquiry form</span></p>
+      <p class="cj-fine cj-fine--c rv">Page types and components follow what Chatberry currently supports. <a class="cos-link cj-inline" href="/pages/solutions/content-engine/page.html">Write page content with the Content Engine <svg class="i"><use href="#i-arrow"/></svg></a></p>
+    </section>
+
+    <!-- ============ 04 WEBVIEWS IN WHATSAPP — three experiences ============ -->
+    <section class="cos-sec cj-tint cj-tint--blue" id="whatsapp" aria-labelledby="wa-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Webviews in WhatsApp</p>
+        <h2 class="cos-h2" id="wa-h">Bring your customer experiences <br><span class="dim">into the conversation.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Share interactive Webviews through WhatsApp campaigns and chats, so customers move from a message to the next action with less friction.</p>
+        </div>
+      </div>
+
+      <div class="cj-x rv" id="xp" style="--d:.1s">
+        <div class="cj-x__tabs" role="tablist" aria-label="Webview experiences">
+          <button class="cj-x__t" type="button" role="tab" id="xt1" aria-controls="xp1" aria-selected="true"><svg class="i"><use href="#i-box"/></svg>Product catalogue</button>
+          <button class="cj-x__t" type="button" role="tab" id="xt2" aria-controls="xp2" aria-selected="false" tabindex="-1"><svg class="i"><use href="#i-cap"/></svg>Online classes</button>
+          <button class="cj-x__t" type="button" role="tab" id="xt3" aria-controls="xp3" aria-selected="false" tabindex="-1"><svg class="i"><use href="#i-cal"/></svg>Bookings &amp; registrations</button>
+        </div>
+        <div class="cj-x__panes">
+          <!-- A: catalogue -->
+          <div class="cj-x__p is-on" role="tabpanel" id="xp1" aria-labelledby="xt1">
+            <div class="wm-phone cj-phone cj-phone--x">
+              <div class="wm-phone__screen"><div class="wm-phone__ui">
+                <div class="wa-chat">
+                  <div class="wa-head"><div class="wm-status"></div><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">B</span><span class="wa-top__who"><b>Brightway Store</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
+                  <div class="wa-body">
+                    <p class="wa-day">Today</p>
+                    <div class="wa-msg wa-msg--in wa-card"><p class="wa-card__body"><b class="wa-card__title">New: summer sandals</b>Six styles, all sizes in stock this week.<span class="wa-meta">09:30</span></p><div class="wa-btns"><span class="wa-btn is-tap"><i class="wa-i wa-i--link"></i>Explore Products</span></div></div>
+                  </div>
+                  <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
+                </div>
+              </div></div>
+              <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+            </div>
+            <span class="cj-x__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+            <div class="wm-phone cj-phone cj-phone--x">
+              <div class="wm-phone__screen"><div class="wm-phone__ui">
+                <div class="wa-web">
+                  <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Brightway Store</b><small><i class="wa-i wa-i--lock"></i>brightway.shop/sandals</small></span><i class="wa-i wa-i--dots"></i></div>
+                  <div class="wa-web__page">
+                  <div class="cj-xw__b">
+                    <span class="cj-xw__big cj-pi cj-pi--b"></span>
+                    <p class="cj-xw__t">Strap sandal &middot; Tan</p>
+                    <p class="cj-xw__p"><b>$56</b><span>Leather &middot; cushioned sole</span></p>
+                    <p class="cj-sizes"><span>38</span><span class="is-on">39</span><span>40</span><span>41</span></p>
+                    <p class="cj-acts"><span class="cj-btn"><svg class="i"><use href="#i-cart"/></svg>Add to cart</span><span class="cj-btn cj-btn--line">Enquire</span></p>
+                  </div>
+                  </div>
+                </div>
+              </div></div>
+              <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+            </div>
+            <div class="cj-x__txt"><h3>Product catalogue</h3><p>A customer taps &ldquo;Explore Products&rdquo; and opens a catalogue with images, prices, details and supported purchase or enquiry actions.</p><ol class="cj-path"><li>Message</li><li>Catalogue</li><li>Product</li><li class="is-end">Cart or enquiry</li></ol></div>
+          </div>
+          <!-- B: class -->
+          <div class="cj-x__p" role="tabpanel" id="xp2" aria-labelledby="xt2">
+            <div class="wm-phone cj-phone cj-phone--x">
+              <div class="wm-phone__screen"><div class="wm-phone__ui">
+                <div class="wa-chat">
+                  <div class="wa-head"><div class="wm-status"></div><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--d">N</span><span class="wa-top__who"><b>Northfield Academy</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
+                  <div class="wa-body">
+                    <p class="wa-day">Today</p>
+                    <div class="wa-msg wa-msg--in wa-card"><p class="wa-card__body"><b class="wa-card__title">Intro to UX Design</b>Live classes start Monday. Places are limited.<span class="wa-meta">09:30</span></p><div class="wa-btns"><span class="wa-btn is-tap"><i class="wa-i wa-i--link"></i>View the course</span></div></div>
+                  </div>
+                  <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
+                </div>
+              </div></div>
+              <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+            </div>
+            <span class="cj-x__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+            <div class="wm-phone cj-phone cj-phone--x">
+              <div class="wm-phone__screen"><div class="wm-phone__ui">
+                <div class="wa-web">
+                  <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Northfield Academy</b><small><i class="wa-i wa-i--lock"></i>northfield.edu/ux-intro</small></span><i class="wa-i wa-i--dots"></i></div>
+                  <div class="wa-web__page">
+                  <div class="cj-xw__b">
+                    <span class="cj-video"><svg class="i"><use href="#i-play"/></svg><em>2:14 preview</em></span>
+                    <p class="cj-xw__t">Intro to UX Design</p>
+                    <p class="cj-xw__p"><span>6 weeks &middot; live online &middot; beginner</span></p>
+                    <ul class="cj-sched"><li><b>Mon</b>19:00&ndash;20:30</li><li><b>Thu</b>19:00&ndash;20:30</li></ul>
+                    <p class="cj-acts"><span class="cj-btn"><svg class="i"><use href="#i-form"/></svg>Register</span><span class="cj-btn cj-btn--line">Join class</span></p>
+                  </div>
+                  </div>
+                </div>
+              </div></div>
+              <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+            </div>
+            <div class="cj-x__txt"><h3>Online classes</h3><p>A student opens a course page from a message: course information, the class schedule, and a registration or join-class action where supported.</p><ol class="cj-path"><li>Message</li><li>Course page</li><li>Registration</li><li class="is-end">Join class</li></ol></div>
+          </div>
+          <!-- C: booking -->
+          <div class="cj-x__p" role="tabpanel" id="xp3" aria-labelledby="xt3">
+            <div class="wm-phone cj-phone cj-phone--x">
+              <div class="wm-phone__screen"><div class="wm-phone__ui">
+                <div class="wa-chat">
+                  <div class="wa-head"><div class="wm-status"></div><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--a">L</span><span class="wa-top__who"><b>Lumen Studio</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
+                  <div class="wa-body">
+                    <p class="wa-day">Today</p>
+                    <div class="wa-msg wa-msg--in wa-card"><p class="wa-card__body"><b class="wa-card__title">Your next appointment</b>Pick a time that suits you this week.<span class="wa-meta">09:30</span></p><div class="wa-btns"><span class="wa-btn is-tap"><i class="wa-i wa-i--link"></i>Book a time</span></div></div>
+                  </div>
+                  <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
+                </div>
+              </div></div>
+              <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+            </div>
+            <span class="cj-x__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+            <div class="wm-phone cj-phone cj-phone--x">
+              <div class="wm-phone__screen"><div class="wm-phone__ui">
+                <div class="wa-web">
+                  <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Lumen Studio</b><small><i class="wa-i wa-i--lock"></i>lumen.studio/book</small></span><i class="wa-i wa-i--dots"></i></div>
+                  <div class="wa-web__page">
+                  <div class="cj-xw__b">
+                    <p class="cj-xw__t">Haircut &amp; style &middot; 45 min</p>
+                    <p class="cj-cal"><span>Mon<b>13</b></span><span>Tue<b>14</b></span><span class="is-on">Wed<b>15</b></span><span>Thu<b>16</b></span><span>Fri<b>17</b></span></p>
+                    <p class="cj-slots"><span>10:00</span><span class="is-on">11:30</span><span class="is-off">13:00</span><span>15:30</span></p>
+                    <p class="cj-conf"><svg class="i"><use href="#i-check"/></svg>Wed 15 Oct, 11:30 with Sara</p>
+                    <p class="cj-acts"><span class="cj-btn cj-btn--wide">Confirm booking</span></p>
+                  </div>
+                  </div>
+                </div>
+              </div></div>
+              <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+            </div>
+            <div class="cj-x__txt"><h3>Bookings &amp; registrations</h3><p>A customer opens a booking page, picks a suitable option, adds the details needed and completes the next step.</p><ol class="cj-path"><li>Message</li><li>Booking page</li><li>Select option</li><li class="is-end">Submit</li></ol></div>
+          </div>
+        </div>
+      </div>
+      <p class="cj-fine rv">Shared through supported WhatsApp campaign and chat workflows; pages open from the conversation in a browser view. Send them to a whole audience with <a class="cos-link cj-inline" href="/pages/solutions/campaign-management/page.html">Campaign Management <svg class="i"><use href="#i-arrow"/></svg></a></p>
+    </section>
+
+    <!-- ============ 05 ANALYTICS — where customers lose interest ============ -->
+    <section class="cos-sec" id="analytics" aria-labelledby="an-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Customer behaviour &amp; Webview analytics</p>
+        <h2 class="cos-h2" id="an-h">Every click can tell you <br><span class="dim">what to improve.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Understand how customers interact with your Webviews, identify drop-off points, and use available behaviour data to improve the next step.</p>
+        </div>
+      </div>
+
+      <div class="cj-an rv" id="an" style="--d:.1s">
+        <figure class="app cj-mark-pg" aria-labelledby="mkCap">
+          <figcaption class="sr-only" id="mkCap">A product page with five numbered interaction markers: product viewed, details clicked, add to cart, checkout started, and purchase completed or abandoned.</figcaption>
+          <p class="cj-bar cj-bar--in"><span class="cj-bar__u"><svg class="i"><use href="#i-lock"/></svg>brightway.shop/linen-shirt</span></p>
+          <div class="cj-mark-pg__b">
+            <div class="cj-mark-pg__img"><span class="cj-pi cj-pi--a"></span><i class="cj-pin" data-lit="1">1</i></div>
+            <div class="cj-mark-pg__info">
+              <p class="cj-xw__t">Linen shirt &middot; Sand</p>
+              <p class="cj-xw__p"><b>$48</b><span>Breathable linen, relaxed fit</span></p>
+              <p class="cj-det">Size &amp; fit details <svg class="i"><use href="#i-chevr"/></svg><i class="cj-pin" data-lit="2">2</i></p>
+              <p class="cj-acts"><span class="cj-btn">Add to cart<i class="cj-pin" data-lit="3">3</i></span></p>
+              <p class="cj-acts"><span class="cj-btn cj-btn--line">Checkout<i class="cj-pin" data-lit="4">4</i></span></p>
+            </div>
+          </div>
+          <ol class="cj-legend">
+            <li><i>1</i>Product viewed</li><li><i>2</i>Details clicked</li><li><i>3</i>Add to cart</li><li><i>4</i>Checkout started</li><li><i>5</i>Purchase completed or abandoned</li>
+          </ol>
+        </figure>
+        <div class="cj-an__side">
+          <div class="app cj-fun" role="img" aria-label="Sample journey for the linen shirt page this week: 1,820 viewed, 960 clicked details, 410 added to cart, 260 started checkout, 140 completed. The biggest drop is between add to cart and completed checkout.">
+            <p class="cj-fun__h"><b>Where are customers losing interest?</b><span class="tag">Sample data</span></p>
+            <ol class="cj-fun__l">
+              <li style="--v:1"><span>Product viewed</span><b>1,820</b></li>
+              <li style="--v:.53"><span>Details clicked</span><b>960</b></li>
+              <li style="--v:.23"><span>Added to cart</span><b>410</b><em class="cj-src">Store integration</em></li>
+              <li style="--v:.14" class="is-drop"><span>Checkout started</span><b>260</b><em class="cj-src">Store integration</em></li>
+              <li style="--v:.08" class="is-goal"><span>Purchase completed</span><b>140</b><em class="cj-src">Store integration</em></li>
+            </ol>
+            <p class="cj-fun__n"><b>Drop-off</b> 270 of 410 carts didn&rsquo;t complete checkout.</p>
+          </div>
+          <div class="app cj-form-an" role="img" aria-label="Sample enquiry form: 320 started, 190 submitted. Most people who leave stop at the preferred date step. Field contents aren't shown.">
+            <p class="cj-fun__h"><b>Enquiry form</b><span>this week</span></p>
+            <ol class="cj-steps">
+              <li class="is-ok"><span>Name</span><i style="--v:1"></i></li>
+              <li class="is-ok"><span>Contact</span><i style="--v:.9"></i></li>
+              <li class="is-drop"><span>Preferred date</span><i style="--v:.62"></i><em>most leave here</em></li>
+              <li><span>Submitted</span><i style="--v:.59"></i></li>
+            </ol>
+            <p class="cj-form-an__f"><b>320</b> started &middot; <b>190</b> submitted &middot; field contents aren&rsquo;t shown</p>
+          </div>
+        </div>
+      </div>
+      <p class="cj-fine rv">Page visits, clicks and form starts and submissions are captured by the Webview; cart, checkout and purchase events need a connected store. Partial form progress shows only where it&rsquo;s captured. <a class="cos-link cj-inline" href="/pages/products/analytics-bi/page.html">Go deeper with Analytics &amp; BI <svg class="i"><use href="#i-arrow"/></svg></a></p>
+    </section>
+
+    <!-- ============ 06 BEHAVIOUR TO ACTION — three mini-workflows ============ -->
+    <section class="cos-sec cj-tint cj-tint--lav" id="action" aria-labelledby="ac-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">From behaviour to action</p>
+        <h2 class="cos-h2" id="ac-h">Turn customer interest <br><span class="dim">into the next step.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Connect supported Webview events with Chatberry workflows to make follow-ups more relevant.</p>
+          <div class="cos-cta cj-cta-sm">
+            <a class="btn btn--lime" href="/pages/products/workflow-orchestration/page.html">Explore Automation <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--line" href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cj-wf rv" id="wf" style="--d:.1s">
+        <p class="cj-wf__head" aria-hidden="true"><span>Customer action</span><span>Captured event</span><span>Configured workflow</span><span>Relevant follow-up</span></p>
+        <article class="cj-wf__r" data-lit="1" aria-label="Abandoned checkout">
+          <p class="cj-wf__k">Abandoned checkout</p>
+          <div class="cj-wf__c"><span class="cj-ico"><svg class="i"><use href="#i-cart"/></svg></span><span><b>Added a shirt to the cart</b><small>Left at checkout</small></span></div>
+          <div class="cj-wf__e"><span class="cj-ev">checkout_abandoned</span></div>
+          <div class="cj-wf__w"><span class="cj-ico cj-ico--ink"><svg class="i"><use href="#i-flow"/></svg></span><span><b>Cart reminder</b><small>Wait 4 hours &middot; if opted in</small></span></div>
+          <div class="cj-wf__m"><p>Your linen shirt is still in your cart. Size M is in stock.</p></div>
+        </article>
+        <article class="cj-wf__r" data-lit="2" aria-label="Incomplete enquiry">
+          <p class="cj-wf__k">Incomplete enquiry</p>
+          <div class="cj-wf__c"><span class="cj-ico"><svg class="i"><use href="#i-form"/></svg></span><span><b>Started an enquiry form</b><small>Left before submitting</small></span></div>
+          <div class="cj-wf__e"><span class="cj-ev">form_started</span><span class="cj-ev cj-ev--off">no submit</span></div>
+          <div class="cj-wf__w"><span class="cj-ico cj-ico--ink"><svg class="i"><use href="#i-flow"/></svg></span><span><b>Enquiry nudge</b><small>Next day &middot; once</small></span></div>
+          <div class="cj-wf__m"><p>Want to finish your enquiry? It only takes a minute.</p></div>
+        </article>
+        <article class="cj-wf__r" data-lit="3" aria-label="Unfinished registration">
+          <p class="cj-wf__k">Unfinished registration</p>
+          <div class="cj-wf__c"><span class="cj-ico"><svg class="i"><use href="#i-cap"/></svg></span><span><b>Viewed the UX course</b><small>Didn&rsquo;t register</small></span></div>
+          <div class="cj-wf__e"><span class="cj-ev">course_viewed</span></div>
+          <div class="cj-wf__w"><span class="cj-ico cj-ico--ink"><svg class="i"><use href="#i-flow"/></svg></span><span><b>Registration reminder</b><small>2 days before start</small></span></div>
+          <div class="cj-wf__m"><p>Classes start Monday and a few places are left. Register here.</p></div>
+        </article>
+      </div>
+      <p class="cj-fine rv">Follow-ups depend on event tracking, connected data, workflow configuration, channel capabilities, customer permissions and messaging policies; nothing is sent without a configured workflow. <a class="cos-link cj-inline" href="/pages/products/drip-marketing/page.html">Plan longer sequences with Drip Marketing <svg class="i"><use href="#i-arrow"/></svg></a></p>
+    </section>
+
+    <!-- ============ 07 USE CASES — one builder, many experiences ============ -->
+    <section class="cos-sec cj-tint cj-tint--green" id="use-cases" aria-labelledby="uc-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Use cases</p>
+        <h2 class="cos-h2" id="uc-h">One builder. <br><span class="dim">Experiences for different needs.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Create experiences around the action your customer needs to complete, from exploring products to registering for a class or requesting a service.</p>
+        </div>
+      </div>
+
+      <div class="cj-bento rv" style="--d:.1s">
+        <article class="cj-tile cj-tile--wide">
+          <div class="cj-tile__v cj-tile__v--cat" aria-hidden="true">
+            <span><i class="cj-pi cj-pi--a"></i><b>Linen shirt</b><em>$48</em></span><span><i class="cj-pi cj-pi--b"></i><b>Canvas tote</b><em>$32</em></span><span><i class="cj-pi cj-pi--c"></i><b>Cotton tee</b><em>$24</em></span><span><i class="cj-pi cj-pi--d"></i><b>Chino shorts</b><em>$40</em></span>
+          </div>
+          <h3>Product catalogues</h3><p>Product images, details, pricing and supported cart or enquiry actions.</p>
+        </article>
+        <article class="cj-tile">
+          <div class="cj-tile__v cj-tile__v--course" aria-hidden="true"><span class="cj-video cj-video--sm"><svg class="i"><use href="#i-play"/></svg></span><b>Intro to UX Design</b><small>6 weeks &middot; Mon &amp; Thu</small></div>
+          <h3>Online learning</h3><p>Course information, schedules, registration and class access, where supported.</p>
+        </article>
+        <article class="cj-tile">
+          <div class="cj-tile__v cj-tile__v--cal" aria-hidden="true"><p class="cj-cal cj-cal--sm"><span>M<b>13</b></span><span>T<b>14</b></span><span class="is-on">W<b>15</b></span><span>T<b>16</b></span></p><p class="cj-slots cj-slots--sm"><span>10:00</span><span class="is-on">11:30</span></p></div>
+          <h3>Bookings</h3><p>Explore services, choose an available option and submit booking details.</p>
+        </article>
+        <article class="cj-tile">
+          <div class="cj-tile__v cj-tile__v--event" aria-hidden="true"><span class="cj-tkt"><svg class="i"><use href="#i-ticket"/></svg><b>Spring Market</b><small>Sat 24 May &middot; 10:00</small></span><span class="cj-btn cj-btn--xs">Register</span></div>
+          <h3>Events</h3><p>Present event information and collect registrations.</p>
+        </article>
+        <article class="cj-tile">
+          <div class="cj-tile__v cj-tile__v--lead" aria-hidden="true"><p class="cj-lf"><span>Name</span><b>Sam Rivera</b></p><p class="cj-lf"><span>Interested in</span><b>Consultation</b></p><span class="cj-btn cj-btn--xs">Request a call</span></div>
+          <h3>Lead generation</h3><p>Enquiry forms and consultation requests that capture customer details.</p>
+        </article>
+        <article class="cj-tile cj-tile--wide">
+          <div class="cj-tile__v cj-tile__v--self" aria-hidden="true">
+            <p class="cj-look"><svg class="i"><use href="#i-search"/></svg>Order #48213</p>
+            <ol class="cj-status"><li class="is-done">Placed</li><li class="is-done">Packed</li><li class="is-on">Out for delivery</li><li>Delivered</li></ol>
+          </div>
+          <h3>Customer self-service</h3><p>Interactive pages for supported tasks, information requests or status lookups.</p>
+        </article>
+      </div>
+      <p class="cj-fine cj-fine--c rv">Product data, scheduling, payments and registration logic depend on available components and integrations. <a class="cos-link cj-inline" href="/pages/solutions/lead-capture/page.html">Capture enquiries with Lead Capture <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link cj-inline" href="/pages/products/integrations/page.html">See Integrations <svg class="i"><use href="#i-arrow"/></svg></a></p>
+    </section>
+
+    <!-- ============ 08 FAQ ============ -->
+    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
+      <div class="os-faq">
+        <div class="os-faq__intro rv">
+          <p class="cos-eyebrow">FAQ</p>
+          <h2 class="cos-h2" id="faq-h">Frequently asked questions about Chatberry Webviews</h2>
+        </div>
+        <div class="os-faq__list rv" style="--d:.1s">
+          <details class="os-qa"><summary>What are Webviews in Chatberry?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Webviews are interactive web experiences that businesses can create for customer-facing tasks, such as product discovery, enquiries, registrations, or bookings. The exact components available depend on Chatberry&rsquo;s current capabilities.</p></div></details>
+          <details class="os-qa"><summary>Can I create Webviews using AI?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Chatberry supports AI-assisted Webview creation according to the capabilities available in the product. Users can create and customise supported experiences and publish them through Chatberry.</p></div></details>
+          <details class="os-qa"><summary>Can I publish and host Webviews through Chatberry?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Webviews can be published through Chatberry where the relevant hosting and publishing capabilities are enabled. The published page can then be shared through supported customer touchpoints.</p></div></details>
+          <details class="os-qa"><summary>Can I share Webviews in WhatsApp campaigns and chats?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Webviews can be shared through supported WhatsApp campaign and chat workflows. The way the page opens should match the actual WhatsApp experience implemented by Chatberry.</p></div></details>
+          <details class="os-qa"><summary>What customer interactions can I track?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Depending on the Webview, product setup, and connected integrations, supported interactions may include page visits, clicks, form submissions, product activity, and conversion events. Only events actually captured by the implementation should be reported.</p></div></details>
+          <details class="os-qa"><summary>Can I trigger workflows based on Webview activity?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Supported Webview events can be connected to configured workflows where the relevant tracking, integrations, and actions are available. Messaging follow-ups must also comply with customer permissions and applicable channel policies.</p></div></details>
+          <details class="os-qa"><summary>Can I create catalogues, registration pages, and booking experiences?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>These are useful Webview use cases. The exact functionality depends on the components and integrations available in Chatberry, such as product data, scheduling, payments, or registration logic.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 09 FINAL CALL TO ACTION ============ -->
+    <section class="cos-final cj-tint cj-tint--green" aria-labelledby="cta-h">
+      <div class="cos-final__grid" aria-hidden="true"></div>
+      <p class="cos-eyebrow">Customer Journeys</p>
+      <h2 class="cos-h2 rv" id="cta-h">Create the experience. <br>Connect the journey.</h2>
+      <p class="cos-body rv">Build interactive Webviews, share them across customer touchpoints, and understand what customers do next.</p>
+      <div class="cos-cta rv">
+        <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Get Started <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line btn--lg" href="https://wa.me/917382716780?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
+      </div>
+      <div class="app cj-crop rv" aria-hidden="true">
+        <p class="cj-bar cj-bar--in"><span class="cj-bar__u"><svg class="i"><use href="#i-lock"/></svg>northfield.edu/spring-open-day</span></p>
+        <div class="cj-crop__b">
+          <p class="cj-xw__t">Spring Open Day &middot; Registration</p>
+          <p class="cj-lf"><span>Name</span><b>Aisha Khan</b></p>
+          <p class="cj-lf"><span>Session</span><b>Sat 10:00 &middot; Campus tour</b></p>
+          <span class="cj-btn cj-btn--wide">Register</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- chrome:foot -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
+  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#C8E63C"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Software by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
+          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
+        </div>
+        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
+      </div>
+      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
+            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/wisemeet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
+            <a href="https://www.melohealth.ai/" style="font-size:14px;color:rgba(255,255,255,.85)">Healthcare</a><a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
+            <a href="/pages/coming-soon/page.html?p=Playbooks" style="font-size:14px;color:rgba(255,255,255,.85)">Playbooks</a><a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a><a href="/pages/coming-soon/page.html?p=Tools" style="font-size:14px;color:rgba(255,255,255,.85)">Tools</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
+            <a href="/pages/coming-soon/page.html?p=About" style="font-size:14px;color:rgba(255,255,255,.85)">About</a><a href="https://wa.me/917382716780" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true" style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
+          </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
+        <span>© Chatberry. 2026 All Rights Reserved.</span>
+        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- /chrome:foot -->
+
+</div>
+
+<script src="/index.js"></script>
+<script src="page.js"></script>
+</body>
+</html>

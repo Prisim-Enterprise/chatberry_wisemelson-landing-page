@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Agents for Business Automation | Chatberry</title>
+<meta name="description" content="AI agents that talk, listen, analyze, create workflows, automate tasks and take action across your business.">
+<meta name="keywords" content="AI agents for business, AI agents for business automation, enterprise AI agents, business AI automation, AI workflow automation, AI agents for operations, AI business assistant, AI workflow builder, agentic AI for business, AI automation platform">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chatberry">
+<meta property="og:title" content="AI Agents — AI that doesn’t just answer. It gets the work done.">
+<meta property="og:description" content="AI that can talk, understand business context, analyze information, create workflows, take action and keep work moving.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="page.css">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="frame">
+
+  <!-- chrome:nav -->
+  <link rel="stylesheet" href="/theme.css">
+  <div class="wmnav-space" aria-hidden="true"></div>
+  <div id="wm-nav"></div>
+  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
+  <!-- /chrome:nav -->
+
+  <main class="cos ag" id="top">
+
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
+      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 8 2.5 8h-17S6 15 6 9"/><path d="M10.2 20.5a2 2 0 0 0 3.6 0"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-calcheck" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></symbol>
+      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 6A1.5 1.5 0 0 1 5 4.5h9A1.5 1.5 0 0 1 15.5 6v5A1.5 1.5 0 0 1 14 12.5H8.5L5.5 15v-2.5A1.5 1.5 0 0 1 3.5 11Z"/><path d="M18.5 8.5A1.5 1.5 0 0 1 20 10v6a1.5 1.5 0 0 1-1.5 1.5V21l-3-3.5h-4.8"/></symbol>
+      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h14a1.5 1.5 0 0 1 1.5 1.5V10a2 2 0 0 0 0 4v2.5A1.5 1.5 0 0 1 19 18H5a1.5 1.5 0 0 1-1.5-1.5V14a2 2 0 0 0 0-4Z"/><path d="M14 7v2M14 11v2M14 15v2"/></symbol>
+      <symbol id="i-team" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="4.8" cy="10.2" r="2.2"/><circle cx="19.2" cy="10.2" r="2.2"/><path d="M7.5 19.5c.6-3 2.4-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/><path d="M1.6 18c.3-2 1.4-3.2 3-3.5M22.4 18c-.3-2-1.4-3.2-3-3.5"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 17.5v-5M11.5 17.5v-10M16.5 17.5v-7"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.5 17l6-6 4 4 7-7.5"/><path d="M15.5 7.5h5.5V13"/></symbol>
+      <symbol id="i-stetho" viewBox="0 0 24 24"><path d="M6 3v5.5a4 4 0 0 0 8 0V3"/><path d="M10 12.5v2a5 5 0 0 0 10 0v-1.2"/><circle cx="20" cy="11" r="2"/></symbol>
+      <symbol id="i-claim" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5M9.5 14l2 2 3.5-3.5"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16.5l-5.5-5.5-8 8"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2.8l8.5 4.7v9L12 21.2 3.5 16.5v-9Z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/><path d="M2.5 3.5H5l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.3a1.5 1.5 0 0 0 1.5-1.1L20.5 7.5H6"/></symbol>
+      <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.8h3.4l1.8 4.4-2.2 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.2 4.4 1.8V19a1.6 1.6 0 0 1-1.7 1.6A16.4 16.4 0 0 1 3.4 5.5 1.6 1.6 0 0 1 5 3.8Z"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></symbol>
+      <symbol id="i-erp" viewBox="0 0 24 24"><path d="M3 20.5h18"/><path d="M4.5 20.5V10l5 3.2V10l5 3.2V5.5h5v15"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.6 4l-3.2 16"/></symbol>
+      <symbol id="i-apps" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><circle cx="17" cy="7" r="3.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><path d="M17 13.5v7M13.5 17h7"/></symbol>
+      <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-7 4.5 14 3-7h4.5"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.2l8.6 4.4L12 12 3.4 7.6Z"/><path d="M3.4 12.4L12 16.8l8.6-4.4M3.4 16.6L12 21l8.6-4.4"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10.2 13.8a4.6 4.6 0 0 0 6.5 0l3-3a4.6 4.6 0 0 0-6.5-6.5l-1 1"/><path d="M13.8 10.2a4.6 4.6 0 0 0-6.5 0l-3 3a4.6 4.6 0 0 0 6.5 6.5l1-1"/></symbol>
+      <symbol id="i-view" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2.2"/><path d="M3.5 9.2h17M9.5 9.2V20"/></symbol>
+      <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2.2"/><circle cx="6" cy="18.5" r="2.2"/><circle cx="18" cy="8.5" r="2.2"/><path d="M6 7.7v8.6M18 10.7c0 4-6.5 2.8-10.4 6.4"/></symbol>
+      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
+      <symbol id="i-board" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="5" height="15" rx="1.5"/><rect x="9.5" y="4.5" width="5" height="10" rx="1.5"/><rect x="15.5" y="4.5" width="5" height="12.5" rx="1.5"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.6" cy="6.5" r="1.1"/><circle cx="4.6" cy="12" r="1.1"/><circle cx="4.6" cy="17.5" r="1.1"/></symbol>
+      <symbol id="i-hash" viewBox="0 0 24 24"><path d="M5 9h14M5 15h14M10 4l-2 16M16 4l-2 16"/></symbol>
+      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.9 9.2c-.6-.9-1.6-1.4-2.9-1.4-1.7 0-2.8.9-2.8 2.1 0 2.9 5.9 1.6 5.9 4.4 0 1.2-1.2 2.1-3.1 2.1-1.3 0-2.4-.6-3-1.5M12 6.2v1.6M12 16.8v1.6"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.8l7.5 3v5.6c0 4.7-3.2 8.4-7.5 9.6-4.3-1.2-7.5-4.9-7.5-9.6V5.8Z"/><path d="M9.2 12l2 2 3.6-3.6"/></symbol>
+      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M4 20l6.5-6.5M4 20v-5.5M4 20h5.5M20 4l-6.5 6.5M20 4v5.5M20 4h-5.5"/></symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6.5 8h11v3.4a5.5 5.5 0 0 1-11 0ZM12 16.9V21"/></symbol>
+      <symbol id="i-arch" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="3.5" width="7.5" height="4.5" rx="1.6"/><rect x="13" y="10" width="7.5" height="10.5" rx="1.6"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.6"/></symbol>
+      <symbol id="i-net" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><circle cx="4.6" cy="6" r="1.9"/><circle cx="19.4" cy="6" r="1.9"/><circle cx="4.6" cy="18" r="1.9"/><circle cx="19.4" cy="18" r="1.9"/><path d="M6.1 7.2l3.8 3M17.9 7.2l-3.8 3M6.1 16.8l3.8-3M17.9 16.8l-3.8-3"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
+      <symbol id="i-flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.6 6H15a3.1 3.1 0 0 1 0 6.2H9a3.1 3.1 0 0 0 0 6.2h6.4"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".7"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.8L4.8 13.5H12l-1 7.7 8.2-10.7H12Z"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.6-4.4M4 3.6v3.6h3.6M4 13a8 8 0 0 0 14.6 4.4M20 20.4v-3.6h-3.6"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4 2.2 4H5"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5V5M6 11l6-6 6 6"/></symbol>
+      <symbol id="i-org" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1.4"/><rect x="2.5" y="16" width="6" height="5" rx="1.4"/><rect x="9" y="16" width="6" height="5" rx="1.4"/><rect x="15.5" y="16" width="6" height="5" rx="1.4"/><path d="M12 8v4M5.5 16v-4h13v4M12 12v4"/></symbol>
+      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8 20 3M17 6l2.5 2.5M14.5 8.5l2 2"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5M10 20v-5.5h4V20"/></symbol>
+      <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5 6 5h12l2.5 8.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19Z"/><path d="M3.5 13.5h5l1.5 2.5h4l1.5-2.5h5"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.8l-5.3 2.8 1-5.8-4.2-4.1 5.9-.9Z"/></symbol>
+      <symbol id="i-dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4.2M12 17v.01"/></symbol>
+    </defs></svg>
+
+    <!-- ============ 01 HERO ============ -->
+    <section class="cos-hero" id="overview" aria-labelledby="ag-h1">
+      <div class="cos-hero__grid" aria-hidden="true"></div>
+
+      <div class="ag-hero">
+        <div class="cos-hero__head rv">
+          <p class="cos-eyebrow">AI Agents</p>
+          <h1 class="cos-h1" id="ag-h1">AI that doesn&rsquo;t just answer. <br><span class="dim">It gets the work done.</span></h1>
+          <p class="cos-hero__intro">AI that can talk, understand business context, analyze information, create workflows, take action and keep work moving.</p>
+          <div class="cos-cta">
+            <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Start Free <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--line btn--lg" href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true">Book a Demo</a>
+          </div>
+          <p class="ag-verbs"><span>Talk.</span><span>Think.</span><span>Create.</span><span>Act.</span></p>
+        </div>
+
+        <div class="app ag-ws rv" id="heroApp" style="--d:.1s" role="img" aria-label="A customer asks to move their booking to Friday. The AI agent replies that Friday at 4 PM is available and done, then the booking is updated, the customer notified and the team updated, while voice input listens.">
+          <div class="app__top app__top--slim">
+            <span class="ag-agent-id"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>AI Agent</span>
+            <span class="tag tag--lime ag-live"><i></i>Working</span>
+          </div>
+          <div class="ag-ws__body">
+            <div class="ag-ws__talk">
+              <p class="ui-label"><svg class="i"><use href="#i-chat"/></svg>Conversation &middot; WhatsApp</p>
+              <div class="ag-log">
+                <div class="ag-in" data-at="1"><span class="av av--cyan">RK</span><p>Can you move my booking to Friday?</p></div>
+                <p class="ag-typing ag-typing--out" data-at="2" data-until="3"><i></i><i></i><i></i></p>
+                <div class="ag-out" data-at="3"><p>Friday at 4&nbsp;PM is available. <b>Done.</b></p><span class="ag-out__by">AI Agent</span></div>
+              </div>
+            </div>
+            <div class="ag-ws__acts">
+              <p class="ui-label"><svg class="i"><use href="#i-bolt"/></svg>Actions</p>
+              <ul class="ag-acts">
+                <li data-at="4"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><span><b>Booking updated</b><small>Fri &middot; 4:00 PM</small></span></li>
+                <li data-at="5"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><span><b>Customer notified</b><small>Confirmation sent</small></span></li>
+                <li data-at="6"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><span><b>Team updated</b><small>Front desk schedule</small></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ag-mic is-listening">
+            <span class="ag-mic__btn"><svg class="i"><use href="#i-mic"/></svg></span>
+            <span class="ag-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <b class="ag-mic__state">Listening&hellip;</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 TALK TO YOUR BUSINESS ============ -->
+    <section class="cos-sec" id="talk" aria-labelledby="talk-h">
+      <div class="sec-head rv">
+        <h2 class="cos-h2" id="talk-h">Just tell AI what you need.</h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">You shouldn&rsquo;t have to learn where every button is. Ask in chat. Speak naturally. Give it an instruction.</p>
+          <p class="cos-body">AI understands what you&rsquo;re trying to accomplish and helps you get there.</p>
+        </div>
+      </div>
+
+      <figure class="ag-one rv" style="--d:.1s">
+        <div class="app ag-chat" id="talkChat" role="img" aria-label="Asked what needs attention today, the AI lists 7 items: 2 overdue tasks, 3 customers waiting and 2 approvals. Told to handle the overdue ones, it reassigns one and prepares the response for the other.">
+          <p class="ag-chat__head"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>Chatberry AI<span class="tag tag--lime ag-live"><i></i>Online</span></p>
+          <div class="ag-chat__log">
+            <p class="ag-me" data-at="1">What needs my attention today?</p>
+            <p class="ag-typing" data-at="2" data-until="3"><i></i><i></i><i></i></p>
+            <div class="ag-ans" data-at="3">
+              <p>You have <span class="ag-big">7 things</span> that need attention.</p>
+              <div class="ag-stats">
+                <p class="is-rose"><b>2</b><span>Overdue tasks</span></p>
+                <p class="is-amber"><b>3</b><span>Customers waiting</span></p>
+                <p><b>2</b><span>Approvals</span></p>
+              </div>
+            </div>
+            <p class="ag-me" data-at="4">Handle the overdue ones.</p>
+            <p class="ag-typing" data-at="5" data-until="6"><i></i><i></i><i></i></p>
+            <div class="ag-ans" data-at="6">
+              <p><b>Done.</b> I&rsquo;ve reassigned one and prepared the response for the other.</p>
+              <ul class="ag-done">
+                <li><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><span>Quote follow-up reassigned to <b>Arjun Mehta</b></span></li>
+                <li><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><span>Reply to <b>Meera Iyer</b> prepared &middot; ready to send</span></li>
+              </ul>
+            </div>
+          </div>
+          <p class="os-compose"><span>Ask or tell Chatberry AI&hellip;</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg></span></p>
+        </div>
+      </figure>
+
+      <p class="os-say os-say--center rv">You ask. <span class="dim">AI works.</span></p>
+    </section>
+
+    <!-- ============ 03 VOICE ============ -->
+    <section class="cos-sec" id="voice" aria-labelledby="voice-h">
+      <div class="sec-head rv">
+        <div>
+          <p class="cos-eyebrow">Voice</p>
+          <h2 class="cos-h2" id="voice-h">Sometimes, talking is faster than typing.</h2>
+        </div>
+        <div class="sec-head__copy"><p class="cos-body">Give instructions naturally while you&rsquo;re working.</p></div>
+      </div>
+
+      <div class="ag-voice">
+        <figure class="os-photo ag-ph--voice rv" style="--d:.05s"><img src="/public/assets/img/ai-agents/agent-voice-at-desk.webp" alt="A support professional at her desk wearing a headset, speaking while reviewing customer messages on her laptop and monitor." width="1024" height="1024" loading="lazy" decoding="async"></figure>
+
+        <div class="ag-voice__side">
+          <div class="app ag-vp rv" id="voiceApp" style="--d:.15s" role="img" aria-label="Spoken request: remind me to follow up with the three customers who haven't responded tomorrow morning. The AI transcribes it, processes it, confirms and creates three reminders for 9 AM tomorrow.">
+            <p class="ag-chat__head"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>Voice</p>
+            <div class="ag-vp__body">
+              <div class="ag-mic">
+                <span class="ag-mic__btn"><svg class="i"><use href="#i-mic"/></svg></span>
+                <span class="ag-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                <b class="ag-mic__state"><span data-at="1" data-until="2">Listening&hellip;</span><span data-at="2" data-until="3">Processing&hellip;</span><span class="ag-hl" data-at="3">Done</span></b>
+              </div>
+              <p class="ag-vp__k">Live transcription</p>
+              <p class="ag-trans" data-at="1"><span style="--i:0">“Remind</span> <span style="--i:1">me</span> <span style="--i:2">to</span> <span style="--i:3">follow</span> <span style="--i:4">up</span> <span style="--i:5">with</span> <span style="--i:6">the</span> <span style="--i:7">three</span> <span style="--i:8">customers</span> <span style="--i:9">who</span> <span style="--i:10">haven&rsquo;t</span> <span style="--i:11">responded</span> <span style="--i:12">tomorrow</span> <span style="--i:13">morning.”</span></p>
+              <p class="ag-using" data-at="2"><span class="ag-spin" data-at="2" data-until="3"></span><svg class="i ag-using__ok" data-at="3"><use href="#i-check"/></svg>Finding the three customers&hellip;</p>
+              <div class="ag-ans" data-at="3">
+                <p><b>Done.</b> I&rsquo;ve created the reminders.</p>
+                <ul class="ag-rem">
+                  <li style="--i:0"><span class="av av--lime">RK</span><span><b>Follow up with Rohan Kapoor</b><small>Tomorrow &middot; 9:00 AM</small></span></li>
+                  <li style="--i:1"><span class="av av--violet">SN</span><span><b>Follow up with Sara Nair</b><small>Tomorrow &middot; 9:00 AM</small></span></li>
+                  <li style="--i:2"><span class="av av--amber">DM</span><span><b>Follow up with Dev Malhotra</b><small>Tomorrow &middot; 9:00 AM</small></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="ag-v2 rv" style="--d:.25s">
+            <p class="ag-v2__q"><svg class="i"><use href="#i-mic"/></svg>&ldquo;Which customers need my attention today?&rdquo;</p>
+            <p class="ag-v2__a">&ldquo;Three high-priority customers are waiting. Want me to show them?&rdquo;</p>
+            <span class="mini-btn mini-btn--lime">Open <svg class="i"><use href="#i-arrow"/></svg></span>
+          </div>
+        </div>
+      </div>
+
+      <p class="os-say os-say--center rv">Your business, <span class="dim">at the speed of conversation.</span></p>
+    </section>
+
+    <!-- ============ 04 WATCH AI WORK ============ -->
+    <section class="cos-sec" id="watch" aria-labelledby="watch-h">
+      <div class="sec-head rv">
+        <h2 class="cos-h2" id="watch-h">See what happens after you say &ldquo;do&nbsp;it.&rdquo;</h2>
+        <div class="sec-head__copy"><p class="cos-body">No explanation needed. One request, and the work is already moving.</p></div>
+      </div>
+
+      <div class="ag-watch" id="watch-box">
+        <div class="ag-watch__side rv" style="--d:.1s">
+          <p class="ag-watch__k">Request</p>
+          <p class="ag-me ag-me--lg">A new enquiry came in. Find out what they need and assign it to the right person.</p>
+          <p class="ag-secs"><b id="secs">6</b><span>seconds</span></p>
+          <p class="ag-watch__line">One request. <span class="dim">Work already moving.</span></p>
+        </div>
+        <ol class="ag-stream rv" id="stream" style="--d:.15s" aria-label="Execution timeline">
+          <li><time>09:42:01</time><span class="ag-stream__dot"></span><span><b>Request received</b><small>New enquiry &middot; WhatsApp</small></span></li>
+          <li><time>09:42:02</time><span class="ag-stream__dot"></span><span><b>AI understands intent</b><small>Wants a quote for a bulk order</small></span></li>
+          <li><time>09:42:03</time><span class="ag-stream__dot"></span><span><b>Customer context checked</b><small>Returning customer &middot; 2 past orders</small></span></li>
+          <li><time>09:42:04</time><span class="ag-stream__dot"></span><span><b>Best team identified</b><small>Sales &middot; North region</small></span></li>
+          <li><time>09:42:05</time><span class="ag-stream__dot"></span><span><b>Task created</b><small>Assigned to Arjun Mehta &middot; due in 1 hour</small></span></li>
+          <li><time>09:42:06</time><span class="ag-stream__dot"></span><span><b>Customer receives response</b><small>&ldquo;Thanks! Arjun from our sales team will share your quote shortly.&rdquo;</small></span></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 05 YOU SAY IT. AI BUILDS IT. ============ -->
+    <section class="cos-sec" id="build" aria-labelledby="build-h">
+      <div class="sec-head rv">
+        <div>
+          <p class="cos-eyebrow">You say it. AI builds it.</p>
+          <h2 class="cos-h2" id="build-h">Describe the process. <span class="dim">Get the workflow.</span></h2>
+        </div>
+        <div class="sec-head__copy"><p class="cos-body">Tell AI what you want to happen. Start with a working workflow instead of a blank canvas.</p></div>
+      </div>
+
+      <figure class="os-figure rv" style="--d:.1s">
+        <div class="app ag-flow" id="flowApp" role="img" aria-label="From a written description, the AI builds a workflow node by node: new enquiry, AI qualification, priority check splitting into high priority with an alert and normal, assign team, wait 2 days, check response, follow up.">
+          <div class="ag-flow__ai">
+            <p class="ag-chat__head"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>Chatberry AI</p>
+            <div class="ag-chat__log">
+              <p class="ag-me">When a new enquiry arrives, qualify it, assign it to the right team, follow up after two days if there&rsquo;s no response, and alert me if it&rsquo;s high priority.</p>
+              <p class="ag-using" data-at="1"><span class="ag-spin" data-at="1" data-until="10"></span><svg class="i ag-using__ok" data-at="10"><use href="#i-check"/></svg><span data-at="1" data-until="10">Building your workflow&hellip;</span><span data-at="10">Workflow ready &middot; 9 steps</span></p>
+              <span class="mini-btn mini-btn--lime ag-flow__go" data-at="10">Review Workflow <svg class="i"><use href="#i-arrow"/></svg></span>
+            </div>
+          </div>
+          <div class="ag-flow__builder">
+            <div class="app__top app__top--slim">
+              <span class="app__crumb">Workflows <svg class="i"><use href="#i-chevr"/></svg> <b>New enquiry handling</b></span>
+              <span class="tag" style="margin-left:auto">Draft</span>
+            </div>
+            <div class="ag-canvas">
+              <svg class="ag-canvas__wires" viewBox="0 0 900 556" preserveAspectRatio="none" aria-hidden="true">
+                <path pathLength="100" data-at="2" d="M450 54 V80"/>
+                <path pathLength="100" data-at="3" d="M450 120 V146"/>
+                <path pathLength="100" data-at="4" d="M450 186 V205 H250 V224"/>
+                <path pathLength="100" data-at="5" d="M450 186 V205 H650 V224"/>
+                <path pathLength="100" data-at="6" d="M250 264 V283 H450 V302"/>
+                <path pathLength="100" data-at="6" d="M650 264 V283 H450 V302"/>
+                <path pathLength="100" data-at="7" d="M450 342 V368"/>
+                <path pathLength="100" data-at="8" d="M450 408 V434"/>
+                <path pathLength="100" data-at="9" d="M450 474 V500"/>
+              </svg>
+              <div class="ag-node ag-node--trig" data-at="1" style="--x:450;--y:34"><span class="ag-node__ico"><svg class="i"><use href="#i-inbox"/></svg></span><span><b>New Enquiry</b><small>Trigger &middot; any channel</small></span></div>
+              <div class="ag-node ag-node--ai" data-at="2" style="--x:450;--y:100"><span class="ag-node__ico"><svg class="i"><use href="#i-spark"/></svg></span><span><b>AI Qualification</b><small>Need, budget, timeline</small></span></div>
+              <div class="ag-node ag-node--cond" data-at="3" style="--x:450;--y:166"><span class="ag-node__ico"><svg class="i"><use href="#i-branch"/></svg></span><span><b>Priority Check</b><small>Is it high priority?</small></span></div>
+              <div class="ag-node ag-node--hi" data-at="4" style="--x:250;--y:244"><span class="ag-node__ico"><svg class="i"><use href="#i-alert"/></svg></span><span><b>High Priority</b><small>Alert you right away</small></span></div>
+              <div class="ag-node ag-node--norm" data-at="5" style="--x:650;--y:244"><span class="ag-node__ico"><svg class="i"><use href="#i-list"/></svg></span><span><b>Normal</b><small>Standard queue</small></span></div>
+              <div class="ag-node ag-node--act" data-at="6" style="--x:450;--y:322"><span class="ag-node__ico"><svg class="i"><use href="#i-users"/></svg></span><span><b>Assign Team</b><small>Right team, by your rules</small></span></div>
+              <div class="ag-node ag-node--wait" data-at="7" style="--x:450;--y:388"><span class="ag-node__ico"><svg class="i"><use href="#i-clock"/></svg></span><span><b>Wait 2 Days</b><small>If there&rsquo;s no response</small></span></div>
+              <div class="ag-node ag-node--chk" data-at="8" style="--x:450;--y:454"><span class="ag-node__ico"><svg class="i"><use href="#i-search"/></svg></span><span><b>Check Response</b><small>Has the customer replied?</small></span></div>
+              <div class="ag-node ag-node--msg" data-at="9" style="--x:450;--y:520"><span class="ag-node__ico"><svg class="i"><use href="#i-send"/></svg></span><span><b>Follow Up</b><small>Send the follow-up message</small></span></div>
+            </div>
+          </div>
+        </div>
+      </figure>
+
+      <p class="os-say os-say--center rv">From words to workflows.</p>
+    </section>
+
+    <!-- ============ 06 AI CAN CREATE TOO ============ -->
+    <section class="cos-sec" id="create" aria-labelledby="create-h">
+      <div class="sec-head rv">
+        <h2 class="cos-h2" id="create-h">Don&rsquo;t just use what already exists. <span class="dim">Create with AI.</span></h2>
+        <div class="sec-head__copy"><p class="cos-body">AI can help your team create the things they use every day.</p></div>
+      </div>
+
+      <ol class="ag-make rv" id="make" style="--d:.1s">
+        <li class="ag-mk">
+          <p class="ag-mk__k"><svg class="i"><use href="#i-wa"/></svg>Template</p>
+          <p class="ag-me ag-me--sm">Create a professional follow-up message for customers who haven&rsquo;t responded.</p>
+          <span class="ag-mk__ai" aria-hidden="true"><svg class="i"><use href="#i-spark"/></svg></span>
+          <div class="ag-gen">
+            <div class="wa-win ag-wa" style="--i:0"><div class="wa-win__ui"><div class="wa-chat"><div class="wa-body"><p class="wa-msg wa-msg--in">Hi {{1}}, just checking in &mdash; did you get a chance to look at our last message? Reply here and we&rsquo;ll take it from there.</p></div></div></div></div>
+            <span class="ag-mk__go" style="--i:1">Save Template <svg class="i"><use href="#i-arrow"/></svg></span>
+          </div>
+        </li>
+        <li class="ag-mk">
+          <p class="ag-mk__k"><svg class="i"><use href="#i-check"/></svg>Task</p>
+          <p class="ag-me ag-me--sm">Create a task for the sales team whenever a high-priority enquiry arrives.</p>
+          <span class="ag-mk__ai" aria-hidden="true"><svg class="i"><use href="#i-spark"/></svg></span>
+          <div class="ag-gen">
+            <dl class="ag-rule">
+              <div style="--i:0"><dt>When</dt><dd>High-priority enquiry arrives</dd></div>
+              <div style="--i:1"><dt>Then</dt><dd>Create task &middot; Sales team</dd></div>
+              <div style="--i:2"><dt>Due</dt><dd>Within 1 hour</dd></div>
+            </dl>
+            <span class="ag-mk__go" style="--i:3">Create <svg class="i"><use href="#i-arrow"/></svg></span>
+          </div>
+        </li>
+        <li class="ag-mk">
+          <p class="ag-mk__k"><svg class="i"><use href="#i-send"/></svg>Campaign</p>
+          <p class="ag-me ag-me--sm">Prepare a re-engagement campaign for customers who haven&rsquo;t interacted recently.</p>
+          <span class="ag-mk__ai" aria-hidden="true"><svg class="i"><use href="#i-spark"/></svg></span>
+          <div class="ag-gen">
+            <ul class="ag-prep">
+              <li style="--i:0"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><b>Audience</b><em>2,140 customers</em></li>
+              <li style="--i:1"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><b>Message</b><em>&ldquo;We miss you&rdquo; offer</em></li>
+              <li style="--i:2"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><b>Sequence</b><em>3 messages</em></li>
+              <li style="--i:3"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span><b>Timing</b><em>Tue&ndash;Thu &middot; 11 AM</em></li>
+            </ul>
+            <span class="ag-mk__go" style="--i:4">Review <svg class="i"><use href="#i-arrow"/></svg></span>
+          </div>
+        </li>
+        <li class="ag-mk">
+          <p class="ag-mk__k"><svg class="i"><use href="#i-flow"/></svg>Workflow</p>
+          <p class="ag-me ag-me--sm">Create a process for handling unresolved requests.</p>
+          <span class="ag-mk__ai" aria-hidden="true"><svg class="i"><use href="#i-spark"/></svg></span>
+          <div class="ag-gen">
+            <ol class="ag-mini-flow">
+              <li style="--i:0">Request unresolved for 48h</li>
+              <li style="--i:1">Check owner &amp; history</li>
+              <li style="--i:2">Escalate to team lead</li>
+              <li style="--i:3">Update the customer</li>
+            </ol>
+            <span class="ag-mk__go" style="--i:4">Review <svg class="i"><use href="#i-arrow"/></svg></span>
+          </div>
+        </li>
+      </ol>
+
+      <p class="os-say os-say--center rv">Tell it what you want. <br><span class="dim">Start with something already built.</span></p>
+    </section>
+
+    <!-- ============ 07 CONTEXT ============ -->
+    <section class="cos-sec" id="context" aria-labelledby="ctx-h">
+      <div class="sec-head rv">
+        <div>
+          <p class="cos-eyebrow">Context</p>
+          <h2 class="cos-h2" id="ctx-h">The more your business teaches it, the more useful it becomes.</h2>
+        </div>
+        <div class="sec-head__copy"><p class="cos-body">AI shouldn&rsquo;t operate with one isolated message. It can work with the context already available across Chatberry.</p></div>
+      </div>
+
+      <ul class="ag-srcs rv" style="--d:.05s" aria-label="Context sources">
+        <li>Customer history</li><li>Conversations</li><li>Knowledge</li><li>Tickets</li><li>Tasks</li><li>Transactions</li><li>Campaigns</li><li>Workflows</li><li>Business rules</li>
+      </ul>
+
+      <figure class="os-figure rv" style="--d:.1s">
+        <div class="app ag-inv" id="invApp" role="img" aria-label="Asked why a customer is unhappy, the AI agent checks the conversation, customer history, previous ticket, recent activity and knowledge, finds they contacted the team twice about the same unresolved issue, and suggests creating a follow-up.">
+          <div class="ag-inv__src">
+            <p class="ui-label">Sources</p>
+            <ul class="ag-src">
+              <li class="s1"><span class="ch"><svg class="i"><use href="#i-chat"/></svg></span><span><b>Conversations</b><small>2 messages about the same refund</small></span></li>
+              <li class="s2"><span class="ch"><svg class="i"><use href="#i-user"/></svg></span><span><b>Customer OS</b><small>Customer since 2023 &middot; 6 orders</small></span></li>
+              <li class="s3"><span class="ch"><svg class="i"><use href="#i-ticket"/></svg></span><span><b>Tickets</b><small>#4821 closed &middot; not resolved</small></span></li>
+              <li class="s4"><span class="ch"><svg class="i"><use href="#i-activity"/></svg></span><span><b>Activities</b><small>Refund requested 9 days ago</small></span></li>
+              <li class="s5"><span class="ch"><svg class="i"><use href="#i-file"/></svg></span><span><b>Knowledge</b><small>Refund policy &middot; 7 days</small></span></li>
+            </ul>
+          </div>
+          <div class="ag-inv__mind">
+            <ol class="ag-stage" aria-label="Context, investigation, understanding, action">
+              <li class="g1">Context</li><li class="g2">Investigation</li><li class="g3">Understanding</li><li class="g4">Action</li>
+            </ol>
+            <p class="ag-me">Why is this customer unhappy?</p>
+            <div class="ag-core">
+              <p class="ag-core__k"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>AI Agent</p>
+              <ul class="ag-checks">
+                <li class="c1">Conversation</li><li class="c2">Customer history</li><li class="c3">Previous ticket</li><li class="c4">Recent activity</li><li class="c5">Knowledge</li>
+              </ul>
+            </div>
+            <p class="ag-find" data-at="6">&ldquo;They contacted the team twice about the same issue and haven&rsquo;t received a resolution.&rdquo;</p>
+            <div class="ag-act" data-at="7">
+              <p class="ag-act__h"><span class="ag-ok"><svg class="i"><use href="#i-flag"/></svg></span>Suggested: follow up today with a resolution<span class="tag tag--amber">Overdue 2 days past policy</span></p>
+              <span class="mini-btn mini-btn--lime ag-act__go">Create follow-up <svg class="i"><use href="#i-arrow"/></svg></span>
+            </div>
+          </div>
+        </div>
+      </figure>
+
+      <p class="os-say rv">AI doesn&rsquo;t just see the message. <br><span class="dim">It sees what happened around it.</span></p>
+    </section>
+
+    <!-- ============ 08 ASK YOUR BUSINESS ANYTHING ============ -->
+    <section class="cos-sec" id="ask" aria-labelledby="ask-h">
+      <div class="sec-head rv">
+        <div>
+          <p class="cos-eyebrow">AI business analyst</p>
+          <h2 class="cos-h2" id="ask-h">Don&rsquo;t just look at your numbers. <span class="dim">Talk to them.</span></h2>
+        </div>
+        <div class="sec-head__copy"><p class="cos-body">Turn business questions into investigations.</p></div>
+      </div>
+
+      <figure class="os-figure rv" style="--d:.1s">
+        <div class="app ag-ana" id="anaApp" role="img" aria-label="Asked why the response rate dropped this month, the AI checks campaigns, conversations, customer segments and team activity, finds the second follow-up response rate is down 14 percent, and recommends moving the second follow-up from 48 to 24 hours.">
+          <div class="app__top app__top--slim">
+            <span class="ag-agent-id"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>AI Business Analyst</span>
+            <ol class="ag-stage ag-stage--top" aria-hidden="true"><li class="g1">Question</li><li class="g2">Investigation</li><li class="g3">Finding</li><li class="g4">Action</li></ol>
+          </div>
+          <div class="ag-ana__body">
+            <p class="ag-ask"><svg class="i"><use href="#i-search"/></svg><span>Why did our response rate drop this month?</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg></span></p>
+            <ul class="ag-inv-list">
+              <li class="c1"><span class="ag-tick"></span>Campaigns checked</li>
+              <li class="c2"><span class="ag-tick"></span>Conversations checked</li>
+              <li class="c3"><span class="ag-tick"></span>Customer segments checked</li>
+              <li class="c4"><span class="ag-tick"></span>Team activity checked</li>
+            </ul>
+            <div class="ag-ana__out">
+              <div class="ag-finding" data-at="5">
+                <p class="ag-k">Key finding</p>
+                <p class="ag-finding__t">Second follow-up response rate <b>&darr; 14%</b></p>
+                <div class="ag-wk" aria-hidden="true">
+                  <span style="--v:.82"><i></i>W1</span><span style="--v:.8"><i></i>W2</span><span style="--v:.78"><i></i>W3</span><span class="is-low" style="--v:.6"><i></i>W4</span>
+                </div>
+                <p class="ag-finding__note">Most replies now arrive after the second message is already 48&nbsp;hours late.</p>
+              </div>
+              <div class="ag-rec" data-at="6">
+                <p class="ag-k">Recommended action</p>
+                <p class="ag-rec__t">Move second follow-up from <s>48h</s> <svg class="i"><use href="#i-arrow"/></svg> <b>24h</b></p>
+                <p class="ag-rec__note">Applies to all active follow-up sequences.</p>
+                <span class="mini-btn mini-btn--lime">Apply Recommendation <svg class="i"><use href="#i-arrow"/></svg></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+
+      <ul class="ag-qs rv" style="--d:.1s">
+        <li>
+          <p class="ag-me ag-me--sm">What changed this week?</p>
+          <div class="ag-delta">
+            <p><span>Conversations</span><b class="up">&uarr; 18%</b></p>
+            <p><span>Response time</span><b class="up">&darr; 11%</b></p>
+            <p><span>Campaign replies</span><b class="down">&darr; 6%</b></p>
+            <p><span>Pending work</span><b class="down">&uarr; 14%</b></p>
+          </div>
+          <p class="ag-qs__a">&ldquo;The biggest change is a drop in second-message responses.&rdquo;</p>
+          <span class="ag-qs__go">Investigate <svg class="i"><use href="#i-arrow"/></svg></span>
+        </li>
+        <li>
+          <p class="ag-me ag-me--sm">Which team is overloaded?</p>
+          <p class="ag-qs__a">&ldquo;Team B has <b>34% more</b> pending work than the average.&rdquo;</p>
+          <span class="ag-qs__go">Rebalance <svg class="i"><use href="#i-arrow"/></svg></span>
+        </li>
+        <li>
+          <p class="ag-me ag-me--sm">Why did campaign performance drop?</p>
+          <p class="ag-qs__a">&ldquo;Most of the decline came from customers receiving the second message more than <b>48 hours</b> after the first.&rdquo;</p>
+          <span class="ag-qs__go">Create new sequence <svg class="i"><use href="#i-arrow"/></svg></span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ 09 AI BEFORE YOU ASK ============ -->
+    <section class="cos-sec" id="notice" aria-labelledby="notice-h">
+      <div class="sec-head rv">
+        <h2 class="cos-h2" id="notice-h">The best assistant is the one that notices first.</h2>
+        <div class="sec-head__copy"><p class="cos-body">AI shouldn&rsquo;t always wait for someone to ask. It can surface important work, pending actions and situations that need attention.</p></div>
+      </div>
+
+      <div class="ag-brief rv" id="brief" style="--d:.1s">
+        <figure class="ag-clock" aria-label="9:00 AM">
+          <svg class="ag-clock__face" viewBox="0 0 400 400" aria-hidden="true">
+            <circle class="ag-clock__ring" cx="200" cy="200" r="186"/>
+            <line class="ag-clock__t is-q" x1="200.0" y1="40.0" x2="200.0" y2="22.0"/>
+            <line class="ag-clock__t" x1="284.0" y1="54.5" x2="289.0" y2="45.8"/>
+            <line class="ag-clock__t" x1="345.5" y1="116.0" x2="354.2" y2="111.0"/>
+            <line class="ag-clock__t is-q" x1="360.0" y1="200.0" x2="378.0" y2="200.0"/>
+            <line class="ag-clock__t" x1="345.5" y1="284.0" x2="354.2" y2="289.0"/>
+            <line class="ag-clock__t" x1="284.0" y1="345.5" x2="289.0" y2="354.2"/>
+            <line class="ag-clock__t is-q" x1="200.0" y1="360.0" x2="200.0" y2="378.0"/>
+            <line class="ag-clock__t" x1="116.0" y1="345.5" x2="111.0" y2="354.2"/>
+            <line class="ag-clock__t" x1="54.5" y1="284.0" x2="45.8" y2="289.0"/>
+            <line class="ag-clock__t is-q" x1="40.0" y1="200.0" x2="22.0" y2="200.0"/>
+            <line class="ag-clock__t" x1="54.5" y1="116.0" x2="45.8" y2="111.0"/>
+            <line class="ag-clock__t" x1="116.0" y1="54.5" x2="111.0" y2="45.8"/>
+            <line class="ag-clock__h" x1="200" y1="200" x2="200" y2="110"/>
+            <line class="ag-clock__m" x1="200" y1="200" x2="200" y2="58"/>
+            <circle class="ag-clock__pin" cx="200" cy="200" r="7"/>
+          </svg>
+          <figcaption>
+            <b>09:00 <small>AM</small></b>
+            <span class="ag-mode"><span class="ag-mode__a" data-at="1" data-until="6">Manual work</span><span class="ag-mode__b" data-at="6"><svg class="i"><use href="#i-spark"/></svg>AI-managed work</span></span>
+          </figcaption>
+        </figure>
+
+        <div class="app ag-bf" role="img" aria-label="Morning briefing: 3 customers waiting for a response, 2 tickets approaching SLA, 4 tasks overdue, 1 high-priority enquiry. The AI has prepared the next actions.">
+          <p class="ag-chat__head"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>Morning briefing<span class="tag" style="margin-left:auto">Today</span></p>
+          <div class="ag-bf__body">
+            <p class="ag-bf__hi" data-at="1">Good morning. <span class="muted">Here&rsquo;s what needs your attention.</span></p>
+            <ul class="ag-bf__list">
+              <li data-at="2"><b>3 customers</b><span>Waiting for a response</span><span class="tag tag--amber">Waiting</span></li>
+              <li data-at="3"><b>2 tickets</b><span>Approaching SLA</span><span class="tag tag--rose">SLA in 2h</span></li>
+              <li data-at="4"><b>4 tasks</b><span>Overdue</span><span class="tag tag--rose">Overdue</span></li>
+              <li data-at="5"><b>1 enquiry</b><span>High priority</span><span class="tag tag--lime">High</span></li>
+            </ul>
+            <div class="ag-act" data-at="6">
+              <p class="ag-act__h"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span>I&rsquo;ve prepared the next actions.</p>
+              <span class="mini-btn mini-btn--lime ag-act__go">Review <svg class="i"><use href="#i-arrow"/></svg></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="os-say os-say--center rv">Don&rsquo;t wait for problems to find you.</p>
+    </section>
+
+    <!-- ============ 10 TIME SAVED ============ -->
+    <section class="cos-sec" id="time" aria-labelledby="time-h">
+      <div class="sec-head rv">
+        <h2 class="cos-h2" id="time-h">Give your team their time back.</h2>
+      </div>
+
+      <div class="ag-time rv" id="timeBox" style="--d:.1s">
+        <figure class="ag-dial" aria-label="A working day from 8:00 to 17:30. Manual replies, data checking, task creation, follow-ups, reports and workflow setup are taken over by AI one by one.">
+          <svg viewBox="0 0 520 520" aria-hidden="true">
+            <circle class="ag-dial__track" cx="260" cy="260" r="190"/>
+            <line class="ag-dial__tick is-h" x1="260.0" y1="110.0" x2="260.0" y2="98.0"/>
+            <line class="ag-dial__tick" x1="276.3" y1="104.9" x2="276.9" y2="98.9"/>
+            <line class="ag-dial__tick" x1="292.4" y1="107.4" x2="293.7" y2="101.5"/>
+            <line class="ag-dial__tick" x1="308.2" y1="111.6" x2="310.1" y2="105.9"/>
+            <line class="ag-dial__tick" x1="323.5" y1="117.5" x2="325.9" y2="112.0"/>
+            <line class="ag-dial__tick is-h" x1="335.0" y1="130.1" x2="341.0" y2="119.7"/>
+            <line class="ag-dial__tick" x1="351.7" y1="133.8" x2="355.2" y2="128.9"/>
+            <line class="ag-dial__tick" x1="364.4" y1="144.1" x2="368.4" y2="139.6"/>
+            <line class="ag-dial__tick" x1="375.9" y1="155.6" x2="380.4" y2="151.6"/>
+            <line class="ag-dial__tick" x1="386.2" y1="168.3" x2="391.1" y2="164.8"/>
+            <line class="ag-dial__tick is-h" x1="389.9" y1="185.0" x2="400.3" y2="179.0"/>
+            <line class="ag-dial__tick" x1="402.5" y1="196.5" x2="408.0" y2="194.1"/>
+            <line class="ag-dial__tick" x1="408.4" y1="211.8" x2="414.1" y2="209.9"/>
+            <line class="ag-dial__tick" x1="412.6" y1="227.6" x2="418.5" y2="226.3"/>
+            <line class="ag-dial__tick" x1="415.1" y1="243.7" x2="421.1" y2="243.1"/>
+            <line class="ag-dial__tick is-h" x1="410.0" y1="260.0" x2="422.0" y2="260.0"/>
+            <line class="ag-dial__tick" x1="415.1" y1="276.3" x2="421.1" y2="276.9"/>
+            <line class="ag-dial__tick" x1="412.6" y1="292.4" x2="418.5" y2="293.7"/>
+            <line class="ag-dial__tick" x1="408.4" y1="308.2" x2="414.1" y2="310.1"/>
+            <line class="ag-dial__tick" x1="402.5" y1="323.5" x2="408.0" y2="325.9"/>
+            <line class="ag-dial__tick is-h" x1="389.9" y1="335.0" x2="400.3" y2="341.0"/>
+            <line class="ag-dial__tick" x1="386.2" y1="351.7" x2="391.1" y2="355.2"/>
+            <line class="ag-dial__tick" x1="375.9" y1="364.4" x2="380.4" y2="368.4"/>
+            <line class="ag-dial__tick" x1="364.4" y1="375.9" x2="368.4" y2="380.4"/>
+            <line class="ag-dial__tick" x1="351.7" y1="386.2" x2="355.2" y2="391.1"/>
+            <line class="ag-dial__tick is-h" x1="335.0" y1="389.9" x2="341.0" y2="400.3"/>
+            <line class="ag-dial__tick" x1="323.5" y1="402.5" x2="325.9" y2="408.0"/>
+            <line class="ag-dial__tick" x1="308.2" y1="408.4" x2="310.1" y2="414.1"/>
+            <line class="ag-dial__tick" x1="292.4" y1="412.6" x2="293.7" y2="418.5"/>
+            <line class="ag-dial__tick" x1="276.3" y1="415.1" x2="276.9" y2="421.1"/>
+            <line class="ag-dial__tick is-h" x1="260.0" y1="410.0" x2="260.0" y2="422.0"/>
+            <line class="ag-dial__tick" x1="243.7" y1="415.1" x2="243.1" y2="421.1"/>
+            <line class="ag-dial__tick" x1="227.6" y1="412.6" x2="226.3" y2="418.5"/>
+            <line class="ag-dial__tick" x1="211.8" y1="408.4" x2="209.9" y2="414.1"/>
+            <line class="ag-dial__tick" x1="196.5" y1="402.5" x2="194.1" y2="408.0"/>
+            <line class="ag-dial__tick is-h" x1="185.0" y1="389.9" x2="179.0" y2="400.3"/>
+            <line class="ag-dial__tick" x1="168.3" y1="386.2" x2="164.8" y2="391.1"/>
+            <line class="ag-dial__tick" x1="155.6" y1="375.9" x2="151.6" y2="380.4"/>
+            <line class="ag-dial__tick" x1="144.1" y1="364.4" x2="139.6" y2="368.4"/>
+            <line class="ag-dial__tick" x1="133.8" y1="351.7" x2="128.9" y2="355.2"/>
+            <line class="ag-dial__tick is-h" x1="130.1" y1="335.0" x2="119.7" y2="341.0"/>
+            <line class="ag-dial__tick" x1="117.5" y1="323.5" x2="112.0" y2="325.9"/>
+            <line class="ag-dial__tick" x1="111.6" y1="308.2" x2="105.9" y2="310.1"/>
+            <line class="ag-dial__tick" x1="107.4" y1="292.4" x2="101.5" y2="293.7"/>
+            <line class="ag-dial__tick" x1="104.9" y1="276.3" x2="98.9" y2="276.9"/>
+            <line class="ag-dial__tick is-h" x1="110.0" y1="260.0" x2="98.0" y2="260.0"/>
+            <line class="ag-dial__tick" x1="104.9" y1="243.7" x2="98.9" y2="243.1"/>
+            <line class="ag-dial__tick" x1="107.4" y1="227.6" x2="101.5" y2="226.3"/>
+            <line class="ag-dial__tick" x1="111.6" y1="211.8" x2="105.9" y2="209.9"/>
+            <line class="ag-dial__tick" x1="117.5" y1="196.5" x2="112.0" y2="194.1"/>
+            <line class="ag-dial__tick is-h" x1="130.1" y1="185.0" x2="119.7" y2="179.0"/>
+            <line class="ag-dial__tick" x1="133.8" y1="168.3" x2="128.9" y2="164.8"/>
+            <line class="ag-dial__tick" x1="144.1" y1="155.6" x2="139.6" y2="151.6"/>
+            <line class="ag-dial__tick" x1="155.6" y1="144.1" x2="151.6" y2="139.6"/>
+            <line class="ag-dial__tick" x1="168.3" y1="133.8" x2="164.8" y2="128.9"/>
+            <line class="ag-dial__tick is-h" x1="185.0" y1="130.1" x2="179.0" y2="119.7"/>
+            <line class="ag-dial__tick" x1="196.5" y1="117.5" x2="194.1" y2="112.0"/>
+            <line class="ag-dial__tick" x1="211.8" y1="111.6" x2="209.9" y2="105.9"/>
+            <line class="ag-dial__tick" x1="227.6" y1="107.4" x2="226.3" y2="101.5"/>
+            <line class="ag-dial__tick" x1="243.7" y1="104.9" x2="243.1" y2="98.9"/>
+            <path class="ag-seg s1" pathLength="100" d="M93.2 351.0 A190 190 0 0 1 75.3 215.3"/>
+            <path class="ag-seg s2" pathLength="100" d="M77.7 206.4 A190 190 0 0 1 122.4 129.0"/>
+            <path class="ag-seg s3" pathLength="100" d="M129.0 122.4 A190 190 0 0 1 255.4 70.1"/>
+            <path class="ag-seg s4" pathLength="100" d="M337.0 86.3 A190 190 0 0 1 422.2 161.0"/>
+            <path class="ag-seg s5" pathLength="100" d="M426.8 169.0 A190 190 0 0 1 447.9 288.4"/>
+            <path class="ag-seg s6" pathLength="100" d="M446.3 297.6 A190 190 0 0 1 313.6 442.3"/>
+            <text class="ag-dial__lab" x="55.6" y="383.0">8:00</text>
+            <text class="ag-dial__lab" x="93.1" y="98.1">10:30</text>
+            <text class="ag-dial__lab" x="350.3" y="47.0">12:45</text>
+            <text class="ag-dial__lab" x="492.4" y="306.0">15:20</text>
+          </svg>
+          <figcaption class="ag-dial__c"><b><span data-n="127">127</span> hrs</b><span>Saved this month</span></figcaption>
+        </figure>
+
+        <div class="ag-time__list">
+          <p class="ag-k">Before AI</p>
+          <ul class="ag-before">
+            <li class="b1">Manual replies</li><li class="b2">Data checking</li><li class="b3">Task creation</li>
+            <li class="b4">Follow-ups</li><li class="b5">Reports</li><li class="b6">Workflow setup</li>
+          </ul>
+          <span class="ag-time__arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+          <p class="ag-k">With AI</p>
+          <p class="ag-after"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span>Handled automatically</p>
+        </div>
+      </div>
+
+      <p class="os-say os-say--center rv">More time for decisions. <br><span class="dim">Less time moving information.</span></p>
+
+      <div class="ag-nums rv">
+        <ul>
+          <li><b>127</b><span>Hours saved</span></li>
+          <li><b>1,846</b><span>Tasks handled</span></li>
+          <li><b>612</b><span>Follow-ups completed</span></li>
+          <li><b>38</b><span>Human escalations</span></li>
+        </ul>
+        <p>An example month in one workspace.</p>
+      </div>
+    </section>
+
+    <!-- ============ 11 AI + HUMAN ============ -->
+    <section class="cos-sec" id="handoff" aria-labelledby="hand-h">
+      <div class="sec-head rv">
+        <div>
+          <p class="cos-eyebrow">AI + human</p>
+          <h2 class="cos-h2" id="hand-h">AI handles the work. <span class="dim">People handle what matters.</span></h2>
+        </div>
+        <div class="sec-head__copy"><p class="cos-body">AI shouldn&rsquo;t pretend it can solve everything. When something requires judgment, approval or a relationship, it brings your team in.</p></div>
+      </div>
+
+      <div class="ag-hand rv" id="hand" style="--d:.1s">
+        <div class="app ag-chat ag-hand__chat">
+          <p class="ag-chat__head"><span class="ag-mark"><img src="/public/assets/img/eye-mark.svg" alt="" width="109" height="103"></span>Customer conversation</p>
+          <div class="ag-chat__log">
+            <div class="ag-in" data-at="1"><span class="av av--violet">MI</span><p>The order came late. I&rsquo;d like a partial refund but I&rsquo;ll keep the replacement parts.</p></div>
+            <div class="ag-out" data-at="2"><p>Thanks, Meera. <b>This needs a decision from your team</b> &mdash; I&rsquo;m bringing in the right person now.</p><span class="ag-out__by">AI Agent</span></div>
+          </div>
+        </div>
+
+        <span class="ag-hand__arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+
+        <div class="app ag-pack" role="img" aria-label="Handoff package with customer, conversation, customer history, AI summary and suggested action.">
+          <p class="ag-chat__head"><svg class="i"><use href="#i-box"/></svg>Handoff package<span class="tag tag--lime" style="margin-left:auto" data-at="8">Transferred</span></p>
+          <dl class="ag-pack__list">
+            <div data-at="3"><dt>Customer</dt><dd>Meera Iyer &middot; customer since 2022</dd></div>
+            <div data-at="4"><dt>Conversation</dt><dd>4 messages &middot; today</dd></div>
+            <div data-at="5"><dt>Customer history</dt><dd>11 orders &middot; 1 previous late delivery</dd></div>
+            <div data-at="6"><dt>AI summary</dt><dd>Order arrived 3 days late. Wants a partial refund, keeps the parts.</dd></div>
+            <div data-at="7" class="is-sug"><dt>Suggested action</dt><dd>Approve a partial refund of &#8377;6,400</dd></div>
+          </dl>
+        </div>
+
+        <span class="ag-hand__arrow" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+
+        <div class="ag-hand__human">
+          <figure class="os-photo ag-ph--hand"><img src="/public/assets/img/ai-agents/team-lead-review.webp" alt="A team lead at her desk, focused on a handed-over customer case open on her monitor." width="928" height="1152" loading="lazy" decoding="async"></figure>
+          <p class="ag-recv" data-at="8"><span class="av av--lime">PS</span><span><b>Priya Shah</b><small>Received &middot; reviewing</small></span></p>
+        </div>
+      </div>
+
+      <p class="os-say os-say--center rv">No lost context. <span class="dim">No starting over.</span></p>
+    </section>
+
+    <!-- ============ 12 MULTIPLE AGENTS ============ -->
+    <section class="cos-sec" id="agents" aria-labelledby="agents-h">
+      <div class="sec-head rv">
+        <h2 class="cos-h2" id="agents-h">Different jobs. Different agents. <span class="dim">One business.</span></h2>
+        <div class="sec-head__copy"><p class="cos-body">Your business has different kinds of work. Your AI can have different agents for it too.</p></div>
+      </div>
+
+      <div class="ag-team rv" id="team" style="--d:.1s" data-step="0">
+        <ol class="ag-journey" id="journey" aria-label="One request moving through the agents">
+          <li><b>New enquiry</b><small>Arrives on WhatsApp</small></li>
+          <li><b>Sales Agent</b><small>Qualifies it</small></li>
+          <li><b>Customer Agent</b><small>Checks history</small></li>
+          <li><b>Team Agent</b><small>Assigns it</small></li>
+          <li><b>Second Brain</b><small>Remembers the follow-up</small></li>
+          <li><b>Marketing Agent</b><small>Continues the journey</small></li>
+        </ol>
+        <div class="ag-crew">
+          <ul class="ag-agents">
+            <li class="ag-a a-sales"><span class="ag-a__ico"><svg class="i"><use href="#i-trend"/></svg></span><b>Sales Agent</b><small>Qualifies and routes leads</small><span class="ag-a__st"><i></i><em class="w">Working</em><em class="r">Ready</em></span></li>
+            <li class="ag-a a-cust"><span class="ag-a__ico"><svg class="i"><use href="#i-user"/></svg></span><b>Customer Agent</b><small>Knows every customer&rsquo;s history</small><span class="ag-a__st"><i></i><em class="w">Working</em><em class="r">Ready</em></span></li>
+            <li class="ag-a a-ops"><span class="ag-a__ico"><svg class="i"><use href="#i-org"/></svg></span><b>Operations Agent</b><small>Keeps orders and requests moving</small><span class="ag-a__st"><i></i><em class="w">Working</em><em class="r">Ready</em></span></li>
+            <li class="ag-a a-mkt"><span class="ag-a__ico"><svg class="i"><use href="#i-send"/></svg></span><b>Marketing Agent</b><small>Runs journeys and campaigns</small><span class="ag-a__st"><i></i><em class="w">Working</em><em class="r">Ready</em></span></li>
+            <li class="ag-a a-sup"><span class="ag-a__ico"><svg class="i"><use href="#i-chat"/></svg></span><b>Support Agent</b><small>Resolves tickets and questions</small><span class="ag-a__st"><i></i><em class="w">Working</em><em class="r">Ready</em></span></li>
+            <li class="ag-a a-team"><span class="ag-a__ico"><svg class="i"><use href="#i-team"/></svg></span><b>Team Agent</b><small>Assigns work to the right people</small><span class="ag-a__st"><i></i><em class="w">Working</em><em class="r">Ready</em></span></li>
+          </ul>
+          <p class="ag-brain"><svg class="i"><use href="#i-layers"/></svg><b>The Second Brain</b><span>Shared memory for every agent</span><em>Follow-up saved &middot; Thu 10 AM</em></p>
+        </div>
+      </div>
+
+      <p class="os-say os-say--center rv">Your business has teams. <span class="dim">Your AI can too.</span></p>
+    </section>
+
+    <!-- ============ 13 CONTROL ============ -->
+    <section class="cos-sec" id="control" aria-labelledby="ctl-h">
+      <div class="sec-head rv">
+        <div>
+          <p class="cos-eyebrow">Control</p>
+          <h2 class="cos-h2" id="ctl-h">Powerful enough to act. <span class="dim">Controlled enough for business.</span></h2>
+        </div>
+        <div class="sec-head__copy"><p class="cos-body">AI should have freedom within boundaries you define.</p></div>
+      </div>
+
+      <figure class="os-figure rv" style="--d:.1s">
+        <div class="app ag-ctl" id="ctlApp" role="img" aria-label="AI permissions. Can do automatically: read customer context, create tasks, summarize conversations, prepare responses, analyze data. Requires approval: send a large campaign, change sensitive information, perform a high-impact action. Activity log shows a record viewed, a task created, a follow-up prepared and an approval requested.">
+          <div class="app__top app__top--slim">
+            <span class="app__crumb">Settings <svg class="i"><use href="#i-chevr"/></svg> AI Agents <svg class="i"><use href="#i-chevr"/></svg> <b>Permissions</b></span>
+          </div>
+          <div class="ag-ctl__body">
+            <div class="ag-perm">
+              <p class="ag-perm__k"><span class="ag-ok"><svg class="i"><use href="#i-check"/></svg></span>Can do automatically</p>
+              <ul>
+                <li>Read customer context<span class="tag tag--lime">Auto</span></li>
+                <li>Create tasks<span class="tag tag--lime">Auto</span></li>
+                <li>Summarize conversations<span class="tag tag--lime">Auto</span></li>
+                <li>Prepare responses<span class="tag tag--lime">Auto</span></li>
+                <li>Analyze data<span class="tag tag--lime">Auto</span></li>
+              </ul>
+              <p class="ag-perm__k ag-perm__k--ask"><span class="ag-ring"></span>Requires approval</p>
+              <ul class="ag-perm__ask">
+                <li>Send large campaign<span class="tag tag--amber"><svg class="i"><use href="#i-lock"/></svg>Approval</span></li>
+                <li>Change sensitive information<span class="tag tag--amber"><svg class="i"><use href="#i-lock"/></svg>Approval</span></li>
+                <li>Perform high-impact action<span class="tag tag--amber"><svg class="i"><use href="#i-lock"/></svg>Approval</span></li>
+              </ul>
+            </div>
+            <div class="ag-log2">
+              <p class="ui-label"><svg class="i"><use href="#i-list"/></svg>Activity log</p>
+              <ol>
+                <li data-at="1"><time>10:42</time>Customer record viewed</li>
+                <li data-at="2"><time>10:43</time>Task created</li>
+                <li data-at="3"><time>10:44</time>Follow-up prepared</li>
+                <li data-at="4" class="is-ask"><time>10:45</time>Approval requested<small>Send large campaign &middot; waiting for Priya Shah</small></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </figure>
+
+      <p class="os-say rv">You decide <span class="dim">how much autonomy AI gets.</span></p>
+    </section>
+
+    <!-- ============ 14 FAQ ============ -->
+    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
+      <div class="os-faq">
+        <div class="os-faq__intro rv">
+          <p class="cos-eyebrow">FAQ</p>
+          <h2 class="cos-h2" id="faq-h">Frequently asked questions</h2>
+          <p class="cos-body">Something else on your mind?</p>
+          <a class="cos-link os-link" href="https://wa.me/917382716780?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="os-faq__list rv" style="--d:.1s">
+          <details class="os-qa"><summary>What are AI Agents in Chatberry?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>AI Agents are business-focused AI workers that can understand requests, use business context, communicate, create workflows, perform actions and involve people when needed.</p></div></details>
+          <details class="os-qa"><summary>Can I talk to Chatberry AI using voice?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Voice can be used to give instructions, ask questions, create tasks and interact with AI using natural language.</p></div></details>
+          <details class="os-qa"><summary>Can AI Agents create workflows?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. You can describe the process you want and AI can generate a starting workflow that you can review and customize.</p></div></details>
+          <details class="os-qa"><summary>Can AI create templates and campaigns?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. AI can help create templates, campaign structures, follow-up sequences and other reusable business assets.</p></div></details>
+          <details class="os-qa"><summary>Can AI analyze my business?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. AI can investigate available business data and answer questions about customers, campaigns, conversations, workload and performance.</p></div></details>
+          <details class="os-qa"><summary>Can AI take actions for me?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Depending on permissions, AI Agents can create tasks, update records, prepare messages, trigger workflows and perform other configured actions.</p></div></details>
+          <details class="os-qa"><summary>Can AI work proactively?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. AI can identify configured conditions, pending work, follow-ups and other situations that require attention and surface them to your team.</p></div></details>
+          <details class="os-qa"><summary>Can AI work with multiple business modules?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. AI Agents can work with connected Chatberry capabilities such as Customer OS, conversations, workflows, knowledge, tasks, ticketing, campaigns and analytics.</p></div></details>
+          <details class="os-qa"><summary>Can I control what the AI is allowed to do?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Permissions and approval requirements can be defined so sensitive or important actions can require human review.</p></div></details>
+          <details class="os-qa"><summary>Can a human take over?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. AI can hand work to the appropriate person along with the relevant conversation, context, history and suggested next action.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 15 EVERYTHING CONNECTS ============ -->
+    <section class="cos-sec os-related" aria-labelledby="rel-h">
+      <h2 class="cos-h3 rv" id="rel-h">AI becomes more powerful when everything connects.</h2>
+      <ul class="os-rel rv" style="--d:.1s">
+        <li><a class="os-relcard" href="/pages/products/customer-os/page.html">
+          <span class="os-relcard__ico"><svg class="i"><use href="#i-user"/></svg></span>
+          <span class="os-relcard__name">Customer OS</span>
+          <b>Know the customer.</b>
+          <span class="os-relcard__sub">Customer context, relationships and history.</span>
+          <span class="os-relcard__go">Explore <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a></li>
+        <li><a class="os-relcard" href="/pages/products/second-brain/page.html">
+          <span class="os-relcard__ico"><svg class="i"><use href="#i-layers"/></svg></span>
+          <span class="os-relcard__name">The Second Brain</span>
+          <b>Remember the work.</b>
+          <span class="os-relcard__sub">Tasks, reminders and follow-through.</span>
+          <span class="os-relcard__go">Explore <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a></li>
+        <li><a class="os-relcard" href="/pages/products/workflow-orchestration/page.html">
+          <span class="os-relcard__ico"><svg class="i"><use href="#i-flow"/></svg></span>
+          <span class="os-relcard__name">Workflow Orchestration</span>
+          <b>Move the work.</b>
+          <span class="os-relcard__sub">Build connected business processes.</span>
+          <span class="os-relcard__go">Explore <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a></li>
+        <li><a class="os-relcard" href="/pages/products/mcp/page.html">
+          <span class="os-relcard__ico"><svg class="i"><use href="#i-plug"/></svg></span>
+          <span class="os-relcard__name">MCP</span>
+          <b>Connect external AI.</b>
+          <span class="os-relcard__sub">Bring compatible AI systems into the workflow.</span>
+          <span class="os-relcard__go">Explore <svg class="i"><use href="#i-arrow"/></svg></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <!-- ============ 16 FINAL CALL TO ACTION ============ -->
+    <section class="cos-final" aria-labelledby="cta-h">
+      <div class="cos-final__grid" aria-hidden="true"></div>
+      <p class="cos-eyebrow">AI Agents</p>
+      <h2 class="cos-h2 rv" id="cta-h">What would you give AI to do?</h2>
+      <p class="cos-body rv">Start with one task. Then give it more.</p>
+      <div class="cos-cta rv">
+        <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Start Free <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line btn--lg" href="https://wa.me/917382716780?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
+      </div>
+      <p class="ag-verbs ag-verbs--center"><span>Talk.</span><span>Think.</span><span>Create.</span><span>Act.</span></p>
+    </section>
+
+  </main>
+
+  <!-- chrome:foot -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
+  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#C8E63C"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Software by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
+          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
+        </div>
+        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
+      </div>
+      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
+            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/wisemeet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
+            <a href="https://www.melohealth.ai/" style="font-size:14px;color:rgba(255,255,255,.85)">Healthcare</a><a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
+            <a href="/pages/coming-soon/page.html?p=Playbooks" style="font-size:14px;color:rgba(255,255,255,.85)">Playbooks</a><a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a><a href="/pages/coming-soon/page.html?p=Tools" style="font-size:14px;color:rgba(255,255,255,.85)">Tools</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
+            <a href="/pages/coming-soon/page.html?p=About" style="font-size:14px;color:rgba(255,255,255,.85)">About</a><a href="https://wa.me/917382716780" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true" style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
+          </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
+        <span>© Chatberry. 2026 All Rights Reserved.</span>
+        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- /chrome:foot -->
+
+</div>
+
+<script src="/index.js"></script>
+<script src="page.js"></script>
+</body>
+</html>

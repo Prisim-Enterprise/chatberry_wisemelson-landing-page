@@ -1,0 +1,141 @@
+/* Floating WhatsApp button: copy of the site-wide one in /index.css (the homepage shares no files with other pages) */
+.wafab { --ink: #ededed; }   /* focus ring colour on the homepage (no /index.css here) */
+/* =========================================================
+   FLOATING WHATSAPP BUTTON  (site-wide, Oct 2026)
+   Fixed bottom-right on every page (injected by index.js). Built to the
+   owner's SVG geometry (public/reference/originals/whatsapp-button.svg, 545 × 91),
+   styled like the site's main buttons (owner, 26 Oct 2026): a #EDEDED pill
+   515 × 81 (r 40.5) with a white 74px logo circle holding the green WhatsApp
+   glyph, white Geist label, soft long shadow; the close circle turns white
+   with an ink cross. Every size is design px × --sc, so it scales as one piece.
+   Closed: a black round button with the green glyph and a slow green ping.
+   Open: the pill spills out of the button (clip-path), the logo and words
+   rise in, the glyph turns into the cross. It closes itself after 5s without a click
+   (not while hovered or focused). Open/closed is remembered for the session.
+   ========================================================= */
+.wafab {
+  --wa: #ededed;            /* the site's ink: pill + button */
+  --wa-green: #25d366;      /* WhatsApp green: the glyph and the ping */
+  --sc: .7033px;                               /* 91 design px → a 64px button */
+  position: fixed;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  z-index: 40;
+  width: calc(91 * var(--sc));
+  height: calc(91 * var(--sc));
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
+}
+html.is-nav-locked .wafab { display: none; }   /* out of the way of the open mobile menu */
+.wafab__pill {
+  position: absolute;
+  right: calc(30 * var(--sc));                  /* 545 − 515: the pill ends under the button */
+  top: calc(5 * var(--sc));
+  display: flex;
+  align-items: center;
+  width: calc(515 * var(--sc));
+  height: calc(81 * var(--sc));
+  box-sizing: border-box;
+  padding-left: calc(4 * var(--sc));
+  border-radius: calc(40.5 * var(--sc));
+  background: var(--wa);
+  color: #090909;
+  font-size: calc(24 * var(--sc));
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 calc(26 * var(--sc)) calc(56 * var(--sc)) calc(-26 * var(--sc)) rgba(0, 0, 0, .55), 0 0 0 1px rgba(9, 9, 9, .06);
+  /* closed: a circle the size of the button, hidden behind it (button centre = 499.5, 40.5 in pill space) */
+  clip-path: circle(calc(45.5 * var(--sc)) at calc(499.5 * var(--sc)) 50%);
+  visibility: hidden;
+  transition: clip-path .5s cubic-bezier(.3, 1.25, .45, 1), visibility 0s .5s;
+}
+.wafab__pill:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.wafab__logo {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: calc(74 * var(--sc));
+  height: calc(74 * var(--sc));
+  border-radius: 50%;
+  background: #090909;
+  color: var(--wa-green);
+  opacity: 0;
+  transform: scale(.4) rotate(-40deg);
+  transition: opacity .2s ease, transform .25s ease;
+}
+.wafab__logo svg { width: calc(36 * var(--sc)); height: calc(36 * var(--sc)); }
+.wafab__txt { margin-left: calc(15 * var(--sc)); white-space: nowrap; }   /* label starts at x 93 */
+.wafab__word { display: inline-block; opacity: 0; transform: translateY(12px) rotate(4deg); transition: opacity .2s ease, transform .2s ease; }
+.wafab__btn {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--wa);
+  color: var(--wa-green);
+  cursor: pointer;
+  box-shadow: 0 calc(24 * var(--sc)) calc(50 * var(--sc)) calc(-20 * var(--sc)) rgba(0, 0, 0, .5), 0 2px 6px rgba(0, 0, 0, .14), inset 0 0 0 1px rgba(9, 9, 9, .08);
+  transition: transform .4s cubic-bezier(.34, 1.4, .64, 1), background .25s ease, color .25s ease, box-shadow .25s ease;
+}
+.wafab__btn:hover { transform: translateY(-2px); }
+.wafab__btn:active { transform: scale(.94); }
+.wafab__btn:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.wafab__btn svg { position: absolute; transition: transform .45s cubic-bezier(.34, 1.4, .64, 1), opacity .25s ease; }
+.wafab__glyph { width: calc(44 * var(--sc)); height: calc(44 * var(--sc)); }
+.wafab__x { inset: 0; width: 100%; height: 100%; opacity: 0; transform: rotate(-135deg) scale(.4); }
+/* the slow ping while closed */
+.wafab__btn::before, .wafab__btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--wa-green);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* open */
+.wafab.is-open .wafab__pill {
+  clip-path: circle(150% at calc(499.5 * var(--sc)) 50%);
+  visibility: visible;
+  transition: clip-path .6s cubic-bezier(.34, 1.4, .64, 1), visibility 0s;
+}
+.wafab.is-open .wafab__word, .wafab.is-open .wafab__logo { opacity: 1; transform: none; transition: opacity .35s ease, transform .5s cubic-bezier(.34, 1.4, .64, 1); }
+.wafab.is-open .wafab__logo { transition-delay: .1s; }
+.wafab.is-open .wafab__word:nth-child(1) { transition-delay: .16s; }
+.wafab.is-open .wafab__word:nth-child(2) { transition-delay: .22s; }
+.wafab.is-open .wafab__word:nth-child(3) { transition-delay: .28s; }
+.wafab.is-open .wafab__word:nth-child(4) { transition-delay: .34s; }
+.wafab.is-open .wafab__word:nth-child(5) { transition-delay: .4s; }
+.wafab.is-open .wafab__btn { background: #090909; color: var(--wa); box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 calc(14 * var(--sc)) calc(30 * var(--sc)) calc(-14 * var(--sc)) rgba(0, 0, 0, .4); }
+.wafab.is-open .wafab__glyph { opacity: 0; transform: rotate(135deg) scale(.4); }
+.wafab.is-open .wafab__x { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .wafab:not(.is-open) .wafab__btn::before { animation: wafabPing 3.6s ease-out infinite 1s; }
+  .wafab:not(.is-open) .wafab__btn::after  { animation: wafabPing 3.6s ease-out infinite 1.5s; }
+  @keyframes wafabPing { 0% { opacity: .55; transform: scale(1); } 60%, 100% { opacity: 0; transform: scale(1.75); } }
+  /* opening: a quick squash-and-pop of the button before the pill spills out */
+  .wafab.is-opening .wafab__btn { animation: wafabPop .45s cubic-bezier(.3, 1.4, .5, 1); }
+  @keyframes wafabPop { 0% { transform: scale(1); } 35% { transform: scale(.82, .9); } 100% { transform: scale(1); } }
+  .wafab { animation: wafabIn .6s cubic-bezier(.3, 1.4, .5, 1) .4s both; }
+  @keyframes wafabIn { from { opacity: 0; transform: translateY(24px) scale(.6); } }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wafab__pill, .wafab__pill *, .wafab__btn, .wafab__btn svg { transition-duration: .01ms !important; }
+}
+@media (max-width: 1179px) {
+  .wafab { --sc: .5934px; right: max(16px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); }   /* 54px button */
+  /* the blog's back-to-top square moves up above the button */
+  .has-wafab .bl-totop { bottom: 82px; }
+}
+/* homepage only: under 640px the page has its own sticky CTA bar (66px tall incl. its 10px gap); sit above it */
+@media (max-width: 639px) {
+  .wafab { bottom: calc(78px + env(safe-area-inset-bottom)); }
+}

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer Support Ticketing System | Chatberry</title>
+<meta name="description" content="Manage customer support tickets, route requests to the right team, create customer-facing support forms, track resolutions, and improve service workflows with Chatberry.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chatberry">
+<meta property="og:title" content="Ticketing — Every customer issue deserves a resolution.">
+<meta property="og:description" content="Bring customer requests, conversations, assignments and resolutions into one organised customer support ticketing system.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="page.css">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="frame">
+
+  <!-- chrome:nav -->
+  <link rel="stylesheet" href="/theme.css">
+  <div class="wmnav-space" aria-hidden="true"></div>
+  <div id="wm-nav"></div>
+  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
+  <!-- /chrome:nav -->
+
+  <main class="cos tk" id="top">
+
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
+      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 8 2.5 8h-17S6 15 6 9"/><path d="M10.2 20.5a2 2 0 0 0 3.6 0"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
+      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h14a1.5 1.5 0 0 1 1.5 1.5V10a2 2 0 0 0 0 4v2.5A1.5 1.5 0 0 1 19 18H5a1.5 1.5 0 0 1-1.5-1.5V14a2 2 0 0 0 0-4Z"/><path d="M14 7v2M14 11v2M14 15v2"/></symbol>
+      <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5 6 5h12l2.5 8.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19Z"/><path d="M3.5 13.5h5l1.5 2.5h4l1.5-2.5h5"/></symbol>
+      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
+      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4 2.2 4H5"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4.2M12 17v.01"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.6" cy="6.5" r="1.1"/><circle cx="4.6" cy="12" r="1.1"/><circle cx="4.6" cy="17.5" r="1.1"/></symbol>
+      <symbol id="i-board" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="5" height="15" rx="1.5"/><rect x="9.5" y="4.5" width="5" height="10" rx="1.5"/><rect x="15.5" y="4.5" width="5" height="12.5" rx="1.5"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 17.5v-5M11.5 17.5v-10M16.5 17.5v-7"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
+      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.9 9.2c-.6-.9-1.6-1.4-2.9-1.4-1.7 0-2.8.9-2.8 2.1 0 2.9 5.9 1.6 5.9 4.4 0 1.2-1.2 2.1-3.1 2.1-1.3 0-2.4-.6-3-1.5M12 6.2v1.6M12 16.8v1.6"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2.8l8.5 4.7v9L12 21.2 3.5 16.5v-9Z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/></symbol>
+      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8 20 3M17 6l2.5 2.5M14.5 8.5l2 2"/></symbol>
+      <symbol id="i-clip" viewBox="0 0 24 24"><path d="M20 11.5l-7.8 7.8a5 5 0 0 1-7.1-7.1l8.2-8.2a3.4 3.4 0 0 1 4.8 4.8l-8.1 8.1a1.7 1.7 0 0 1-2.4-2.4l7.4-7.4"/></symbol>
+      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15M15.5 4.5 19 8l-3.5 3.5M20 16H5M8.5 12.5 5 16l3.5 3.5"/></symbol>
+      <symbol id="i-note" viewBox="0 0 24 24"><path d="M5.5 3.5h13A1.5 1.5 0 0 1 20 5v10l-5.5 5.5h-9A1.5 1.5 0 0 1 4 19V5a1.5 1.5 0 0 1 1.5-1.5Z"/><path d="M14.5 20.5V16a1 1 0 0 1 1-1H20M8 8.5h8M8 12h5"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.6-4.4M4 3.6v3.6h3.6M4 13a8 8 0 0 0 14.6 4.4M20 20.4v-3.6h-3.6"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5V5M6 11l6-6 6 6"/></symbol>
+    </defs></svg>
+
+    <!-- ============ 01 HERO — asymmetric split ============ -->
+    <section class="cos-hero tk-hero" id="overview" aria-labelledby="tk-h1">
+      <div class="cos-hero__grid" aria-hidden="true"></div>
+
+      <div class="tk-hero__split">
+        <div class="tk-hero__copy rv">
+          <p class="cos-eyebrow">Ticketing</p>
+          <h1 class="cos-h1" id="tk-h1">Every customer <br>issue <span class="dim">deserves <br>a resolution.</span></h1>
+          <p class="cos-hero__intro">Bring customer requests, conversations, assignments and resolutions into one organised customer support ticketing system. Help your team stay on top of every ticket, from the first request to the final response.</p>
+          <div class="cos-cta">
+            <a class="btn btn--lime btn--lg" href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--line btn--lg" href="https://wa.me/917382716780?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
+          </div>
+        </div>
+
+        <figure class="app tk-inbox rv" id="heroInbox" style="--d:.15s" aria-labelledby="heroInboxCap">
+          <figcaption class="sr-only" id="heroInboxCap">A support inbox. Choose a ticket to see its conversation, priority, status, assignee, recent activity and the next action.</figcaption>
+          <div class="app__top app__top--slim">
+            <span class="app__crumb"><svg class="i"><use href="#i-inbox"/></svg> <b>Support inbox</b></span>
+            <span class="tag tk-inbox__count">4 open</span>
+          </div>
+          <div class="tk-inbox__body">
+            <div class="tk-list" role="tablist" aria-label="Tickets" aria-orientation="vertical">
+              <button class="tk-row" type="button" role="tab" id="ht1" aria-controls="hp1" aria-selected="true">
+                <span class="tk-row__top"><b>Order hasn&rsquo;t arrived</b><em>2m</em></span>
+                <span class="tk-row__who">Arjun Mehta &middot; #TK-20418</span>
+                <span class="tk-row__tags"><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span><span class="tk-st tk-st--prog">In progress</span></span>
+              </button>
+              <button class="tk-row" type="button" role="tab" id="ht2" aria-controls="hp2" aria-selected="false" tabindex="-1">
+                <span class="tk-row__top"><b>Charged twice this month</b><em>14m</em></span>
+                <span class="tk-row__who">Sara Lopez &middot; #TK-20416</span>
+                <span class="tk-row__tags"><span class="tk-pr tk-pr--med">Medium</span><span class="tk-st tk-st--asg">Assigned</span></span>
+              </button>
+              <button class="tk-row" type="button" role="tab" id="ht3" aria-controls="hp3" aria-selected="false" tabindex="-1">
+                <span class="tk-row__top"><b>Can&rsquo;t sign in to my account</b><em>38m</em></span>
+                <span class="tk-row__who">Kenji Ito &middot; #TK-20413</span>
+                <span class="tk-row__tags"><span class="tk-pr tk-pr--med">Medium</span><span class="tk-st tk-st--wait">Waiting on customer</span></span>
+              </button>
+              <button class="tk-row" type="button" role="tab" id="ht4" aria-controls="hp4" aria-selected="false" tabindex="-1">
+                <span class="tk-row__top"><b>Change my booking date</b><em>1h</em></span>
+                <span class="tk-row__who">Lena Fischer &middot; #TK-20409</span>
+                <span class="tk-row__tags"><span class="tk-pr tk-pr--low">Low</span><span class="tk-st tk-st--new">New</span></span>
+              </button>
+            </div>
+
+            <div class="tk-detail">
+              <div class="tk-pane is-on" role="tabpanel" id="hp1" aria-labelledby="ht1">
+                <p class="tk-ref"><svg class="i"><use href="#i-wa"/></svg>#TK-20418 &middot; via WhatsApp</p>
+                <p class="tk-subj">Order hasn&rsquo;t arrived</p>
+                <dl class="tk-props">
+                  <div><dt>Priority</dt><dd><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span></dd></div>
+                  <div><dt>Status</dt><dd><span class="tk-st tk-st--prog">In progress</span></dd></div>
+                  <div><dt>Assignee</dt><dd><span class="av av--cyan">PS</span>Priya Shah</dd></div>
+                </dl>
+                <div class="tk-thread">
+                  <p class="tk-msg tk-msg--in"><b>Arjun Mehta</b>My order #58213 was due yesterday and the tracking hasn&rsquo;t moved since Monday.<em>10:42</em></p>
+                  <p class="tk-msg tk-msg--out"><b>Priya Shah</b>Sorry for the wait, Arjun. I&rsquo;ve asked the courier to trace it and will update you today.<em>10:49</em></p>
+                </div>
+                <ul class="tk-act">
+                  <li><svg class="i"><use href="#i-users"/></svg>Routed to Order support, assigned to Priya<em>10:43</em></li>
+                  <li><svg class="i"><use href="#i-box"/></svg>Courier trace requested<em>10:51</em></li>
+                </ul>
+                <p class="tk-next"><span><b>Next</b> Share the courier&rsquo;s update</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg>Send update</span></p>
+              </div>
+
+              <div class="tk-pane" role="tabpanel" id="hp2" aria-labelledby="ht2">
+                <p class="tk-ref"><svg class="i"><use href="#i-mail"/></svg>#TK-20416 &middot; via email</p>
+                <p class="tk-subj">Charged twice this month</p>
+                <dl class="tk-props">
+                  <div><dt>Priority</dt><dd><span class="tk-pr tk-pr--med">Medium</span></dd></div>
+                  <div><dt>Status</dt><dd><span class="tk-st tk-st--asg">Assigned</span></dd></div>
+                  <div><dt>Assignee</dt><dd><span class="av av--violet">DK</span>Daniel Kim</dd></div>
+                </dl>
+                <div class="tk-thread">
+                  <p class="tk-msg tk-msg--in"><b>Sara Lopez</b>I can see two payments for my October plan on the same day. Can you refund one?<em>10:30</em></p>
+                </div>
+                <ul class="tk-act">
+                  <li><svg class="i"><use href="#i-users"/></svg>Routed to Billing by category<em>10:31</em></li>
+                  <li><svg class="i"><use href="#i-user"/></svg>Assigned to Daniel Kim<em>10:33</em></li>
+                </ul>
+                <p class="tk-next"><span><b>Next</b> Confirm the duplicate payment</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg>Reply</span></p>
+              </div>
+
+              <div class="tk-pane" role="tabpanel" id="hp3" aria-labelledby="ht3">
+                <p class="tk-ref"><svg class="i"><use href="#i-globe"/></svg>#TK-20413 &middot; via support page</p>
+                <p class="tk-subj">Can&rsquo;t sign in to my account</p>
+                <dl class="tk-props">
+                  <div><dt>Priority</dt><dd><span class="tk-pr tk-pr--med">Medium</span></dd></div>
+                  <div><dt>Status</dt><dd><span class="tk-st tk-st--wait">Waiting on customer</span></dd></div>
+                  <div><dt>Assignee</dt><dd><span class="av av--lime">RN</span>Ravi Nair</dd></div>
+                </dl>
+                <div class="tk-thread">
+                  <p class="tk-msg tk-msg--in"><b>Kenji Ito</b>The reset link says it has expired every time I open it.<em>10:06</em></p>
+                  <p class="tk-msg tk-msg--out"><b>Ravi Nair</b>I&rsquo;ve sent a fresh link. Could you try it within the next 15 minutes?<em>10:14</em></p>
+                </div>
+                <ul class="tk-act">
+                  <li><svg class="i"><use href="#i-clock"/></svg>Waiting on customer since 10:14<em>38m</em></li>
+                </ul>
+                <p class="tk-next"><span><b>Next</b> Follow up if there&rsquo;s no reply</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-bell"/></svg>Set reminder</span></p>
+              </div>
+
+              <div class="tk-pane" role="tabpanel" id="hp4" aria-labelledby="ht4">
+                <p class="tk-ref"><svg class="i"><use href="#i-wa"/></svg>#TK-20409 &middot; via WhatsApp</p>
+                <p class="tk-subj">Change my booking date</p>
+                <dl class="tk-props">
+                  <div><dt>Priority</dt><dd><span class="tk-pr tk-pr--low">Low</span></dd></div>
+                  <div><dt>Status</dt><dd><span class="tk-st tk-st--new">New</span></dd></div>
+                  <div><dt>Assignee</dt><dd class="muted">Unassigned</dd></div>
+                </dl>
+                <div class="tk-thread">
+                  <p class="tk-msg tk-msg--in"><b>Lena Fischer</b>Hi, can I move my booking from the 14th to the 21st? Same time if possible.<em>09:58</em></p>
+                </div>
+                <ul class="tk-act">
+                  <li><svg class="i"><use href="#i-ticket"/></svg>Ticket created from conversation<em>09:58</em></li>
+                </ul>
+                <p class="tk-next"><span><b>Next</b> Pick an owner for this request</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-user"/></svg>Assign to me</span></p>
+              </div>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 02 TICKET MANAGEMENT — full-width scene ============ -->
+    <section class="cos-sec" id="workspace" aria-labelledby="ws-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Ticket management</p>
+        <h2 class="cos-h2" id="ws-h">Every request. <br><span class="dim">One place to manage it.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Stop losing track of customer issues across conversations and spreadsheets. Give your team one organised workspace to create, assign, prioritise and manage tickets through resolution.</p>
+        </div>
+      </div>
+
+      <figure class="os-figure rv" style="--d:.1s">
+        <div class="app tk-ws" id="workspaceApp" role="img" aria-label="The ticket workspace: saved views on the left, a list of open tickets with priority, status and assignee, the selected ticket's conversation, and its customer details, properties and history on the right.">
+          <div class="app__top">
+            <span class="app__crumb">Tickets <svg class="i"><use href="#i-chevr"/></svg> <b>All open</b></span>
+            <span class="tk-search"><svg class="i"><use href="#i-search"/></svg>Search tickets, customers, references</span>
+            <span class="chip"><svg class="i"><use href="#i-filter"/></svg>Priority: any</span>
+            <span class="mini-btn mini-btn--lime tk-ws__new"><svg class="i"><use href="#i-plus"/></svg>New ticket</span>
+          </div>
+          <div class="tk-ws__body">
+            <div class="tk-side">
+              <p class="ui-label">Views</p>
+              <p class="tk-side__i is-on"><svg class="i"><use href="#i-inbox"/></svg>All open<em>24</em></p>
+              <p class="tk-side__i"><svg class="i"><use href="#i-user"/></svg>Assigned to me<em>6</em></p>
+              <p class="tk-side__i"><svg class="i"><use href="#i-users"/></svg>Unassigned<em>3</em></p>
+              <p class="tk-side__i"><svg class="i"><use href="#i-clock"/></svg>Due today<em>5</em></p>
+              <p class="tk-side__i tk-side__i--warn"><svg class="i"><use href="#i-alert"/></svg>Overdue<em>2</em></p>
+              <p class="ui-label tk-side__k">Teams</p>
+              <p class="tk-side__i"><svg class="i"><use href="#i-box"/></svg>Order support<em>9</em></p>
+              <p class="tk-side__i"><svg class="i"><use href="#i-coin"/></svg>Billing<em>6</em></p>
+              <p class="tk-side__i"><svg class="i"><use href="#i-key"/></svg>Technical support<em>5</em></p>
+              <p class="tk-side__i"><svg class="i"><use href="#i-cal"/></svg>Bookings<em>4</em></p>
+            </div>
+
+            <div class="tk-wl">
+              <p class="tk-wl__h"><b>All open</b><span>24 tickets &middot; newest first</span></p>
+              <div class="tk-wl__r"><span class="tk-wl__s"><b>Order hasn&rsquo;t arrived</b><small>Arjun Mehta &middot; #TK-20418</small></span><span class="tk-wl__m"><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span><span class="av av--cyan">PS</span></span></div>
+              <div class="tk-wl__r"><span class="tk-wl__s"><b>Charged twice this month</b><small>Sara Lopez &middot; #TK-20416</small></span><span class="tk-wl__m"><span class="tk-pr tk-pr--med">Medium</span><span class="av av--violet">DK</span></span></div>
+              <div class="tk-wl__r is-sel"><span class="tk-wl__s"><b>Change my booking date</b><small>Lena Fischer &middot; #TK-20409</small></span><span class="tk-wl__m"><span class="tk-pr tk-pr--low">Low</span><span class="av av--lime">AN</span></span></div>
+              <div class="tk-wl__r"><span class="tk-wl__s"><b>Can&rsquo;t sign in to my account</b><small>Kenji Ito &middot; #TK-20413</small></span><span class="tk-wl__m"><span class="tk-pr tk-pr--med">Medium</span><span class="av av--lime">RN</span></span></div>
+              <div class="tk-wl__r"><span class="tk-wl__s"><b>Technician didn&rsquo;t show up</b><small>Omar Haddad &middot; #TK-20405</small></span><span class="tk-wl__m"><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span><span class="av">MR</span></span></div>
+              <div class="tk-wl__r"><span class="tk-wl__s"><b>Invoice needs our tax ID</b><small>Nadia Romero &middot; #TK-20401</small></span><span class="tk-wl__m"><span class="tk-pr tk-pr--low">Low</span><span class="av av--violet">DK</span></span></div>
+            </div>
+
+            <div class="tk-conv">
+              <div class="tk-conv__h">
+                <p><b>Change my booking date</b><span>#TK-20409 &middot; Lena Fischer &middot; via WhatsApp</span></p>
+                <span class="tk-st tk-st--prog">In progress</span>
+              </div>
+              <div class="tk-conv__log">
+                <p class="tk-msg tk-msg--in"><b>Lena Fischer</b>Hi, can I move my booking from the 14th to the 21st? Same time if possible.<em>09:58</em></p>
+                <p class="tk-sys"><svg class="i"><use href="#i-user"/></svg>Ana Novak took ownership &middot; status changed to In progress<em>10:02</em></p>
+                <p class="tk-msg tk-msg--out"><b>Ana Novak</b>Happy to help, Lena. The 21st at 11:00 is free. Shall I confirm it for you?<em>10:05</em></p>
+                <p class="tk-msg tk-msg--in"><b>Lena Fischer</b>Yes please, that works.<em>10:09</em></p>
+              </div>
+              <p class="tk-compose"><span class="tk-compose__mode"><b>Reply</b><span>Internal note</span></span><span class="tk-compose__ph">Done! Your booking is now on the 21st at 11:00&hellip;</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg>Send</span></p>
+            </div>
+
+            <div class="tk-info">
+              <div class="tk-info__who">
+                <span class="av av--lg">LF</span>
+                <p><b>Lena Fischer</b><span>Customer since 2023 &middot; 3 previous tickets</span></p>
+              </div>
+              <p class="ui-label">Ticket</p>
+              <dl class="tk-kv">
+                <div><dt>Status</dt><dd><span class="tk-st tk-st--prog">In progress</span></dd></div>
+                <div><dt>Priority</dt><dd>Low</dd></div>
+                <div><dt>Category</dt><dd>Booking change</dd></div>
+                <div><dt>Team</dt><dd>Bookings</dd></div>
+                <div><dt>Assignee</dt><dd><span class="av av--lime">AN</span>Ana Novak</dd></div>
+              </dl>
+              <p class="ui-label">History</p>
+              <ol class="tk-hist">
+                <li><b>Created</b> from WhatsApp<em>09:58</em></li>
+                <li><b>Routed</b> to Bookings<em>09:58</em></li>
+                <li><b>Assigned</b> to Ana Novak<em>10:02</em></li>
+                <li class="is-now"><b>Reply</b> sent to customer<em>10:05</em></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </figure>
+
+      <ul class="tk-caps rv" style="--d:.1s">
+        <li>One ticket inbox</li>
+        <li>Status and priority</li>
+        <li>Customer details and history</li>
+        <li>Clear ownership</li>
+        <li>Every update recorded</li>
+      </ul>
+    </section>
+
+    <!-- ============ 03 SUBMISSION PAGES — three-stage story ============ -->
+    <section class="cos-sec" id="requests" aria-labelledby="rq-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Support pages</p>
+        <h2 class="cos-h2" id="rq-h">Give customers a simpler <br>way to ask for help.</h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Create dedicated support pages where customers can raise requests, explain their issues and submit the details your team needs. Every submission can become a trackable ticket, ready for your team to act on.</p>
+          <a class="cos-link os-link" href="/pages/products/webviews/page.html">Build customer-facing pages with Webviews <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <ol class="tk-journey rv" id="journey" style="--d:.1s">
+        <li class="tk-stage tk-stage--1">
+          <p class="tk-stage__k"><span>01</span>The customer submits a request</p>
+          <div class="wm-phone tk-phone tk-scr tk-form" role="img" aria-label="A branded support page titled How can we help you, with a request category, subject, description, an optional attachment and a Submit Request button.">
+            <div class="wm-phone__screen"><div class="wm-phone__ui">
+              <div class="wa-web">
+                <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Your Brand Support</b><small><i class="wa-i wa-i--lock"></i>help.yourbrand.com</small></span><i class="wa-i wa-i--dots"></i></div>
+                <div class="wa-web__page">
+                <div class="tk-form__body">
+                  <p class="tk-brand"><span class="tk-brand__logo">YB</span>Your Brand Support</p>
+                  <p class="tk-form__t">How can we help you?</p>
+                  <p class="tk-f"><span>Request category</span><b>Order &amp; delivery <svg class="i"><use href="#i-chev"/></svg></b></p>
+                  <p class="tk-f"><span>Subject</span><b>Parcel marked delivered, not received</b></p>
+                  <p class="tk-f tk-f--area"><span>Describe the issue</span><b>Tracking says it was delivered on Tuesday, but nothing arrived and my neighbours haven&rsquo;t seen it.</b></p>
+                  <p class="tk-f tk-f--file"><span>Attachment (optional)</span><b><svg class="i"><use href="#i-clip"/></svg>tracking-screenshot.png</b></p>
+                  <span class="tk-submit">Submit Request</span>
+                </div>
+                </div>
+              </div>
+            </div></div>
+            <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+          </div>
+        </li>
+        <li class="tk-stage tk-stage--2">
+          <p class="tk-stage__k"><span>02</span>They get a clear confirmation</p>
+          <div class="wm-phone tk-phone tk-scr tk-ok" role="img" aria-label="A confirmation screen: your request has been submitted, with ticket reference TK-20431.">
+            <div class="wm-phone__screen"><div class="wm-phone__ui">
+              <div class="wa-web">
+                <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Your Brand Support</b><small><i class="wa-i wa-i--lock"></i>help.yourbrand.com</small></span><i class="wa-i wa-i--dots"></i></div>
+                <div class="wa-web__page">
+                <div class="tk-ok__body">
+                  <span class="tk-ok__mark"><svg class="i"><use href="#i-check"/></svg></span>
+                  <p class="tk-ok__t">Your request has been submitted</p>
+                  <p class="tk-ok__p">Thanks, Arjun. Our team has your request and will be in touch. Keep this reference for any follow-up.</p>
+                  <p class="tk-ok__ref"><span>Ticket reference</span><b>#TK-20431</b></p>
+                  <dl class="tk-ok__sum">
+                    <div><dt>Category</dt><dd>Order &amp; delivery</dd></div>
+                    <div><dt>Submitted</dt><dd>Today, 09:12</dd></div>
+                  </dl>
+                </div>
+                </div>
+              </div>
+            </div></div>
+            <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+          </div>
+        </li>
+        <li class="tk-stage tk-stage--3">
+          <p class="tk-stage__k"><span>03</span>The ticket appears for your team</p>
+          <div class="wm-phone tk-phone tk-scr tk-arr" role="img" aria-label="The team's ticket inbox with the new ticket TK-20431 at the top: category Order and delivery, priority High, status New, assigned to Ravi Nair in Order support.">
+            <div class="wm-phone__screen"><div class="wm-phone__ui tk-arr__ui">
+            <div class="wm-status"></div><div class="app__top app__top--slim"><span class="app__crumb"><svg class="i"><use href="#i-inbox"/></svg> <b>Order support</b></span></div>
+            <div class="tk-arr__list">
+              <div class="tk-arr__new" data-at="3">
+                <p class="tk-arr__top"><span class="tk-st tk-st--new">New</span><em>Just now</em></p>
+                <p class="tk-arr__s">Parcel marked delivered, not received</p>
+                <p class="tk-arr__who">Arjun Mehta &middot; #TK-20431 &middot; via support page</p>
+                <dl class="tk-arr__kv">
+                  <div><dt>Category</dt><dd>Order &amp; delivery</dd></div>
+                  <div><dt>Priority</dt><dd><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span></dd></div>
+                  <div><dt>Assignee</dt><dd><span class="tk-arr__wait" data-at="3" data-until="4">Routing&hellip;</span><span data-at="4"><span class="av av--lime">RN</span>Ravi Nair</span></dd></div>
+                </dl>
+              </div>
+              <div class="tk-arr__old"><b>Wrong size delivered</b><span>#TK-20427 &middot; In progress</span></div>
+              <div class="tk-arr__old"><b>Return label not received</b><span>#TK-20422 &middot; Waiting on customer</span></div>
+            </div>
+          </div></div>
+            <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+          </div>
+        </li>
+      </ol>
+      <p class="tk-fine rv">Forms, categories and fields are set up by your team. Attachments and routing apply where configured.</p>
+    </section>
+
+    <!-- ============ 04 SMART ROUTING — centred branching ============ -->
+    <section class="cos-sec" id="routing" aria-labelledby="rt-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Smart routing</p>
+        <h2 class="cos-h2" id="rt-h">Get every request <span class="dim">to the right team.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Not every issue belongs to the same team. Route tickets based on category, priority or other conditions you configure, so requests reach the people best equipped to handle them.</p>
+        </div>
+      </div>
+
+      <figure class="tk-route rv" id="route" data-sc="1" style="--d:.1s" aria-labelledby="routeCap">
+        <figcaption class="sr-only" id="routeCap">Pick an example request to see which routing rule applies and where the ticket goes.</figcaption>
+        <div class="tk-try" role="tablist" aria-label="Example requests">
+          <button class="tk-try__b" type="button" role="tab" aria-selected="true" aria-controls="routeStage" data-for="1"><svg class="i"><use href="#i-coin"/></svg>Billing question</button>
+          <button class="tk-try__b" type="button" role="tab" aria-selected="false" aria-controls="routeStage" data-for="2" tabindex="-1"><svg class="i"><use href="#i-box"/></svg>Delivery issue</button>
+          <button class="tk-try__b" type="button" role="tab" aria-selected="false" aria-controls="routeStage" data-for="3" tabindex="-1"><svg class="i"><use href="#i-key"/></svg>Technical problem</button>
+          <button class="tk-try__b" type="button" role="tab" aria-selected="false" aria-controls="routeStage" data-for="4" tabindex="-1"><svg class="i"><use href="#i-flag"/></svg>Urgent request</button>
+        </div>
+
+        <div class="tk-route__stage" id="routeStage" role="tabpanel" aria-live="polite">
+          <div class="tk-req">
+            <p class="tk-req__k"><svg class="i"><use href="#i-ticket"/></svg>Incoming request</p>
+            <div class="tk-req__c" data-for="1"><b>&ldquo;I was charged twice for my plan this month.&rdquo;</b><span>Sara Lopez &middot; Category: Billing &middot; Priority: Medium</span></div>
+            <div class="tk-req__c" data-for="2"><b>&ldquo;My order still hasn&rsquo;t arrived and tracking hasn&rsquo;t moved.&rdquo;</b><span>Arjun Mehta &middot; Category: Order &amp; delivery &middot; Priority: Medium</span></div>
+            <div class="tk-req__c" data-for="3"><b>&ldquo;The app shows an error every time I try to sign in.&rdquo;</b><span>Kenji Ito &middot; Category: Technical &middot; Priority: Medium</span></div>
+            <div class="tk-req__c" data-for="4"><b>&ldquo;Checkout fails for all our staff. We can&rsquo;t take orders.&rdquo;</b><span>Omar Haddad &middot; Category: Technical &middot; Priority: High</span></div>
+          </div>
+
+          <p class="tk-rule">
+            <span class="tk-rule__k">Rule</span>
+            <span class="tk-rule__c" data-for="1">Category is <b>Billing</b> <svg class="i"><use href="#i-arrow"/></svg> Billing team</span>
+            <span class="tk-rule__c" data-for="2">Category is <b>Order &amp; delivery</b> <svg class="i"><use href="#i-arrow"/></svg> Order support</span>
+            <span class="tk-rule__c" data-for="3">Category is <b>Technical</b> <svg class="i"><use href="#i-arrow"/></svg> Technical support</span>
+            <span class="tk-rule__c" data-for="4">Priority is <b>High</b> <svg class="i"><use href="#i-arrow"/></svg> Flag for attention</span>
+          </p>
+
+          <div class="tk-fork" aria-hidden="true"><i class="tk-fork__lit"></i><b></b><b></b><b></b><b></b></div>
+
+          <ul class="tk-dests">
+            <li class="tk-dest" data-for="1">
+              <p class="tk-dest__h"><span class="tk-dest__ico"><svg class="i"><use href="#i-coin"/></svg></span><b>Billing team</b></p>
+              <p class="tk-dest__idle">6 open in queue</p>
+              <p class="tk-dest__got"><span class="tk-st tk-st--asg">Assigned</span><span><span class="av av--violet">DK</span>Daniel Kim</span></p>
+            </li>
+            <li class="tk-dest" data-for="2">
+              <p class="tk-dest__h"><span class="tk-dest__ico"><svg class="i"><use href="#i-box"/></svg></span><b>Order support</b></p>
+              <p class="tk-dest__idle">9 open in queue</p>
+              <p class="tk-dest__got"><span class="tk-st tk-st--asg">Assigned</span><span><span class="av av--cyan">PS</span>Priya Shah</span></p>
+            </li>
+            <li class="tk-dest" data-for="3">
+              <p class="tk-dest__h"><span class="tk-dest__ico"><svg class="i"><use href="#i-key"/></svg></span><b>Technical support</b></p>
+              <p class="tk-dest__idle">5 open in queue</p>
+              <p class="tk-dest__got"><span class="tk-st tk-st--asg">Assigned</span><span><span class="av av--lime">RN</span>Ravi Nair</span></p>
+            </li>
+            <li class="tk-dest tk-dest--flag" data-for="4">
+              <p class="tk-dest__h"><span class="tk-dest__ico"><svg class="i"><use href="#i-flag"/></svg></span><b>Needs attention</b></p>
+              <p class="tk-dest__idle">High-priority requests</p>
+              <p class="tk-dest__got"><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>Flagged</span><span><span class="av">MR</span>Maya Rao</span></p>
+            </li>
+          </ul>
+        </div>
+      </figure>
+      <p class="tk-fine tk-fine--c rv">Example rules. Routing follows the conditions you set up.</p>
+    </section>
+
+    <!-- ============ 05 LIFECYCLE — horizontal timeline ============ -->
+    <section class="cos-sec" id="lifecycle" aria-labelledby="lc-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Ticket lifecycle</p>
+        <h2 class="cos-h2" id="lc-h">From open to resolved. <br><span class="dim">Nothing gets lost.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Give every request a clear status and history. See what&rsquo;s being handled, what&rsquo;s waiting for a response and what has been resolved, without chasing updates across teams.</p>
+        </div>
+      </div>
+
+      <ol class="tk-life rv" id="life" style="--d:.1s">
+        <li>
+          <span class="tk-life__dot" aria-hidden="true"></span>
+          <span class="tk-st tk-st--new">New</span>
+          <b>Received and recorded</b>
+          <p class="tk-life__ui"><svg class="i"><use href="#i-globe"/></svg>#TK-20431 &middot; via support page<em>09:12</em></p>
+        </li>
+        <li>
+          <span class="tk-life__dot" aria-hidden="true"></span>
+          <span class="tk-st tk-st--asg">Assigned</span>
+          <b>Ownership is clear</b>
+          <p class="tk-life__ui"><span class="av av--lime">RN</span>Ravi Nair &middot; Order support<em>09:13</em></p>
+        </li>
+        <li>
+          <span class="tk-life__dot" aria-hidden="true"></span>
+          <span class="tk-st tk-st--prog">In progress</span>
+          <b>Investigated and updated</b>
+          <p class="tk-life__ui"><svg class="i"><use href="#i-msg"/></svg>&ldquo;Courier asked to trace the parcel.&rdquo;<em>10:05</em></p>
+        </li>
+        <li class="tk-life__end">
+          <span class="tk-life__dot" aria-hidden="true"></span>
+          <span class="tk-st tk-st--done"><svg class="i"><use href="#i-check"/></svg>Resolved</span>
+          <b>Outcome recorded</b>
+          <p class="tk-life__ui"><svg class="i"><use href="#i-check"/></svg>Replacement delivered<em>Thu 14:30</em></p>
+        </li>
+      </ol>
+      <p class="tk-fine rv">Illustrative statuses. Use the stages that fit your support process.</p>
+    </section>
+
+    <!-- ============ 06 FOLLOW-UPS & ESCALATIONS — event scene ============ -->
+    <section class="cos-sec" id="follow-ups" aria-labelledby="fu-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Follow-ups &amp; escalations</p>
+        <h2 class="cos-h2" id="fu-h">Keep tickets moving, <br><span class="dim">even when teams get busy.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Use configured automation to follow up on pending requests, flag overdue tickets and escalate unresolved issues. Help your team catch delays before customers have to ask again.</p>
+          <a class="cos-link os-link" href="/pages/products/workflow-orchestration/page.html">Automate wider processes with Workflow Orchestration <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <figure class="tk-esc rv" id="esc" style="--d:.1s" aria-labelledby="escCap">
+        <figcaption class="sr-only" id="escCap">One ticket, a refund that hasn't arrived, moves from assigned to pending, then due soon and overdue. Each change triggers an automation event: the agent is notified, the customer gets an update, a follow-up is sent, the ticket is flagged, and it is escalated to a supervisor.</figcaption>
+        <div class="app tk-tc">
+          <p class="tk-tc__top"><span>#TK-20425</span>
+            <span class="tk-tc__st">
+              <span class="tk-st tk-st--asg" data-at="1" data-until="3">Assigned</span>
+              <span class="tk-st tk-st--wait" data-at="3" data-until="4">Waiting on customer</span>
+              <span class="tk-st tk-st--due" data-at="4" data-until="5"><svg class="i"><use href="#i-clock"/></svg>Due in 1h</span>
+              <span class="tk-st tk-st--over" data-at="5"><svg class="i"><use href="#i-alert"/></svg>Escalated</span>
+            </span>
+          </p>
+          <p class="tk-tc__s">Refund not received</p>
+          <p class="tk-tc__who">Nadia Romero &middot; Billing</p>
+          <div class="tk-sla">
+            <p><span>Response due</span><b>Today, 16:00</b></p>
+            <span class="tk-sla__bar"><i></i></span>
+          </div>
+          <dl class="tk-kv tk-tc__kv">
+            <div><dt>Owner</dt><dd><span data-until="5"><span class="av av--lime">RN</span>Ravi Nair</span><span data-at="5"><span class="av">MR</span>Maya Rao &middot; Supervisor</span></dd></div>
+            <div><dt>Waiting</dt><dd><span data-until="3">&mdash;</span><span data-at="3" data-until="4">24 hours</span><span data-at="4">27 hours</span></dd></div>
+          </dl>
+        </div>
+
+        <span class="tk-esc__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+
+        <ol class="tk-ev">
+          <li data-lit="1"><span class="tk-ev__i"><svg class="i"><use href="#i-bell"/></svg></span><p><small>Ticket assigned</small><b>Ravi Nair is notified</b></p><em>09:00</em></li>
+          <li data-lit="2"><span class="tk-ev__i"><svg class="i"><use href="#i-msg"/></svg></span><p><small>Status changes</small><b>Customer gets an update</b></p><em>09:20</em></li>
+          <li data-lit="3"><span class="tk-ev__i"><svg class="i"><use href="#i-refresh"/></svg></span><p><small>Waiting too long</small><b>Follow-up sent to the customer</b></p><em>Tue 09:20</em></li>
+          <li data-lit="4"><span class="tk-ev__i tk-ev__i--warn"><svg class="i"><use href="#i-clock"/></svg></span><p><small>Response deadline approaching</small><b>Ticket flagged for attention</b></p><em>15:00</em></li>
+          <li data-lit="5" class="tk-ev--esc"><span class="tk-ev__i tk-ev__i--esc"><svg class="i"><use href="#i-up"/></svg></span><p><small>Still unresolved after the deadline</small><b>Escalated to Maya Rao, Supervisor</b></p><em>16:00</em></li>
+        </ol>
+      </figure>
+      <p class="tk-fine rv">Example rules. What runs depends on the automation and deadlines you configure.</p>
+    </section>
+
+    <!-- ============ 07 CUSTOMER UPDATES — conversation-led ============ -->
+    <section class="cos-sec" id="updates" aria-labelledby="up-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Customer updates</p>
+        <h2 class="cos-h2" id="up-h">Better updates. <br><span class="dim">Fewer &ldquo;Any progress?&rdquo; messages.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Keep customers informed as their requests move forward. Share status updates and responses through supported communication channels, so customers know their issue has been received and is being handled.</p>
+        </div>
+      </div>
+
+      <figure class="tk-upd rv" id="upd" style="--d:.1s" aria-labelledby="updCap">
+        <figcaption class="sr-only" id="updCap">A WhatsApp conversation with a customer. Each message lines up with a ticket change: the acknowledgement when the ticket is created, a status update when work starts, a request for information, and a resolution message when the ticket is resolved.</figcaption>
+        <div class="wm-phone tk-upd__ph" aria-hidden="true">
+          <div class="wm-phone__screen"><div class="wm-phone__ui">
+            <div class="wa-chat">
+              <div class="wa-head"><div class="wm-status"></div><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">Y</span><span class="wa-top__who"><b>Your Brand Support</b><small>WhatsApp</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
+              <div class="wa-body">
+                <p class="wa-day">Today</p>
+                <p data-lit="1" class="wa-msg wa-msg--in">Thanks, Arjun. We&rsquo;ve received your request <b>#TK-20431</b> and we&rsquo;re looking into it.<span class="wa-meta">09:12</span></p>
+                <p data-lit="2" class="wa-msg wa-msg--out">Hi, any progress on my parcel?<span class="wa-meta">13:40 <i class="wa-tick"></i></span></p>
+                <p data-lit="2" class="wa-msg wa-msg--in">Yes. The courier is tracing it now, and we&rsquo;ll update you by 4 PM.<span class="wa-meta">13:42</span></p>
+                <p data-lit="3" class="wa-msg wa-msg--in">We&rsquo;re sending a replacement. Could you confirm your delivery address?<span class="wa-meta">15:55</span></p>
+                <p data-lit="3" class="wa-msg wa-msg--out">12 Park Lane, any time after 2 PM.<span class="wa-meta">16:03 <i class="wa-tick"></i></span></p>
+                <p data-lit="4" class="wa-msg wa-msg--in">Your replacement was delivered at 14:30. Is there anything else we can help with?<span class="wa-meta">Thu 14:36</span></p>
+              </div>
+              <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
+            </div>
+          </div></div>
+          <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
+        </div>
+        <div class="tk-upd__side">
+          <p class="tk-upd__k">In the ticket</p>
+          <ol class="tk-upd__log">
+            <li data-lit="1"><p class="tk-upd__st"><span class="tk-st tk-st--new">New</span></p><b>Ticket #TK-20431 created</b><span class="tk-upd__type">Acknowledgement</span></li>
+            <li data-lit="2"><p class="tk-upd__st"><span class="tk-st tk-st--prog">In progress</span></p><b>Courier trace requested</b><span class="tk-upd__type">Status update</span></li>
+            <li data-lit="3"><p class="tk-upd__st"><span class="tk-st tk-st--wait">Waiting on customer</span></p><b>Replacement approved</b><span class="tk-upd__type">Request for information</span></li>
+            <li data-lit="4"><p class="tk-upd__st"><span class="tk-st tk-st--done"><svg class="i"><use href="#i-check"/></svg>Resolved</span></p><b>Replacement delivered</b><span class="tk-upd__type">Resolution message</span></li>
+          </ol>
+          <p class="tk-upd__foot"><svg class="i"><use href="#i-ticket"/></svg>Every message is saved to the ticket&rsquo;s history.</p>
+        </div>
+      </figure>
+      <p class="tk-fine tk-fine--c rv">Shown on WhatsApp as an example. Available channels depend on your setup. Planning broadcasts instead? See <a class="tk-link" href="/pages/products/campaigns/page.html">Campaigns</a> and <a class="tk-link" href="/pages/products/drip-marketing/page.html">Drip Marketing</a>.</p>
+    </section>
+
+    <!-- ============ 08 TEAM COLLABORATION — layered interface ============ -->
+    <section class="cos-sec" id="collaboration" aria-labelledby="co-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Team collaboration</p>
+        <h2 class="cos-h2" id="co-h">One support team, <br><span class="dim">working from the same context.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Give agents the context they need to work together. Assign ownership, transfer tickets when needed, add internal notes and review previous interactions without losing the thread.</p>
+        </div>
+      </div>
+
+      <figure class="tk-co rv" id="collab" style="--d:.1s" aria-labelledby="coCap">
+        <figcaption class="sr-only" id="coCap">A ticket handed from one agent to another. The customer conversation sits in the main panel; an internal note from Ana Novak explains what's left to do; the assignment control shows the ticket transferred to Daniel Kim, who replies in the notes.</figcaption>
+        <div class="app tk-co__main">
+          <div class="tk-conv__h">
+            <p><b>Wrong item delivered</b><span>#TK-20427 &middot; Omar Haddad &middot; via WhatsApp</span></p>
+            <span class="tk-st tk-st--prog">In progress</span>
+          </div>
+          <div class="tk-conv__log">
+            <p class="tk-msg tk-msg--in"><b>Omar Haddad</b>I ordered the blue jacket in M, but a black one in L arrived. Photos attached.<em>Mon 11:20</em></p>
+            <p class="tk-msg tk-msg--out"><b>Ana Novak</b>Sorry about that, Omar. We&rsquo;ll send the right one and collect the wrong one. What time suits you for pickup?<em>Mon 11:34</em></p>
+            <p class="tk-msg tk-msg--in"><b>Omar Haddad</b>Mornings are best for me.<em>Mon 11:41</em></p>
+            <p class="tk-sys" data-at="2"><svg class="i"><use href="#i-swap"/></svg>Ana Novak transferred this ticket to Daniel Kim<em>Mon 17:58</em></p>
+          </div>
+          <div class="tk-co__prev">
+            <p class="ui-label">Previous interactions</p>
+            <p><svg class="i"><use href="#i-ticket"/></svg><b>#TK-19870</b> Delivery address change &middot; Resolved in March</p>
+          </div>
+        </div>
+
+        <div class="app tk-co__as">
+          <p class="ui-label"><svg class="i"><use href="#i-user"/></svg>Assignment</p>
+          <p class="tk-co__who">
+            <span class="tk-co__from" data-until="2"><span class="av av--lime">AN</span><span><b>Ana Novak</b><small>Order support</small></span></span>
+            <span class="tk-co__to" data-at="2"><span class="av av--violet">DK</span><span><b>Daniel Kim</b><small>Order support &middot; morning shift</small></span></span>
+            <span class="mini-btn"><svg class="i"><use href="#i-swap"/></svg>Transfer</span>
+          </p>
+          <p class="tk-co__st"><span>Status</span><span class="tk-st tk-st--prog">In progress</span></p>
+        </div>
+
+        <div class="app tk-co__notes">
+          <p class="tk-co__nh"><svg class="i"><use href="#i-lock"/></svg><b>Internal notes</b><span>Only your team can see these</span></p>
+          <div class="tk-note" data-at="1">
+            <p class="tk-note__by"><span class="av av--lime">AN</span><b>Ana Novak</b><em>Mon 17:55</em></p>
+            <p>Replacement approved by stock. <span class="tk-at">@Daniel</span> can you book the pickup? Omar prefers mornings, and the right size is reserved.</p>
+          </div>
+          <div class="tk-note" data-at="3">
+            <p class="tk-note__by"><span class="av av--violet">DK</span><b>Daniel Kim</b><em>Tue 09:10</em></p>
+            <p>On it. Pickup booked for Thursday, 9&ndash;11 AM. I&rsquo;ll confirm with Omar now.</p>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ============ 09 CUSTOM VIEWS — three compact previews ============ -->
+    <section class="cos-sec" id="views" aria-labelledby="vw-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Custom views</p>
+        <h2 class="cos-h2" id="vw-h">One ticket system. <br><span class="dim">Different ways to see the work.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Give each team a practical way to organise its workload. Switch between focused views, filter requests and see the information that matters most to the task at hand.</p>
+        </div>
+      </div>
+
+      <div class="tk-vsw" role="group" aria-label="Choose a view">
+        <button class="tk-vsw__b" type="button" aria-pressed="true" data-v="0"><svg class="i"><use href="#i-board"/></svg>Kanban</button>
+        <button class="tk-vsw__b" type="button" aria-pressed="false" data-v="1"><svg class="i"><use href="#i-list"/></svg>List</button>
+        <button class="tk-vsw__b" type="button" aria-pressed="false" data-v="2"><svg class="i"><use href="#i-cal"/></svg>Calendar</button>
+      </div>
+
+      <div class="tk-views rv" id="views-grid" style="--d:.1s">
+        <figure class="tk-view is-on">
+          <figcaption><svg class="i"><use href="#i-board"/></svg><b>Kanban view</b><span>Move tickets through stages</span></figcaption>
+          <div class="app tk-kb" role="img" aria-label="A Kanban board with Open, In progress and Resolved columns holding ticket cards.">
+            <div class="tk-kb__col"><p class="tk-kb__h">Open <em>2</em></p>
+              <p class="tk-kb__c"><b>Change my booking date</b><span><span class="tk-pr tk-pr--low">Low</span><span class="av av--lime">AN</span></span></p>
+              <p class="tk-kb__c"><b>Invoice needs our tax ID</b><span><span class="tk-pr tk-pr--low">Low</span><span class="av av--violet">DK</span></span></p>
+            </div>
+            <div class="tk-kb__col"><p class="tk-kb__h">In progress <em>2</em></p>
+              <p class="tk-kb__c is-hot"><b>Order hasn&rsquo;t arrived</b><span><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span><span class="av av--cyan">PS</span></span></p>
+              <p class="tk-kb__c"><b>Charged twice</b><span><span class="tk-pr tk-pr--med">Medium</span><span class="av av--violet">DK</span></span></p>
+            </div>
+            <div class="tk-kb__col"><p class="tk-kb__h">Resolved <em>1</em></p>
+              <p class="tk-kb__c tk-kb__c--done"><b>Wrong size delivered</b><span><span class="tk-st tk-st--done"><svg class="i"><use href="#i-check"/></svg>Resolved</span></span></p>
+            </div>
+          </div>
+        </figure>
+
+        <figure class="tk-view">
+          <figcaption><svg class="i"><use href="#i-list"/></svg><b>List view</b><span>Scan everything at once</span></figcaption>
+          <div class="app tk-lv" role="table" aria-label="Ticket list with subject, priority, status and assignee.">
+            <div class="tk-lv__r tk-lv__r--h" role="row"><span role="columnheader">Subject</span><span role="columnheader">Priority</span><span role="columnheader">Status</span><span role="columnheader">Owner</span></div>
+            <div class="tk-lv__r" role="row"><span role="cell"><b>Order hasn&rsquo;t arrived</b></span><span role="cell"><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span></span><span role="cell"><span class="tk-st tk-st--prog">In progress</span></span><span role="cell"><span class="av av--cyan">PS</span></span></div>
+            <div class="tk-lv__r" role="row"><span role="cell"><b>Charged twice</b></span><span role="cell"><span class="tk-pr tk-pr--med">Medium</span></span><span role="cell"><span class="tk-st tk-st--asg">Assigned</span></span><span role="cell"><span class="av av--violet">DK</span></span></div>
+            <div class="tk-lv__r" role="row"><span role="cell"><b>Can&rsquo;t sign in</b></span><span role="cell"><span class="tk-pr tk-pr--med">Medium</span></span><span role="cell"><span class="tk-st tk-st--wait">Waiting</span></span><span role="cell"><span class="av av--lime">RN</span></span></div>
+            <div class="tk-lv__r" role="row"><span role="cell"><b>Change booking date</b></span><span role="cell"><span class="tk-pr tk-pr--low">Low</span></span><span role="cell"><span class="tk-st tk-st--new">New</span></span><span role="cell"><span class="av av--lime">AN</span></span></div>
+            <div class="tk-lv__r" role="row"><span role="cell"><b>Technician no-show</b></span><span role="cell"><span class="tk-pr tk-pr--high"><svg class="i"><use href="#i-flag"/></svg>High</span></span><span role="cell"><span class="tk-st tk-st--prog">In progress</span></span><span role="cell"><span class="av">MR</span></span></div>
+          </div>
+        </figure>
+
+        <figure class="tk-view">
+          <figcaption><svg class="i"><use href="#i-cal"/></svg><b>Calendar view</b><span>See follow-ups and deadlines</span></figcaption>
+          <div class="app tk-cv" role="img" aria-label="A week calendar with a follow-up on Tuesday, a response deadline on Wednesday and a callback on Thursday.">
+            <p class="tk-cv__h"><b>October</b><span>Week 42</span></p>
+            <div class="tk-cv__grid">
+              <div><p>Mon<b>13</b></p></div>
+              <div><p>Tue<b>14</b></p><span class="tk-cv__e"><b>Follow up</b>Lena &middot; booking</span></div>
+              <div class="is-today"><p>Wed<b>15</b></p><span class="tk-cv__e tk-cv__e--due"><b>Due 16:00</b>#TK-20425</span></div>
+              <div><p>Thu<b>16</b></p><span class="tk-cv__e"><b>Pickup</b>Omar &middot; 9&ndash;11</span><span class="tk-cv__e"><b>Callback</b>Kenji</span></div>
+              <div><p>Fri<b>17</b></p></div>
+            </div>
+          </div>
+        </figure>
+      </div>
+      <p class="tk-fine rv">Available views and saved filters depend on your setup.</p>
+    </section>
+
+    <!-- ============ 10 TICKET ANALYTICS — wide reporting view ============ -->
+    <section class="cos-sec" id="analytics" aria-labelledby="an-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Ticket analytics</p>
+        <h2 class="cos-h2" id="an-h">See the issues <br><span class="dim">slowing your team down.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Understand support demand, spot bottlenecks and see how your team is handling incoming requests. Use ticket data to find recurring issues and improve your support process.</p>
+          <a class="cos-link os-link" href="/pages/products/analytics-bi/page.html">Reporting across the whole business: Analytics &amp; BI <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+
+      <figure class="os-figure rv" style="--d:.1s">
+        <div class="app tk-an" id="an" role="img" aria-label="A support report with illustrative figures: total tickets, open backlog, average first response and resolution times, overdue tickets, tickets by category with delivery issues the largest share, and open tickets by status.">
+          <div class="app__top app__top--slim">
+            <span class="app__crumb">Reports <svg class="i"><use href="#i-chevr"/></svg> <b>Support overview</b></span>
+            <span class="tk-tabs"><span>7 days</span><b>30 days</b><span>Quarter</span></span>
+            <span class="tag tk-an__ill">Illustrative figures</span>
+          </div>
+          <div class="tk-an__body">
+            <div class="tk-kpis">
+              <div><span>Total tickets</span><b><span data-n="1284">1,284</span></b></div>
+              <div><span>Open backlog</span><b><span data-n="96">96</span></b></div>
+              <div><span>Avg first response</span><b><span data-n="18">18</span> min</b></div>
+              <div><span>Avg resolution</span><b>6h 40m</b></div>
+              <div class="is-warn"><span>Overdue</span><b><span data-n="7">7</span></b><em><svg class="i"><use href="#i-alert"/></svg>Needs attention</em></div>
+            </div>
+            <div class="tk-an__row">
+              <div class="tk-cat">
+                <p class="ui-label"><svg class="i"><use href="#i-chart"/></svg>Tickets by category</p>
+                <ul class="tk-hb">
+                  <li class="is-top"><span>Order &amp; delivery</span><span class="tk-bar"><i style="--v:1"></i></span><b>34%</b></li>
+                  <li><span>Billing</span><span class="tk-bar"><i style="--v:.65"></i></span><b>22%</b></li>
+                  <li><span>Account access</span><span class="tk-bar"><i style="--v:.53"></i></span><b>18%</b></li>
+                  <li><span>Booking changes</span><span class="tk-bar"><i style="--v:.44"></i></span><b>15%</b></li>
+                  <li><span>Service complaints</span><span class="tk-bar"><i style="--v:.32"></i></span><b>11%</b></li>
+                </ul>
+                <p class="tk-finding"><svg class="i"><use href="#i-search"/></svg>Delivery questions are the largest share this month. Worth checking how couriers share tracking updates.</p>
+              </div>
+              <div class="tk-bystat">
+                <p class="ui-label"><svg class="i"><use href="#i-ticket"/></svg>Open tickets by status</p>
+                <span class="tk-stack" aria-hidden="true"><i style="--v:.19"></i><i style="--v:.22"></i><i style="--v:.40"></i><i style="--v:.19"></i></span>
+                <ul class="tk-legend">
+                  <li><i class="k1"></i>New<b>18</b></li>
+                  <li><i class="k2"></i>Assigned<b>21</b></li>
+                  <li><i class="k3"></i>In progress<b>39</b></li>
+                  <li><i class="k4"></i>Waiting on customer<b>18</b></li>
+                </ul>
+                <p class="tk-bystat__team"><span>Busiest team</span><b>Order support &middot; 41 open</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ============ 11 FAQ ============ -->
+    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
+      <div class="os-faq">
+        <div class="os-faq__intro rv">
+          <p class="cos-eyebrow">FAQ</p>
+          <h2 class="cos-h2" id="faq-h">Ticketing, answered.</h2>
+          <p class="cos-body">Something else on your mind?</p>
+          <a class="cos-link os-link" href="https://wa.me/917382716780?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us <svg class="i"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="os-faq__list rv" style="--d:.1s">
+          <details class="os-qa"><summary>What is Chatberry Ticketing?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Chatberry Ticketing helps businesses organise customer support requests, assign ownership, track progress, coordinate teams, and manage issues through resolution.</p></div></details>
+          <details class="os-qa"><summary>Can customers raise tickets themselves?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Customers can submit requests through the support pages and forms you set up, and each submission can become a ticket your team can track.</p></div></details>
+          <details class="os-qa"><summary>Can I create a customised ticket submission page?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>You can set up a customer-facing support page with your branding, the request categories you need and form fields that match your support process. The options available depend on your Chatberry setup.</p></div></details>
+          <details class="os-qa"><summary>Can tickets be assigned automatically?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Tickets can be routed using the rules and criteria you configure, such as category or priority, so requests reach the appropriate team or agent.</p></div></details>
+          <details class="os-qa"><summary>Can I prioritise urgent tickets?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Every ticket carries a priority, so your team can see what needs attention first. Where configured, rules can also flag urgent requests or escalate tickets that are close to their deadline.</p></div></details>
+          <details class="os-qa"><summary>Can customers receive ticket updates?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Customer notifications and progress updates can be sent through the communication channels supported and configured for your ticket workflow.</p></div></details>
+          <details class="os-qa"><summary>Can I track response and resolution times?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Ticket reporting helps teams review response and resolution performance where those metrics are captured. SLA monitoring and overdue alerts depend on the capabilities enabled for your account.</p></div></details>
+          <details class="os-qa"><summary>Can different teams manage their own tickets?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Tickets can be organised around assignment, ownership, categories and team responsibilities, according to how you configure them.</p></div></details>
+          <details class="os-qa"><summary>Can I automate ticket follow-ups?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Configured automation can handle supported follow-ups, notifications and escalation conditions, so agents don&rsquo;t have to track every pending request by hand.</p></div></details>
+          <details class="os-qa"><summary>Can I view tickets in different layouts?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Where supported, teams can use different ticket views, such as Kanban, List or Calendar, to organise requests around the way they work.</p></div></details>
+          <details class="os-qa"><summary>Is Ticketing suitable for different industries?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Chatberry Ticketing is built for any business that needs to manage customer issues, service requests and support workflows.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 12 FINAL CALL TO ACTION — minimal ============ -->
+    <section class="cos-final" aria-labelledby="cta-h">
+      <div class="cos-final__grid" aria-hidden="true"></div>
+      <p class="cos-eyebrow">Make support simple</p>
+      <h2 class="cos-h2 rv" id="cta-h">Turn every support request <br>into a clear next step.</h2>
+      <p class="cos-body rv">Organise customer issues, empower your support team and move every request toward resolution with Chatberry Ticketing.</p>
+      <div class="cos-cta rv">
+        <a class="btn btn--lime btn--lg" href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line btn--lg" href="https://wa.me/917382716780?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
+      </div>
+      <p class="tk-done rv" aria-hidden="true"><span class="tk-done__i"><svg class="i"><use href="#i-check"/></svg></span><b>#TK-20431</b>Resolved &middot; customer notified</p>
+    </section>
+
+  </main>
+
+  <!-- chrome:foot -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
+  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#C8E63C"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Software by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
+          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
+        </div>
+        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
+      </div>
+      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
+            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/wisemeet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
+            <a href="https://www.melohealth.ai/" style="font-size:14px;color:rgba(255,255,255,.85)">Healthcare</a><a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
+            <a href="/pages/coming-soon/page.html?p=Playbooks" style="font-size:14px;color:rgba(255,255,255,.85)">Playbooks</a><a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a><a href="/pages/coming-soon/page.html?p=Tools" style="font-size:14px;color:rgba(255,255,255,.85)">Tools</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
+            <a href="/pages/coming-soon/page.html?p=About" style="font-size:14px;color:rgba(255,255,255,.85)">About</a><a href="https://wa.me/917382716780" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true" style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
+          </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
+        <span>© Chatberry. 2026 All Rights Reserved.</span>
+        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- /chrome:foot -->
+
+</div>
+
+<script src="/index.js"></script>
+<script src="page.js"></script>
+</body>
+</html>

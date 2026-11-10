@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media Library with AI Image Generation | Chatberry</title>
+<meta name="description" content="Store and reuse business images, videos, and documents with Chatberry Media Library. Generate images with AI and keep your media ready to use.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chatberry">
+<meta property="og:title" content="Chatberry Media Library — All your media. One place.">
+<meta property="og:description" content="Save business images, videos and documents once, reuse them anywhere media is supported, and generate new images with AI.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/index.css">
+<link rel="stylesheet" href="page.css">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="frame">
+
+  <!-- chrome:nav -->
+  <link rel="stylesheet" href="/theme.css">
+  <div class="wmnav-space" aria-hidden="true"></div>
+  <div id="wm-nav"></div>
+  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
+  <!-- /chrome:nav -->
+
+  <main class="cos ml" id="top">
+
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
+      <symbol id="i-img" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 18 5-5 4 4 2.5-2.5L20 19"/></symbol>
+      <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3Z"/></symbol>
+      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
+      <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3.5 7A1.5 1.5 0 0 1 5 5.5h4.2l2 2.2H19A1.5 1.5 0 0 1 20.5 9.2V17.5A1.5 1.5 0 0 1 19 19H5a1.5 1.5 0 0 1-1.5-1.5Z"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15.5V4M7.5 8.5 12 4l4.5 4.5M4.5 15v3.5A1.5 1.5 0 0 0 6 20h12a1.5 1.5 0 0 0 1.5-1.5V15"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.5 6.5v11l9-5.5Z"/></symbol>
+      <symbol id="i-mega" viewBox="0 0 24 24"><path d="M4 10v4h3l7 4V6L7 10Z"/><path d="M17.5 9a4 4 0 0 1 0 6"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <!-- illustrated creatives: an AI result and campaign graphics -->
+      <linearGradient id="g-sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#231d0e"/><stop offset="1" stop-color="#344313"/></linearGradient>
+      <linearGradient id="g-bottle" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d7dbcd"/><stop offset=".45" stop-color="#a2c0a1"/><stop offset="1" stop-color="#dddfd3"/></linearGradient>
+      <radialGradient id="g-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#241e02"/><stop offset="1" stop-color="#241e02" stop-opacity="0"/></radialGradient>
+      <symbol id="c-launch" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="300" fill="url(#g-sky)"/>
+        <circle cx="290" cy="130" r="120" fill="url(#g-glow)"/>
+        <path d="M0 232c80-18 160-18 240-6s120 12 160 4v70H0Z" fill="#3b4b19"/>
+        <g transform="translate(78 0)">
+          <ellipse cx="200" cy="236" rx="96" ry="18" fill="#1b170d"/>
+          <ellipse cx="200" cy="232" rx="96" ry="18" fill="#090909"/>
+          <ellipse cx="200" cy="229" rx="44" ry="7" fill="#f6f6f6" opacity=".12"/>
+          <rect x="172" y="104" width="56" height="126" rx="16" fill="url(#g-bottle)"/>
+          <rect x="186" y="80" width="28" height="30" rx="6" fill="#B7DC3D"/>
+          <rect x="180" y="150" width="40" height="44" rx="4" fill="#1b170d"/>
+          <rect x="186" y="160" width="28" height="4" rx="2" fill="#d5d5d5"/>
+          <rect x="190" y="170" width="20" height="3" rx="1.5" fill="#676767"/>
+          <rect x="180" y="110" width="8" height="100" rx="4" fill="#090909" opacity=".18"/>
+        </g>
+        <path d="M150 236c-6-30 4-60 22-74-2 30-8 54-22 74ZM372 236c10-26 30-44 50-48-10 22-28 40-50 48Z" fill="#80a44c"/>
+        <text x="28" y="52" font-family="Geist, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="#CAE07F">NEW &#183; SPRING EDITION</text>
+        <text x="28" y="80" font-family="Geist, sans-serif" font-size="24" font-weight="600" fill="#d5d5d5">Pure. Light. Yours.</text>
+      </symbol>
+      <symbol id="c-sale" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="300" fill="#d5d5d5"/>
+        <circle cx="330" cy="70" r="90" fill="#B7DC3D"/>
+        <text x="30" y="70" font-family="Geist, sans-serif" font-size="16" font-weight="600" letter-spacing="3" fill="#B7DC3D">SUMMER SALE</text>
+        <text x="28" y="168" font-family="Geist, sans-serif" font-size="92" font-weight="700" fill="#090909">30%</text>
+        <text x="32" y="206" font-family="Geist, sans-serif" font-size="20" fill="#31312c">off the linen range</text>
+        <rect x="32" y="236" width="128" height="34" rx="17" fill="#B7DC3D"/>
+        <text x="96" y="258" text-anchor="middle" font-family="Geist, sans-serif" font-size="14" font-weight="700" fill="#d5d5d5">Shop now</text>
+      </symbol>
+      <symbol id="c-event" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="300" fill="#160925"/>
+        <circle cx="70" cy="240" r="110" fill="#1f0f34"/>
+        <rect x="250" y="40" width="110" height="110" rx="55" fill="#B7DC3D"/>
+        <text x="30" y="70" font-family="Geist, sans-serif" font-size="14" font-weight="600" letter-spacing="3" fill="#8a5dbf">SAT 24 MAY &#183; 10 AM</text>
+        <text x="30" y="128" font-family="Geist, sans-serif" font-size="44" font-weight="700" fill="#d5d5d5">Spring</text>
+        <text x="30" y="176" font-family="Geist, sans-serif" font-size="44" font-weight="700" fill="#d5d5d5">Market</text>
+        <text x="32" y="214" font-family="Geist, sans-serif" font-size="16" fill="#b1b1b1">Riverside Hall &#183; free entry</text>
+      </symbol>
+      <symbol id="c-workshop" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
+        <rect width="400" height="300" fill="#09262d"/>
+        <rect x="236" y="56" width="128" height="88" rx="10" fill="#090909" stroke="#d5d5d5" stroke-width="3"/>
+        <path d="M254 124l26-30 20 22 14-14 30 22" fill="none" stroke="#d5d5d5" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="336" cy="80" r="9" fill="#B7DC3D" stroke="#d5d5d5" stroke-width="3"/>
+        <text x="30" y="70" font-family="Geist, sans-serif" font-size="14" font-weight="600" letter-spacing="3" fill="#69d3f0">FREE WORKSHOP</text>
+        <text x="30" y="132" font-family="Geist, sans-serif" font-size="36" font-weight="700" fill="#d5d5d5">Intro to</text>
+        <text x="30" y="174" font-family="Geist, sans-serif" font-size="36" font-weight="700" fill="#d5d5d5">UX Design</text>
+        <text x="32" y="214" font-family="Geist, sans-serif" font-size="16" fill="#b1b1b1">Thursday &#183; 6 PM &#183; Northfield</text>
+      </symbol>
+    </defs></svg>
+
+    <!-- ============ 01 HERO — the library and a generated image ============ -->
+    <section class="cos-hero" id="overview" aria-labelledby="ml-h1">
+      <div class="cos-hero__grid" aria-hidden="true"></div>
+
+      <div class="ml-head rv">
+        <p class="cos-eyebrow">Media Library</p>
+        <h1 class="cos-h1" id="ml-h1">All your media. <br><span class="dim">One place.</span></h1>
+        <p class="cos-hero__intro">Store your business images, videos and documents in one place. Find what you need, reuse it whenever you want, and generate new images with AI, all inside Chatberry.</p>
+        <div class="cos-cta">
+          <a class="btn btn--lime btn--lg" href="/pages/products/customer-os/page.html">Explore Chatberry <svg class="i"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--line btn--lg" href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true">Book a Demo</a>
+        </div>
+      </div>
+
+      <figure class="ml-hero rv" id="hero" style="--d:.15s" aria-labelledby="heroCap">
+        <figcaption class="sr-only" id="heroCap">The Chatberry Media Library: a search field, filters for all, images, videos and documents, a Generate with AI button, and a grid of product photos, campaign creatives, a video and a PDF. Beside it, an AI prompt asks for a premium product launch visual; the generated image is shown with a Save to Media Library button, and it then appears first in the library.</figcaption>
+        <div class="app ml-lib">
+          <div class="ml-lib__top">
+            <b class="ml-lib__t">Media Library</b>
+            <span class="ml-search"><svg class="i"><use href="#i-search"/></svg>Search media</span>
+            <span class="ml-ai-btn"><svg class="i"><use href="#i-spark"/></svg>Generate with AI</span>
+          </div>
+          <p class="ml-filters"><span class="is-on">All</span><span><svg class="i"><use href="#i-img"/></svg>Images</span><span><svg class="i"><use href="#i-video"/></svg>Videos</span><span><svg class="i"><use href="#i-file"/></svg>Documents</span></p>
+          <ul class="ml-grid">
+            <li class="ml-new" data-at="3"><span class="ml-th"><svg class="ml-art"><use href="#c-launch"/></svg><em class="ml-badge"><svg class="i"><use href="#i-spark"/></svg>AI</em></span><b>spring-launch.png</b><small>Just saved</small></li>
+            <li><span class="ml-th"><svg class="ml-art"><use href="#c-sale"/></svg></span><b>summer-sale.png</b><small>Image &middot; 1080&times;1080</small></li>
+            <li><span class="ml-th"><img src="/public/assets/img/media-library/dispatch.jpg" alt="" loading="lazy" decoding="async"></span><b>dispatch-day.jpg</b><small>Image &middot; 2.1 MB</small></li>
+            <li><span class="ml-th ml-th--vid"><img src="/public/assets/img/media-library/classroom.jpg" alt="" loading="lazy" decoding="async"><i><svg class="i"><use href="#i-play"/></svg></i><em class="ml-dur">0:42</em></span><b>open-day-tour.mp4</b><small>Video &middot; 0:42</small></li>
+            <li><span class="ml-th"><svg class="ml-art"><use href="#c-event"/></svg></span><b>spring-market.png</b><small>Image &middot; 1200&times;900</small></li>
+            <li><span class="ml-th ml-th--doc"><span class="ml-pdf"><b>PDF</b><i></i><i></i><i></i><i></i></span></span><b>price-list-2026.pdf</b><small>Document &middot; 6 pages</small></li>
+            <li><span class="ml-th"><img src="/public/assets/img/media-library/desk.jpg" alt="" loading="lazy" decoding="async"></span><b>team-desk.jpg</b><small>Image &middot; 1.4 MB</small></li>
+            <li><span class="ml-th"><svg class="ml-art"><use href="#c-workshop"/></svg></span><b>ux-workshop.png</b><small>Image &middot; 1080&times;1350</small></li>
+          </ul>
+        </div>
+        <div class="app ml-gen">
+          <p class="ml-gen__h"><span class="ml-mark"><svg class="i"><use href="#i-spark"/></svg></span><b>Generate with AI</b></p>
+          <p class="ml-prompt">Create a premium product launch visual.</p>
+          <div class="ml-gen__img">
+            <span class="ml-shimmer" data-until="1"><svg class="i"><use href="#i-spark"/></svg>Generating&hellip;</span>
+            <svg class="ml-art" data-at="1"><use href="#c-launch"/></svg>
+          </div>
+          <span class="ml-save" data-until="2"><svg class="i"><use href="#i-plus"/></svg>Save to Media Library</span>
+          <span class="ml-save ml-save--done" data-at="2"><svg class="i"><use href="#i-check"/></svg>Saved to Media Library</span>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ============ 02 ONE CENTRAL LIBRARY — the working view ============ -->
+    <section class="cos-sec" id="library" aria-labelledby="lb-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">One central library</p>
+        <h2 class="cos-h2" id="lb-h">Stop searching. <br><span class="dim">Start creating.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Keep your business media organised in one central library. Save important files once and access them whenever you need them, without searching through folders or uploading the same assets again and again.</p>
+        </div>
+      </div>
+
+      <figure class="os-figure rv" style="--d:.1s">
+        <div class="app ml-work" role="img" aria-label="A working Media Library view. Collections on the left: all media, product images, campaign creatives, videos and documents. A search for 'spring' with the images filter, a mixed grid of photos, creatives and a video, and a preview pane for the selected spring market creative showing its type, size and date added.">
+          <aside class="ml-side">
+            <p class="ui-label">Collections</p>
+            <ul class="ml-side__l">
+              <li class="is-on"><svg class="i"><use href="#i-folder"/></svg>All media<em>248</em></li>
+              <li><svg class="i"><use href="#i-folder"/></svg>Product images<em>64</em></li>
+              <li><svg class="i"><use href="#i-folder"/></svg>Campaign creatives<em>38</em></li>
+              <li><svg class="i"><use href="#i-folder"/></svg>Videos<em>12</em></li>
+              <li><svg class="i"><use href="#i-folder"/></svg>Documents<em>41</em></li>
+            </ul>
+            <span class="ml-up"><svg class="i"><use href="#i-upload"/></svg>Upload</span>
+          </aside>
+          <div class="ml-work__main">
+            <div class="ml-work__bar">
+              <span class="ml-search ml-search--on"><svg class="i"><use href="#i-search"/></svg>spring</span>
+              <p class="ml-filters ml-filters--in"><span>All</span><span class="is-on"><svg class="i"><use href="#i-img"/></svg>Images</span><span><svg class="i"><use href="#i-video"/></svg>Videos</span><span><svg class="i"><use href="#i-file"/></svg>Documents</span></p>
+            </div>
+            <ul class="ml-mason">
+              <li class="ml-mason--w"><svg class="ml-art"><use href="#c-launch"/></svg><b>spring-launch.png</b></li>
+              <li class="is-sel"><svg class="ml-art"><use href="#c-event"/></svg><b>spring-market.png</b></li>
+              <li class="ml-mason--t"><img src="/public/assets/img/media-library/student.jpg" alt="" loading="lazy" decoding="async"><b>study-session.jpg</b></li>
+              <li><img src="/public/assets/img/media-library/classroom.jpg" alt="" loading="lazy" decoding="async"><b>spring-intake.jpg</b></li>
+              <li><svg class="ml-art"><use href="#c-sale"/></svg><b>spring-sale-story.png</b></li>
+              <li class="ml-mason--w"><img src="/public/assets/img/media-library/dispatch.jpg" alt="" loading="lazy" decoding="async"><b>spring-dispatch.jpg</b></li>
+            </ul>
+          </div>
+          <aside class="ml-prev">
+            <span class="ml-prev__img"><svg class="ml-art"><use href="#c-event"/></svg></span>
+            <p class="ml-prev__n">spring-market.png</p>
+            <dl class="ml-kv">
+              <div><dt>Type</dt><dd>Image &middot; PNG</dd></div>
+              <div><dt>Size</dt><dd>1200&times;900 &middot; 860 KB</dd></div>
+              <div><dt>Collection</dt><dd>Campaign creatives</dd></div>
+              <div><dt>Added</dt><dd>Oct 8</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </figure>
+      <ul class="ml-four rv" style="--d:.1s">
+        <li>Store images, videos and documents.</li>
+        <li>Find and preview saved media.</li>
+        <li>Keep reusable assets together.</li>
+        <li>Access your media whenever you need it.</li>
+      </ul>
+      <p class="ml-fine rv">Illustrative interface; supported formats, sizes and views follow the product.</p>
+    </section>
+
+    <!-- ============ 03 CREATE WITH AI — prompt, image, save, library ============ -->
+    <section class="cos-sec ml-tint ml-tint--green" id="ai" aria-labelledby="ai-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Create with AI</p>
+        <h2 class="cos-h2" id="ai-h">Turn your ideas <br><span class="dim">into images.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Need a new promotional visual? Generate images with AI directly inside Chatberry. Describe what you need and create visuals for your campaigns, products, promotions and business communications.</p>
+        </div>
+      </div>
+
+      <figure class="ml-studio rv" id="studio" style="--d:.1s" aria-labelledby="stCap">
+        <figcaption class="sr-only" id="stCap">An image-generation workspace. Step one, the prompt: a premium launch visual for a new spring skincare bottle on a soft green background. Step two, the generated image of a dark green bottle on a white podium with the words Spring Edition. Step three, Save to Media Library. Step four, the image appears in the library's campaign creatives collection, marked as just saved.</figcaption>
+        <div class="app ml-studio__p">
+          <p class="ml-step"><span>1</span>Describe it</p>
+          <p class="ml-ta">A premium launch visual for our new spring skincare bottle, on a soft green background with natural light.</p>
+          <span class="ml-gen-btn" data-lit="1"><svg class="i"><use href="#i-spark"/></svg>Generate image</span>
+        </div>
+        <div class="app ml-studio__c">
+          <p class="ml-step"><span>2</span>The result</p>
+          <div class="ml-canvas">
+            <span class="ml-shimmer ml-shimmer--lg" data-until="2"><svg class="i"><use href="#i-spark"/></svg>Generating your image&hellip;</span>
+            <svg class="ml-art" data-at="2"><use href="#c-launch"/></svg>
+          </div>
+        </div>
+        <div class="ml-studio__r">
+          <div class="app ml-studio__s">
+            <p class="ml-step"><span>3</span>Keep it</p>
+            <span class="ml-save" data-until="3"><svg class="i"><use href="#i-plus"/></svg>Save to Media Library</span>
+            <span class="ml-save ml-save--done" data-at="3"><svg class="i"><use href="#i-check"/></svg>Saved</span>
+            <p class="ml-studio__to"><svg class="i"><use href="#i-folder"/></svg>Campaign creatives</p>
+          </div>
+          <div class="app ml-studio__l">
+            <p class="ml-step"><span>4</span>In your library</p>
+            <ul class="ml-mini">
+              <li class="ml-mini__new" data-at="4"><svg class="ml-art"><use href="#c-launch"/></svg><em>Just saved</em></li>
+              <li><svg class="ml-art"><use href="#c-sale"/></svg></li>
+              <li><svg class="ml-art"><use href="#c-event"/></svg></li>
+              <li><svg class="ml-art"><use href="#c-workshop"/></svg></li>
+            </ul>
+          </div>
+        </div>
+      </figure>
+      <ul class="ml-four rv" style="--d:.1s">
+        <li>Generate images from text prompts.</li>
+        <li>Create visuals for different business needs.</li>
+        <li>Save generated images to your Media Library.</li>
+        <li>Reuse your creations whenever you need them.</li>
+      </ul>
+      <p class="ml-fine rv">Illustrative example; the image shown is an illustration of a result.</p>
+    </section>
+
+    <!-- ============ 04 REUSE — one asset, three places ============ -->
+    <section class="cos-sec ml-tint ml-tint--blue" id="reuse" aria-labelledby="ru-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Ready when you need it</p>
+        <h2 class="cos-h2" id="ru-h">Create once. <br><span class="dim">Use it across your work.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">Your media should be ready when your team needs it. Reuse saved images, videos and documents in supported Chatberry features instead of searching for files or uploading the same assets again.</p>
+        </div>
+      </div>
+
+      <figure class="ml-reuse rv" id="reuse-fig" style="--d:.1s" aria-labelledby="ruCap">
+        <figcaption class="sr-only" id="ruCap">One saved image, spring-launch.png, is selected in three places: as the media in a campaign composer, as the header image of a WhatsApp message template, and as the hero image in a Webview editor.</figcaption>
+        <div class="app ml-asset">
+          <span class="ml-asset__img"><svg class="ml-art"><use href="#c-launch"/></svg></span>
+          <p class="ml-asset__n"><b>spring-launch.png</b><small>Saved in Campaign creatives</small></p>
+        </div>
+        <svg class="ml-reuse__wire" viewBox="0 0 100 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 150C55 150 45 50 100 50M0 150H100M0 150C55 150 45 250 100 250"/></svg>
+        <div class="ml-reuse__out">
+          <div class="app ml-use ml-use--camp" data-lit="1">
+            <p class="ml-use__k"><svg class="i"><use href="#i-mega"/></svg>Campaign composer</p>
+            <div class="ml-use__b"><span class="ml-use__th"><svg class="ml-art"><use href="#c-launch"/></svg></span><span><b>Media</b><small>spring-launch.png &middot; from library</small></span><span class="ml-st ml-st--ok"><svg class="i"><use href="#i-check"/></svg>Selected</span></div>
+          </div>
+          <div class="app ml-use ml-use--tpl" data-lit="2">
+            <p class="ml-use__k"><svg class="i"><use href="#i-wa"/></svg>Message template</p>
+            <div class="ml-use__tpl"><span class="ml-use__hdr"><svg class="ml-art"><use href="#c-launch"/></svg></span><p><b>Header image</b>Hi {{1}}, the spring edition is here.</p></div>
+          </div>
+          <div class="app ml-use ml-use--wv" data-lit="3">
+            <p class="ml-use__k"><svg class="i"><use href="#i-globe"/></svg>Webview editor</p>
+            <div class="ml-use__wv"><span class="ml-use__hero"><svg class="ml-art"><use href="#c-launch"/></svg><em>Hero image</em></span><i></i><i></i></div>
+          </div>
+        </div>
+      </figure>
+      <p class="ml-say rv">From campaign creatives to business documents, <br><span class="dim">keep your frequently used media ready to use.</span></p>
+      <p class="ml-fine ml-fine--c rv">Media can be selected wherever a Chatberry feature supports it. <a class="cos-link ml-inline" href="/pages/solutions/campaign-management/page.html">Campaign Management <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link ml-inline" href="/pages/solutions/customer-journeys/page.html">Customer Journeys <svg class="i"><use href="#i-arrow"/></svg></a></p>
+    </section>
+
+    <!-- ============ 05 ORGANISATION — scattered → collections ============ -->
+    <section class="cos-sec ml-tint ml-tint--lav" id="organise" aria-labelledby="or-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Keep everything in order</p>
+        <h2 class="cos-h2" id="or-h">Your media, organised <br><span class="dim">as your business grows.</span></h2>
+        <div class="sec-head__copy">
+          <p class="cos-body">As your business grows, so does the content your team creates. Keep reusable media together so it&rsquo;s easier to manage, find and use whenever new campaigns or customer conversations come up.</p>
+        </div>
+      </div>
+
+      <figure class="ml-org rv" id="org" style="--d:.1s" aria-labelledby="orCap">
+        <figcaption class="sr-only" id="orCap">On the left, files scattered across downloads, email attachments and chats. On the right, the same media organised into four collections: product images, campaign creatives, videos and documents.</figcaption>
+        <div class="ml-mess" aria-hidden="true">
+          <p class="ml-mess__k">Before</p>
+          <span class="ml-chip ml-chip--a"><svg class="i"><use href="#i-img"/></svg>IMG_2041 (1).jpg<em>Downloads</em></span>
+          <span class="ml-chip ml-chip--b"><svg class="i"><use href="#i-file"/></svg>pricelist_FINAL.pdf<em>Email</em></span>
+          <span class="ml-chip ml-chip--c"><svg class="i"><use href="#i-img"/></svg>sale banner v3.png<em>Chat</em></span>
+          <span class="ml-chip ml-chip--d"><svg class="i"><use href="#i-video"/></svg>tour-final-2.mp4<em>Drive</em></span>
+          <span class="ml-chip ml-chip--e"><svg class="i"><use href="#i-img"/></svg>product shot.jpeg<em>Desktop</em></span>
+        </div>
+        <span class="ml-org__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
+        <ul class="ml-cols">
+          <li data-lit="1"><span class="ml-stack"><img src="/public/assets/img/media-library/desk.jpg" alt="" loading="lazy" decoding="async"><img src="/public/assets/img/media-library/dispatch.jpg" alt="" loading="lazy" decoding="async"></span><b>Product images</b><small>64 items</small></li>
+          <li data-lit="2"><span class="ml-stack"><svg class="ml-art"><use href="#c-sale"/></svg><svg class="ml-art"><use href="#c-event"/></svg></span><b>Campaign creatives</b><small>38 items</small></li>
+          <li data-lit="3"><span class="ml-stack ml-stack--vid"><img src="/public/assets/img/media-library/classroom.jpg" alt="" loading="lazy" decoding="async"><i><svg class="i"><use href="#i-play"/></svg></i></span><b>Videos</b><small>12 items</small></li>
+          <li data-lit="4"><span class="ml-stack ml-stack--doc"><span class="ml-pdf"><b>PDF</b><i></i><i></i><i></i></span><span class="ml-pdf"><b>DOC</b><i></i><i></i></span></span><b>Documents</b><small>41 items</small></li>
+        </ul>
+      </figure>
+      <p class="ml-fine rv">Illustrative collections and counts.</p>
+    </section>
+
+    <!-- ============ 06 HOW IT WORKS — three cropped moments ============ -->
+    <section class="cos-sec" id="how" aria-labelledby="hw-h">
+      <div class="sec-head rv">
+        <p class="cos-eyebrow">Simple from start to finish</p>
+        <h2 class="cos-h2" id="hw-h">From upload to reuse <br><span class="dim">in three steps.</span></h2>
+      </div>
+
+      <ol class="ml-how rv" style="--d:.1s">
+        <li>
+          <div class="app ml-how__v ml-drop" aria-hidden="true">
+            <span class="ml-drop__z"><svg class="i"><use href="#i-upload"/></svg>Drop files or browse</span>
+            <p class="ml-prog"><span>catalogue-2026.pdf</span><i style="--v:1"></i><b>Done</b></p>
+            <p class="ml-prog"><span>store-front.jpg</span><i style="--v:.62"></i><b>62%</b></p>
+          </div>
+          <p class="ml-how__n"><span>1</span>Save your media</p>
+          <p>Upload your existing images, videos and documents to Chatberry.</p>
+        </li>
+        <li>
+          <div class="app ml-how__v ml-how__v--ai" aria-hidden="true">
+            <p class="ml-prompt ml-prompt--sm">A bright banner for our weekend workshop</p>
+            <span class="ml-mini-res"><svg class="ml-art"><use href="#c-workshop"/></svg></span>
+          </div>
+          <p class="ml-how__n"><span>2</span>Generate new visuals</p>
+          <p>Use AI to create images for your business needs.</p>
+        </li>
+        <li>
+          <div class="app ml-how__v ml-pick" aria-hidden="true">
+            <p class="ml-pick__h">Choose from library</p>
+            <p class="ml-pick__g"><span class="is-sel"><svg class="ml-art"><use href="#c-launch"/></svg></span><span><svg class="ml-art"><use href="#c-sale"/></svg></span><span><img src="/public/assets/img/media-library/dispatch.jpg" alt=""></span></p>
+            <span class="ml-pick__b">Use selected</span>
+          </div>
+          <p class="ml-how__n"><span>3</span>Access and reuse</p>
+          <p>Find your saved media and use it wherever supported across Chatberry.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ 07 FAQ ============ -->
+    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
+      <div class="os-faq">
+        <div class="os-faq__intro rv">
+          <p class="cos-eyebrow">FAQ</p>
+          <h2 class="cos-h2" id="faq-h">Frequently asked questions</h2>
+          <p class="cos-body">Looking for something else? <a class="cos-link ml-inline" href="/pages/solutions/content-engine/page.html">See the Content Engine <svg class="i"><use href="#i-arrow"/></svg></a></p>
+        </div>
+        <div class="os-faq__list rv" style="--d:.1s">
+          <details class="os-qa"><summary>What is Chatberry Media Library?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Chatberry Media Library is a central place to save, manage, and reuse business media, including images, videos, and documents.</p></div></details>
+          <details class="os-qa"><summary>Can I generate images inside Chatberry?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. You can use AI to generate images directly inside Chatberry and save them to your Media Library for future use.</p></div></details>
+          <details class="os-qa"><summary>Can I reuse media without uploading it every time?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Save your media once and access it again whenever you need it.</p></div></details>
+          <details class="os-qa"><summary>What types of files can I store?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>You can store business media such as images, videos, and documents, subject to supported file formats and size limits.</p></div></details>
+          <details class="os-qa"><summary>Can I use my saved media in campaigns?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Your saved media can be reused in the Chatberry features that support media selection, helping you avoid repeatedly uploading the same assets.</p></div></details>
+          <details class="os-qa"><summary>Can I use AI-generated images later?<span class="os-qa__icon" aria-hidden="true"></span></summary>
+            <div class="os-qa__a"><p>Yes. Save generated images to your Media Library so you can access and reuse them whenever needed.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 08 FINAL CALL TO ACTION ============ -->
+    <section class="cos-final" aria-labelledby="cta-h">
+      <div class="cos-final__grid" aria-hidden="true"></div>
+      <p class="cos-eyebrow">Media Library</p>
+      <h2 class="cos-h2 rv" id="cta-h">Everything you need to create <br>and manage business media.</h2>
+      <p class="cos-body rv">Keep your media organised, generate new images with AI, and make your content ready whenever your business needs it.</p>
+      <div class="cos-cta rv">
+        <a class="btn btn--lime btn--lg" href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--line btn--lg" href="https://wa.me/917382716780?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
+      </div>
+      <div class="ml-strip rv" aria-hidden="true">
+        <span><svg class="ml-art"><use href="#c-launch"/></svg></span>
+        <span><img src="/public/assets/img/media-library/desk.jpg" alt="" loading="lazy" decoding="async"></span>
+        <span><svg class="ml-art"><use href="#c-event"/></svg></span>
+        <span><img src="/public/assets/img/media-library/classroom.jpg" alt="" loading="lazy" decoding="async"></span>
+        <span><svg class="ml-art"><use href="#c-sale"/></svg></span>
+        <span><img src="/public/assets/img/media-library/dispatch.jpg" alt="" loading="lazy" decoding="async"></span>
+        <span><svg class="ml-art"><use href="#c-workshop"/></svg></span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- chrome:foot -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
+  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#C8E63C"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Software by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
+          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
+        </div>
+        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
+      </div>
+      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
+        <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
+            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/wisemeet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
+            <a href="https://www.melohealth.ai/" style="font-size:14px;color:rgba(255,255,255,.85)">Healthcare</a><a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
+            <a href="/pages/coming-soon/page.html?p=Playbooks" style="font-size:14px;color:rgba(255,255,255,.85)">Playbooks</a><a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a><a href="/pages/coming-soon/page.html?p=Tools" style="font-size:14px;color:rgba(255,255,255,.85)">Tools</a>
+          </div>
+      
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
+            <a href="/pages/coming-soon/page.html?p=About" style="font-size:14px;color:rgba(255,255,255,.85)">About</a><a href="https://wa.me/917382716780" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://cal.com/wisemelon.ai/wisemelon-whatsapp-demo?overlayCalendar=true" style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
+          </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
+        <span>© Chatberry. 2026 All Rights Reserved.</span>
+        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- /chrome:foot -->
+
+</div>
+
+<script src="/index.js"></script>
+<script src="page.js"></script>
+</body>
+</html>

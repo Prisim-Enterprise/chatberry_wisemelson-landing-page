@@ -1,0 +1,191 @@
+/* =========================================================
+   Chatberry — legal pages (privacy policy, terms of service)
+   Loaded after index.css, which supplies the tokens and the
+   --u design-pixel unit every size below is written in.
+   ========================================================= */
+
+/* =========================================================
+   LEGAL PAGES — privacy policy / terms of service
+   ========================================================= */
+.legal { padding-bottom: calc(130 * var(--u)); }
+
+.legal__head {
+  padding: calc(88 * var(--u)) calc(67 * var(--u)) calc(52 * var(--u));
+  border-bottom: 1px solid var(--rule);
+}
+.legal__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(10 * var(--u));
+  margin: 0 0 calc(20 * var(--u));
+  font-size: calc(15 * var(--u));
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.legal__eyebrow::before {
+  content: "";
+  width: calc(10 * var(--u));
+  height: calc(10 * var(--u));
+  border-radius: 50%;
+  background: var(--lime-ico);
+}
+.legal__title {
+  margin: 0;
+  font-family: var(--font-head);
+  font-size: calc(56 * var(--u));
+  line-height: calc(64 * var(--u));
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.legal__meta {
+  margin: calc(16 * var(--u)) 0 0;
+  font-size: calc(17 * var(--u));
+  color: var(--muted);
+}
+
+.legal__body {
+  display: grid;
+  grid-template-columns: calc(340 * var(--u)) 1fr;
+}
+
+/* align-self:start keeps the box content-height while sticky still travels
+   the full height of the grid area beside the document */
+.legal__side {
+  align-self: start;
+  position: sticky;
+  top: calc(40 * var(--u));
+  padding: calc(48 * var(--u)) calc(40 * var(--u)) calc(48 * var(--u)) calc(67 * var(--u));
+}
+.legal__nav-title {
+  margin: 0 0 calc(16 * var(--u));
+  font-size: calc(14 * var(--u));
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.legal__nav-title--sub {
+  margin-top: calc(34 * var(--u));
+  padding-top: calc(24 * var(--u));
+  border-top: 1px solid var(--rule);
+}
+.legal__nav-list {
+  display: grid;
+  gap: calc(2 * var(--u));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: calc(18 * var(--u));
+  font-weight: 500;
+}
+.legal__nav-list a {
+  display: block;
+  padding: calc(9 * var(--u)) calc(14 * var(--u));
+  margin-left: calc(-14 * var(--u));
+  border-radius: calc(8 * var(--u));
+  color: var(--nav-link);
+  transition: background-color .14s ease, color .14s ease;
+}
+.legal__nav-list a:hover { background: var(--lime-soft); color: var(--ink); }
+.legal__nav-list .is-current {
+  background: var(--lime-soft);
+  color: var(--ink);
+  font-weight: 600;
+}
+.legal__nav-list--sub { font-size: calc(17 * var(--u)); font-weight: 400; }
+
+.legal__doc {
+  border-left: 1px solid var(--rule);
+  padding: calc(48 * var(--u)) calc(67 * var(--u)) calc(20 * var(--u)) calc(58 * var(--u));
+  max-width: calc(960 * var(--u));
+  color: var(--prose);
+  font-size: calc(18 * var(--u));
+  line-height: calc(32 * var(--u));
+}
+.legal__doc p { margin: calc(14 * var(--u)) 0 0; }
+.legal__doc a { color: var(--ink); font-weight: 600; border-bottom: 1px solid var(--lime-ico); }
+.legal__doc a:hover { background: var(--lime-soft); }
+
+.legal__sec + .legal__sec { margin-top: calc(38 * var(--u)); }
+
+.legal__group {
+  margin: calc(64 * var(--u)) 0 calc(30 * var(--u));
+  padding-top: calc(40 * var(--u));
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-head);
+  font-size: calc(32 * var(--u));
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  scroll-margin-top: calc(30 * var(--u));
+}
+.legal__group:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+
+.legal__h2, .legal__h3 {
+  margin: 0;
+  font-family: var(--font-head);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.legal__h2 { font-size: calc(24 * var(--u)); }
+.legal__h3 { font-size: calc(21 * var(--u)); }
+.legal__num {
+  display: inline-block;
+  min-width: calc(30 * var(--u));
+  color: var(--lime-ico);
+}
+
+.legal__defs { margin: 0; }
+.legal__defs dt {
+  margin-top: calc(20 * var(--u));
+  font-size: calc(18 * var(--u));
+  font-weight: 600;
+  color: var(--ink);
+}
+.legal__defs dd { margin: calc(4 * var(--u)) 0 0; }
+
+.legal__bullets {
+  display: grid;
+  gap: calc(10 * var(--u));
+  margin: calc(16 * var(--u)) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.legal__bullets li { position: relative; padding-left: calc(26 * var(--u)); }
+.legal__bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(12 * var(--u));
+  width: calc(8 * var(--u));
+  height: calc(8 * var(--u));
+  border-radius: 50%;
+  background: var(--lime-ico);
+}
+
+@media (max-width: 1179px) {
+  .legal__head { padding: 48px 22px 32px; }
+  .legal__title { font-size: 32px; line-height: 40px; }
+  .legal__meta  { font-size: 14px; }
+  .legal__body  { display: block; }
+  .legal__side  { position: static; padding: 28px 22px 0; }
+  .legal__nav-list { font-size: 16px; }
+  .legal__doc {
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+    margin-top: 28px;
+    padding: 28px 22px 0;
+    max-width: none;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .legal__group { font-size: 24px; margin: 40px 0 22px; padding-top: 28px; }
+  .legal__h2 { font-size: 20px; }
+  .legal__h3 { font-size: 18px; }
+  .legal__num { min-width: 28px; }
+  .legal__defs dt { font-size: 16px; }
+}

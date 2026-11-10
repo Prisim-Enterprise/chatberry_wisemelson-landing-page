@@ -363,7 +363,7 @@
    number is the one the blog's "Chat on WhatsApp" buttons already use. */
 (function () {
   'use strict';
-  var WA = 'https://wa.me/917382716780?text=' + encodeURIComponent('Hi Chatberry, I would like to know more.');
+  var WA = 'https://wa.me/919742502964?text=' + encodeURIComponent('Hi Chatberry, I would like to know more.');
   var KEY = 'wm-wafab-open';
   if (document.querySelector('.wafab')) return;
 

@@ -360,7 +360,7 @@ if (document.readyState === 'loading') document.addEventListener('DOMContentLoad
   function open(href) {
     if (root) return;
     var base = (href || '').match(MATCH);
-    base = base ? base[0] : 'https://wa.me/919742502964?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.';
+    base = base ? base[0] : 'https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.';
     var slug = base.split('/').pop();
     var label = LABEL[slug] || 'Book a demo';
     var src = base + '?overlayCalendar=true&embed=true&theme=light';
@@ -420,7 +420,7 @@ if (document.readyState === 'loading') document.addEventListener('DOMContentLoad
   var TEST = false;                                /* testing: open at once, every load, even after a submit */
   var DELAY = TEST ? 0 : 30000;
   var DONE = 'wm-lead-done', UTM = 'wm-lead-utm';
-  var WA = 'https://wa.me/919742502964?text=';
+  var WA = 'https://wa.me/918147715267?text=';
   var CODES = [['+91', 'IN'], ['+971', 'AE'], ['+966', 'SA'], ['+65', 'SG'], ['+44', 'UK'], ['+1', 'US'], ['+61', 'AU']];
 
   function get(store, k) { try { return window[store].getItem(k); } catch (e) { return null; } }

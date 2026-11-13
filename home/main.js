@@ -447,7 +447,7 @@ class Homepage extends WM.Component {
     const cc = CC.find(c => c[0] === (st.cc || 'IN')) || CC[0], need = cc[2];
     const len = st.phone.length;
     const sheetFace = st.gSent ? 'celebrate' : st.gErr ? 'squint' : st.gFocus || len ? 'oh' : 'hello';
-    const send = () => { if (st.gSent) return this.setState({ guide: null, guideI: null }); if (len === need) { window.open('https://wa.me/919742502964?text=' + encodeURIComponent('Hi Chatberry, please send me the guide: ' + gs.t + '. My WhatsApp number: ' + cc[1] + ' ' + st.phone), '_blank', 'noopener'); this.setState({ gSent: true, gFocus: false }); } else { this.setState(x => ({ gErr: true, gErrN: x.gErrN + 1 })); clearTimeout(this.et); this.et = setTimeout(() => this.setState({ gErr: false }), 1400); } };
+    const send = () => { if (st.gSent) return this.setState({ guide: null, guideI: null }); if (len === need) { window.open('https://wa.me/918147715267?text=' + encodeURIComponent('Hi Chatberry, please send me the guide: ' + gs.t + '. My WhatsApp number: ' + cc[1] + ' ' + st.phone), '_blank', 'noopener'); this.setState({ gSent: true, gFocus: false }); } else { this.setState(x => ({ gErr: true, gErrN: x.gErrN + 1 })); clearTimeout(this.et); this.et = setTimeout(() => this.setState({ gErr: false }), 1400); } };
     const fmtP = p => cc[0] === 'IN' ? this.fmt(p) : p.replace(/(\d{3})(?=\d)/g, '$1 ');
     const SHAPES = [
       { a: ['6px', '6px', '18px', '18px', '6px', '0deg'], b: ['16px', '14px', '18px', '18px', '50%'], c: ['9px', '9px', '6px'] },
@@ -475,7 +475,7 @@ class Homepage extends WM.Component {
       { h: 'PRODUCT', l: [L('Customer OS', 'products/customer-os/page.html'), L('AI Agents', 'products/ai-agents/page.html'), L('Ticketing', 'products/ticketing/page.html'), L('Business Intelligence', 'products/analytics-bi/page.html')] },
       { h: 'SOLUTIONS', l: [L('Healthcare', 'https://www.melohealth.ai/'), L('Distribution', 'industries/manufacturing-distribution/page.html'), L('Hospitality', 'industries/hospitality/page.html'), L('Education', 'industries/education/page.html'), L('Real Estate', 'industries/real-estate/page.html')] },
       { h: 'RESOURCES', l: [L('Playbooks', 'coming-soon/page.html?p=Playbooks'), L('Blogs', 'blog/page.html'), L('Tools', 'coming-soon/page.html?p=Tools')] },
-      { h: 'COMPANY', l: [L('About', 'coming-soon/page.html?p=About'), L('Contact Us', 'https://wa.me/919742502964'), L('Partners', 'partners/page.html'), L('Book a Demo', 'https://wa.me/919742502964?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.')] }
+      { h: 'COMPANY', l: [L('About', 'coming-soon/page.html?p=About'), L('Contact Us', 'https://wa.me/918147715267'), L('Partners', 'partners/page.html'), L('Book a Demo', 'https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.')] }
     ];
     return {
       chaosFadeOp: st.hover != null && st.hp === 2 ? 0 : 1, measureRef: this.measure, carRef: this.carRef, carEnter: () => this.setState({ carHover: true }), carLeave: () => this.setState({ carHover: false }), k, heroH: st.wide ? 'max(440px, calc(100dvh - var(--navh, 58px)))' : 'auto', heroCols: st.wide ? 'minmax(0,1fr) minmax(0,1fr)' : 'minmax(0,1fr)', heroVisMin: st.wide ? '0px' : st.mob ? '340px' : 'min(420px, 55vh)', hChaos: Math.round(580 * k), hOne: Math.round(600 * k), hLearn: Math.round(340 * k),

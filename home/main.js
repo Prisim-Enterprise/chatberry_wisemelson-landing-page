@@ -473,7 +473,7 @@ class Homepage extends WM.Component {
     const L = (t, u) => ({ t, u: u.startsWith('http') ? u : '/pages/' + u });
     const footCols = [
       { h: 'PRODUCT', l: [L('Customer OS', 'products/customer-os/page.html'), L('AI Agents', 'products/ai-agents/page.html'), L('Ticketing', 'products/ticketing/page.html'), L('Business Intelligence', 'products/analytics-bi/page.html')] },
-      { h: 'SOLUTIONS', l: [L('Healthcare', 'https://www.melohealth.ai/'), L('Distribution', 'industries/manufacturing-distribution/page.html'), L('Hospitality', 'industries/hospitality/page.html'), L('Education', 'industries/education/page.html'), L('Real Estate', 'industries/real-estate/page.html')] },
+      { h: 'SOLUTIONS', l: [L('Healthcare', '/pages/coming-soon/page.html?p=Healthcare'), L('Distribution', 'industries/manufacturing-distribution/page.html'), L('Hospitality', 'industries/hospitality/page.html'), L('Education', 'industries/education/page.html'), L('Real Estate', 'industries/real-estate/page.html')] },
       { h: 'RESOURCES', l: [L('Playbooks', 'coming-soon/page.html?p=Playbooks'), L('Blogs', 'blog/page.html'), L('Tools', 'coming-soon/page.html?p=Tools')] },
       { h: 'COMPANY', l: [L('About', 'coming-soon/page.html?p=About'), L('Contact Us', 'https://wa.me/918147715267'), L('Partners', 'partners/page.html'), L('Book a Demo', 'https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.')] }
     ];

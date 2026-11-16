@@ -1,0 +1,7 @@
+archive
+node_modules
+scripts
+.git
+.DS_Store
+Thumbs.db
+README.md

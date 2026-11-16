@@ -30,6 +30,7 @@ const pages = [];
 const today = new Date().toISOString().slice(0, 10);
 const listed = [];
 for (const rel of pages) {
+  if (rel === '404.html') continue;
   const file = path.join(root, rel);
   let s = fs.readFileSync(file, 'utf8');
   const url = SITE + (rel === 'index.html' ? '/' : '/' + rel);

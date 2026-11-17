@@ -1,6 +1,6 @@
 # Chatberry landing page
 
-Marketing site for **Chatberry**, software by Prisim. Plain HTML, CSS and JavaScript: no build step, no dependencies.
+Marketing site for **Chatberry**, product by Prisim. Plain HTML, CSS and JavaScript: no build step, no dependencies.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FPrisim-Enterprise%2Fchatberry_wisemelson-landing-page)
 

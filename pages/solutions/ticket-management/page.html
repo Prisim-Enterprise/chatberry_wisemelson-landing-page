@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ticket Management System for Businesses | Chatberry</title>
-<meta name="description" content="Manage customer issues with Chatberry Ticket Management. Create tickets, assign teams, automate follow-ups, track resolutions, and monitor performance.">
+<title>Ticket Management – Resolve every issue | Chatberry</title>
+<meta name="description" content="Create tickets, assign teams, automate follow-ups, track resolution and monitor support performance with Chatberry.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Chatberry Ticket Management — Manage every ticket. Resolve every issue.">
-<meta property="og:description" content="Capture customer requests, assign them to the right team, track progress and resolve issues with a ticket management system built around your workflows.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Ticket Management – Resolve every issue | Chatberry">
+<meta property="og:description" content="Create tickets, assign teams, automate follow-ups, track resolution and monitor support performance with Chatberry.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ticket Management – Resolve every issue | Chatberry">
+<meta name="twitter:description" content="Create tickets, assign teams, automate follow-ups, track resolution and monitor support performance with Chatberry.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,626 +21,123 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos tkm" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
-      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4 2.2 4H5"/></symbol>
-      <symbol id="i-note" viewBox="0 0 24 24"><path d="M5.5 3.5h13A1.5 1.5 0 0 1 20 5v10l-5.5 5.5h-9A1.5 1.5 0 0 1 4 19V5a1.5 1.5 0 0 1 1.5-1.5Z"/><path d="M14.5 20.5V16a1 1 0 0 1 1-1H20M8 8.5h8M8 12h5"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
-      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
-      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15M15.5 4.5 19 8l-3.5 3.5M20 16H5M8.5 12.5 5 16l3.5 3.5"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16.5l-5.5-5.5-8 8"/></symbol>
-      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7A1.5 1.5 0 0 1 5 5.5h14A1.5 1.5 0 0 1 20.5 7v2.5a2.5 2.5 0 0 0 0 5V17a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 17v-2.5a2.5 2.5 0 0 0 0-5Z"/><path d="M14.5 6v12" stroke-dasharray="2 2.2"/></symbol>
-      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15Z"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/></symbol>
-      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5v-14M6 11l6-6 6 6"/></symbol>
-      <symbol id="i-clip" viewBox="0 0 24 24"><path d="M19 11.5l-7.2 7.2a4.6 4.6 0 0 1-6.5-6.5l7.6-7.6a3 3 0 0 1 4.3 4.3l-7.4 7.4a1.5 1.5 0 0 1-2.1-2.1l6.6-6.6"/></symbol>
-      <symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3.5l8.5 4v9L12 20.5l-8.5-4Z"/><path d="M3.5 7.5 12 11.5l8.5-4M12 11.5v9"/></symbol>
-      <symbol id="i-rule" viewBox="0 0 24 24"><path d="M4 6h10M4 12h7M4 18h10"/><path d="M16 9.5l3.5 2.5-3.5 2.5"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — the ticket workspace ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="tkm-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="tkm-head rv">
-        <p class="cos-eyebrow">Ticket Management</p>
-        <h1 class="cos-h1" id="tkm-h1">Manage every ticket. <br><span class="dim">Resolve every issue.</span></h1>
-        <p class="cos-hero__intro">Capture customer requests, assign them to the right team, track progress, and resolve issues faster with a ticket management system built around your business workflows.</p>
-        <div class="cos-cta">
-          <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-        </div>
-      </div>
-
-      <figure class="app tkm-hero rv" id="hero" style="--d:.15s" aria-labelledby="heroCap">
-        <figcaption class="sr-only" id="heroCap">Ticket management workspace showing ticket status, priority and assigned team members (design concept). The ticket list has search and filters, and shows a damaged product ticket from an e-commerce store, a course access issue from an education provider, a meeting-room equipment ticket from a co-working space that is overdue, and a travel booking change. A new subscription renewal ticket arrives at the top. The selected damaged product ticket is open on the right with its customer, category, high priority, In progress status, Support team and owner Maya Reyes, and a short activity preview.</figcaption>
-        <div class="app__top">
-          <span class="app__crumb"><svg class="i"><use href="#i-ticket"/></svg><b>Tickets</b><svg class="i"><use href="#i-chevr"/></svg>All open</span>
-          <span class="tkm-tools"><span class="chip tkm-search"><svg class="i"><use href="#i-search"/></svg>Search tickets</span><span class="chip"><svg class="i"><use href="#i-filter"/></svg>Priority: All</span><span class="chip"><svg class="i"><use href="#i-users"/></svg>Team: All</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-plus"/></svg>New ticket</span></span>
-        </div>
-        <div class="tkm-ws">
-          <div class="tkm-ws__list">
-            <p class="tkm-ws__tabs"><span class="is-on">Open <em>24</em></span><span>Assigned to me <em>6</em></span><span>Overdue <em>3</em></span><span>Resolved</span></p>
-            <ul class="tkm-q">
-              <li class="tkm-q__r tkm-q__r--in" data-at="1">
-                <p class="tkm-q__t"><b>Subscription renewal failed</b><span class="tkm-q__new">New</span></p>
-                <p class="tkm-q__m"><span class="tkm-ref">TK-1052</span><span class="tkm-ctx">Subscription</span><span class="tkm-pri tkm-pri--md"><i></i>Medium</span></p>
-                <p class="tkm-q__f"><span class="tkm-st tkm-st--new">New</span><span class="tkm-own"><span class="av">BI</span>Billing &middot; unassigned</span></p>
-              </li>
-              <li class="tkm-q__r is-sel" data-lit="2">
-                <p class="tkm-q__t"><b>Damaged product on delivery</b><time>09:12</time></p>
-                <p class="tkm-q__m"><span class="tkm-ref">TK-1048</span><span class="tkm-ctx">E-commerce</span><span class="tkm-pri tkm-pri--hi"><i></i>High</span></p>
-                <p class="tkm-q__f"><span class="tkm-st tkm-st--prog">In progress</span><span class="tkm-own"><span class="av av--lime">MR</span>Support &middot; Maya R.</span></p>
-              </li>
-              <li class="tkm-q__r">
-                <p class="tkm-q__t"><b>Course access issue</b><time>08:47</time></p>
-                <p class="tkm-q__m"><span class="tkm-ref">TK-1047</span><span class="tkm-ctx">Education</span><span class="tkm-pri tkm-pri--md"><i></i>Medium</span></p>
-                <p class="tkm-q__f"><span class="tkm-st tkm-st--asg">Assigned</span><span class="tkm-own"><span class="av av--cyan">DK</span>Academic support &middot; Daniel K.</span></p>
-              </li>
-              <li class="tkm-q__r">
-                <p class="tkm-q__t"><b>Meeting-room display not working</b><time>Yesterday</time></p>
-                <p class="tkm-q__m"><span class="tkm-ref">TK-1045</span><span class="tkm-ctx">Co-working</span><span class="tkm-pri tkm-pri--ur"><i></i>Urgent</span><span class="tkm-od">Overdue 2h</span></p>
-                <p class="tkm-q__f"><span class="tkm-st tkm-st--asg">Assigned</span><span class="tkm-own"><span class="av av--violet">RP</span>Facilities &middot; Ravi P.</span></p>
-              </li>
-              <li class="tkm-q__r tkm-q__r--last">
-                <p class="tkm-q__t"><b>Booking date change</b><time>Yesterday</time></p>
-                <p class="tkm-q__m"><span class="tkm-ref">TK-1043</span><span class="tkm-ctx">Travel</span><span class="tkm-pri tkm-pri--lo"><i></i>Low</span></p>
-                <p class="tkm-q__f"><span class="tkm-st tkm-st--wait">Waiting for response</span><span class="tkm-own"><span class="av">JS</span>Bookings &middot; Jon S.</span></p>
-              </li>
-            </ul>
-          </div>
-          <div class="tkm-ws__det">
-            <div class="tkm-dt__h">
-              <p class="tkm-dt__ref"><span class="tkm-ref">TK-1048</span><span class="tkm-ctx">E-commerce</span></p>
-              <p class="tkm-dt__t">Damaged product on delivery</p>
-              <p class="tkm-dt__s">Leah Fernandes &middot; Order #48213 &middot; via ticket page</p>
-              <p class="tkm-dt__a"><span class="chip"><svg class="i"><use href="#i-swap"/></svg>Transfer</span><span class="mini-btn"><svg class="i"><use href="#i-check"/></svg>Update status</span></p>
-            </div>
-            <dl class="tkm-dl tkm-dl--grid">
-              <div><dt>Status</dt><dd><span class="tkm-st tkm-st--prog">In progress</span></dd></div>
-              <div><dt>Priority</dt><dd><span class="tkm-pri tkm-pri--hi"><i></i>High</span></dd></div>
-              <div><dt>Team</dt><dd>Support</dd></div>
-              <div><dt>Owner</dt><dd><span class="av av--lime">MR</span>Maya Reyes</dd></div>
-              <div><dt>Category</dt><dd>Order issue</dd></div>
-              <div><dt>Due</dt><dd>Today, 18:00</dd></div>
-            </dl>
-            <div class="tkm-dt__body">
-              <p class="ui-label">Description</p>
-              <p class="tkm-quote">The ceramic lamp in order #48213 arrived with a cracked base. Photos attached. Can I get a replacement?</p>
-              <p class="tkm-file"><svg class="i"><use href="#i-clip"/></svg>lamp-photo-1.jpg<span>lamp-photo-2.jpg</span></p>
-              <p class="ui-label tkm-gap">Activity</p>
-              <ol class="tkm-act">
-                <li><span class="tkm-act__d"></span><p><b>Ticket created</b> by Leah Fernandes<small>Ticket page &middot; 09:12</small></p></li>
-                <li><span class="tkm-act__d"></span><p><b>Assigned to Support</b> by rule &ldquo;Order issues&rdquo;<small>09:12</small></p></li>
-                <li><span class="tkm-act__d tkm-act__d--on"></span><p><b>Maya Reyes</b> added an internal note<small>Photos confirm the damage. Requesting a replacement. &middot; 09:40</small></p></li>
-              </ol>
-              <p class="os-compose">Reply to Leah or add an internal note<span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-arrow"/></svg></span></p>
-            </div>
-          </div>
-        </div>
-      </figure>
-      <p class="tkm-fine rv">Design concept with fictional data.</p>
-    </section>
-
-    <!-- ============ 02 PROBLEM — requests with nowhere to go ============ -->
-    <section class="cos-sec tkm-tint--soft" id="problem" aria-labelledby="pr-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">The problem</p>
-        <h2 class="cos-h2" id="pr-h">Customer issues shouldn&rsquo;t get lost <br><span class="dim">in the process.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">When requests arrive from different channels and teams manage them separately, follow-ups get missed, ownership becomes unclear, and resolution takes longer than it should.</p>
-        </div>
-      </div>
-
-      <div class="tkm-pr" role="img" aria-label="Examples of requests getting lost: an overcrowded inbox of unread emails about a damaged order, a course login and a projector; a tracking spreadsheet with blank assignees and overdue dates; a facilities ticket open for six days and overdue; and a class access request with no owner and no next action.">
-        <article class="tkm-pr__i tkm-pr__i--a rv">
-          <div class="tkm-pr__v" aria-hidden="true">
-            <div class="tkm-mail">
-              <p class="tkm-mail__h"><b>Inbox</b><span>128 unread</span></p>
-              <p class="tkm-mail__r"><b>Re: Re: Fwd: order 48213 arrived broken</b><span>2 days</span></p>
-              <p class="tkm-mail__r"><b>Can&rsquo;t open Module 3??</b><span>3 days</span></p>
-              <p class="tkm-mail__r"><b>Room B projector again</b><span>4 days</span></p>
-              <p class="tkm-mail__r"><b>Renewal invoice &mdash; charged twice</b><span>4 days</span></p>
-              <p class="tkm-mail__r tkm-mail__r--fade"><b>Following up on my last email</b><span>5 days</span></p>
-              <p class="tkm-mail__r tkm-mail__r--fade"><b>Any update?</b><span>6 days</span></p>
-            </div>
-          </div>
-          <h3>Lost requests</h3>
-          <p>Messages get buried across inboxes, conversations, and forms.</p>
-        </article>
-        <article class="tkm-pr__i tkm-pr__i--b rv" style="--d:.08s">
-          <div class="tkm-pr__v" aria-hidden="true">
-            <table class="tkm-sheet">
-              <tr><th>Request</th><th>Assignee</th><th>Due</th></tr>
-              <tr><td>Broken lamp</td><td></td><td class="tkm-sheet__od">12/10</td></tr>
-              <tr><td>Course login</td><td>?</td><td class="tkm-sheet__od">11/10</td></tr>
-              <tr><td>Room B screen</td><td></td><td></td></tr>
-              <tr><td>Refund (dup.)</td><td>Sam/Priya</td><td class="tkm-sheet__od">09/10</td></tr>
-            </table>
-          </div>
-          <h3>Unclear ownership</h3>
-          <p>Tickets sit unassigned while teams assume someone else is handling them.</p>
-        </article>
-        <article class="tkm-pr__i tkm-pr__i--c rv" style="--d:.12s">
-          <div class="tkm-pr__v" aria-hidden="true">
-            <div class="tkm-snip">
-              <p class="tkm-snip__k">Facilities</p>
-              <p class="tkm-snip__t">Room B display flickering</p>
-              <p class="tkm-snip__s">Opened 6 days ago &middot; Status: Open</p>
-              <p class="tkm-snip__od"><svg class="i"><use href="#i-clock"/></svg>Overdue by 5 days</p>
-            </div>
-          </div>
-          <h3>Delayed resolutions</h3>
-          <p>Open issues remain unresolved because follow-ups are missed.</p>
-        </article>
-        <article class="tkm-pr__i tkm-pr__i--d rv" style="--d:.16s">
-          <div class="tkm-pr__v" aria-hidden="true">
-            <div class="tkm-orph">
-              <p class="tkm-orph__t"><b>Class access request</b><span>Grade 10 Physics &middot; from a parent</span></p>
-              <p class="tkm-orph__f"><span>Owner</span><i>&mdash;</i></p>
-              <p class="tkm-orph__f"><span>Next action</span><i>&mdash;</i></p>
-              <p class="tkm-orph__f"><span>Status</span><i>unknown</i></p>
-            </div>
-            <p class="tkm-sticky">Who&rsquo;s handling this one?<br><small>&mdash; ops manager</small></p>
-          </div>
-          <h3>Limited visibility</h3>
-          <p>Managers cannot easily see what is pending, who is responsible, or what needs attention.</p>
-        </article>
-      </div>
-      <p class="tkm-fine rv">Illustrations of common problems, not Chatberry screens.</p>
-      <p class="tkm-say rv"><span class="tkm-say__mark" aria-hidden="true"><svg class="i"><use href="#i-ticket"/></svg></span>Bring every request into one organised system.</p>
-    </section>
-
-    <!-- ============ 03 TICKET CREATION — form → ticket ============ -->
-    <section class="cos-sec" id="create" aria-labelledby="cr-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Ticket creation</p>
-        <h2 class="cos-h2" id="cr-h">Every request <br><span class="dim">has a place.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Turn customer issues and service requests into trackable tickets. Let customers submit requests through a simple, branded ticket page, while your team can create tickets internally whenever a new issue comes in.</p>
-          <p class="cos-body">Each ticket can include the details your team needs to act on, such as issue description, request category, customer information, priority, attachments where supported, assigned team or owner, and due date where supported.</p>
-        </div>
-      </div>
-
-      <div class="tkm-cr" id="cr">
-        <figure class="tkm-br rv" aria-labelledby="brCap">
-          <figcaption class="sr-only" id="brCap">Customer ticket submission page and internal ticket creation interface (design concept), part one: a branded Northfield Academy support page in a browser window. The student fills in labelled fields for name, student ID, request category set to Course access, course Grade 10 Physics Online, a description saying Module 3 videos show access expired, and an optional screenshot, then submits the request.</figcaption>
-          <div class="tkm-br__bar" aria-hidden="true"><span class="tkm-br__dots"><i></i><i></i><i></i></span><span class="tkm-br__url"><svg class="i"><use href="#i-lock"/></svg>Northfield Academy &middot; Student support</span></div>
-          <div class="tkm-fm" aria-hidden="true">
-            <p class="tkm-fm__brand"><span class="tkm-fm__logo">NA</span><span><b>Northfield Academy</b><small>Student support</small></span></p>
-            <p class="tkm-fm__h">Raise a request</p>
-            <p class="tkm-fm__s">Tell us what&rsquo;s wrong and we&rsquo;ll route it to the right team.</p>
-            <div class="tkm-fm__two">
-              <p class="tkm-fm__f"><span>Full name</span><i>Aarav Mehta</i></p>
-              <p class="tkm-fm__f"><span>Student ID</span><i>NA-20417</i></p>
-            </div>
-            <p class="tkm-fm__f"><span>Request category</span><i class="tkm-fm__sel">Course access<svg class="i"><use href="#i-chev"/></svg></i></p>
-            <p class="tkm-fm__f"><span>Course</span><i>Grade 10 Physics &mdash; Online</i></p>
-            <p class="tkm-fm__f"><span>Describe the issue</span><i class="tkm-fm__ta">Since Monday, Module 3 videos say &ldquo;access expired&rdquo;. Modules 1&ndash;2 still open.</i></p>
-            <p class="tkm-fm__f"><span>Screenshot <em>(optional)</em></span><i class="tkm-fm__up"><svg class="i"><use href="#i-clip"/></svg>module3-error.png</i></p>
-            <p class="tkm-fm__go"><span>Submit request</span></p>
-            <p class="tkm-fm__ok" data-at="1"><svg class="i"><use href="#i-check"/></svg>Request received &middot; Reference TK-1047</p>
-          </div>
-        </figure>
-
-        <span class="tkm-cr__arrow rv" style="--d:.1s" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg><small>Becomes a ticket</small></span>
-
-        <div class="tkm-cr__side">
-          <figure class="app tkm-tk rv" style="--d:.15s" aria-labelledby="tkCap">
-            <figcaption class="sr-only" id="tkCap">Part two: the resulting internal Chatberry ticket TK-1047, Course access issue, with category Course access, medium priority, status Assigned, Academic support team, owner Daniel Kim, source Ticket page and a due date of tomorrow at 12:00, plus the student's description and screenshot.</figcaption>
-            <div class="app__top app__top--slim">
-              <span class="app__crumb"><svg class="i"><use href="#i-ticket"/></svg><b>Tickets</b><svg class="i"><use href="#i-chevr"/></svg>TK-1047</span>
-              <span class="tkm-from"><svg class="i"><use href="#i-file"/></svg>From ticket page</span>
-            </div>
-            <div class="tkm-tk__b" data-lit="2">
-              <p class="tkm-tk__t">Course access issue</p>
-              <p class="tkm-tk__s">Aarav Mehta &middot; NA-20417 &middot; Grade 10 Physics &mdash; Online</p>
-              <dl class="tkm-dl tkm-dl--grid tkm-dl--3">
-                <div><dt>Reference</dt><dd>TK-1047</dd></div>
-                <div><dt>Category</dt><dd>Course access</dd></div>
-                <div><dt>Priority</dt><dd><span class="tkm-pri tkm-pri--md"><i></i>Medium</span></dd></div>
-                <div><dt>Status</dt><dd><span class="tkm-st tkm-st--asg">Assigned</span></dd></div>
-                <div><dt>Team</dt><dd>Academic support</dd></div>
-                <div><dt>Owner</dt><dd><span class="av av--cyan">DK</span>Daniel Kim</dd></div>
-              </dl>
-              <p class="tkm-quote">Since Monday, Module 3 videos say &ldquo;access expired&rdquo;. Modules 1&ndash;2 still open.</p>
-              <p class="tkm-file"><svg class="i"><use href="#i-clip"/></svg>module3-error.png<span>Due tomorrow, 12:00</span></p>
-            </div>
-          </figure>
-
-          <figure class="app tkm-mini rv" style="--d:.25s" aria-labelledby="miniCap">
-            <figcaption class="sr-only" id="miniCap">A second, smaller ticket from a different business: TK-1049, travel booking change for a Lisbon itinerary, low priority, waiting for response, Bookings team.</figcaption>
-            <p class="tkm-mini__k">Same system, different request</p>
-            <p class="tkm-mini__t"><b>Booking change &mdash; Lisbon, 14&ndash;18 Nov</b><span class="tkm-ref">TK-1049</span></p>
-            <p class="tkm-mini__m"><span class="tkm-ctx">Travel</span><span class="tkm-pri tkm-pri--lo"><i></i>Low</span><span class="tkm-st tkm-st--wait">Waiting for response</span><span class="tkm-own"><span class="av">JS</span>Bookings</span></p>
-          </figure>
-        </div>
-      </div>
-
-      <ul class="tkm-ex rv" aria-label="Example requests">
-        <li><b>E-commerce</b>Report a damaged product or request a replacement.</li>
-        <li><b>Education</b>Report a course access issue or ask for help with class scheduling.</li>
-        <li><b>Travel</b>Request a booking change or assistance with an itinerary.</li>
-      </ul>
-      <p class="tkm-fine rv">Design concept. Available fields and attachment types depend on your setup. <a class="cos-link tkm-inline" href="/pages/products/ticketing/page.html">See the Ticketing product <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 04 ROUTING — rules send each ticket to a team ============ -->
-    <section class="cos-sec tkm-tint--cool" id="routing" aria-labelledby="rt-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Assignment and routing</p>
-        <h2 class="cos-h2" id="rt-h">The right issue. <br><span class="dim">The right team.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Automatically assign tickets based on the type of request, department, priority, or rules defined by your business. Reduce manual sorting and help every request reach the people responsible for resolving it.</p>
-          <p class="cos-body">Teams can view their assigned tickets, understand what needs attention, and transfer tickets when another team needs to take over, where supported.</p>
-        </div>
-      </div>
-
-      <figure class="tkm-rt rv" id="rt" aria-labelledby="rtCap">
-        <figcaption class="sr-only" id="rtCap">Ticket routing workflow assigning requests to the appropriate departments (design concept). Four incoming tickets pass through configured assignment rules to a team: a billing question matches the rule Issue type is Billing and goes to Finance; a meeting-room equipment issue matches Department is Facilities and goes to Facilities; a campaign change request matches Issue type is Campaign change and goes to the Agency team; an urgent customer issue matches Priority is Urgent and goes to Support, flagged for priority handling.</figcaption>
-        <div class="tkm-rt__hd" aria-hidden="true">
-          <p><b>Incoming tickets</b>Billing &middot; Facilities &middot; Customer requests</p>
-          <span></span>
-          <p><b>Assignment rules</b>Issue type &middot; Priority &middot; Department</p>
-          <span></span>
-          <p><b>Teams</b>Finance &middot; Facilities &middot; Agency &middot; Support</p>
-        </div>
-        <ol class="tkm-rt__map" aria-hidden="true">
-          <li class="tkm-rt__row">
-            <span class="tkm-rt__in"><span class="tkm-ctx">Subscription</span><b>Renewal charged twice</b><small>TK-1053 &middot; Billing question</small></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__rule"><svg class="i"><use href="#i-rule"/></svg><span><small>Issue type</small><b>is Billing</b></span></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__to"><span class="av">FI</span><span><b>Finance</b><small>12 open</small></span></span>
-          </li>
-          <li class="tkm-rt__row" style="--d:.12s">
-            <span class="tkm-rt__in"><span class="tkm-ctx">Co-working</span><b>Room B display not working</b><small>TK-1045 &middot; Meeting-room equipment</small></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__rule"><svg class="i"><use href="#i-rule"/></svg><span><small>Department</small><b>is Facilities</b></span></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__to"><span class="av av--violet">FA</span><span><b>Facilities</b><small>7 open</small></span></span>
-          </li>
-          <li class="tkm-rt__row" style="--d:.24s">
-            <span class="tkm-rt__in"><span class="tkm-ctx">Digital agency</span><b>Swap hero banner in Q4 campaign</b><small>TK-1054 &middot; Campaign change request</small></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__rule"><svg class="i"><use href="#i-rule"/></svg><span><small>Issue type</small><b>is Campaign change</b></span></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__to"><span class="av av--cyan">AG</span><span><b>Agency team</b><small>9 open</small></span></span>
-          </li>
-          <li class="tkm-rt__row tkm-rt__row--hi" style="--d:.36s">
-            <span class="tkm-rt__in"><span class="tkm-ctx">E-commerce</span><b>Wrong item shipped, event tomorrow</b><small>TK-1055 &middot; Urgent customer issue</small></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__rule"><svg class="i"><use href="#i-rule"/></svg><span><small>Priority</small><b>is Urgent</b></span></span>
-            <span class="tkm-rt__ln"></span>
-            <span class="tkm-rt__to"><span class="av av--lime">SU</span><span><b>Support</b><small><svg class="i"><use href="#i-flag"/></svg>Priority handling</small></span></span>
-          </li>
-        </ol>
-      </figure>
-      <p class="tkm-fine rv">Assignment follows the rules your team configures. Example rules and teams. <a class="cos-link tkm-inline" href="/pages/solutions/department-management/page.html">Set up departments with Department Management <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link tkm-inline" href="/pages/solutions/team-collaboration/page.html">Hand off work with Team Collaboration <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 05 RESOLUTION — lifecycle + activity trail ============ -->
-    <section class="cos-sec" id="resolution" aria-labelledby="rs-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Resolution tracking</p>
-        <h2 class="cos-h2" id="rs-h">From first request <br><span class="dim">to final resolution.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Give every ticket a clear status, owner, and next step. Teams can see what is new, what is being handled, what is waiting for a response, and what has been resolved.</p>
-          <p class="cos-body">Show the complete history of a ticket, including status changes, internal notes, customer updates, assignments, and actions taken, where supported. This gives the team the context needed to continue work without repeatedly asking for the same information.</p>
-        </div>
-      </div>
-
-      <ol class="tkm-lc rv" aria-label="Ticket lifecycle">
-        <li><span class="tkm-st tkm-st--new">New</span><small>Logged with its details</small></li>
-        <li><span class="tkm-st tkm-st--asg">Assigned</span><small>A team and owner are set</small></li>
-        <li><span class="tkm-st tkm-st--prog">In Progress</span><small>Someone is working on it</small></li>
-        <li><span class="tkm-st tkm-st--wait">Waiting for Response</span><small>Needs the customer&rsquo;s reply</small></li>
-        <li><span class="tkm-st tkm-st--done"><svg class="i"><use href="#i-check"/></svg>Resolved</span><small>Closed, with a full record</small></li>
-      </ol>
-      <p class="tkm-fine rv">The workflow can be configured to suit the way your business handles requests.</p>
-
-      <figure class="app tkm-td rv" id="td" style="--d:.1s" aria-labelledby="tdCap">
-        <figcaption class="sr-only" id="tdCap">Ticket activity timeline showing status changes and issue resolution (design concept). Ticket TK-1048, damaged product on delivery for order 48213. The trail, in order: created by the customer Leah Fernandes through the ticket page on Monday at 09:12; assigned to Support by rule and owned by Maya Reyes; replacement approved by Sam Torres with an internal note; customer notified that the replacement has shipped; resolved on Tuesday at 16:30 after the customer confirmed. Beside it: owner Maya Reyes, high priority, status Resolved, and the next action, a check that the replacement was delivered on Friday.</figcaption>
-        <div class="app__top">
-          <span class="app__crumb"><svg class="i"><use href="#i-ticket"/></svg><b>Tickets</b><svg class="i"><use href="#i-chevr"/></svg>TK-1048</span>
-          <span class="tkm-td__ttl">Damaged product on delivery</span>
-          <span class="tkm-st tkm-st--done tkm-td__st" data-lit="5"><svg class="i"><use href="#i-check"/></svg>Resolved</span>
-        </div>
-        <div class="tkm-td__g">
-          <div class="tkm-td__tl">
-            <p class="ui-label">Activity &middot; oldest first</p>
-            <ol class="tkm-tl">
-              <li data-lit="1"><span class="tkm-tl__i"><svg class="i"><use href="#i-user"/></svg></span><p><b>Ticket created by the customer</b><small>Leah Fernandes &middot; Ticket page &middot; Mon 09:12</small></p><p class="tkm-tl__q">&ldquo;The ceramic lamp in order #48213 arrived with a cracked base. Photos attached.&rdquo;</p></li>
-              <li data-lit="2"><span class="tkm-tl__i"><svg class="i"><use href="#i-users"/></svg></span><p><b>Assigned to Support</b><small>Rule &ldquo;Order issues&rdquo; &middot; Owner Maya Reyes &middot; Mon 09:12</small></p><p class="tkm-tl__chg"><span class="tkm-st tkm-st--new">New</span><svg class="i"><use href="#i-arrow"/></svg><span class="tkm-st tkm-st--asg">Assigned</span></p></li>
-              <li data-lit="3"><span class="tkm-tl__i"><svg class="i"><use href="#i-box"/></svg></span><p><b>Replacement approved</b><small>Sam Torres, Operations &middot; Mon 11:05</small></p><p class="tkm-tl__note"><svg class="i"><use href="#i-note"/></svg><span><b>Internal note</b>Damage confirmed from photos. Replacement from the Pune warehouse, no return needed.</span></p></li>
-              <li data-lit="4"><span class="tkm-tl__i"><svg class="i"><use href="#i-mail"/></svg></span><p><b>Customer notified</b><small>Replacement shipped, tracking link shared &middot; Mon 11:20</small></p><p class="tkm-tl__chg"><span class="tkm-st tkm-st--prog">In progress</span><svg class="i"><use href="#i-arrow"/></svg><span class="tkm-st tkm-st--wait">Waiting for response</span></p></li>
-              <li data-lit="5"><span class="tkm-tl__i tkm-tl__i--on"><svg class="i"><use href="#i-check"/></svg></span><p><b>Ticket resolved</b><small>Customer confirmed the replacement arrived &middot; Tue 16:30</small></p></li>
-            </ol>
-          </div>
-          <aside class="tkm-td__side">
-            <p class="ui-label">Ticket</p>
-            <dl class="tkm-dl">
-              <div><dt>Owner</dt><dd><span class="av av--lime">MR</span>Maya Reyes</dd></div>
-              <div><dt>Team</dt><dd>Support</dd></div>
-              <div><dt>Priority</dt><dd><span class="tkm-pri tkm-pri--hi"><i></i>High</span></dd></div>
-              <div><dt>Status</dt><dd><span class="tkm-st tkm-st--done"><svg class="i"><use href="#i-check"/></svg>Resolved</span></dd></div>
-              <div><dt>Customer</dt><dd>Leah Fernandes</dd></div>
-              <div><dt>Order</dt><dd>#48213</dd></div>
-            </dl>
-            <div class="tkm-na" data-lit="5">
-              <p class="tkm-na__k"><svg class="i"><use href="#i-cal"/></svg>Next action</p>
-              <p class="tkm-na__t">Confirm delivery of the replacement</p>
-              <p class="tkm-na__s">Maya Reyes &middot; Friday</p>
-            </div>
-          </aside>
-        </div>
-      </figure>
-      <p class="tkm-say rv">Every action has a record, <span class="dim">so whoever picks up the ticket next starts with the full story.</span></p>
-    </section>
-
-    <!-- ============ 06 AUTOMATION — a vertical sequence with one escalation ============ -->
-    <section class="cos-sec tkm-tint--green" id="automation" aria-labelledby="au-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Follow-ups and automation</p>
-        <h2 class="cos-h2" id="au-h">Keep tickets moving, <br><span class="dim">automatically.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Reduce the need for manual chasing with workflows that trigger actions when a ticket is created, updated, delayed, or resolved.</p>
-          <p class="cos-body">If a co-working member reports a broken meeting-room display and the ticket remains unresolved past its target time, Chatberry can notify the responsible team and escalate it according to the configured workflow.</p>
-        </div>
-      </div>
-
-      <div class="tkm-au">
-        <figure class="tkm-au__seq rv" id="au" aria-labelledby="auCap">
-          <figcaption class="sr-only" id="auCap">Ticket automation sequence showing assignment, reminders and escalation (design concept). Step 1, 10:02: a co-working member reports that the Room B display is not working. Step 2, 10:02: the ticket is assigned to Facilities and Ravi Patel with a four-hour target. Step 3, 14:02: the target time is exceeded and the status is still Assigned. Step 4, 14:02: according to configured rules, a reminder goes to Ravi and the ticket is escalated to the facilities manager. Step 5, 15:10: the display is replaced, the ticket is resolved and the member is notified.</figcaption>
-          <ol class="tkm-seq">
-            <li data-lit="1"><time>10:02</time><span class="tkm-seq__n"><svg class="i"><use href="#i-ticket"/></svg></span>
-              <div class="tkm-seq__p"><p class="tkm-seq__k">Ticket created</p><p class="tkm-seq__t">Room B display not working</p><p class="tkm-seq__m"><span class="tkm-ref">TK-1045</span><span class="tkm-ctx">Co-working</span><span class="tkm-pri tkm-pri--ur"><i></i>Urgent</span></p></div></li>
-            <li data-lit="2"><time>10:02</time><span class="tkm-seq__n"><svg class="i"><use href="#i-users"/></svg></span>
-              <div class="tkm-seq__p"><p class="tkm-seq__k">Assigned to Facilities</p><p class="tkm-seq__t">Owner Ravi Patel &middot; target 4 hours</p></div></li>
-            <li class="tkm-seq--warn" data-lit="3"><time>14:02</time><span class="tkm-seq__n"><svg class="i"><use href="#i-clock"/></svg></span>
-              <div class="tkm-seq__p"><p class="tkm-seq__k">Target time exceeded</p><p class="tkm-seq__t">Still Assigned after 4 hours</p><p class="tkm-seq__m"><span class="tkm-od">Overdue</span></p></div></li>
-            <li class="tkm-seq--esc" data-lit="4"><time>14:02</time><span class="tkm-seq__n"><svg class="i"><use href="#i-up"/></svg></span>
-              <div class="tkm-seq__p"><p class="tkm-seq__k">Reminder and escalation triggered</p><p class="tkm-seq__t"><svg class="i"><use href="#i-bell"/></svg>Reminder sent to Ravi Patel</p><p class="tkm-seq__t"><svg class="i"><use href="#i-up"/></svg>Escalated to the facilities manager</p><p class="tkm-seq__rule">According to configured rules</p></div></li>
-            <li class="tkm-seq--done" data-lit="5"><time>15:10</time><span class="tkm-seq__n"><svg class="i"><use href="#i-check"/></svg></span>
-              <div class="tkm-seq__p"><p class="tkm-seq__k">Resolved and member notified</p><p class="tkm-seq__t">Display replaced. &ldquo;Room B is ready to use again.&rdquo;</p><p class="tkm-seq__m"><span class="tkm-st tkm-st--done"><svg class="i"><use href="#i-check"/></svg>Resolved</span></p></div></li>
-          </ol>
-        </figure>
-
-        <div class="tkm-au__side">
-          <figure class="tkm-photo rv" style="--d:.1s"><img src="/public/assets/img/ticket-management/meeting-room-display.webp" alt="A facilities team member checks the wall-mounted display in a co-working meeting room." width="928" height="1152" loading="lazy" decoding="async"></figure>
-          <ul class="tkm-caps rv" style="--d:.15s" aria-label="Automation capabilities">
-            <li><b>Automatic assignment</b>Send tickets to the appropriate team based on defined rules.</li>
-            <li><b>Follow-up reminders</b>Notify owners when a ticket has been waiting too long.</li>
-            <li><b>Priority escalation</b>Alert the appropriate manager when a high-priority issue remains unresolved.</li>
-            <li><b>Status notifications</b>Keep customers informed when their ticket progresses.</li>
-            <li><b>Resolution updates</b>Notify the customer when the issue is resolved and provide next steps where needed.</li>
-          </ul>
-        </div>
-      </div>
-      <p class="tkm-fine rv">Example sequence. Triggers, targets and notifications follow the workflow you configure, where supported. <a class="cos-link tkm-inline" href="/pages/solutions/workflow-development/page.html">Build advanced workflows with Workflow Development <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 07 ANALYTICS — an editorial composition ============ -->
-    <section class="cos-sec tkm-tint--warm" id="analytics" aria-labelledby="an-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Ticket analytics</p>
-        <h2 class="cos-h2" id="an-h">Know what&rsquo;s pending. <br><span class="dim">Understand what&rsquo;s improving.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Get visibility into ticket volume, team performance, recurring issues, and resolution efficiency. Help managers identify bottlenecks and decide where attention is needed.</p>
-        </div>
-      </div>
-
-      <div class="tkm-an">
-        <figure class="app tkm-an__trend rv" aria-labelledby="trCap">
-          <figcaption class="sr-only" id="trCap">Ticket analytics showing resolution time, overdue tickets and team workload (illustrative data). Weekly ticket volume over eight weeks: tickets created rose from 132 to 168 a week, and tickets resolved rose from 120 to 166, closing most of the gap by week 8.</figcaption>
-          <div class="tkm-an__top">
-            <p class="tkm-an__h">Ticket volume <span>Created vs resolved, per week</span></p>
-            <p class="tkm-an__f"><span class="chip"><svg class="i"><use href="#i-cal"/></svg>Last 8 weeks</span><span class="chip">All departments</span><span class="chip">All priorities</span></p>
-          </div>
-          <div class="tkm-trend">
-            <svg viewBox="0 0 640 200" preserveAspectRatio="none" aria-hidden="true">
-              <path class="tkm-trend__g" d="M0 20H640M0 60H640M0 100H640M0 140H640M0 180H640"/>
-              <path class="tkm-trend__a" d="M40 116 L120 84 L200 98 L280 50 L360 64 L440 36 L520 60 L600 44 L600 180 L40 180Z"/>
-              <path class="tkm-trend__c" d="M40 116 L120 84 L200 98 L280 50 L360 64 L440 36 L520 60 L600 44"/>
-              <path class="tkm-trend__r" d="M40 140 L120 102 L200 104 L280 80 L360 70 L440 54 L520 58 L600 48"/>
-            </svg>
-            <p class="tkm-trend__x" aria-hidden="true"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span></p>
-          </div>
-          <p class="tkm-key" aria-hidden="true"><span class="tkm-key__c">Created <b>168</b></span><span class="tkm-key__r">Resolved <b>166</b></span><span class="muted">Week 8</span></p>
-        </figure>
-
-        <figure class="app tkm-an__od rv" style="--d:.08s" aria-labelledby="odCap">
-          <figcaption class="sr-only" id="odCap">Overdue queue of four tickets with priority labels: an urgent meeting-room display ticket overdue 2 hours, a high-priority double charge on a subscription renewal overdue 5 hours, a medium course scheduling clash overdue 1 day, and a low-priority itinerary question overdue 2 days.</figcaption>
-          <p class="tkm-an__h">Overdue queue <span class="tkm-od">18 overdue</span></p>
-          <ul class="tkm-odq">
-            <li><span class="tkm-pri tkm-pri--ur"><i></i>Urgent</span><span><b>Room B display not working</b><small>Facilities &middot; TK-1045</small></span><em>2h</em></li>
-            <li><span class="tkm-pri tkm-pri--hi"><i></i>High</span><span><b>Renewal charged twice</b><small>Finance &middot; TK-1053</small></span><em>5h</em></li>
-            <li><span class="tkm-pri tkm-pri--md"><i></i>Medium</span><span><b>Class schedule clash</b><small>Academic support &middot; TK-1039</small></span><em>1d</em></li>
-            <li><span class="tkm-pri tkm-pri--lo"><i></i>Low</span><span><b>Itinerary question</b><small>Bookings &middot; TK-1031</small></span><em>2d</em></li>
-          </ul>
-        </figure>
-
-        <figure class="app tkm-an__card tkm-an__load rv" style="--d:.04s" aria-labelledby="ldCap">
-          <figcaption class="sr-only" id="ldCap">Team workload, open tickets per team with the overdue share: Support 42 open with 6 overdue, Academic support 21 with 3, Bookings 14 with 2, Finance 12 with 4, Agency team 9 with 1, Facilities 7 with 2.</figcaption>
-          <p class="tkm-an__h">Team workload <span>Open &middot; of which overdue</span></p>
-          <ul class="tkm-load">
-            <li style="--v:1;--o:.14"><span>Support</span><i><b></b><s></s></i><em>42</em></li>
-            <li style="--v:.5;--o:.14"><span>Academic</span><i><b></b><s></s></i><em>21</em></li>
-            <li style="--v:.33;--o:.14"><span>Bookings</span><i><b></b><s></s></i><em>14</em></li>
-            <li style="--v:.29;--o:.33"><span>Finance</span><i><b></b><s></s></i><em>12</em></li>
-            <li style="--v:.21;--o:.11"><span>Agency</span><i><b></b><s></s></i><em>9</em></li>
-            <li style="--v:.17;--o:.29"><span>Facilities</span><i><b></b><s></s></i><em>7</em></li>
-          </ul>
-          <p class="tkm-key" aria-hidden="true"><span class="tkm-key__o">Open</span><span class="tkm-key__od">Overdue</span></p>
-        </figure>
-
-        <figure class="app tkm-an__card tkm-an__res rv" style="--d:.1s" aria-labelledby="rsCap">
-          <figcaption class="sr-only" id="rsCap">Average resolution time by priority: urgent 2.1 hours, high 6.5 hours, medium 14 hours, low 31 hours. Overall average 9.4 hours.</figcaption>
-          <p class="tkm-an__h">Resolution time <span>Average, by priority</span></p>
-          <p class="tkm-big">9.4<small>h</small><span>overall average</span></p>
-          <ul class="tkm-lol">
-            <li style="--v:.06"><span>Urgent</span><i><b></b></i><em>2.1h</em></li>
-            <li style="--v:.2"><span>High</span><i><b></b></i><em>6.5h</em></li>
-            <li style="--v:.44"><span>Medium</span><i><b></b></i><em>14h</em></li>
-            <li style="--v:.97"><span>Low</span><i><b></b></i><em>31h</em></li>
-          </ul>
-        </figure>
-
-        <figure class="app tkm-an__card tkm-an__cat rv" style="--d:.16s" aria-labelledby="ctCap">
-          <figcaption class="sr-only" id="ctCap">Most frequently reported issue categories, share of tickets: order issues 28 percent, course access 19 percent, facilities requests 16 percent, subscription billing 14 percent, campaign changes 12 percent, booking assistance 11 percent.</figcaption>
-          <p class="tkm-an__h">Top categories <span>Share of tickets</span></p>
-          <p class="tkm-strip" aria-hidden="true"><i style="--v:28"></i><i style="--v:19"></i><i style="--v:16"></i><i style="--v:14"></i><i style="--v:12"></i><i style="--v:11"></i></p>
-          <ul class="tkm-cats">
-            <li><i></i>Order issues<em>28%</em></li>
-            <li><i></i>Course access<em>19%</em></li>
-            <li><i></i>Facilities requests<em>16%</em></li>
-            <li><i></i>Subscription billing<em>14%</em></li>
-            <li><i></i>Campaign changes<em>12%</em></li>
-            <li><i></i>Booking assistance<em>11%</em></li>
-          </ul>
-        </figure>
-      </div>
-
-      <dl class="tkm-kpi rv" aria-label="Key ticket metrics">
-        <div><dt>Total Tickets</dt><dd>Requests received during the selected period.</dd></div>
-        <div><dt>Open Tickets</dt><dd>Issues that still need attention.</dd></div>
-        <div><dt>Overdue Tickets</dt><dd>Tickets that have passed their target resolution time.</dd></div>
-        <div><dt>Average Resolution Time</dt><dd>How long tickets take to resolve on average.</dd></div>
-        <div><dt>First Response Time</dt><dd>How quickly the team first responds.</dd></div>
-        <div><dt>Resolution Rate</dt><dd>The proportion of tickets resolved during the selected period.</dd></div>
-        <div><dt>Tickets by Priority</dt><dd>Distribution of low-, medium-, high-, and urgent-priority issues.</dd></div>
-        <div><dt>Team Workload</dt><dd>Tickets assigned to each team or owner.</dd></div>
-      </dl>
-      <p class="tkm-fine rv"><span class="tkm-ill">Illustrative data</span> Where supported, filter analytics by date range, department, priority, status, and assigned team. <a class="cos-link tkm-inline" href="/pages/products/analytics-bi/page.html">Go wider with Analytics &amp; BI <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 08 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Ticket Management FAQs</h2>
-          <p class="cos-body">Looking at the wider support operation? <a class="cos-link tkm-inline" href="/pages/solutions/customer-support/page.html">Explore Customer Support <svg class="i"><use href="#i-arrow"/></svg></a></p>
-          <p class="cos-body">Where conversations turn into service requests: <a class="cos-link tkm-inline" href="/pages/solutions/lead-engagement/page.html">Lead Engagement <svg class="i"><use href="#i-arrow"/></svg></a></p>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is a ticket management system?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>A ticket management system helps businesses record, assign, track, and resolve customer issues and service requests. It gives each request a clear status, owner, and history.</p></div></details>
-          <details class="os-qa"><summary>How does Chatberry Ticket Management work?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry helps businesses collect requests, create tickets, assign them to teams, track progress, automate follow-ups, and monitor resolution performance through analytics.</p></div></details>
-          <details class="os-qa"><summary>Can customers raise tickets through a website?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Businesses can provide a branded ticket submission page where customers can describe an issue and submit a request for the team to handle, subject to the available product configuration.</p></div></details>
-          <details class="os-qa"><summary>Can tickets be assigned to different departments?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Tickets can be routed based on configured rules, such as request category, priority, or department, helping each request reach the appropriate team.</p></div></details>
-          <details class="os-qa"><summary>Can ticket follow-ups and escalations be automated?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Workflows can be configured to trigger reminders, notifications, and escalations when specified ticket conditions are met, where these actions are supported.</p></div></details>
-          <details class="os-qa"><summary>Can I track ticket resolution time and team performance?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Ticket analytics can help teams monitor metrics such as open tickets, overdue tickets, response times, resolution times, and workload by team. The displayed metrics should match the capabilities available in the product.</p></div></details>
-          <details class="os-qa"><summary>Can different types of businesses use Chatberry Ticket Management?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. The same ticket management approach can support e-commerce order issues, education requests, co-working facility problems, subscription billing queries, agency change requests, and travel booking assistance.</p></div></details>
-          <details class="os-qa"><summary>Can my team manage a ticket from start to finish?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Tickets can be tracked through their configured lifecycle, from creation and assignment through progress updates and final resolution. Activity history can help the team understand what has happened and what needs to happen next, where supported.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 09 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">Ticket Management</p>
-      <h2 class="cos-h2 rv" id="cta-h">Every ticket accounted for. <br><span class="dim">Every team on track.</span></h2>
-      <p class="cos-body rv">Bring customer requests, team ownership, automated follow-ups, and ticket analytics into one organised workflow with Chatberry.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-      </div>
-      <figure class="app tkm-done rv" style="--d:.1s" aria-labelledby="doneCap">
-        <figcaption class="sr-only" id="doneCap">A resolved ticket (design concept): TK-1047, course access issue, owned by Daniel Kim in Academic support. History: created from the ticket page at 08:47, assigned at 08:47, course access restored at 13:30, resolved and student notified at 14:05.</figcaption>
-        <div class="tkm-done__h">
-          <p><span class="tkm-ref">TK-1047</span><b>Course access issue</b><small>Academic support &middot; Daniel Kim</small></p>
-          <span class="tkm-st tkm-st--done tkm-st--lg"><svg class="i"><use href="#i-check"/></svg>Resolved</span>
-        </div>
-        <ol class="tkm-done__l">
-          <li><time>08:47</time>Created from the ticket page</li>
-          <li><time>08:47</time>Assigned to Daniel Kim</li>
-          <li><time>13:30</time>Module 3 access restored</li>
-          <li class="is-on"><time>14:05</time>Resolved &middot; student notified</li>
-        </ol>
-      </figure>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Solutions <em>Ticket Management</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>Every ticket,</span></span><span class="ln"><span>resolved on time.</span></span></h1>
+      <p class="rv d2">Capture customer requests, route them to the right team, track progress and close issues faster.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="tix"><div><i></i><span>Refund for order #4821</span><em>Due today</em></div><div><i></i><span>AC not cooling, room 204</span><em>Arjun</em></div><div><i></i><span>Invoice correction</span><em>In progress</em></div><div><i></i><span>Address change request</span><em>Resolved</em></div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Ticket Management</em></span>
+    <p class="stmt__txt" id="stmtTxt">When requests come from many channels and teams handle them separately, things get missed. A shared ticket system fixes that.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="pains wrap" aria-labelledby="pain-h">
+    <span class="lbl rv">The problem</span>
+    <h2 class="h-m rv" id="pain-h" style="margin-top:22px">Sound familiar?</h2>
+    <ol class="pains__list"><li class="rv d0"><span>01</span><b>Lost requests</b><p>Messages get buried across inboxes.</p></li><li class="rv d1"><span>02</span><b>No owner</b><p>Tickets wait while everyone assumes someone else has it.</p></li><li class="rv d2"><span>03</span><b>Slow resolution</b><p>Missed follow-ups keep issues open.</p></li><li class="rv d3"><span>04</span><b>Little visibility</b><p>Managers can’t see what is pending.</p></li></ol>
+  </section>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Every request has a home</h3><p>Branded ticket pages and chat-to-ticket in one click.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Automatic assignment</h3><p>Route by type, department or priority.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Clear status</h3><p>New, in progress, waiting and resolved, at a glance.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Performance tracking</h3><p>Resolution times, backlog and team workload.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Capture</span><p class="row__d">Requests become tickets automatically.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Route</span><p class="row__d">The right team gets each ticket.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Resolve</span><p class="row__d">Track to closure and keep customers updated.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Can customers submit tickets themselves?<i></i></summary><p>Yes, through a simple branded form.</p></details><details><summary>Can tickets escalate automatically?<i></i></summary><p>Yes. Set rules for overdue or high-priority tickets.</p></details><details><summary>Can I report on support?<i></i></summary><p>Yes. Track volumes, resolution times and workload.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/ticketing/page.html"><small>Products</small><b>Ticketing</b><p>Collect customer requests, send them to the right team, keep customers updated and close every ticket on time.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/solutions/customer-support/page.html"><small>Solutions</small><b>Customer Support</b><p>AI answers routine questions instantly, your team takes over when it matters, and everything happens in one inbox.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/products/workflow-orchestration/page.html"><small>Products</small><b>Workflow Orchestration</b><p>Drag together triggers, conditions, AI and actions to automate processes exactly the way your business runs them.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Ticket Management working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

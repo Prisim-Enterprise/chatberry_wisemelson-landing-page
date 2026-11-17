@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Content Engine for Business Communication | Chatberry</title>
-<meta name="description" content="Turn business knowledge into WhatsApp templates, customer replies, campaign messages, and reusable content with Chatberry Content Engine.">
+<title>Content Engine – Business knowledge into ready content | Chatberry</title>
+<meta name="description" content="Turn your business knowledge into WhatsApp templates, replies, campaign messages and reusable content with Chatberry.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Chatberry Content Engine — Turn your business knowledge into content that works.">
-<meta property="og:description" content="Reusable templates, context-aware replies and campaign messages built from your own business information.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Content Engine – Business knowledge into ready content | Chatberry">
+<meta property="og:description" content="Turn your business knowledge into WhatsApp templates, replies, campaign messages and reusable content with Chatberry.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Content Engine – Business knowledge into ready content | Chatberry">
+<meta name="twitter:description" content="Turn your business knowledge into WhatsApp templates, replies, campaign messages and reusable content with Chatberry.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,466 +21,123 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos ce" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
-      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></symbol>
-      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-      <symbol id="i-mega" viewBox="0 0 24 24"><path d="M4 10v4h3l7 4V6L7 10Z"/><path d="M17.5 9a4 4 0 0 1 0 6"/></symbol>
-      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6Z"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12.5" height="12.5" rx="2"/><path d="M16 8V5.5A2 2 0 0 0 14 3.5H5.5a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2H8"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15M15.5 4.5 19 8l-3.5 3.5M20 16H5M8.5 12.5 5 16l3.5 3.5"/></symbol>
-      <symbol id="i-retry" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M17.5 3v4h-4M6.5 21v-4h4"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5Z"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — business information becomes three outputs ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="ce-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="ce-head rv">
-        <p class="cos-eyebrow">Content Engine</p>
-        <h1 class="cos-h1" id="ce-h1">Turn your business knowledge <br><span class="dim">into content that works.</span></h1>
-        <p class="cos-hero__intro">Your business information shouldn&rsquo;t sit unused in documents, websites and conversations. Turn it into reusable templates, customer replies, campaign messages and personalised communication with Chatberry.</p>
-        <div class="cos-cta">
-          <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Get Started <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo</a>
-        </div>
-      </div>
-
-      <figure class="ce-hero rv" id="hero" style="--d:.15s" aria-labelledby="heroCap">
-        <figcaption class="sr-only" id="heroCap">Chatberry Content Engine turning business information into a WhatsApp template, customer reply, and campaign message. Three sources, a returns policy document, the shipping page of the website and a product table, feed the content workspace, which produces an order-shipped WhatsApp template, a reply to a returns question and a spring campaign message.</figcaption>
-        <ul class="ce-src">
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-file"/></svg></span><span><b>Returns policy.pdf</b><small>Document &middot; 4 pages</small></span></li>
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-globe"/></svg></span><span><b>brightway.shop/shipping</b><small>Website page</small></span></li>
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-table"/></svg></span><span><b>Products</b><small>Table &middot; 128 rows</small></span></li>
-        </ul>
-        <svg class="ce-wire" viewBox="0 0 100 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50C55 50 45 150 100 150M0 150H100M0 250C55 250 45 150 100 150"/></svg>
-        <div class="app ce-core">
-          <p class="ce-core__h"><span class="ce-mark"><svg class="i"><use href="#i-spark"/></svg></span><b>Content Engine</b></p>
-          <p class="ce-core__k">Using</p>
-          <p class="ce-core__chips"><span>Returns policy v3</span><span>Shipping page</span><span>Products</span></p>
-          <p class="ce-core__k">Creating</p>
-          <ol class="ce-core__l">
-            <li data-lit="2"><svg class="i"><use href="#i-check"/></svg>WhatsApp template</li>
-            <li data-lit="3"><svg class="i"><use href="#i-check"/></svg>Support reply</li>
-            <li data-lit="4"><svg class="i"><use href="#i-check"/></svg>Campaign message</li>
-          </ol>
-        </div>
-        <svg class="ce-wire" viewBox="0 0 100 300" preserveAspectRatio="none" aria-hidden="true"><path d="M0 150C55 150 45 50 100 50M0 150H100M0 150C55 150 45 250 100 250"/></svg>
-        <div class="ce-out">
-          <div class="ce-o" data-lit="2">
-            <p class="ce-o__k"><svg class="i"><use href="#i-wa"/></svg>WhatsApp template &middot; Utility</p>
-            <p class="ce-o__t">Hi {{1}}, your order {{2}} has shipped. Delivery takes 2&ndash;4 working days.</p>
-          </div>
-          <div class="ce-o ce-o--reply" data-lit="3">
-            <p class="ce-o__k"><svg class="i"><use href="#i-msg"/></svg>Support reply</p>
-            <p class="ce-o__t">You can return unworn items within 30 days. I&rsquo;ll send you a free return label.</p>
-          </div>
-          <div class="ce-o ce-o--camp" data-lit="4">
-            <p class="ce-o__k"><svg class="i"><use href="#i-mega"/></svg>Campaign message</p>
-            <p class="ce-o__t">The spring linen range is here: breathable, easy to wash, from $24.</p>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 02 PROBLEMS — five small, recognisable moments ============ -->
-    <section class="cos-sec" id="problem" aria-labelledby="pr-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">The problem</p>
-        <h2 class="cos-h2" id="pr-h">Your business knows more <br><span class="dim">than your team can use.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Businesses have plenty of information. The challenge is making it useful whenever someone needs it.</p>
-        </div>
-      </div>
-
-      <div class="ce-pr rv" style="--d:.1s">
-        <article class="ce-pr__i ce-pr__i--1">
-          <div class="ce-pr__v" aria-hidden="true">
-            <span class="ce-scrap ce-scrap--a"><svg class="i"><use href="#i-file"/></svg>Policies_final_v2.docx</span>
-            <span class="ce-scrap ce-scrap--b"><svg class="i"><use href="#i-globe"/></svg>FAQ page</span>
-            <span class="ce-scrap ce-scrap--c"><svg class="i"><use href="#i-table"/></svg>Prices.xlsx</span>
-            <span class="ce-scrap ce-scrap--d"><svg class="i"><use href="#i-file"/></svg>Product guide.pdf</span>
-          </div>
-          <h3>Your information is scattered</h3>
-          <p>Product details, policies, FAQs and documents live in different places. Finding the right one takes time.</p>
-        </article>
-        <article class="ce-pr__i ce-pr__i--2">
-          <div class="ce-pr__v" aria-hidden="true">
-            <span class="ce-draft">Hi! Our returns window is 14 days&hellip;</span>
-            <span class="ce-draft">Hello, you can return items within 14&hellip;</span>
-            <span class="ce-draft">Hey there, returns are accepted for 14&hellip;</span>
-          </div>
-          <h3>Your team keeps creating the same content</h3>
-          <p>Agents rewrite similar replies and marketers recreate messages that already exist in some form.</p>
-        </article>
-        <article class="ce-pr__i ce-pr__i--3">
-          <div class="ce-pr__v" aria-hidden="true">
-            <span class="ce-wait__q">Do you ship to Canada?</span>
-            <span class="ce-wait__t"><i></i><i></i><i></i>Agent is looking it up&hellip;</span>
-            <span class="ce-wait__c"><svg class="i"><use href="#i-clock"/></svg>Waiting 11 min</span>
-          </div>
-          <h3>Every response takes time</h3>
-          <p>Teams search, check details and write while customers wait.</p>
-        </article>
-        <article class="ce-pr__i ce-pr__i--4">
-          <div class="ce-pr__v" aria-hidden="true">
-            <span class="ce-vs"><b>Agent A</b>&ldquo;Returns within 14 days.&rdquo;</span>
-            <span class="ce-vs"><b>Agent B</b>&ldquo;You have a month to return it.&rdquo;</span>
-          </div>
-          <h3>Your communication lacks consistency</h3>
-          <p>Different people explain the same product or policy differently.</p>
-        </article>
-        <article class="ce-pr__i ce-pr__i--5">
-          <div class="ce-pr__v" aria-hidden="true">
-            <span class="ce-gen"><em>Generic</em>Check out our new collection!</span>
-            <span class="ce-gen ce-gen--on"><em>With context</em>Maya, the linen shirt you looked at is back in size M.</span>
-          </div>
-          <h3>Personalisation is difficult at scale</h3>
-          <p>Generic messages miss context, and adapting every message by hand takes too long.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- ============ 03 BUSINESS KNOWLEDGE — sources converge into one context ============ -->
-    <section class="cos-sec ce-tint ce-tint--green" id="knowledge" aria-labelledby="kn-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Learn from your business information</p>
-        <h2 class="cos-h2" id="kn-h">Give AI the context <br><span class="dim">behind your business.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Bring relevant business information together so it can support useful content and more informed customer interactions.</p>
-        </div>
-      </div>
-
-      <figure class="ce-kn rv" id="kn" style="--d:.1s" aria-labelledby="knCap">
-        <figcaption class="sr-only" id="knCap">Five kinds of source, documents, websites, connected business data, customer conversations and structured information, converge into one business knowledge layer with five sources connected. From it, a contextual answer about delivery to Canada cites the shipping page and the products table.</figcaption>
-        <ul class="ce-kn__src">
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-file"/></svg></span><b>Documents</b><small>Guides, manuals, policies, FAQs</small><span class="ce-kn__eg">Returns policy.pdf</span></li>
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-globe"/></svg></span><b>Websites</b><small>Useful pages from your site</small><span class="ce-kn__eg">/shipping &middot; /sizing</span></li>
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-db"/></svg></span><b>Connected data</b><small>Products, services, customers</small><span class="ce-kn__eg">Store catalogue</span></li>
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-msg"/></svg></span><b>Conversations</b><small>Eligible context, where permitted</small><span class="ce-kn__eg">Resolved chats</span></li>
-          <li data-lit="1"><span class="ce-ico"><svg class="i"><use href="#i-table"/></svg></span><b>Structured info</b><small>Collections, tables, fields</small><span class="ce-kn__eg">Plans &middot; Regions</span></li>
-        </ul>
-        <span class="ce-kn__merge" aria-hidden="true"></span>
-        <p class="ce-kn__bar" data-lit="2"><span class="ce-mark"><svg class="i"><use href="#i-book"/></svg></span><b>Business knowledge</b><span>5 sources connected</span></p>
-        <span class="ce-kn__down" aria-hidden="true"></span>
-        <div class="app ce-kn__ans" data-lit="3">
-          <p class="ce-kn__q"><span class="av av--violet">MP</span>Do you ship to Canada, and how long does it take?</p>
-          <p class="ce-kn__a">Yes. Orders to Canada arrive in 5&ndash;7 working days, and shipping is free over $80.</p>
-          <p class="ce-kn__cite"><svg class="i"><use href="#i-file"/></svg>Shipping page &middot; Regions table</p>
-        </div>
-      </figure>
-      <p class="ce-say rv">One connected source of business knowledge. <br><span class="dim">More ways to put it to work.</span></p>
-      <p class="ce-fine ce-fine--c rv">Sources are connected and refreshed in the ways your setup supports; nothing is assumed to sync automatically. <a class="cos-link ce-inline" href="/pages/products/knowledge-base/page.html">Organise sources in the Knowledge Base <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 04 TEMPLATES & REPLIES — one source, three uses ============ -->
-    <section class="cos-sec ce-tint ce-tint--blue" id="create" aria-labelledby="cr-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Templates &amp; reusable content</p>
-        <h2 class="cos-h2" id="cr-h">Create once. <br><span class="dim">Reuse across conversations.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Turn business knowledge into content your team can use again and again.</p>
-          <div class="cos-cta ce-cta-sm">
-            <a class="btn btn--lime" href="https://app.prisim.co.in/">Get Started <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <figure class="ce-ws rv" id="ws" style="--d:.1s" aria-labelledby="wsCap">
-        <figcaption class="sr-only" id="wsCap">A content editor uses the spring linen product sheet as its source. The same information becomes a WhatsApp promotional template awaiting approval, a suggested quick reply in a live chat about fabric care, and a campaign message in the composer.</figcaption>
-        <div class="app ce-ed">
-          <div class="app__top app__top--slim"><span class="app__crumb">Content <svg class="i"><use href="#i-chevr"/></svg> <b>Spring linen</b></span></div>
-          <div class="ce-ed__b">
-            <p class="ui-label">Source</p>
-            <p class="ce-ed__src"><svg class="i"><use href="#i-file"/></svg><span><b>Spring linen &middot; product sheet</b><small>Fabric, care, sizes, price from $24</small></span></p>
-            <p class="ui-label ce-gap">Create for</p>
-            <p class="ce-ed__for"><span class="is-on" data-lit="1">WhatsApp template</span><span class="is-on" data-lit="2">Quick reply</span><span class="is-on" data-lit="3">Campaign</span><span>Follow-up</span></p>
-            <p class="ui-label ce-gap">Key facts used</p>
-            <ul class="ce-ed__facts"><li>100% linen, breathable</li><li>Machine wash at 30&deg;</li><li>Sizes S&ndash;XL</li><li>From $24</li></ul>
-          </div>
-        </div>
-        <div class="ce-ws__out">
-          <div class="app ce-tpl" data-lit="1">
-            <p class="ce-tpl__h"><svg class="i"><use href="#i-wa"/></svg><b>Template &middot; spring_linen</b><span class="ce-st ce-st--warn">Awaiting approval</span></p>
-            <div class="wa-win ce-win"><div class="wa-win__ui"><div class="wa-chat"><div class="wa-body">
-              <div class="wa-msg wa-msg--in wa-card"><p class="wa-card__body"><b class="wa-card__title">New: spring linen</b>Hi {{1}}, our breathable linen range is here, sizes S&ndash;XL from $24.<span class="wa-meta">10:00</span></p><div class="wa-btns"><span class="wa-btn"><i class="wa-i wa-i--link"></i>Shop the range</span></div></div>
-            </div></div></div></div>
-          </div>
-          <div class="app ce-chat" data-lit="2">
-            <div class="wa-win ce-win"><div class="wa-win__ui"><div class="wa-chat"><div class="wa-body">
-              <p class="wa-msg wa-msg--in">Can I put the linen shirt in the washing machine?<span class="wa-meta">14:08</span></p>
-            </div></div></div></div>
-            <p class="ce-sugg"><span class="ce-sugg__k"><svg class="i"><use href="#i-bolt"/></svg>Suggested quick reply</span>Yes, machine wash at 30&deg; and hang to dry. It softens with every wash.<span class="ce-sugg__a"><span class="ce-btn ce-btn--xs">Use reply</span></span></p>
-          </div>
-          <div class="app ce-camp" data-lit="3">
-            <p class="ce-tpl__h"><svg class="i"><use href="#i-mega"/></svg><b>Campaign &middot; Spring launch</b><span class="ce-st">Draft</span></p>
-            <p class="ce-camp__m">Warmer days are coming. Our new linen range is light, easy to wash and starts at $24.</p>
-            <p class="ce-camp__f"><span>Audience: opted-in customers</span><span>Thu 10:00</span></p>
-          </div>
-        </div>
-      </figure>
-      <ul class="ce-five rv" style="--d:.1s">
-        <li><b>WhatsApp templates</b>Announcements, promotions, reminders and updates.</li>
-        <li><b>Support replies</b>Answers built from product details and policies.</li>
-        <li><b>Quick replies</b>Recurring answers without rewriting each time.</li>
-        <li><b>Campaign content</b>Messages based on products, offers and audience.</li>
-        <li><b>Follow-ups &amp; reminders</b>Content for configured workflows, such as renewals.</li>
-      </ul>
-      <p class="ce-fine ce-fine--c rv">WhatsApp templates follow approval and messaging requirements. <a class="cos-link ce-inline" href="/pages/solutions/campaign-management/page.html">Send content with Campaign Management <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 05 REPLIES — context behind the answer ============ -->
-    <section class="cos-sec" id="replies" aria-labelledby="rp-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">More relevant customer replies</p>
-        <h2 class="cos-h2" id="rp-h">Better answers start <br><span class="dim">with better context.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Give your team and AI agents access to relevant business knowledge so they respond with greater consistency and relevance.</p>
-        </div>
-      </div>
-
-      <figure class="ce-rp rv" id="rp" style="--d:.1s" aria-labelledby="rpCap">
-        <figcaption class="sr-only" id="rpCap">A WhatsApp conversation where a customer asks whether their subscription includes additional users. Beside it, a suggested-reply panel shows the question, relevant information from the plan comparison and billing policy, a proposed reply, and Edit and Review and send actions.</figcaption>
-        <div class="wa-win ce-conv"><div class="wa-win__ui"><div class="wa-chat">
-          <div class="wa-head"><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--d">DC</span><span class="wa-top__who"><b>Daniel Cho</b><small>Tasklane</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-          <div class="wa-body">
-            <p class="wa-day">Today</p>
-            <p class="wa-msg wa-msg--in">Hi, does my subscription include additional users? We&rsquo;re growing the team.<span class="wa-meta">11:20</span></p>
-            <p class="wa-typing" data-until="2"><i></i><i></i><i></i></p>
-            <p class="wa-msg wa-msg--out" data-at="2">Your current subscription includes the users specified in your plan. I can check your plan details if you share your account email.<span class="wa-meta">11:21 <i class="wa-tick"></i></span></p>
-          </div>
-          <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
-        </div></div></div>
-        <aside class="app ce-panel">
-          <p class="ui-label">Customer question</p>
-          <p class="ce-panel__q">Does my subscription include additional users?</p>
-          <p class="ui-label ce-gap">Relevant information</p>
-          <ul class="ce-panel__src">
-            <li data-lit="1"><svg class="i"><use href="#i-table"/></svg><span><b>Plan comparison</b><small>Users included per plan</small></span></li>
-            <li data-lit="1"><svg class="i"><use href="#i-file"/></svg><span><b>Billing policy v2</b><small>Adding seats mid-cycle</small></span></li>
-          </ul>
-          <p class="ui-label ce-gap">Proposed reply</p>
-          <p class="ce-panel__r">Your current subscription includes the users specified in your plan. I can check your plan details if you share your account email.</p>
-          <p class="ce-panel__a"><span class="ce-btn ce-btn--line">Edit</span><span class="ce-btn"><svg class="i"><use href="#i-send"/></svg>Review &amp; send</span></p>
-        </aside>
-      </figure>
-      <ul class="ce-ticks rv" style="--d:.1s">
-        <li>Understand the customer&rsquo;s question in context.</li>
-        <li>Use relevant product, service or policy information.</li>
-        <li>Suggest replies agents can review and send.</li>
-        <li>Ground AI answers in available knowledge.</li>
-        <li>Hand over to a person when help is needed, where supported.</li>
-      </ul>
-      <p class="ce-fine rv">Illustrative conversation. Specific answers should come from actual plan and account data; replies are reviewed before sending. <a class="cos-link ce-inline" href="/pages/products/ai-agents/page.html">Answer customers with AI Agents <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 06 UPDATES — old source, new source, refreshed content ============ -->
-    <section class="cos-sec ce-tint ce-tint--lav" id="updates" aria-labelledby="up-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Keep content relevant</p>
-        <h2 class="cos-h2" id="up-h">Your content should keep up <br><span class="dim">with your business.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Products change. Policies change. Offers change. Your content should reflect the latest available information.</p>
-        </div>
-      </div>
-
-      <ol class="ce-up rv" id="up" style="--d:.1s" aria-label="Before, update, refreshed content">
-        <li data-lit="1">
-          <p class="ce-up__k"><span>1</span>Before</p>
-          <div class="app ce-doc"><p class="ce-doc__h"><svg class="i"><use href="#i-file"/></svg>Returns policy &middot; v2</p><p class="ce-doc__l">Items can be returned within <s>14 days</s> of delivery.</p><p class="ce-doc__l ce-doc__l--x">Return shipping is paid by the customer.</p></div>
-        </li>
-        <li data-lit="2">
-          <p class="ce-up__k"><span>2</span>Source updated</p>
-          <div class="app ce-doc ce-doc--new"><p class="ce-doc__h"><svg class="i"><use href="#i-file"/></svg>Returns policy &middot; v3<span class="ce-st ce-st--ok">Updated Oct 10</span></p><p class="ce-doc__l">Items can be returned within <mark>30 days</mark> of delivery.</p><p class="ce-doc__l"><mark>Free return labels</mark> for all orders.</p></div>
-        </li>
-        <li data-lit="3" class="is-end">
-          <p class="ce-up__k"><span>3</span>Content refreshed</p>
-          <div class="app ce-doc"><p class="ce-doc__h"><svg class="i"><use href="#i-msg"/></svg>Quick reply &middot; Returns</p><p class="ce-doc__l">You can return unworn items within 30 days, and we&rsquo;ll send a free return label.</p><p class="ce-doc__a"><span class="ce-st ce-st--warn"><svg class="i"><use href="#i-retry"/></svg>Refresh suggested</span><span class="ce-btn ce-btn--xs">Review &amp; save</span></p></div>
-        </li>
-      </ol>
-      <ul class="ce-ticks ce-ticks--4 rv" style="--d:.1s">
-        <li>Update source information when products or policies change.</li>
-        <li>Rely less on outdated, copied responses.</li>
-        <li>Use approved information for reusable content.</li>
-        <li>Review generated content before it&rsquo;s sent.</li>
-      </ul>
-      <p class="ce-fine rv">Content is refreshed from current source information through the review steps your setup uses; automatic regeneration is shown only where supported.</p>
-    </section>
-
-    <!-- ============ 07 USE CASES — a varied bento ============ -->
-    <section class="cos-sec" id="use-cases" aria-labelledby="uc-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Use cases</p>
-        <h2 class="cos-h2" id="uc-h">Put your business knowledge <br><span class="dim">to work everywhere.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Use your business information to support more relevant communication across conversations and workflows.</p>
-        </div>
-      </div>
-
-      <div class="ce-bento rv" style="--d:.1s">
-        <article class="ce-tile ce-tile--tall">
-          <div class="ce-tile__v ce-tile__v--sup" aria-hidden="true">
-            <div class="wa-win ce-win"><div class="wa-win__ui"><div class="wa-chat"><div class="wa-body"><p class="wa-msg wa-msg--in">Is the tote waterproof?<span class="wa-meta">16:42</span></p></div></div></div></div>
-            <p class="ce-sugg ce-sugg--sm"><span class="ce-sugg__k"><svg class="i"><use href="#i-bolt"/></svg>Suggested</span>It&rsquo;s water-resistant canvas, so light rain is fine.</p>
-          </div>
-          <h3>Customer support</h3><p>Answer common product and service questions from available knowledge.</p>
-        </article>
-        <article class="ce-tile ce-tile--wide">
-          <div class="ce-tile__v ce-tile__v--camp" aria-hidden="true">
-            <div class="wa-win ce-win"><div class="wa-win__ui"><div class="wa-chat"><div class="wa-body"><div class="wa-msg wa-msg--in wa-card"><p class="wa-card__body"><b class="wa-card__title">Weekend offer</b>20% off the linen range until Sunday.<span class="wa-meta">10:00</span></p><div class="wa-btns"><span class="wa-btn"><i class="wa-i wa-i--link"></i>Shop now</span></div></div></div></div></div></div>
-            <div class="wa-win ce-win"><div class="wa-win__ui"><div class="wa-chat"><div class="wa-body"><div class="wa-msg wa-msg--in wa-card"><p class="wa-card__body"><b class="wa-card__title">Back in stock</b>Your saved tote is available again.<span class="wa-meta">09:15</span></p><div class="wa-btns"><span class="wa-btn"><i class="wa-i wa-i--link"></i>View tote</span></div></div></div></div></div></div>
-          </div>
-          <h3>Marketing campaigns</h3><p>Prepare promotional messages and campaign content.</p>
-        </article>
-        <article class="ce-tile">
-          <div class="ce-tile__v ce-tile__v--sales" aria-hidden="true">
-            <p class="ce-obj"><em>Objection</em>&ldquo;It&rsquo;s more than the high street.&rdquo;</p>
-            <p class="ce-obj ce-obj--a"><em>Answer</em>100% linen, lasts years, free returns.</p>
-          </div>
-          <h3>Sales conversations</h3><p>Product explanations and responses to common objections.</p>
-        </article>
-        <article class="ce-tile">
-          <div class="ce-tile__v ce-tile__v--onb" aria-hidden="true">
-            <ol class="ce-onb"><li class="is-done">Welcome</li><li class="is-done">Set up account</li><li class="is-on">First order tips</li><li>Rewards</li></ol>
-          </div>
-          <h3>Customer onboarding</h3><p>Instructions, helpful information and next steps.</p>
-        </article>
-        <article class="ce-tile">
-          <div class="ce-tile__v ce-tile__v--rem" aria-hidden="true">
-            <p class="ce-rem__f"><span>Renewal status</span><b>Due Oct 31</b></p>
-            <p class="ce-rem__m">Hi Daniel, your Team plan renews on Oct 31. Want to add seats first?</p>
-          </div>
-          <h3>Renewals &amp; payments</h3><p>Reminders using connected data and configured workflows.</p>
-        </article>
-        <article class="ce-tile">
-          <div class="ce-tile__v ce-tile__v--ai" aria-hidden="true">
-            <p class="ce-ai__a">Free shipping applies to orders over $80 in the US and Canada.</p>
-            <p class="ce-kn__cite"><svg class="i"><use href="#i-file"/></svg>Shipping page</p>
-          </div>
-          <h3>AI agents</h3><p>Business knowledge for responses and supported tasks.</p>
-        </article>
-      </div>
-      <p class="ce-fine ce-fine--c rv">Fictional examples. <a class="cos-link ce-inline" href="/pages/solutions/customer-journeys/page.html">Use content in Customer Journeys <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link ce-inline" href="/pages/products/integrations/page.html">Connect data with Integrations <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 08 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Frequently asked questions about Content Engine</h2>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is Chatberry Content Engine?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry Content Engine helps businesses use available business information to create reusable templates, customer replies, campaign messages, and other content for customer communication.</p></div></details>
-          <details class="os-qa"><summary>What information can it learn from?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Depending on the setup, it can use documents, website information, connected business data, and eligible customer conversation information.</p></div></details>
-          <details class="os-qa"><summary>Can it create WhatsApp templates?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>It can help prepare reusable WhatsApp message content. Templates intended for WhatsApp Business Platform use must follow applicable template approval and messaging requirements.</p></div></details>
-          <details class="os-qa"><summary>Can it help customer support teams reply faster?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>It can help prepare reusable replies and support context-aware responses using available business knowledge and supported workflows.</p></div></details>
-          <details class="os-qa"><summary>Can AI use this knowledge to answer customers?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Where AI replies are enabled, available business knowledge can provide context for responses. Accuracy depends on the quality, relevance, and freshness of the available information.</p></div></details>
-          <details class="os-qa"><summary>Does it automatically learn whenever business data changes?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>This depends on the connected sources and update mechanisms available. Automatic synchronisation or continuous learning should only be claimed for sources and workflows that support it.</p></div></details>
-          <details class="os-qa"><summary>Can the content be used in campaigns and workflows?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Content can support campaigns and configured workflows where the relevant Chatberry features and integrations are available.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 09 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final ce-tint ce-tint--green" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">Content Engine</p>
-      <h2 class="cos-h2 rv" id="cta-h">Your knowledge has more to offer.</h2>
-      <p class="cos-body rv">Turn business information into reusable content, help your team respond with confidence, and create more relevant customer communication with Chatberry.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Get Started <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-      </div>
-      <div class="ce-crop rv" aria-hidden="true">
-        <p class="ce-crop__i"><svg class="i"><use href="#i-wa"/></svg>Template<b>order_shipped</b></p>
-        <p class="ce-crop__i"><svg class="i"><use href="#i-msg"/></svg>Quick reply<b>Returns &middot; 30 days</b></p>
-        <p class="ce-crop__i"><svg class="i"><use href="#i-mega"/></svg>Campaign<b>Spring linen</b></p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Solutions <em>Content Engine</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>Turn what you know</span></span><span class="ln"><span>into what you send.</span></span></h1>
+      <p class="rv d2">Use your business information to create templates, replies and campaign messages that are accurate, consistent and quick.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vdoc"><div style="--i:0"><i>PDF</i><span>Price list 2026</span><em>Ready</em></div><div style="--i:1"><i>WEB</i><span>Return policy</span><em>Ready</em></div><div style="--i:2"><i>FAQ</i><span>Delivery questions</span><em>Ready</em></div><div style="--i:3"><i>CSV</i><span>Product catalogue</span><em>Syncing</em></div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Content Engine</em></span>
+    <p class="stmt__txt" id="stmtTxt">Your team keeps rewriting the same answers and messages. Content Engine turns your knowledge into content everyone can reuse.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="pains wrap" aria-labelledby="pain-h">
+    <span class="lbl rv">The problem</span>
+    <h2 class="h-m rv" id="pain-h" style="margin-top:22px">Sound familiar?</h2>
+    <ol class="pains__list"><li class="rv d0"><span>01</span><b>Information is scattered</b><p>Product details and policies are hard to find.</p></li><li class="rv d1"><span>02</span><b>Same content, rewritten</b><p>People recreate replies that already exist.</p></li><li class="rv d2"><span>03</span><b>Slow responses</b><p>Customers wait while teams search and write.</p></li><li class="rv d3"><span>04</span><b>Inconsistent answers</b><p>Everyone explains things differently.</p></li></ol>
+  </section>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Context for AI</h3><p>Bring product, policy and FAQ content together in one place.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Create once, reuse often</h3><p>Save templates and replies your whole team can use.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Better, faster answers</h3><p>Agents and AI respond with the right facts every time.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Personal at scale</h3><p>Adapt messages for each audience without starting over.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Gather</span><p class="row__d">Add the knowledge your team relies on.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Generate</span><p class="row__d">Create templates, replies and campaign copy.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Reuse</span><p class="row__d">Use it across chats, campaigns and journeys.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Does it write WhatsApp templates?<i></i></summary><p>Yes. Draft templates from your content and submit them for approval.</p></details><details><summary>Can my team edit the content?<i></i></summary><p>Yes. Everything AI drafts can be reviewed and edited.</p></details><details><summary>Where is the content used?<i></i></summary><p>In replies, campaigns, journeys and AI agents.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/knowledge-base/page.html"><small>Products</small><b>Knowledge Base</b><p>Bring documents, website pages, FAQs and business data into one knowledge base that your AI agents and workflows can use.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/solutions/media-library/page.html"><small>Solutions</small><b>Media Library</b><p>Keep images, videos and documents in one library, reuse them anywhere in Chatberry and create new visuals with AI.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/products/campaigns/page.html"><small>Products</small><b>Campaigns</b><p>Create, schedule and send WhatsApp campaigns from one place, then learn from every read, reply and click.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Content Engine working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

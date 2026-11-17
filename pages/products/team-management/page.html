@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Team Management Software | Roles, Permissions &amp; Smart Routing | Chatberry</title>
-<meta name="description" content="Manage teams with roles, access control, departments, smart routing, 2FA, team chats, workload management, analytics, and activity tracking in Chatberry.">
+<title>Team Management – Roles, access and smart routing | Chatberry</title>
+<meta name="description" content="Manage roles, permissions, departments, routing, workloads and security for every team in Chatberry.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Team Management — Give every team the right access, context, and control.">
-<meta property="og:description" content="Give every team the right access, context, and control with Chatberry Team Management — from roles and departments to smart routing, security, collaboration, and team intelligence.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Team Management – Roles, access and smart routing | Chatberry">
+<meta property="og:description" content="Manage roles, permissions, departments, routing, workloads and security for every team in Chatberry.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Team Management – Roles, access and smart routing | Chatberry">
+<meta name="twitter:description" content="Manage roles, permissions, departments, routing, workloads and security for every team in Chatberry.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,803 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos tm" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
-      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 8 2.5 8h-17S6 15 6 9"/><path d="M10.2 20.5a2 2 0 0 0 3.6 0"/></symbol>
-      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-calcheck" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 6A1.5 1.5 0 0 1 5 4.5h9A1.5 1.5 0 0 1 15.5 6v5A1.5 1.5 0 0 1 14 12.5H8.5L5.5 15v-2.5A1.5 1.5 0 0 1 3.5 11Z"/><path d="M18.5 8.5A1.5 1.5 0 0 1 20 10v6a1.5 1.5 0 0 1-1.5 1.5V21l-3-3.5h-4.8"/></symbol>
-      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h14a1.5 1.5 0 0 1 1.5 1.5V10a2 2 0 0 0 0 4v2.5A1.5 1.5 0 0 1 19 18H5a1.5 1.5 0 0 1-1.5-1.5V14a2 2 0 0 0 0-4Z"/><path d="M14 7v2M14 11v2M14 15v2"/></symbol>
-      <symbol id="i-team" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="4.8" cy="10.2" r="2.2"/><circle cx="19.2" cy="10.2" r="2.2"/><path d="M7.5 19.5c.6-3 2.4-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/><path d="M1.6 18c.3-2 1.4-3.2 3-3.5M22.4 18c-.3-2-1.4-3.2-3-3.5"/></symbol>
-      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 17.5v-5M11.5 17.5v-10M16.5 17.5v-7"/></symbol>
-      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.5 17l6-6 4 4 7-7.5"/><path d="M15.5 7.5h5.5V13"/></symbol>
-      <symbol id="i-stetho" viewBox="0 0 24 24"><path d="M6 3v5.5a4 4 0 0 0 8 0V3"/><path d="M10 12.5v2a5 5 0 0 0 10 0v-1.2"/><circle cx="20" cy="11" r="2"/></symbol>
-      <symbol id="i-claim" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5M9.5 14l2 2 3.5-3.5"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16.5l-5.5-5.5-8 8"/></symbol>
-      <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2.8l8.5 4.7v9L12 21.2 3.5 16.5v-9Z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/></symbol>
-      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/><path d="M2.5 3.5H5l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.3a1.5 1.5 0 0 0 1.5-1.1L20.5 7.5H6"/></symbol>
-      <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
-      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.8h3.4l1.8 4.4-2.2 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.2 4.4 1.8V19a1.6 1.6 0 0 1-1.7 1.6A16.4 16.4 0 0 1 3.4 5.5 1.6 1.6 0 0 1 5 3.8Z"/></symbol>
-      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></symbol>
-      <symbol id="i-erp" viewBox="0 0 24 24"><path d="M3 20.5h18"/><path d="M4.5 20.5V10l5 3.2V10l5 3.2V5.5h5v15"/></symbol>
-      <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.6 4l-3.2 16"/></symbol>
-      <symbol id="i-apps" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><circle cx="17" cy="7" r="3.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><path d="M17 13.5v7M13.5 17h7"/></symbol>
-      <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-7 4.5 14 3-7h4.5"/></symbol>
-      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.2l8.6 4.4L12 12 3.4 7.6Z"/><path d="M3.4 12.4L12 16.8l8.6-4.4M3.4 16.6L12 21l8.6-4.4"/></symbol>
-      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10.2 13.8a4.6 4.6 0 0 0 6.5 0l3-3a4.6 4.6 0 0 0-6.5-6.5l-1 1"/><path d="M13.8 10.2a4.6 4.6 0 0 0-6.5 0l-3 3a4.6 4.6 0 0 0 6.5 6.5l1-1"/></symbol>
-      <symbol id="i-view" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2.2"/><path d="M3.5 9.2h17M9.5 9.2V20"/></symbol>
-      <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2.2"/><circle cx="6" cy="18.5" r="2.2"/><circle cx="18" cy="8.5" r="2.2"/><path d="M6 7.7v8.6M18 10.7c0 4-6.5 2.8-10.4 6.4"/></symbol>
-      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
-      <symbol id="i-board" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="5" height="15" rx="1.5"/><rect x="9.5" y="4.5" width="5" height="10" rx="1.5"/><rect x="15.5" y="4.5" width="5" height="12.5" rx="1.5"/></symbol>
-      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.6" cy="6.5" r="1.1"/><circle cx="4.6" cy="12" r="1.1"/><circle cx="4.6" cy="17.5" r="1.1"/></symbol>
-      <symbol id="i-hash" viewBox="0 0 24 24"><path d="M5 9h14M5 15h14M10 4l-2 16M16 4l-2 16"/></symbol>
-      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.9 9.2c-.6-.9-1.6-1.4-2.9-1.4-1.7 0-2.8.9-2.8 2.1 0 2.9 5.9 1.6 5.9 4.4 0 1.2-1.2 2.1-3.1 2.1-1.3 0-2.4-.6-3-1.5M12 6.2v1.6M12 16.8v1.6"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
-      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.8l7.5 3v5.6c0 4.7-3.2 8.4-7.5 9.6-4.3-1.2-7.5-4.9-7.5-9.6V5.8Z"/><path d="M9.2 12l2 2 3.6-3.6"/></symbol>
-      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M4 20l6.5-6.5M4 20v-5.5M4 20h5.5M20 4l-6.5 6.5M20 4v5.5M20 4h-5.5"/></symbol>
-      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6.5 8h11v3.4a5.5 5.5 0 0 1-11 0ZM12 16.9V21"/></symbol>
-      <symbol id="i-arch" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="3.5" width="7.5" height="4.5" rx="1.6"/><rect x="13" y="10" width="7.5" height="10.5" rx="1.6"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.6"/></symbol>
-      <symbol id="i-net" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><circle cx="4.6" cy="6" r="1.9"/><circle cx="19.4" cy="6" r="1.9"/><circle cx="4.6" cy="18" r="1.9"/><circle cx="19.4" cy="18" r="1.9"/><path d="M6.1 7.2l3.8 3M17.9 7.2l-3.8 3M6.1 16.8l3.8-3M17.9 16.8l-3.8-3"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-      <symbol id="i-flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.6 6H15a3.1 3.1 0 0 1 0 6.2H9a3.1 3.1 0 0 0 0 6.2h6.4"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
-      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></symbol>
-      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".7"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
-      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
-      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.8L4.8 13.5H12l-1 7.7 8.2-10.7H12Z"/></symbol>
-      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.6-4.4M4 3.6v3.6h3.6M4 13a8 8 0 0 0 14.6 4.4M20 20.4v-3.6h-3.6"/></symbol>
-      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
-      <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
-      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4 2.2 4H5"/></symbol>
-      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5V5M6 11l6-6 6 6"/></symbol>
-      <symbol id="i-org" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1.4"/><rect x="2.5" y="16" width="6" height="5" rx="1.4"/><rect x="9" y="16" width="6" height="5" rx="1.4"/><rect x="15.5" y="16" width="6" height="5" rx="1.4"/><path d="M12 8v4M5.5 16v-4h13v4M12 12v4"/></symbol>
-      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8 20 3M17 6l2.5 2.5M14.5 8.5l2 2"/></symbol>
-      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5M10 20v-5.5h4V20"/></symbol>
-      <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5 6 5h12l2.5 8.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19Z"/><path d="M3.5 13.5h5l1.5 2.5h4l1.5-2.5h5"/></symbol>
-      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.8l-5.3 2.8 1-5.8-4.2-4.1 5.9-.9Z"/></symbol>
-      <symbol id="i-dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4.2M12 17v.01"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="tm-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="os-hero-top">
-        <div class="cos-hero__head rv">
-          <p class="cos-eyebrow">Team Management</p>
-          <h1 class="cos-h1" id="tm-h1"><span class="dim">Give every team</span> <br>the right access, context, and control.</h1>
-          <p class="cos-hero__intro">Organize people, manage permissions, route work, secure access, and understand team performance &mdash; all from one place.</p>
-          <div class="cos-cta">
-            <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Start Free <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo</a>
-          </div>
-          <p class="os-note"><svg class="i"><use href="#i-check"/></svg>Start free. Pay as you use.</p>
-        </div>
-
-        <figure class="os-photo os-ph--hero rv" style="--d:.1s"><img src="/public/assets/img/team-management/team-lead-workspace.webp" alt="A team lead at her desk using the team workspace on a large monitor, with a colleague working beside her in an open office." width="1152" height="928" loading="eager" decoding="async"></figure>
-      </div>
-
-      <figure class="cos-hero__ui rv" style="--d:.15s">
-        <ol class="tm-story" id="heroStory" aria-label="New request, routing, right person, assigned">
-          <li><span>01</span>New request</li><li><span>02</span>Routing</li><li><span>03</span>Right person</li><li><span>04</span>Assigned</li>
-        </ol>
-        <div class="ui-scroll">
-          <div class="app tm-hero" id="heroApp" style="--w:1336" role="img" aria-label="Team operations workspace: a team overview with status, workload and tasks per member, and a smart assignment panel that routes a new booking request by availability and workload to Priya Shah.">
-            <div class="app__top">
-              <span class="ws-switch"><span class="ws-logo">N</span>Northwind <svg class="i"><use href="#i-chev"/></svg></span>
-              <span class="app__search"><svg class="i"><use href="#i-search"/></svg>Search people, teams, roles<kbd>&#8984;K</kbd></span>
-              <span class="app__tools"><svg class="i"><use href="#i-bell"/></svg><span class="av av--violet">MI</span></span>
-            </div>
-            <div class="tm-hero__body">
-              <aside class="app__side">
-                <p class="side__label">Team Management</p>
-                <span class="side__item is-on"><svg class="i"><use href="#i-users"/></svg>Teams</span>
-                <span class="side__item"><svg class="i"><use href="#i-org"/></svg>Departments</span>
-                <span class="side__item"><svg class="i"><use href="#i-key"/></svg>Roles</span>
-                <span class="side__item"><svg class="i"><use href="#i-branch"/></svg>Routing</span>
-                <span class="side__item"><svg class="i"><use href="#i-shield"/></svg>Security</span>
-                <span class="side__item"><svg class="i"><use href="#i-chart"/></svg>Analytics</span>
-              </aside>
-
-              <div class="tm-hero__main">
-                <div class="view__head"><div><p class="view__title">Team Overview</p><p class="view__sub">Reservations &middot; 6 members</p></div><span class="seg"><span class="is-on">Today</span><span>Week</span></span></div>
-                <div class="tbl tm-team">
-                  <div class="tbl__row tbl__head"><span>Team member</span><span>Status</span><span>Workload</span><span>Tasks</span></div>
-                  <div class="tbl__row"><span class="who"><span class="av av--lime">AT</span>Ana Torres</span><span class="tm-st tm-st--on">Online</span><span class="tm-load" style="--v:.4"><i></i>4 active</span><span>8</span></div>
-                  <div class="tbl__row"><span class="who"><span class="av av--cyan">RV</span>Rahul Verma</span><span class="tm-st tm-st--busy">Busy</span><span class="tm-load" style="--v:.7"><i></i>7 active</span><span>5</span></div>
-                  <div class="tbl__row tm-team__pick"><span class="who"><span class="av av--violet">PS</span>Priya Shah</span><span class="tm-st tm-st--on">Online</span><span class="tm-load tm-load--pick" style="--v:.3"><i></i><b class="tm-n0">2 active</b><b class="tm-n1">3 active</b></span><span>4</span></div>
-                  <div class="tbl__row"><span class="who"><span class="av av--amber">ML</span>Marcus Lee</span><span class="tm-st tm-st--away">Away</span><span class="tm-load" style="--v:0"><i></i>&mdash;</span><span>3</span></div>
-                  <div class="tbl__row"><span class="who"><span class="av">JD</span>Jordan Diaz</span><span class="tm-st tm-st--on">Online</span><span class="tm-load" style="--v:.5"><i></i>5 active</span><span>6</span></div>
-                </div>
-              </div>
-
-              <aside class="app__panel tm-assign">
-                <p class="ui-label">Smart Assignment <svg class="i"><use href="#i-spark"/></svg></p>
-                <div class="tm-queue">
-                  <p><b>12</b> new conversations</p>
-                  <p><b>4</b> available team members</p>
-                  <p class="tm-queue__rule"><svg class="i"><use href="#i-branch"/></svg>Assigning on availability + workload</p>
-                </div>
-                <div class="tm-req" data-at="1">
-                  <span class="ch"><svg class="i"><use href="#i-cal"/></svg></span>
-                  <div><b>New booking request</b><small>Reservations &middot; 2 guests &middot; 14&ndash;16 Nov</small></div>
-                </div>
-                <ul class="tm-checks" data-at="2">
-                  <li style="--i:0"><svg class="i"><use href="#i-check"/></svg>Department &middot; Reservations</li>
-                  <li style="--i:1"><svg class="i"><use href="#i-check"/></svg>Available &middot; 4 people</li>
-                  <li style="--i:2"><svg class="i"><use href="#i-check"/></svg>Lowest workload &middot; Priya</li>
-                </ul>
-                <div class="tm-done" data-at="4">
-                  <svg class="i"><use href="#i-check"/></svg>
-                  <span>Assigned <svg class="i tm-done__to"><use href="#i-arrow"/></svg> <b>Priya Shah</b></span>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 02 THE BIG IDEA ============ -->
-    <section class="cos-sec" id="idea" aria-labelledby="idea-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="idea-h">Your people. <br><span class="dim">One connected operating layer.</span></h2>
-        <p class="tm-lines">People work differently. Teams have different responsibilities. Permissions differ. Workloads change. <b>Chatberry brings them together without forcing everyone into the same workflow.</b></p>
-      </div>
-
-      <figure class="tm-chain" id="chain" aria-label="People, roles, departments, work and performance connect into Team Management.">
-        <ol class="tm-chain__steps">
-          <li style="--i:0"><svg class="i"><use href="#i-users"/></svg>People</li>
-          <li style="--i:1"><svg class="i"><use href="#i-key"/></svg>Roles</li>
-          <li style="--i:2"><svg class="i"><use href="#i-org"/></svg>Departments</li>
-          <li style="--i:3"><svg class="i"><use href="#i-check"/></svg>Work</li>
-          <li style="--i:4"><svg class="i"><use href="#i-trend"/></svg>Performance</li>
-        </ol>
-        <div class="tm-chain__core"><img src="/assets/chatberry-icon.svg" alt="" width="32" height="32"><span><b>Team Management</b><small>One operating layer</small></span></div>
-      </figure>
-    </section>
-
-    <!-- ============ 03 ROLES & ACCESS ============ -->
-    <section class="cos-sec" id="roles" aria-labelledby="roles-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Roles &amp; access</p>
-          <h2 class="cos-h2" id="roles-h">Control who can see, do, and manage what.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Create roles and define exactly what each person can access.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-roles" id="rolesApp" data-role="1">
-          <div class="tm-roles__body">
-            <aside class="tm-roles__side">
-              <p class="ui-label">Roles</p>
-              <div class="tm-rolelist" role="tablist" aria-label="Roles">
-                <button class="tm-role" type="button" role="tab"><b>Admin</b><small>2 members &middot; full access</small></button>
-                <button class="tm-role" type="button" role="tab"><b>Manager</b><small>5 members &middot; department scope</small></button>
-                <button class="tm-role" type="button" role="tab"><b>Agent</b><small>26 members &middot; assigned work</small></button>
-              </div>
-              <div class="tm-rolecard">
-                <p class="tm-rolecard__h"><span class="tm-rn tm-rn--1">Admin</span><span class="tm-rn tm-rn--2">Manager</span><span class="tm-rn tm-rn--3">Agent</span> can</p>
-                <ul class="tm-can tm-can--1"><li class="y">Manage the whole workspace</li><li class="y">Change security and roles</li><li class="y">See every department</li></ul>
-                <ul class="tm-can tm-can--2"><li class="y">Manage department conversations</li><li class="y">Assign tasks</li><li class="y">View department analytics</li><li class="n">Change workspace security</li></ul>
-                <ul class="tm-can tm-can--3"><li class="y">Handle assigned conversations</li><li class="y">Work on their own tasks</li><li class="n">See other teams&rsquo; work</li><li class="n">Change settings</li></ul>
-              </div>
-            </aside>
-            <div class="tm-roles__main">
-              <div class="tm-matrix">
-                <div class="tm-mx tm-mx--head"><span>Module</span><span class="c1">Admin</span><span class="c2">Manager</span><span class="c3">Agent</span></div>
-                <div class="tm-mx"><span><svg class="i"><use href="#i-msg"/></svg>Conversations</span><span class="c1"><i class="pm pm--full">Full</i></span><span class="c2"><i class="pm">Team</i></span><span class="c3"><i class="pm">Assigned</i></span></div>
-                <div class="tm-mx"><span><svg class="i"><use href="#i-users"/></svg>Customers</span><span class="c1"><i class="pm pm--full">Full</i></span><span class="c2"><i class="pm">Department</i></span><span class="c3"><i class="pm">Assigned</i></span></div>
-                <div class="tm-mx"><span><svg class="i"><use href="#i-mail"/></svg>Campaigns</span><span class="c1"><i class="pm pm--full">Full</i></span><span class="c2"><i class="pm">Manage</i></span><span class="c3"><i class="pm">View</i></span></div>
-                <div class="tm-mx"><span><svg class="i"><use href="#i-check"/></svg>Tasks</span><span class="c1"><i class="pm pm--full">Full</i></span><span class="c2"><i class="pm">Team</i></span><span class="c3"><i class="pm">Own</i></span></div>
-                <div class="tm-mx"><span><svg class="i"><use href="#i-chart"/></svg>Analytics</span><span class="c1"><i class="pm pm--full">Full</i></span><span class="c2"><i class="pm">Department</i></span><span class="c3"><i class="pm">Own</i></span></div>
-                <div class="tm-mx"><span><svg class="i"><use href="#i-sliders"/></svg>Settings</span><span class="c1"><i class="pm pm--full">Full</i></span><span class="c2"><i class="pm">Limited</i></span><span class="c3"><i class="pm pm--none">&mdash;</i></span></div>
-              </div>
-              <div class="tm-perms">
-                <span class="ui-label">Permissions</span>
-                <span class="tm-p" data-r="123">View</span><span class="tm-p" data-r="123">Create</span><span class="tm-p" data-r="123">Edit</span><span class="tm-p" data-r="1">Delete</span><span class="tm-p" data-r="12">Export</span><span class="tm-p" data-r="12">Manage</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <p class="os-say rv">Access should follow responsibility.</p>
-    </section>
-
-    <!-- ============ 04 DEPARTMENTS ============ -->
-    <section class="cos-sec" id="departments" aria-labelledby="dep-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Departments</p>
-          <h2 class="cos-h2" id="dep-h">Organize work around how your business operates.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Create departments, assign people, define responsibilities, and keep work moving to the right teams.</p></div>
-      </div>
-
-      <figure class="tm-org rv" style="--d:.1s" aria-label="An organization with Sales, Support, Operations, Marketing and Finance departments.">
-        <div class="tm-org__root"><img src="/assets/chatberry-icon.svg" alt="" width="32" height="32"><b>Northwind</b><small>Organization &middot; 33 people</small></div>
-        <div class="tm-deps" id="deps">
-          <button class="tm-dep" type="button"><b>Sales</b><small>8 members</small><span class="av-stack"><span class="av av--amber">ML</span><span class="av av--cyan">RV</span><span class="av">+6</span></span></button>
-          <button class="tm-dep" type="button"><b>Support</b><small>12 members</small><span class="av-stack"><span class="av av--violet">PS</span><span class="av av--lime">AT</span><span class="av">+10</span></span></button>
-          <button class="tm-dep" type="button"><b>Operations</b><small>6 members</small><span class="av-stack"><span class="av">JD</span><span class="av av--amber">SK</span><span class="av">+4</span></span></button>
-          <button class="tm-dep" type="button"><b>Marketing</b><small>4 members</small><span class="av-stack"><span class="av av--violet">MI</span><span class="av">+3</span></span></button>
-          <button class="tm-dep" type="button"><b>Finance</b><small>3 members</small><span class="av-stack"><span class="av av--cyan">NK</span><span class="av">+2</span></span></button>
-        </div>
-        <div class="app tm-depdetail">
-          <div class="tm-dd" data-dep="0"><p class="tm-dd__name">Sales</p><span><b>8</b>Members</span><span><b>24</b>Active work</span><span><b>31</b>Conversations</span><span><b>18</b>Tasks</span><span><b>2</b>Tickets</span><span><b>6 / 8</b>Available</span><span><b>3m</b>Avg. response</span></div>
-          <div class="tm-dd" data-dep="1"><p class="tm-dd__name">Support</p><span><b>12</b>Members</span><span><b>38</b>Active work</span><span><b>54</b>Conversations</span><span><b>22</b>Tasks</span><span><b>17</b>Tickets</span><span><b>9 / 12</b>Available</span><span><b>2m</b>Avg. response</span></div>
-          <div class="tm-dd" data-dep="2"><p class="tm-dd__name">Operations</p><span><b>6</b>Members</span><span><b>17</b>Active work</span><span><b>12</b>Conversations</span><span><b>29</b>Tasks</span><span><b>4</b>Tickets</span><span><b>5 / 6</b>Available</span><span><b>5m</b>Avg. response</span></div>
-          <div class="tm-dd" data-dep="3"><p class="tm-dd__name">Marketing</p><span><b>4</b>Members</span><span><b>9</b>Active work</span><span><b>6</b>Conversations</span><span><b>14</b>Tasks</span><span><b>0</b>Tickets</span><span><b>3 / 4</b>Available</span><span><b>&mdash;</b>Avg. response</span></div>
-          <div class="tm-dd" data-dep="4"><p class="tm-dd__name">Finance</p><span><b>3</b>Members</span><span><b>7</b>Active work</span><span><b>4</b>Conversations</span><span><b>11</b>Tasks</span><span><b>1</b>Tickets</span><span><b>3 / 3</b>Available</span><span><b>6m</b>Avg. response</span></div>
-        </div>
-      </figure>
-
-      <p class="os-say os-say--center rv">One organization. <span class="dim">Clear ownership.</span></p>
-    </section>
-
-    <!-- ============ 05 SMART ROUTING ============ -->
-    <section class="cos-sec" id="routing" aria-labelledby="route-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Smart routing</p>
-          <h2 class="cos-h2" id="route-h">Send every request to the right person.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Route conversations, tasks, tickets, and work based on how your team actually operates.</p></div>
-      </div>
-
-      <div class="tm-route rv" id="route" style="--d:.1s" data-sc="1">
-        <div class="tm-scen" role="tablist" aria-label="Example requests">
-          <button class="tm-scen__b" type="button" role="tab"><svg class="i"><use href="#i-home"/></svg>New property enquiry</button>
-          <button class="tm-scen__b" type="button" role="tab"><svg class="i"><use href="#i-cal"/></svg>Booking request</button>
-          <button class="tm-scen__b" type="button" role="tab"><svg class="i"><use href="#i-file"/></svg>Student enquiry</button>
-        </div>
-        <ol class="tm-rail" id="rail">
-          <li class="tm-rs"><span class="tm-rs__ico"><svg class="i"><use href="#i-inbox"/></svg></span><b>New request</b><small><span class="s1">Property enquiry</span><span class="s2">Booking request</span><span class="s3">Student enquiry</span></small></li>
-          <li class="tm-rs"><span class="tm-rs__ico"><svg class="i"><use href="#i-org"/></svg></span><b>Department</b><small><span class="s1">Sales</span><span class="s2">Reservations</span><span class="s3">Admissions</span></small></li>
-          <li class="tm-rs"><span class="tm-rs__ico"><svg class="i"><use href="#i-star"/></svg></span><b>Skill</b><small><span class="s1">Property enquiries</span><span class="s2 skip">Any</span><span class="s3">Counselling</span></small></li>
-          <li class="tm-rs"><span class="tm-rs__ico"><svg class="i"><use href="#i-dot"/></svg></span><b>Availability</b><small><span class="s1">Available agent</span><span class="s2">Available member</span><span class="s3">Available counsellor</span></small></li>
-          <li class="tm-rs"><span class="tm-rs__ico"><svg class="i"><use href="#i-scale"/></svg></span><b>Workload</b><small><span class="s1">Lowest workload</span><span class="s2 skip">Not applied</span><span class="s3 skip">Not applied</span></small></li>
-          <li class="tm-rs tm-rs--end"><span class="tm-rs__ico"><svg class="i"><use href="#i-check"/></svg></span><b>Assigned</b><small><span class="s1">Marcus Lee</span><span class="s2">Ana Torres</span><span class="s3">Meera Iyer</span></small></li>
-        </ol>
-        <div class="tm-ctrls">
-          <span class="ui-label">Routing rules</span>
-          <span class="chip is-on"><svg class="i"><use href="#i-refresh"/></svg>Round robin</span>
-          <span class="chip is-on"><svg class="i"><use href="#i-dot"/></svg>Availability</span>
-          <span class="chip is-on"><svg class="i"><use href="#i-scale"/></svg>Workload</span>
-          <span class="chip is-on"><svg class="i"><use href="#i-star"/></svg>Skill</span>
-          <span class="chip is-on"><svg class="i"><use href="#i-org"/></svg>Department</span>
-          <span class="chip"><svg class="i"><use href="#i-up"/></svg>Priority</span>
-        </div>
-      </div>
-
-      <p class="os-say rv">Don&rsquo;t just distribute work. <span class="dim">Route it intelligently.</span></p>
-    </section>
-
-    <!-- ============ 06 ROUND ROBIN ============ -->
-    <section class="cos-sec" id="round-robin" aria-labelledby="rr-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Round robin</p>
-          <h2 class="cos-h2" id="rr-h">Keep work distributed fairly.</h2>
-        </div>
-        <div class="sec-head__copy">
-          <p class="cos-body">Automatically distribute new work across eligible team members without relying on manual assignment.</p>
-          <a class="cos-link os-link" href="https://app.prisim.co.in/">Configure Routing <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-rr" id="rrApp" role="img" aria-label="Requests 1 to 6 are assigned in turn to Ana, Rahul and Priya. When Rahul goes away, request 5 skips him and goes to Priya.">
-          <div class="tm-rr__top">
-            <span class="ui-label">Incoming</span>
-            <span class="tm-rr__queue"><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i><i>6</i></span>
-            <span class="tm-rr__ctrls"><span class="chip is-on">Round robin</span><span class="chip is-on">Skip offline</span><span class="chip is-on">Respect workload</span><span class="chip">Department based</span></span>
-          </div>
-          <div class="tm-lanes">
-            <div class="tm-lane"><p class="tm-lane__h"><span class="av av--lime">AT</span><b>Ana Torres</b><span class="tm-st tm-st--on">Online</span></p>
-              <span class="tm-tok" data-at="1">1</span><span class="tm-tok" data-at="4">4</span><span class="tm-tok" data-at="7">6</span></div>
-            <div class="tm-lane tm-lane--b"><p class="tm-lane__h"><span class="av av--cyan">RV</span><b>Rahul Verma</b><span class="tm-st tm-st--on tm-rv-on">Online</span><span class="tm-st tm-st--away tm-rv-away">Away</span></p>
-              <span class="tm-tok" data-at="2">2</span><span class="tm-skip" data-at="6"><svg class="i"><use href="#i-arrow"/></svg>Skipped &middot; away</span></div>
-            <div class="tm-lane"><p class="tm-lane__h"><span class="av av--violet">PS</span><b>Priya Shah</b><span class="tm-st tm-st--on">Online</span></p>
-              <span class="tm-tok" data-at="3">3</span><span class="tm-tok tm-tok--moved" data-at="6">5</span></div>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 07 TEAM CHAT ============ -->
-    <section class="cos-sec" id="team-chat" aria-labelledby="chat-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Team chat</p>
-          <h2 class="cos-h2" id="chat-h">Talk internally without losing the context.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Collaborate with your team while keeping internal conversations connected to the work.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="ui-scroll">
-          <div class="app tm-chat" id="chatApp" style="--w:1336" role="img" aria-label="A customer asks whether their order has shipped. In an internal team chat the agent asks operations, who confirm it ships today, and the agent replies to the customer.">
-            <div class="tm-chat__body">
-              <div class="wa-win tm-cust"><div class="wa-win__ui"><div class="wa-chat">
-                <div class="wa-head"><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--e">KN</span><span class="wa-top__who"><b>Kavya Nair</b><small>Customer &middot; WhatsApp</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-                <div class="wa-body">
-                  <p class="wa-msg wa-msg--in" data-at="1">Can you confirm whether the order has shipped?<span class="wa-meta">11:02</span></p>
-                  <p class="wa-msg wa-msg--out" data-at="5">Yes &mdash; it ships today. You&rsquo;ll get tracking by this evening.<span class="wa-meta">11:09 <i class="wa-tick"></i></span></p>
-                </div>
-                <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
-              </div></div></div>
-              <div class="tm-int">
-                <p class="os-chat__head"><span class="os-ai-mark"><svg class="i"><use href="#i-lock"/></svg></span>Internal &middot; Order #A-2291 <span class="tag tag--lime">Only your team</span></p>
-                <div class="os-chat__log">
-                  <div class="tm-im" data-at="2"><span class="av av--lime">AT</span><div><b>Ana &middot; Support</b><p>Can someone check the order status? <span class="tm-at">@Operations</span></p></div></div>
-                  <div class="tm-im" data-at="3"><span class="av">JD</span><div><b>Jordan &middot; Operations</b><p>Checking now.</p></div></div>
-                  <div class="tm-im" data-at="4"><span class="av">JD</span><div><b>Jordan &middot; Operations</b><p>It ships today &mdash; Mumbai dispatch, 4 pm.</p></div></div>
-                </div>
-                <div class="tm-links"><span class="ui-label">Linked</span><span class="chip">Customer</span><span class="chip">Conversation</span><span class="chip">Task</span><span class="chip">Ticket</span><span class="chip">Team</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <div class="os-eco__after tm-after">
-        <p class="os-say os-say--flush rv">Private team collaboration. <span class="dim">Connected context.</span></p>
-        <figure class="os-photo os-ph--wide rv" style="--d:.1s"><img src="/public/assets/img/team-management/team-around-laptop.webp" alt="Four colleagues around one laptop at a shared table, mid-conversation, in a busy workspace." width="1152" height="928" loading="lazy" decoding="async"></figure>
-      </div>
-    </section>
-
-    <!-- ============ 08 TEAM WORKSPACE ============ -->
-    <section class="cos-sec" id="workspace" aria-labelledby="ws-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Team workspace</p>
-          <h2 class="cos-h2" id="ws-h">Everyone knows what they need to work on.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Give every team member a focused workspace for their work.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-my" id="myApp">
-          <div class="app__top app__top--slim"><span class="who"><span class="av av--lime">AT</span>My Work &middot; Ana Torres</span><span class="tm-st tm-st--on">Online</span></div>
-          <div class="tm-my__body">
-            <div class="tm-my__kpis">
-              <div class="kpi"><span><svg class="i"><use href="#i-msg"/></svg>Conversations</span><b>4</b><em>active</em></div>
-              <div class="kpi"><span><svg class="i"><use href="#i-check"/></svg>Tasks</span><b>7</b><em>pending</em></div>
-              <div class="kpi"><span><svg class="i"><use href="#i-ticket"/></svg>Tickets</span><b>2</b><em>open</em></div>
-              <div class="kpi"><span><svg class="i"><use href="#i-clock"/></svg>Follow-ups</span><b>5</b><em>due</em></div>
-              <div class="kpi"><span><svg class="i"><use href="#i-users"/></svg>Customers</span><b>12</b><em>active</em></div>
-            </div>
-            <div class="tm-focus">
-              <p class="tp__h">Today&rsquo;s focus</p>
-              <ol>
-                <li class="tm-f tm-f--done"><span class="tm-box"><svg class="i"><use href="#i-check"/></svg></span>Follow up with Kavya Nair<small>Order #A-2291</small></li>
-                <li class="tm-f"><span class="tm-box"><svg class="i"><use href="#i-check"/></svg></span>Review pending request<small>Group booking &middot; 12 rooms</small></li>
-                <li class="tm-f"><span class="tm-box"><svg class="i"><use href="#i-check"/></svg></span>Complete assigned task<small>Update Q4 rate card</small></li>
-                <li class="tm-f"><span class="tm-box"><svg class="i"><use href="#i-check"/></svg></span>Respond to waiting conversation<small>Waiting 12 min</small></li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <p class="os-say rv">Less searching. <span class="dim">More doing.</span></p>
-    </section>
-
-    <!-- ============ 09 AVAILABILITY & WORKLOAD ============ -->
-    <section class="cos-sec" id="workload" aria-labelledby="wl-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Availability &amp; workload</p>
-          <h2 class="cos-h2" id="wl-h">Know who is available. <br><span class="dim">Know who is overloaded.</span></h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">See team availability and workload in real time.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-wl" id="wlApp" role="img" aria-label="4 available, 3 busy, 2 away, 5 offline. Rahul has 9 active items and is approaching capacity, so the next request is routed to Priya, who has 2.">
-          <div class="tm-wl__body">
-            <div class="tm-avail">
-              <div class="tm-av tm-av--on"><b>4</b>Available</div>
-              <div class="tm-av tm-av--busy"><b>3</b>Busy</div>
-              <div class="tm-av tm-av--away"><b>2</b>Away</div>
-              <div class="tm-av tm-av--off"><b>5</b>Offline</div>
-            </div>
-            <div class="tm-bars">
-              <p class="tp__h">Workload <span class="tm-cap">Capacity &middot; 10</span></p>
-              <div class="tm-bar"><span class="who"><span class="av av--lime">AT</span>Ana Torres</span><span class="tm-bar__t"><i style="--v:.4"></i></span><b>4</b></div>
-              <div class="tm-bar tm-bar--hot"><span class="who"><span class="av av--cyan">RV</span>Rahul Verma</span><span class="tm-bar__t"><i style="--v:.9"></i></span><b>9</b></div>
-              <div class="tm-bar tm-bar--to"><span class="who"><span class="av av--violet">PS</span>Priya Shah</span><span class="tm-bar__t"><i style="--v:.2"></i></span><b>2</b></div>
-              <div class="tm-bar"><span class="who"><span class="av">JD</span>Jordan Diaz</span><span class="tm-bar__t"><i style="--v:.6"></i></span><b>6</b></div>
-            </div>
-            <div class="tm-insights">
-              <p class="tm-warn" data-at="2"><svg class="i"><use href="#i-alert"/></svg><span><b>Rahul is approaching workload capacity.</b> 9 of 10 active.</span></p>
-              <div class="tm-next" data-at="3">
-                <span class="tm-next__req"><svg class="i"><use href="#i-inbox"/></svg>Next request</span>
-                <span class="tm-next__skip"><s>Rahul</s> skipped</span>
-                <span class="tm-next__to"><svg class="i"><use href="#i-arrow"/></svg>Routed to <b>Priya Shah</b></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <p class="os-say rv">Balance work before it becomes a bottleneck.</p>
-    </section>
-
-    <!-- ============ 10 SECURITY ============ -->
-    <section class="cos-sec" id="security" aria-labelledby="sec-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Security</p>
-          <h2 class="cos-h2" id="sec-h">Protect access to your workspace.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Add stronger authentication and security controls for the people accessing your business.</p></div>
-      </div>
-
-      <div class="tm-sec rv" style="--d:.1s">
-        <div class="app tm-secset">
-          <p class="os-chat__head"><span class="os-ai-mark"><svg class="i"><use href="#i-shield"/></svg></span>Security settings</p>
-          <div class="tm-srow"><span><svg class="i"><use href="#i-key"/></svg>Two-factor authentication</span><span class="tag tag--lime">Enabled</span><span class="toggle" aria-hidden="true"></span></div>
-          <div class="tm-srow"><span><svg class="i"><use href="#i-lock"/></svg>Login verification</span><span class="tag">Required</span></div>
-          <div class="tm-srow"><span><svg class="i"><use href="#i-apps"/></svg>Active sessions</span><span class="tag">3</span></div>
-          <div class="tm-srow"><span><svg class="i"><use href="#i-clock"/></svg>Session controls</span><span class="tag">Managed</span></div>
-          <div class="tm-srow"><span><svg class="i"><use href="#i-shield"/></svg>Access policy</span><span class="tag">Configured</span></div>
-        </div>
-        <div class="app tm-2fa" id="tfa" role="img" aria-label="Two-factor sign-in: login, password, verification code, workspace.">
-          <ol class="tm-2fa__steps">
-            <li><em><svg class="i"><use href="#i-user"/></svg></em>Login</li>
-            <li><em><svg class="i"><use href="#i-lock"/></svg></em>Password</li>
-            <li><em><svg class="i"><use href="#i-key"/></svg></em>Verification code</li>
-            <li><em><svg class="i"><use href="#i-check"/></svg></em>Workspace</li>
-          </ol>
-          <div class="tm-code"><p class="ui-label">Enter the 6-digit code</p><span><i>4</i><i>8</i><i>2</i><i>9</i><i>1</i><i>6</i></span></div>
-          <p class="tm-2fa__ok"><svg class="i"><use href="#i-check"/></svg>Verified &middot; signed in to Northwind</p>
-        </div>
-      </div>
-
-      <ul class="os-labels rv" style="--d:.2s" aria-label="Security controls">
-        <li>Two-factor authentication</li><li>Session management</li><li>Login activity</li><li>Role-based access</li><li>Permission controls</li><li>Account security</li>
-      </ul>
-
-      <p class="os-say rv">The right people. The right access. <span class="dim">Every time.</span></p>
-    </section>
-
-    <!-- ============ 11 TEAM ACTIVITY ============ -->
-    <section class="cos-sec" id="activity" aria-labelledby="act-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Activity</p>
-          <h2 class="cos-h2" id="act-h">See what your team is actually doing.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Understand activity across people, departments, conversations, tasks, and work.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-act" id="actApp">
-          <div class="tm-filters"><span class="ui-label">Filter</span><span class="chip is-on">Person</span><span class="chip">Department</span><span class="chip">Module</span><span class="chip">Date</span><span class="chip">Activity</span></div>
-          <ol class="tm-tl">
-            <li data-at="1"><time>10:32 AM</time><span class="tm-tl__dot"></span><span class="who"><span class="av av--lime">AT</span>Ana</span><p>Assigned a conversation</p><span class="tag">Conversation</span></li>
-            <li data-at="2"><time>10:41 AM</time><span class="tm-tl__dot"></span><span class="who"><span class="av av--lime">AT</span>Ana</span><p>Created a task &middot; confirm dispatch</p><span class="tag">Task</span></li>
-            <li data-at="3"><time>10:52 AM</time><span class="tm-tl__dot"></span><span class="who"><span class="av">KN</span>Kavya</span><p>Customer replied</p><span class="tag tag--cyan">Customer</span></li>
-            <li data-at="4"><time>11:06 AM</time><span class="tm-tl__dot"></span><span class="who"><span class="av">JD</span>Jordan</span><p>Completed the task</p><span class="tag tag--lime">Done</span></li>
-            <li data-at="5"><time>11:12 AM</time><span class="tm-tl__dot"></span><span class="who"><span class="av av--lime">AT</span>Ana</span><p>Resolved ticket #1093</p><span class="tag tag--lime">Resolved</span></li>
-          </ol>
-        </div>
-      </figure>
-
-      <p class="os-say rv">Every action leaves context.</p>
-    </section>
-
-    <!-- ============ 12 TEAM ANALYTICS ============ -->
-    <section class="cos-sec" id="analytics" aria-labelledby="an-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Team analytics</p>
-          <h2 class="cos-h2" id="an-h">Turn team activity into operational insight.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Understand how work is distributed, where teams spend time, and where performance can improve.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="ui-scroll">
-          <div class="app tm-an" id="anApp" style="--w:1336">
-            <div class="app__top app__top--slim"><span class="app__crumb">Analytics <svg class="i"><use href="#i-chevr"/></svg><b>Team</b></span><span class="tm-tabs"><span class="chip is-on">Activity</span><span class="chip">Workload</span><span class="chip">Response</span><span class="chip">Utilization</span><span class="chip">More</span></span></div>
-            <div class="tm-an__body">
-              <div class="tm-an__kpis">
-                <div class="kpi"><span>Active time</span><b>6h 42m</b><em>per person &middot; today</em></div>
-                <div class="kpi"><span>Conversations</span><b class="os-num" data-n="184">184</b><em class="good">+12% vs last week</em></div>
-                <div class="kpi"><span>Tasks completed</span><b class="os-num" data-n="76">76</b><em class="good">+8%</em></div>
-                <div class="kpi"><span>Tickets resolved</span><b class="os-num" data-n="42">42</b><em>this week</em></div>
-                <div class="kpi"><span>Avg. response</span><b>4m 18s</b><em class="good">&minus;38s</em></div>
-                <div class="kpi"><span>Pending work</span><b class="os-num" data-n="23">23</b><em>across 4 teams</em></div>
-              </div>
-              <div class="tm-an__charts">
-                <div class="tp__card">
-                  <p class="tp__h">Activity over time <span class="tag">This week</span></p>
-                  <div class="tm-cols">
-                    <span style="--h:.55"><em>Mon</em></span><span style="--h:.72"><em>Tue</em></span><span style="--h:.64"><em>Wed</em></span><span style="--h:.9" class="is-hi"><em>Thu</em></span><span style="--h:.78"><em>Fri</em></span><span style="--h:.32"><em>Sat</em></span><span style="--h:.18"><em>Sun</em></span>
-                  </div>
-                </div>
-                <div class="tp__card">
-                  <p class="tp__h">Workload distribution</p>
-                  <div class="os-stuck tm-hbar"><span>Support</span><span class="proc__bar"><i style="--v:.86"></i></span><b>38</b></div>
-                  <div class="os-stuck tm-hbar"><span>Sales</span><span class="proc__bar"><i style="--v:.55"></i></span><b>24</b></div>
-                  <div class="os-stuck tm-hbar"><span>Operations</span><span class="proc__bar"><i style="--v:.39"></i></span><b>17</b></div>
-                  <div class="os-stuck tm-hbar"><span>Marketing</span><span class="proc__bar"><i style="--v:.2"></i></span><b>9</b></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <div class="os-eco__after tm-after">
-        <p class="os-say os-say--flush rv">Know where the work is happening.</p>
-        <figure class="os-photo os-ph--wide rv" style="--d:.1s"><img src="/public/assets/img/team-management/manager-operations-view.webp" alt="A manager at her desk reviewing a team operations dashboard on a wall screen and her laptop." width="1152" height="928" loading="lazy" decoding="async"></figure>
-      </div>
-    </section>
-
-    <!-- ============ 13 INDIVIDUAL PERFORMANCE ============ -->
-    <section class="cos-sec" id="individual" aria-labelledby="ind-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="ind-h">Understand performance without losing the human context.</h2>
-        <div class="sec-head__copy"><p class="cos-body">Understand activity and workload at the individual level while keeping the focus on improving operations &mdash; not simply measuring people.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-ind">
-          <aside class="tm-ind__prof">
-            <span class="av av--violet tm-av-xl">PS</span>
-            <p class="rec__name">Priya Shah</p>
-            <p class="rec__meta">Support &middot; Agent</p>
-            <div class="rec__tags"><span class="tm-st tm-st--on">Online</span><span class="tag">Reservations skill</span></div>
-            <div class="rec__block"><p class="ui-label">Workload</p><p class="tm-ind__wl"><b>5</b> active &middot; <b>2</b> pending</p></div>
-          </aside>
-          <div class="tm-ind__grid">
-            <div class="tm-g"><p class="ui-label">Activity</p><div class="tm-gv"><b>6h 12m</b><span>Active time</span></div></div>
-            <div class="tm-g"><p class="ui-label">Work</p><div class="tm-gv"><b>18</b><span>Tasks completed</span></div><div class="tm-gv"><b>42</b><span>Conversations handled</span></div><div class="tm-gv"><b>11</b><span>Tickets resolved</span></div></div>
-            <div class="tm-g"><p class="ui-label">Responsiveness</p><div class="tm-gv"><b>2m 18s</b><span>First response</span></div><div class="tm-gv"><b>4m 10s</b><span>Average response</span></div></div>
-            <div class="tm-g"><p class="ui-label">Workload</p><div class="tm-gv"><b>5</b><span>Current active work</span></div><div class="tm-gv"><b>2</b><span>Pending</span></div></div>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 14 DEPARTMENT PERFORMANCE ============ -->
-    <section class="cos-sec" id="department-performance" aria-labelledby="dp-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="dp-h">See how every team is performing.</h2>
-      </div>
-
-      <div class="tm-dp rv" style="--d:.1s">
-        <article class="tm-dpc"><p class="tm-dpc__h">Sales</p><div class="tm-dpc__m"><span><b>24</b>Active work</span><span><b>82</b>Completed</span><span><b>3m</b>Response</span></div><span class="proc__bar"><i style="--v:.66"></i></span></article>
-        <article class="tm-dpc"><p class="tm-dpc__h">Support</p><div class="tm-dpc__m"><span><b>38</b>Active work</span><span><b>104</b>Completed</span><span><b>2m</b>Response</span></div><span class="proc__bar"><i style="--v:.84"></i></span></article>
-        <article class="tm-dpc"><p class="tm-dpc__h">Operations</p><div class="tm-dpc__m"><span><b>17</b>Active work</span><span><b>61</b>Completed</span><span><b>5m</b>Response</span></div><span class="proc__bar"><i style="--v:.49"></i></span></article>
-        <div class="tm-dpi">
-          <p class="tm-ins tm-ins--up"><svg class="i"><use href="#i-trend"/></svg><span><b>Support workload increased 18% this week.</b></span></p>
-          <p class="tm-ins"><svg class="i"><use href="#i-alert"/></svg><span><b>Operations has the lowest response volume.</b></span></p>
-        </div>
-      </div>
-
-      <p class="os-say rv">See where work flows &mdash; <span class="dim">and where it gets stuck.</span></p>
-    </section>
-
-    <!-- ============ 15 AUDIT LOGS ============ -->
-    <section class="cos-sec" id="audit" aria-labelledby="au-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Audit &amp; activity logs</p>
-          <h2 class="cos-h2" id="au-h">Know what changed, who changed it, and when.</h2>
-        </div>
-        <div class="sec-head__copy"><p class="cos-body">Keep a clear record of important workspace and team activity.</p></div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-audit" id="auditApp">
-          <div class="tm-filters"><span class="ui-label">Filter</span><span class="chip">User</span><span class="chip">Action</span><span class="chip">Module</span><span class="chip">Date</span></div>
-          <div class="tm-log tm-log--new" data-at="1"><time>10:45 AM</time><div><b>Routing rule updated</b><small>Round robin &rarr; Respect workload</small></div><span class="who"><span class="av av--violet">MI</span>Admin</span><span class="tag tag--lime">New</span></div>
-          <div class="tm-log"><time>10:42 AM</time><div><b>Role updated</b><small>Manager &rarr; Support Manager</small></div><span class="who"><span class="av av--violet">MI</span>Admin</span><span class="tag">Roles</span></div>
-          <div class="tm-log"><time>10:38 AM</time><div><b>Permission changed</b><small>Analytics &rarr; Department only</small></div><span class="who"><span class="av av--violet">MI</span>Admin</span><span class="tag">Permissions</span></div>
-          <div class="tm-log"><time>10:31 AM</time><div><b>Agent added</b><small>Support Team</small></div><span class="who"><span class="av av--cyan">RV</span>Manager</span><span class="tag">Teams</span></div>
-        </div>
-      </figure>
-
-      <p class="os-say rv">Visibility when it matters.</p>
-    </section>
-
-    <!-- ============ 16 ONE TEAM OPERATING LAYER ============ -->
-    <section class="cos-sec" id="connected" aria-labelledby="one-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="one-h">People, permissions, work, and performance &mdash; connected.</h2>
-        <div class="sec-head__copy"><p class="cos-body">Team Management gives every person the right access and context while connecting their work to the rest of the business.</p></div>
-      </div>
-
-      <figure class="tm-hub rv" style="--d:.1s" aria-label="Team Management connected to Customer OS, Second Brain, Conversations, Campaigns, Ticketing, Workflow Orchestration and Analytics.">
-      <svg class="tm-hub__wires" viewBox="0 0 1336 420" preserveAspectRatio="none" aria-hidden="true">
-          <path pathLength="100" style="--d:0.05s" d="M668 210 L668 60"/>
-          <path pathLength="100" style="--d:0.11s" d="M668 210 L1075 116"/>
-          <path pathLength="100" style="--d:0.17s" d="M668 210 L1175 243"/>
-          <path pathLength="100" style="--d:0.23s" d="M668 210 L894 345"/>
-          <path pathLength="100" style="--d:0.29s" d="M668 210 L442 345"/>
-          <path pathLength="100" style="--d:0.35s" d="M668 210 L161 243"/>
-          <path pathLength="100" style="--d:0.41s" d="M668 210 L261 116"/>
-      </svg>
-        <ul class="tm-hub__nodes">
-          <li style="--x:668;--y:60"><a href="/pages/products/customer-os/page.html"><svg class="i"><use href="#i-users"/></svg>Customer OS</a></li>
-          <li style="--x:1075;--y:116"><a href="/pages/products/second-brain/page.html"><svg class="i"><use href="#i-layers"/></svg>Second Brain</a></li>
-          <li style="--x:1175;--y:243"><a href="/pages/products/omnichannel/page.html"><svg class="i"><use href="#i-msg"/></svg>Conversations</a></li>
-          <li style="--x:894;--y:345"><a href="/pages/products/campaigns/page.html"><svg class="i"><use href="#i-mail"/></svg>Campaigns</a></li>
-          <li style="--x:442;--y:345"><a href="/pages/products/ticketing/page.html"><svg class="i"><use href="#i-ticket"/></svg>Ticketing</a></li>
-          <li style="--x:161;--y:243"><a href="/pages/products/workflow-orchestration/page.html"><svg class="i"><use href="#i-flow"/></svg>Workflow Orchestration</a></li>
-          <li style="--x:261;--y:116"><a href="/pages/products/analytics-bi/page.html"><svg class="i"><use href="#i-trend"/></svg>Analytics</a></li>
-        </ul>
-        <div class="tm-hub__core"><img src="/assets/chatberry-icon.svg" alt="" width="32" height="32"><span><b>Team Management</b><small>People layer</small></span></div>
-      </figure>
-    </section>
-
-    <!-- ============ 17 TEAM MANAGEMENT + SECOND BRAIN ============ -->
-    <section class="cos-sec" id="second-brain" aria-labelledby="sb-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="sb-h">Your team shouldn&rsquo;t have to remember everything either.</h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">The Second Brain can help surface pending work, remind people about commitments, and keep teams moving.</p>
-          <a class="cos-link os-link" href="/pages/products/second-brain/page.html">Explore the Second Brain <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app tm-nb" id="nbApp" role="img" aria-label="In Ana's workspace a Second Brain notification says: you have 3 things that need attention &mdash; 1 overdue task, 1 customer follow-up, 1 pending approval.">
-          <div class="tm-nb__ws">
-            <p class="tp__h">My Work &middot; Ana Torres</p>
-            <p class="tm-nb__row"><span class="tag">Conversation</span>Kavya Nair &middot; order status</p>
-            <p class="tm-nb__row"><span class="tag">Task</span>Update Q4 rate card</p>
-            <p class="tm-nb__row"><span class="tag">Ticket</span>#1102 &middot; delivery ETA</p>
-            <p class="tm-nb__row"><span class="tag">Follow-up</span>Group booking &middot; 12 rooms</p>
-          </div>
-          <div class="tm-notif" data-at="1">
-            <p class="tm-notif__h"><span class="os-ai-mark"><svg class="i"><use href="#i-spark"/></svg></span>Second Brain <time>now</time></p>
-            <p class="tm-notif__t">You have <span class="os-num" data-n="3">3</span> things that need attention.</p>
-            <ul><li><span class="tag tag--rose">Overdue</span>1 overdue task</li><li><span class="tag tag--amber">Follow-up</span>1 customer follow-up</li><li><span class="tag tag--cyan">Approval</span>1 pending approval</li></ul>
-            <span class="mini-btn mini-btn--lime">Review <svg class="i"><use href="#i-arrow"/></svg></span>
-          </div>
-        </div>
-      </figure>
-
-      <p class="os-say rv">Team Management controls who does the work. <span class="dim">The Second Brain helps make sure it happens.</span></p>
-    </section>
-
-    <!-- ============ 18 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Frequently asked questions</h2>
-          <p class="cos-body">Something else on your mind?</p>
-          <a class="cos-link os-link" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is team management software?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Team management software helps organizations organize people, roles, departments, permissions, work assignment, collaboration, and team performance. Chatberry combines these capabilities with conversations, tasks, workflows, and analytics.</p></div></details>
-          <details class="os-qa"><summary>Can I create custom roles and permissions?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Chatberry allows organizations to create roles and define permissions based on responsibilities. Access can be controlled across different areas of the workspace.</p></div></details>
-          <details class="os-qa"><summary>Can I manage departments?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Teams can be organized into departments with their own members, responsibilities, routing rules, workload, and performance views.</p></div></details>
-          <details class="os-qa"><summary>What is smart team routing?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Smart team routing automatically assigns conversations, tasks, tickets, or other work based on configured rules such as department, skill, availability, workload, priority, or round-robin distribution.</p></div></details>
-          <details class="os-qa"><summary>Does Chatberry support round-robin assignment?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Round-robin assignment can distribute incoming work across eligible team members. Routing can also consider availability and other configured rules.</p></div></details>
-          <details class="os-qa"><summary>Can teams collaborate internally?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Team members can use internal team conversations while keeping relevant context connected to customer conversations, tasks, tickets, and other work.</p></div></details>
-          <details class="os-qa"><summary>Can I see team member activity?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Team analytics can provide visibility into activity such as conversations handled, tasks completed, tickets resolved, response performance, workload, and active time.</p></div></details>
-          <details class="os-qa"><summary>Can I see department performance?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Managers can analyze work distribution, workload, activity, response performance, and other configured metrics by department.</p></div></details>
-          <details class="os-qa"><summary>Does Chatberry support two-factor authentication?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry can provide two-factor authentication and other configured account-security controls for stronger workspace access protection.</p></div></details>
-          <details class="os-qa"><summary>Can I see who changed something?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry can provide activity and audit information for supported workspace actions, helping administrators understand what changed, who performed the action, and when it happened.</p></div></details>
-          <details class="os-qa"><summary>Can Team Management work with Customer OS?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Customer OS provides customer and business records, while Team Management controls the people, roles, permissions, routing, and access around that work.</p></div></details>
-          <details class="os-qa"><summary>Can Team Management work with the Second Brain?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. The Second Brain can help team members remember tasks, follow-ups, commitments, and pending work while Team Management controls ownership, access, departments, and team structure.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 19 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">Team Management</p>
-      <h2 class="cos-h2 rv" id="cta-h">Build a team that <br>knows who does what.</h2>
-      <p class="cos-body rv">Give people the right access. Route work intelligently. Understand what&rsquo;s happening across your teams.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Start Free <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-      </div>
-      <p class="os-note"><svg class="i"><use href="#i-check"/></svg>Start free. Pay as you use.</p>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Products <em>Team Management</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>The right access</span></span><span class="ln"><span>for every team.</span></span></h1>
+      <p class="rv d2">Organise people, control who sees what, send work to the right person and keep an eye on workload, all from one place.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vteam"><div><i>PS</i><span><b>Priya</b>Sales lead</span><em class="on">Available</em></div><div><i>AT</i><span><b>Arjun</b>Support</span><em class="on">Available</em></div><div><i>MJ</i><span><b>Meera</b>Operations</span><em class="">Away</em></div><div><i>RK</i><span><b>Rahul</b>Sales</span><em class="on">Available</em></div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Team Management</em></span>
+    <p class="stmt__txt" id="stmtTxt">Every team has different jobs, different permissions and different workloads. Chatberry lets each one work its own way, without losing sight of the whole business.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      <div class="uses rv"><span>Departments</span><span>Round-robin assignment</span><span>Two-factor sign-in</span><span>Activity logs</span><span>Team chat</span></div>
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Roles and permissions</h3><p>Decide exactly what each person can view, edit and manage.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Smart routing</h3><p>Send chats, tickets and tasks to the right person automatically, based on rules you set.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Fair workload</h3><p>Spread new work across available team members and spot who is overloaded.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Secure access</h3><p>Protect your workspace with two-factor sign-in and activity tracking.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Organise</span><p class="row__d">Create departments and add people with the right roles.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Route</span><p class="row__d">Set rules for how chats, tickets and tasks are assigned.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Oversee</span><p class="row__d">Watch availability, workload and performance as it happens.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Can I limit what a person can see?<i></i></summary><p>Yes. Roles control access to modules, records and actions.</p></details><details><summary>How does routing work?<i></i></summary><p>You set conditions such as channel, topic or department, and Chatberry assigns matching work to the right people.</p></details><details><summary>Can I see who is available?<i></i></summary><p>Yes. Availability and workload are visible in real time.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/solutions/department-management/page.html"><small>Solutions</small><b>Department Management</b><p>Create departments around how your business works, assign the right people and tools, and manage access from one place.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/solutions/team-collaboration/page.html"><small>Solutions</small><b>Team Collaboration</b><p>Conversations, tasks, time tracking and activity in one workspace, so everyone knows what to do next.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/products/omnichannel/page.html"><small>Products</small><b>Omnichannel Inbox</b><p>See every customer conversation in one shared workspace, with the history and context your team needs to reply well.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Team Management working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

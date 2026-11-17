@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Workflow Development Platform for Developers | Chatberry</title>
-<meta name="description" content="Build custom workflows with Chatberry. Connect APIs, webhooks, triggers, custom logic and AI capabilities to develop and orchestrate intelligent business processes.">
+<title>Workflow Development – For developers who build | Chatberry</title>
+<meta name="description" content="Build custom workflows with APIs, webhooks, triggers, custom logic and AI in Chatberry’s visual workflow environment.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Workflow Development — Build Workflows Without Limits">
-<meta property="og:description" content="A flexible environment for developers to design, connect and orchestrate intelligent workflows.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Workflow Development – For developers who build | Chatberry">
+<meta property="og:description" content="Build custom workflows with APIs, webhooks, triggers, custom logic and AI in Chatberry’s visual workflow environment.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Workflow Development – For developers who build | Chatberry">
+<meta name="twitter:description" content="Build custom workflows with APIs, webhooks, triggers, custom logic and AI in Chatberry’s visual workflow environment.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,517 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos wd" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
-      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 8 2.5 8h-17S6 15 6 9"/><path d="M10.2 20.5a2 2 0 0 0 3.6 0"/></symbol>
-      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-calcheck" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 6A1.5 1.5 0 0 1 5 4.5h9A1.5 1.5 0 0 1 15.5 6v5A1.5 1.5 0 0 1 14 12.5H8.5L5.5 15v-2.5A1.5 1.5 0 0 1 3.5 11Z"/><path d="M18.5 8.5A1.5 1.5 0 0 1 20 10v6a1.5 1.5 0 0 1-1.5 1.5V21l-3-3.5h-4.8"/></symbol>
-      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h14a1.5 1.5 0 0 1 1.5 1.5V10a2 2 0 0 0 0 4v2.5A1.5 1.5 0 0 1 19 18H5a1.5 1.5 0 0 1-1.5-1.5V14a2 2 0 0 0 0-4Z"/><path d="M14 7v2M14 11v2M14 15v2"/></symbol>
-      <symbol id="i-team" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="4.8" cy="10.2" r="2.2"/><circle cx="19.2" cy="10.2" r="2.2"/><path d="M7.5 19.5c.6-3 2.4-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/><path d="M1.6 18c.3-2 1.4-3.2 3-3.5M22.4 18c-.3-2-1.4-3.2-3-3.5"/></symbol>
-      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 17.5v-5M11.5 17.5v-10M16.5 17.5v-7"/></symbol>
-      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.5 17l6-6 4 4 7-7.5"/><path d="M15.5 7.5h5.5V13"/></symbol>
-      <symbol id="i-stetho" viewBox="0 0 24 24"><path d="M6 3v5.5a4 4 0 0 0 8 0V3"/><path d="M10 12.5v2a5 5 0 0 0 10 0v-1.2"/><circle cx="20" cy="11" r="2"/></symbol>
-      <symbol id="i-claim" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5M9.5 14l2 2 3.5-3.5"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16.5l-5.5-5.5-8 8"/></symbol>
-      <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2.8l8.5 4.7v9L12 21.2 3.5 16.5v-9Z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/></symbol>
-      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/><path d="M2.5 3.5H5l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.3a1.5 1.5 0 0 0 1.5-1.1L20.5 7.5H6"/></symbol>
-      <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
-      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.8h3.4l1.8 4.4-2.2 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.2 4.4 1.8V19a1.6 1.6 0 0 1-1.7 1.6A16.4 16.4 0 0 1 3.4 5.5 1.6 1.6 0 0 1 5 3.8Z"/></symbol>
-      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></symbol>
-      <symbol id="i-erp" viewBox="0 0 24 24"><path d="M3 20.5h18"/><path d="M4.5 20.5V10l5 3.2V10l5 3.2V5.5h5v15"/></symbol>
-      <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.6 4l-3.2 16"/></symbol>
-      <symbol id="i-apps" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><circle cx="17" cy="7" r="3.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><path d="M17 13.5v7M13.5 17h7"/></symbol>
-      <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-7 4.5 14 3-7h4.5"/></symbol>
-      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.2l8.6 4.4L12 12 3.4 7.6Z"/><path d="M3.4 12.4L12 16.8l8.6-4.4M3.4 16.6L12 21l8.6-4.4"/></symbol>
-      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10.2 13.8a4.6 4.6 0 0 0 6.5 0l3-3a4.6 4.6 0 0 0-6.5-6.5l-1 1"/><path d="M13.8 10.2a4.6 4.6 0 0 0-6.5 0l-3 3a4.6 4.6 0 0 0 6.5 6.5l1-1"/></symbol>
-      <symbol id="i-view" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2.2"/><path d="M3.5 9.2h17M9.5 9.2V20"/></symbol>
-      <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2.2"/><circle cx="6" cy="18.5" r="2.2"/><circle cx="18" cy="8.5" r="2.2"/><path d="M6 7.7v8.6M18 10.7c0 4-6.5 2.8-10.4 6.4"/></symbol>
-      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
-      <symbol id="i-board" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="5" height="15" rx="1.5"/><rect x="9.5" y="4.5" width="5" height="10" rx="1.5"/><rect x="15.5" y="4.5" width="5" height="12.5" rx="1.5"/></symbol>
-      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.6" cy="6.5" r="1.1"/><circle cx="4.6" cy="12" r="1.1"/><circle cx="4.6" cy="17.5" r="1.1"/></symbol>
-      <symbol id="i-hash" viewBox="0 0 24 24"><path d="M5 9h14M5 15h14M10 4l-2 16M16 4l-2 16"/></symbol>
-      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.9 9.2c-.6-.9-1.6-1.4-2.9-1.4-1.7 0-2.8.9-2.8 2.1 0 2.9 5.9 1.6 5.9 4.4 0 1.2-1.2 2.1-3.1 2.1-1.3 0-2.4-.6-3-1.5M12 6.2v1.6M12 16.8v1.6"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
-      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.8l7.5 3v5.6c0 4.7-3.2 8.4-7.5 9.6-4.3-1.2-7.5-4.9-7.5-9.6V5.8Z"/><path d="M9.2 12l2 2 3.6-3.6"/></symbol>
-      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M4 20l6.5-6.5M4 20v-5.5M4 20h5.5M20 4l-6.5 6.5M20 4v5.5M20 4h-5.5"/></symbol>
-      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6.5 8h11v3.4a5.5 5.5 0 0 1-11 0ZM12 16.9V21"/></symbol>
-      <symbol id="i-arch" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="3.5" width="7.5" height="4.5" rx="1.6"/><rect x="13" y="10" width="7.5" height="10.5" rx="1.6"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.6"/></symbol>
-      <symbol id="i-net" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><circle cx="4.6" cy="6" r="1.9"/><circle cx="19.4" cy="6" r="1.9"/><circle cx="4.6" cy="18" r="1.9"/><circle cx="19.4" cy="18" r="1.9"/><path d="M6.1 7.2l3.8 3M17.9 7.2l-3.8 3M6.1 16.8l3.8-3M17.9 16.8l-3.8-3"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-      <symbol id="i-flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.6 6H15a3.1 3.1 0 0 1 0 6.2H9a3.1 3.1 0 0 0 0 6.2h6.4"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
-      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></symbol>
-      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".7"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
-      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
-      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.8L4.8 13.5H12l-1 7.7 8.2-10.7H12Z"/></symbol>
-      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.6-4.4M4 3.6v3.6h3.6M4 13a8 8 0 0 0 14.6 4.4M20 20.4v-3.6h-3.6"/></symbol>
-      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
-      <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
-      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4 2.2 4H5"/></symbol>
-      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5V5M6 11l6-6 6 6"/></symbol>
-      <symbol id="i-org" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1.4"/><rect x="2.5" y="16" width="6" height="5" rx="1.4"/><rect x="9" y="16" width="6" height="5" rx="1.4"/><rect x="15.5" y="16" width="6" height="5" rx="1.4"/><path d="M12 8v4M5.5 16v-4h13v4M12 12v4"/></symbol>
-      <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8 20 3M17 6l2.5 2.5M14.5 8.5l2 2"/></symbol>
-      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11 12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5M10 20v-5.5h4V20"/></symbol>
-      <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5 6 5h12l2.5 8.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19Z"/><path d="M3.5 13.5h5l1.5 2.5h4l1.5-2.5h5"/></symbol>
-      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.8l-5.3 2.8 1-5.8-4.2-4.1 5.9-.9Z"/></symbol>
-      <symbol id="i-dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4.2M12 17v.01"/></symbol>
-      <symbol id="i-hook" viewBox="0 0 24 24"><path d="M9 7.5a3 3 0 1 1 4.6 2.5l-2.4 4.5"/><path d="M6.4 16.2a3 3 0 1 0 5.1 2.3h5"/><path d="M17.5 15.5a3 3 0 1 1-.9 5.6"/><path d="M11.2 14.5 8.5 19"/></symbol>
-      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4.5 4.5h6a2.5 2.5 0 0 1 2.5 2.5v13a2 2 0 0 0-2-2h-6.5ZM19.5 4.5h-6A2.5 2.5 0 0 0 11 7v13a2 2 0 0 1 2-2h6.5Z"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — BUILD WORKFLOWS WITHOUT LIMITS ============ -->
-    <section class="cos-hero wd-hero" id="overview" aria-labelledby="wd-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-      <div class="wd-hero__copy">
-        <p class="cos-eyebrow rv">Workflow Development</p>
-        <h1 class="cos-h1 rv" id="wd-h1">Build Workflows <span class="dim">Without Limits</span></h1>
-        <p class="cos-hero__intro rv" style="--d:.05s">A flexible environment for developers to design, connect and orchestrate intelligent workflows.</p>
-        <p class="cos-body wd-hero__more rv" style="--d:.1s">Build sophisticated workflows using visual development, APIs, webhooks, custom logic and connected services. From simple event-driven automations to complex business processes, bring your ideas to execution with Chatberry.</p>
-        <div class="cos-cta rv" style="--d:.15s">
-          <a class="btn btn--lime btn--lg" href="/pages/products/workflow-orchestration/page.html">Explore Workflow Builder <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Talk to Our Team</a>
-        </div>
-      </div>
-
-      <div class="wd-hero__vis">
-        <figure class="os-photo wd-ph wd-hero__ph rv" style="--d:.1s"><img src="/public/assets/img/workflow-development/hero.webp" alt="Two developers working on code at their monitors in a bright office." width="900" height="600" loading="lazy" decoding="async"></figure>
-        <figure class="app wd-builder rv" id="wdHero" style="--d:.2s" role="img" aria-label="A node-based workflow: a trigger for a new order calls an API, a condition checks the customer, an AI agent drafts a reply while a database saves the order, then a webhook notifies fulfilment.">
-          <div class="app__top app__top--slim" aria-hidden="true">
-            <span class="app__crumb">Workflows <svg class="i"><use href="#i-chevr"/></svg> <b>New order handling</b></span>
-            <span class="tag tag--lime wd-live"><i></i>Live</span>
-          </div>
-          <div class="wd-canvas wd-canvas--hero" style="--cw:1000;--ch:420" aria-hidden="true">
-            <svg class="wd-wires" viewBox="0 0 1000 420" preserveAspectRatio="none">
-              <path class="wd-e" d="M180 210 H220"/>
-              <path class="wd-e" d="M380 210 H420"/>
-              <path class="wd-e" d="M580 210 H600 V110 H620"/>
-              <path class="wd-e" d="M580 210 H600 V310 H620"/>
-              <path class="wd-e" d="M780 110 H800 V210 H820"/>
-              <path class="wd-e" d="M780 310 H800 V210 H820"/>
-            </svg>
-            <div class="wd-node" style="--x:100;--y:210;--i:0"><span class="wd-ico wd-ico--trig"><svg class="i"><use href="#i-bolt"/></svg></span><span class="wd-node__t"><b>Trigger</b><small>New order</small></span></div>
-            <div class="wd-node" style="--x:300;--y:210;--i:1"><span class="wd-ico wd-ico--conn"><svg class="i"><use href="#i-code"/></svg></span><span class="wd-node__t"><b>API</b><small>GET customer</small></span></div>
-            <div class="wd-node" style="--x:500;--y:210;--i:2"><span class="wd-ico wd-ico--cond"><svg class="i"><use href="#i-branch"/></svg></span><span class="wd-node__t"><b>Condition</b><small>Returning buyer?</small></span></div>
-            <div class="wd-node" style="--x:700;--y:110;--i:3"><span class="wd-ico wd-ico--ai"><svg class="i"><use href="#i-spark"/></svg></span><span class="wd-node__t"><b>AI Agent</b><small>Draft reply</small></span></div>
-            <div class="wd-node" style="--x:700;--y:310;--i:3"><span class="wd-ico wd-ico--data"><svg class="i"><use href="#i-db"/></svg></span><span class="wd-node__t"><b>Database</b><small>Save order</small></span></div>
-            <div class="wd-node" style="--x:900;--y:210;--i:4"><span class="wd-ico wd-ico--hook"><svg class="i"><use href="#i-hook"/></svg></span><span class="wd-node__t"><b>Webhook</b><small>Notify fulfilment</small></span></div>
-          </div>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ============ 02 VISUAL WORKFLOW DEVELOPMENT ============ -->
-    <section class="cos-sec wd-sec" id="visual" aria-labelledby="vis-h">
-      <div class="sec-head">
-        <p class="cos-eyebrow rv">Visual development</p>
-        <h2 class="cos-h2 rv" id="vis-h">Visual Workflow Development. <span class="dim">Design workflows with complete visibility and control.</span></h2>
-        <div class="sec-head__copy rv"><p class="cos-body">Build workflows using a node-based visual environment. Connect triggers, actions, conditions and integrations to create structured processes that execute exactly as intended.</p></div>
-      </div>
-
-      <figure class="app wd-studio rv" id="wdStudio" role="img" aria-label="A workflow canvas with a node palette: a trigger connects to an API request, then a condition, then an action.">
-        <div class="app__top app__top--slim" aria-hidden="true">
-          <span class="app__crumb">Workflows <svg class="i"><use href="#i-chevr"/></svg> <b>Order sync</b></span>
-          <span class="wd-saved"><svg class="i"><use href="#i-check"/></svg>Saved</span>
-        </div>
-        <div class="wd-studio__body" aria-hidden="true">
-          <div class="wd-palette">
-            <p class="wd-palette__k">Nodes</p>
-            <p class="wd-pal"><span class="wd-ico wd-ico--trig"><svg class="i"><use href="#i-bolt"/></svg></span>Trigger</p>
-            <p class="wd-pal"><span class="wd-ico wd-ico--conn"><svg class="i"><use href="#i-code"/></svg></span>API Request</p>
-            <p class="wd-pal"><span class="wd-ico wd-ico--hook"><svg class="i"><use href="#i-hook"/></svg></span>Webhook</p>
-            <p class="wd-pal"><span class="wd-ico wd-ico--cond"><svg class="i"><use href="#i-branch"/></svg></span>Condition</p>
-            <p class="wd-pal"><span class="wd-ico wd-ico--ai"><svg class="i"><use href="#i-spark"/></svg></span>AI Agent</p>
-            <p class="wd-pal"><span class="wd-ico wd-ico--wait"><svg class="i"><use href="#i-clock"/></svg></span>Timer</p>
-            <p class="wd-pal"><span class="wd-ico wd-ico--msg"><svg class="i"><use href="#i-send"/></svg></span>Action</p>
-          </div>
-          <div class="wd-canvas wd-canvas--studio" style="--cw:1000;--ch:320">
-            <svg class="wd-wires" viewBox="0 0 1000 320" preserveAspectRatio="none">
-              <path class="wd-e" d="M205 160 H295"/>
-              <path class="wd-e" d="M455 160 H545"/>
-              <path class="wd-e" d="M705 160 H795"/>
-            </svg>
-            <div class="wd-node wd-node--lg" style="--x:125;--y:160;--i:0"><span class="wd-ico wd-ico--trig"><svg class="i"><use href="#i-bolt"/></svg></span><span class="wd-node__t"><b>Trigger</b><small>Order created</small></span></div>
-            <div class="wd-node wd-node--lg" style="--x:375;--y:160;--i:1"><span class="wd-ico wd-ico--conn"><svg class="i"><use href="#i-code"/></svg></span><span class="wd-node__t"><b>API Request</b><small>POST /inventory</small></span></div>
-            <div class="wd-node wd-node--lg" style="--x:625;--y:160;--i:2"><span class="wd-ico wd-ico--cond"><svg class="i"><use href="#i-branch"/></svg></span><span class="wd-node__t"><b>Condition</b><small>In stock?</small></span></div>
-            <div class="wd-node wd-node--lg" style="--x:875;--y:160;--i:3"><span class="wd-ico wd-ico--msg"><svg class="i"><use href="#i-send"/></svg></span><span class="wd-node__t"><b>Action</b><small>Confirm order</small></span></div>
-            <span class="wd-step" style="--x:250;--y:160">1</span><span class="wd-step" style="--x:500;--y:160">2</span><span class="wd-step" style="--x:750;--y:160">3</span>
-          </div>
-        </div>
-      </figure>
-
-      <ul class="wd-ticks">
-        <li class="rv">Visual node-based workflow builder</li>
-        <li class="rv" style="--d:.04s">Connect multiple actions and events</li>
-        <li class="rv" style="--d:.08s">Configure conditional workflow paths</li>
-        <li class="rv" style="--d:.12s">Design multi-step processes</li>
-        <li class="rv" style="--d:.16s">Manage workflow execution sequences</li>
-      </ul>
-      <a class="cos-link os-link rv" href="#use-cases">See What You Can Build <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-    </section>
-
-    <!-- ============ 03 APIS & WEBHOOKS ============ -->
-    <section class="cos-sec wd-sec" id="apis" aria-labelledby="api-h">
-      <div class="wd-split">
-        <div class="wd-split__media">
-          <figure class="os-photo wd-ph wd-ph--tall rv"><img src="/public/assets/img/workflow-development/apis.webp" alt="A developer at a computer working on code." width="1100" height="733" loading="lazy" decoding="async"></figure>
-          <div class="app wd-req rv" id="wdReq" style="--d:.15s" role="img" aria-label="An API request panel: POST to an orders endpoint returns 200 OK, and a webhook event order.created is received.">
-            <p class="wd-req__line" aria-hidden="true"><span class="wd-method">POST</span><span class="wd-url">/v1/orders</span><span class="wd-ok">200 OK</span></p>
-            <pre class="wd-code" aria-hidden="true"><span class="wd-c-k">"event"</span>: <span class="wd-c-s">"order.created"</span>,
-<span class="wd-c-k">"order_id"</span>: <span class="wd-c-s">"ORD-2291"</span></pre>
-            <p class="wd-hookin" aria-hidden="true"><i></i>Webhook received <span>order.created</span></p>
-          </div>
-        </div>
-        <div class="wd-split__copy">
-          <p class="cos-eyebrow rv">APIs &amp; webhooks</p>
-          <h2 class="cos-h2 rv" id="api-h">Connect Through APIs &amp; Webhooks. <span class="dim">Make your systems communicate.</span></h2>
-          <p class="cos-body rv">Connect external applications, internal systems and third-party services through APIs and webhooks. Trigger workflows from external events and exchange information across your technology stack.</p>
-          <ul class="wd-ticks wd-ticks--col">
-            <li class="rv">API-based integrations</li>
-            <li class="rv" style="--d:.04s">Incoming and outgoing webhooks</li>
-            <li class="rv" style="--d:.08s">Event-driven workflow triggers</li>
-            <li class="rv" style="--d:.12s">Real-time data exchange</li>
-            <li class="rv" style="--d:.16s">External service connectivity</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 04 LOGIC ============ -->
-    <section class="cos-sec wd-sec" id="logic" aria-labelledby="logic-h">
-      <div class="sec-head">
-        <p class="cos-eyebrow rv">Workflow logic</p>
-        <h2 class="cos-h2 rv" id="logic-h">Logic That Goes Beyond Automation. <span class="dim">Build workflows around your business logic.</span></h2>
-        <div class="sec-head__copy rv"><p class="cos-body">Every process has its own rules. Create workflows that respond to different conditions, process information and follow dynamic execution paths.</p></div>
-      </div>
-
-      <figure class="wd-branch rv" id="wdBranch" role="img" aria-label="A branching workflow: a payment event reaches a condition. Path A sends a confirmation, path B starts a follow-up, and both update the record.">
-        <div class="wd-canvas wd-canvas--branch" style="--cw:1000;--ch:360" aria-hidden="true">
-          <svg class="wd-wires" viewBox="0 0 1000 360" preserveAspectRatio="none">
-            <path class="wd-e wd-e--ab" d="M190 180 H270"/>
-            <path class="wd-e wd-e--a" d="M450 180 H490 V90 H530"/>
-            <path class="wd-e wd-e--b" d="M450 180 H490 V270 H530"/>
-            <path class="wd-e wd-e--a" d="M710 90 H750 V180 H790"/>
-            <path class="wd-e wd-e--b" d="M710 270 H750 V180 H790"/>
-          </svg>
-          <div class="wd-node wd-node--lg wd-on" style="--x:110;--y:180"><span class="wd-ico wd-ico--trig"><svg class="i"><use href="#i-bolt"/></svg></span><span class="wd-node__t"><b>Trigger</b><small>Payment event</small></span></div>
-          <div class="wd-node wd-node--lg wd-on" style="--x:360;--y:180"><span class="wd-ico wd-ico--cond"><svg class="i"><use href="#i-branch"/></svg></span><span class="wd-node__t"><b>Condition</b><small>Payment succeeded?</small></span></div>
-          <div class="wd-node wd-node--lg wd-a" style="--x:620;--y:90"><span class="wd-ico wd-ico--msg"><svg class="i"><use href="#i-check"/></svg></span><span class="wd-node__t"><b>Path A</b><small>Send confirmation</small></span></div>
-          <div class="wd-node wd-node--lg wd-b" style="--x:620;--y:270"><span class="wd-ico wd-ico--wait"><svg class="i"><use href="#i-refresh"/></svg></span><span class="wd-node__t"><b>Path B</b><small>Start follow-up</small></span></div>
-          <div class="wd-node wd-node--lg wd-on" style="--x:880;--y:180"><span class="wd-ico wd-ico--data"><svg class="i"><use href="#i-db"/></svg></span><span class="wd-node__t"><b>Action</b><small>Update record</small></span></div>
-          <span class="wd-flag wd-flag--a" style="--x:490;--y:122">Yes</span>
-          <span class="wd-flag wd-flag--b" style="--x:490;--y:238">No</span>
-        </div>
-      </figure>
-
-      <ul class="wd-ticks">
-        <li class="rv">Conditional branching</li>
-        <li class="rv" style="--d:.04s">Dynamic workflow paths</li>
-        <li class="rv" style="--d:.08s">Data-based decisions</li>
-        <li class="rv" style="--d:.12s">Multi-step execution</li>
-        <li class="rv" style="--d:.16s">Customisable workflow behaviour</li>
-      </ul>
-    </section>
-
-    <!-- ============ 05 EVENT-DRIVEN EXECUTION ============ -->
-    <section class="cos-sec wd-sec" id="events" aria-labelledby="ev-h">
-      <div class="sec-head">
-        <p class="cos-eyebrow rv">Event-driven execution</p>
-        <h2 class="cos-h2 rv" id="ev-h">Event-Driven Workflow Execution. <span class="dim">Let events initiate the right actions.</span></h2>
-        <div class="sec-head__copy rv"><p class="cos-body">Build workflows that respond to business events, scheduled activities and external triggers. Automate processes based on when something happens, not just when someone initiates it.</p></div>
-      </div>
-
-      <figure class="wd-events rv" id="wdEvents" role="img" aria-label="Three kinds of trigger, an API call, a webhook event and a timer, each start the workflow, which runs its automated actions.">
-        <div class="wd-trigs" aria-hidden="true">
-          <div class="wd-trig wd-trig--api" style="--i:0"><span class="wd-trig__k"><svg class="i"><use href="#i-code"/></svg>API trigger</span><p class="wd-mono">POST /workflows/run</p></div>
-          <div class="wd-trig wd-trig--hook" style="--i:1"><span class="wd-trig__k"><svg class="i"><use href="#i-hook"/></svg>Webhook event</span><p class="wd-mono">lead.created</p></div>
-          <div class="wd-trig wd-trig--timer" style="--i:2"><span class="wd-trig__k"><svg class="i"><use href="#i-clock"/></svg>Timer</span><p class="wd-mono">Every day · 09:00</p></div>
-        </div>
-        <svg class="wd-merge" viewBox="0 0 1000 90" preserveAspectRatio="none" aria-hidden="true">
-          <path class="wd-e" d="M167 0 V30 Q167 45 182 45 H485 Q500 45 500 60 V90"/>
-          <path class="wd-e" d="M500 0 V90"/>
-          <path class="wd-e" d="M833 0 V30 Q833 45 818 45 H515 Q500 45 500 60 V90"/>
-        </svg>
-        <div class="wd-run" aria-hidden="true">
-          <span class="wd-run__k"><span class="wd-ico wd-ico--ai"><svg class="i"><use href="#i-flow"/></svg></span>Workflow runs</span>
-          <span class="wd-act">Update CRM record</span><span class="wd-act">Send message</span><span class="wd-act">Assign to team</span><span class="wd-act">Call external API</span>
-        </div>
-      </figure>
-
-      <ul class="wd-ticks">
-        <li class="rv">API triggers</li>
-        <li class="rv" style="--d:.04s">Webhook events</li>
-        <li class="rv" style="--d:.08s">Timer-based triggers</li>
-        <li class="rv" style="--d:.12s">Automated actions</li>
-        <li class="rv" style="--d:.16s">Scheduled execution</li>
-      </ul>
-    </section>
-
-    <!-- ============ 06 AI IN WORKFLOWS ============ -->
-    <section class="cos-sec wd-sec" id="ai" aria-labelledby="ai-h">
-      <div class="wd-split wd-split--flip">
-        <div class="wd-split__copy">
-          <p class="cos-eyebrow rv">AI in workflows</p>
-          <h2 class="cos-h2 rv" id="ai-h">Bring AI Into Your Workflows. <span class="dim">Combine intelligent decision-making with automated execution.</span></h2>
-          <p class="cos-body rv">Integrate AI capabilities into your workflows to interpret information, process requests, generate responses and initiate subsequent actions.</p>
-          <ul class="wd-ticks wd-ticks--col">
-            <li class="rv">AI-powered processing</li>
-            <li class="rv" style="--d:.04s">Intelligent task execution</li>
-            <li class="rv" style="--d:.08s">Context-aware actions</li>
-            <li class="rv" style="--d:.12s">AI agent integration</li>
-            <li class="rv" style="--d:.16s">Human handoff when required</li>
-          </ul>
-        </div>
-        <div class="wd-split__media">
-          <figure class="os-photo wd-ph wd-ph--tall rv"><img src="/public/assets/img/workflow-development/ai.webp" alt="A technical professional working at a computer with two screens." width="1100" height="734" loading="lazy" decoding="async"></figure>
-          <ol class="wd-ai rv" id="wdAi" style="--d:.15s" aria-label="An incoming request goes to an AI agent, which checks a knowledge source, then takes an action or hands off to a human.">
-            <li style="--i:0"><span class="wd-ico"><svg class="i" aria-hidden="true"><use href="#i-inbox"/></svg></span>Incoming Request</li>
-            <li style="--i:1"><span class="wd-ico wd-ico--ai"><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg></span>AI Agent</li>
-            <li style="--i:2"><span class="wd-ico wd-ico--data"><svg class="i" aria-hidden="true"><use href="#i-book"/></svg></span>Knowledge Source</li>
-            <li class="wd-ai__split" style="--i:3"><span class="wd-ai__opt"><span class="wd-ico wd-ico--msg"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>Action</span><span class="wd-ai__or">or</span><span class="wd-ai__opt"><span class="wd-ico"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span>Human Handoff</span></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 07 TECHNOLOGY STACK ============ -->
-    <section class="cos-sec wd-sec" id="stack" aria-labelledby="stack-h">
-      <div class="sec-head">
-        <p class="cos-eyebrow rv">Connected stack</p>
-        <h2 class="cos-h2 rv" id="stack-h">Connect Your Entire Technology Stack. <span class="dim">One workflow. Multiple connected systems.</span></h2>
-        <div class="sec-head__copy rv"><p class="cos-body">Bring your applications, services and business tools into connected workflows. Build processes that move information between systems and eliminate disconnected operations.</p></div>
-      </div>
-
-      <figure class="wd-hub rv" id="wdHub" role="img" aria-label="One workflow in the centre connected to the kinds of systems it can work with: your APIs, webhooks, CRM, database, messaging, email, payments and spreadsheets.">
-        <svg class="wd-hub__lines" viewBox="0 0 1000 440" preserveAspectRatio="none" aria-hidden="true">
-          <path class="wd-e" d="M500 220 L170 80"/><path class="wd-e" d="M500 220 L120 220"/><path class="wd-e" d="M500 220 L170 360"/>
-          <path class="wd-e" d="M500 220 L380 50"/><path class="wd-e" d="M500 220 L620 50"/>
-          <path class="wd-e" d="M500 220 L830 80"/><path class="wd-e" d="M500 220 L880 220"/><path class="wd-e" d="M500 220 L830 360"/>
-        </svg>
-        <div class="wd-hub__core" aria-hidden="true"><span class="wd-ico wd-ico--ai"><svg class="i"><use href="#i-flow"/></svg></span><b>Workflow</b><small>One process, many systems</small></div>
-        <span class="wd-sat" style="--x:170;--y:80;--i:0" aria-hidden="true"><svg class="i"><use href="#i-code"/></svg>Your APIs</span>
-        <span class="wd-sat" style="--x:120;--y:220;--i:1" aria-hidden="true"><svg class="i"><use href="#i-hook"/></svg>Webhooks</span>
-        <span class="wd-sat" style="--x:170;--y:360;--i:2" aria-hidden="true"><svg class="i"><use href="#i-users"/></svg>CRM</span>
-        <span class="wd-sat" style="--x:380;--y:50;--i:3" aria-hidden="true"><svg class="i"><use href="#i-db"/></svg>Database</span>
-        <span class="wd-sat" style="--x:620;--y:50;--i:4" aria-hidden="true"><svg class="i"><use href="#i-wa"/></svg>Messaging</span>
-        <span class="wd-sat" style="--x:830;--y:80;--i:5" aria-hidden="true"><svg class="i"><use href="#i-mail"/></svg>Email</span>
-        <span class="wd-sat" style="--x:880;--y:220;--i:6" aria-hidden="true"><svg class="i"><use href="#i-coin"/></svg>Payments</span>
-        <span class="wd-sat" style="--x:830;--y:360;--i:7" aria-hidden="true"><svg class="i"><use href="#i-table"/></svg>Spreadsheets</span>
-      </figure>
-
-      <ul class="wd-ticks">
-        <li class="rv">Third-party integrations</li>
-        <li class="rv" style="--d:.04s">Application connectivity</li>
-        <li class="rv" style="--d:.08s">Cross-platform workflows</li>
-        <li class="rv" style="--d:.12s">Connected business processes</li>
-        <li class="rv" style="--d:.16s">Flexible integration architecture</li>
-      </ul>
-    </section>
-
-    <!-- ============ 08 USE CASES ============ -->
-    <section class="cos-sec wd-sec" id="use-cases" aria-labelledby="uc-h">
-      <div class="sec-head">
-        <p class="cos-eyebrow rv">Use cases</p>
-        <h2 class="cos-h2 rv" id="uc-h">Workflow Development Use Cases. <span class="dim">From simple integrations to complex business processes.</span></h2>
-        <div class="sec-head__copy rv"><p class="cos-body">Build workflows that solve real operational and technical challenges.</p></div>
-      </div>
-
-      <div class="wd-uses">
-        <article class="wd-use rv">
-          <figure class="os-photo wd-ph wd-use__ph"><img src="/public/assets/img/workflow-development/onboarding.webp" alt="Two colleagues reviewing work together on a laptop." width="800" height="533" loading="lazy" decoding="async"></figure>
-          <h3>Customer Onboarding Automation</h3>
-          <p>Connect signup forms, CRM systems and communication channels. Automatically create customer records, trigger welcome messages and initiate onboarding sequences.</p>
-          <ol class="wd-flow" aria-label="Workflow"><li>Signup Form</li><li>CRM Record</li><li>Welcome Message</li><li>Onboarding Sequence</li></ol>
-        </article>
-        <article class="wd-use rv" style="--d:.05s">
-          <figure class="os-photo wd-ph wd-use__ph"><img src="/public/assets/img/workflow-development/ecommerce.webp" alt="Warehouse staff walking through an aisle of stocked shelves." width="800" height="533" loading="lazy" decoding="async"></figure>
-          <h3>E-commerce Order Processing</h3>
-          <p>Connect your online store, payment gateway, inventory system and delivery services. Automate order updates, payment verification and fulfilment notifications.</p>
-          <ol class="wd-flow" aria-label="Workflow"><li>New Order</li><li>Payment Verification</li><li>Inventory Update</li><li>Delivery Notification</li></ol>
-        </article>
-        <article class="wd-use rv" style="--d:.1s">
-          <figure class="os-photo wd-ph wd-use__ph"><img src="/public/assets/img/workflow-development/leads.webp" alt="A sales team in discussion around a meeting table." width="800" height="534" loading="lazy" decoding="async"></figure>
-          <h3>Lead Management &amp; Distribution</h3>
-          <p>Capture leads from multiple sources, validate information, assign leads based on custom conditions and trigger follow-up actions.</p>
-          <ol class="wd-flow" aria-label="Workflow"><li>Lead Capture</li><li>Validation</li><li>Qualification</li><li>Assignment</li></ol>
-        </article>
-        <article class="wd-use rv">
-          <figure class="os-photo wd-ph wd-use__ph"><img src="/public/assets/img/workflow-development/payments.webp" alt="Two professionals reviewing figures on paper beside their laptops." width="800" height="534" loading="lazy" decoding="async"></figure>
-          <h3>Payment &amp; Subscription Automation</h3>
-          <p>Build workflows that monitor payment events, identify failed transactions, send reminders and update subscription records.</p>
-          <ol class="wd-flow" aria-label="Workflow"><li>Payment Event</li><li>Status Check</li><li>Reminder / Confirmation</li><li>Record Update</li></ol>
-        </article>
-        <article class="wd-use rv" style="--d:.05s">
-          <figure class="os-photo wd-ph wd-use__ph"><img src="/public/assets/img/workflow-development/support.webp" alt="Two support agents wearing headsets at their desks." width="800" height="533" loading="lazy" decoding="async"></figure>
-          <h3>AI-Powered Customer Support</h3>
-          <p>Connect incoming customer requests with AI agents, knowledge sources and ticketing systems. Categorise requests, generate responses and route complex cases to the right team.</p>
-          <ol class="wd-flow" aria-label="Workflow"><li>Customer Query</li><li>AI Agent</li><li>Knowledge Source</li><li>Resolution / Ticket</li></ol>
-        </article>
-        <article class="wd-use rv" style="--d:.1s">
-          <figure class="os-photo wd-ph wd-use__ph"><img src="/public/assets/img/workflow-development/sync.webp" alt="A monitor and laptop showing code side by side." width="800" height="1200" loading="lazy" decoding="async"></figure>
-          <h3>Cross-Platform Data Synchronisation</h3>
-          <p>Connect multiple applications and databases to exchange information, update records and maintain consistent business data across systems.</p>
-          <ol class="wd-flow" aria-label="Workflow"><li>Source Application</li><li>API</li><li>Data Transformation</li><li>Destination System</li></ol>
-        </article>
-      </div>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Discuss Your Workflow <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-      </div>
-    </section>
-
-    <!-- ============ 09 BUILD, EXECUTE & EVOLVE ============ -->
-    <section class="cos-sec wd-sec" id="execute" aria-labelledby="ex-h">
-      <div class="sec-head">
-        <p class="cos-eyebrow rv">Execution</p>
-        <h2 class="cos-h2 rv" id="ex-h">Build, Execute &amp; Evolve. <span class="dim">Your workflows should grow with your business.</span></h2>
-        <div class="sec-head__copy rv"><p class="cos-body">Develop workflows, test their behaviour and refine their execution as requirements change. Build a foundation that supports increasingly sophisticated business processes.</p></div>
-      </div>
-
-      <div class="wd-exec">
-        <figure class="app wd-runs rv" id="wdRuns" role="img" aria-label="An execution history: recent runs of several workflows, most completed, one running and one failed, each with its trigger and time.">
-          <div class="app__top app__top--slim" aria-hidden="true">
-            <span class="app__crumb">Workflows <svg class="i"><use href="#i-chevr"/></svg> <b>Execution history</b></span>
-          </div>
-          <div class="wd-runs__t" aria-hidden="true">
-            <p class="wd-runs__h"><span>Run</span><span>Workflow</span><span>Trigger</span><span>Status</span><span>Started</span></p>
-            <p class="wd-runs__r"><span class="wd-mono">#4821</span><span>Order sync</span><span>Webhook</span><span><i class="wd-st wd-st--run">Running</i></span><span>just now</span></p>
-            <p class="wd-runs__r"><span class="wd-mono">#4820</span><span>Lead routing</span><span>API</span><span><i class="wd-st wd-st--done">Completed</i></span><span>2 min ago</span></p>
-            <p class="wd-runs__r"><span class="wd-mono">#4819</span><span>Payment reminders</span><span>Timer</span><span><i class="wd-st wd-st--done">Completed</i></span><span>9:00</span></p>
-            <p class="wd-runs__r"><span class="wd-mono">#4818</span><span>Order sync</span><span>Webhook</span><span><i class="wd-st wd-st--fail">Failed</i></span><span>8:56</span></p>
-            <p class="wd-runs__r"><span class="wd-mono">#4817</span><span>Support triage</span><span>Message</span><span><i class="wd-st wd-st--done">Completed</i></span><span>8:52</span></p>
-          </div>
-        </figure>
-        <figure class="os-photo wd-ph wd-exec__ph rv" style="--d:.1s"><img src="/public/assets/img/workflow-development/execution.webp" alt="A team gathered round a computer screen, reviewing work together." width="1000" height="563" loading="lazy" decoding="async"></figure>
-      </div>
-
-      <ul class="wd-ticks">
-        <li class="rv">Workflow execution visibility</li>
-        <li class="rv" style="--d:.04s">Process testing and refinement</li>
-        <li class="rv" style="--d:.08s">Execution history and monitoring</li>
-        <li class="rv" style="--d:.12s">Workflow optimisation</li>
-        <li class="rv" style="--d:.16s">Scalable workflow architecture</li>
-      </ul>
-    </section>
-
-    <!-- ============ 10 FAQ ============ -->
-    <section class="cos-sec wd-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Frequently asked questions</h2>
-          <p class="cos-body">Something else on your mind?</p>
-          <a class="cos-link os-link" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is workflow development?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Workflow development is the process of designing and building a sequence of connected steps that automate tasks, move data between systems and respond to business events. With Chatberry, developers can create workflows using visual nodes, triggers, actions, APIs, webhooks and conditional logic.</p></div></details>
-          <details class="os-qa"><summary>Can developers build custom workflows with Chatberry?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Chatberry is designed to help developers create workflows around specific business and technical requirements. Workflows can combine triggers, actions, conditions, integrations and AI capabilities, subject to the tools and features enabled in the platform.</p></div></details>
-          <details class="os-qa"><summary>Can Chatberry workflows connect with external applications and APIs?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry supports connecting systems through integration capabilities such as APIs and webhooks. This allows workflows to receive events from external services, exchange data and initiate actions across connected applications. Check the current integration documentation for supported methods and services.</p></div></details>
-          <details class="os-qa"><summary>What are triggers and webhooks in workflow development?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>A trigger starts a workflow when a defined event occurs, such as an incoming webhook, an API request or a scheduled time. Webhooks allow one application to send event information to another system, helping workflows respond to changes without relying only on manual initiation.</p></div></details>
-          <details class="os-qa"><summary>Can I add conditions and branching logic to a workflow?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Workflow logic can use conditions to evaluate information and direct execution along different paths. For example, a payment workflow could send a confirmation when a payment succeeds or initiate a follow-up process when a payment fails. The exact logic options depend on the workflow features available in your Chatberry environment.</p></div></details>
-          <details class="os-qa"><summary>Can AI agents be used inside workflows?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>AI capabilities can be incorporated into workflows to help interpret requests, process information, generate content or determine the next step. A workflow can then connect those AI-driven tasks to other actions or route cases to a human team when needed, depending on the configured integrations and capabilities.</p></div></details>
-          <details class="os-qa"><summary>How can I monitor and improve workflow execution?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Workflow monitoring helps teams review execution activity, identify errors and refine processes. Contact the Chatberry team for details about the available execution-monitoring capabilities.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 11 CLOSING ============ -->
-    <section class="cos-final wd-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <figure class="os-photo wd-ph wd-final__ph"><img src="/public/assets/img/workflow-development/team.webp" alt="A team collaborating around laptops at a shared table." width="1600" height="1067" loading="lazy" decoding="async"></figure>
-      <p class="cos-eyebrow">Workflow Development</p>
-      <h2 class="cos-h2 rv" id="cta-h">Build What&rsquo;s Next. <span class="dim">Turn complex processes into connected, intelligent workflows.</span></h2>
-      <p class="cos-body rv">Whether you&rsquo;re integrating systems, developing business automation or building intelligent applications, Chatberry gives you the flexibility to bring your workflows to life.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Start Building <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Talk to Our Team</a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Solutions <em>Workflow Development</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>Workflows</span></span><span class="ln"><span>without limits.</span></span></h1>
+      <p class="rv d2">A visual environment where developers design, connect and run intelligent workflows across any system.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vflow"><div class="vflow__n"><small>WHEN</small>Webhook</div><i class="vflow__l"></i><div class="vflow__n"><small>IF</small>Parse payload</div><i class="vflow__l"></i><div class="vflow__n is-ai"><small>THEN</small>AI decides</div><i class="vflow__l"></i><div class="vflow__n"><small>DO</small>Call API</div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Workflow Development</em></span>
+    <p class="stmt__txt" id="stmtTxt">Real processes need real logic. Build workflows that react to events, call any API, run AI steps and follow your business rules exactly.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Visual, node-based</h3><p>Design workflows with full visibility of every step.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">APIs and webhooks</h3><p>Trigger from external events and call any service.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Custom logic</h3><p>Conditions, loops and data handling for complex rules.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">AI inside workflows</h3><p>Let AI interpret data, generate replies and choose paths.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Design</span><p class="row__d">Lay out triggers, logic and actions.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Connect</span><p class="row__d">Wire up APIs, webhooks and data.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Run</span><p class="row__d">Execute, monitor and refine.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Can workflows be triggered externally?<i></i></summary><p>Yes. Use webhooks or API calls.</p></details><details><summary>Can I add AI steps?<i></i></summary><p>Yes. AI can classify, extract, write and decide.</p></details><details><summary>Can I monitor runs?<i></i></summary><p>Yes. Track every run and inspect failures.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/workflow-orchestration/page.html"><small>Products</small><b>Workflow Orchestration</b><p>Drag together triggers, conditions, AI and actions to automate processes exactly the way your business runs them.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/products/integrations/page.html"><small>Products</small><b>Integrations</b><p>Bring your CRM, store, payment gateway and calendar together with Chatberry, and let information flow where it is needed.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/solutions/custom-solutions/page.html"><small>Solutions</small><b>Custom Solutions</b><p>Combine Chatberry’s building blocks with your own logic and services to create solutions you can deliver to clients.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Workflow Development working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

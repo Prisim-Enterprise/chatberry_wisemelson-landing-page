@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Webfront Analytics &amp; Customer Behaviour Insights | Chatberry</title>
-<meta name="description" content="Track Webfront visits, clicks, form abandonment, product views, add-to-cart actions, and conversions. Turn customer behaviour into actionable insights with Business Score.">
+<title>Business Score – What visitors do on your pages | Chatberry</title>
+<meta name="description" content="Track visits, clicks, form drop-offs, product views, carts and conversions on your Chatberry pages, and turn behaviour into insight.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Business Score — Webfront analytics and customer behaviour insights.">
-<meta property="og:description" content="See what visitors view, click, fill in and purchase across your Webfronts, where they drop off, and where conversions can improve.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Business Score – What visitors do on your pages | Chatberry">
+<meta property="og:description" content="Track visits, clicks, form drop-offs, product views, carts and conversions on your Chatberry pages, and turn behaviour into insight.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Business Score – What visitors do on your pages | Chatberry">
+<meta name="twitter:description" content="Track visits, clicks, form drop-offs, product views, carts and conversions on your Chatberry pages, and turn behaviour into insight.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,476 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos wi" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10.2 13.8a4.6 4.6 0 0 0 6.5 0l3-3a4.6 4.6 0 0 0-6.5-6.5l-1 1"/><path d="M13.8 10.2a4.6 4.6 0 0 0-6.5 0l-3 3a4.6 4.6 0 0 0 6.5 6.5l1-1"/></symbol>
-      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
-      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/><path d="M2.5 3.5H5l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.3a1.5 1.5 0 0 0 1.5-1.1L20.5 7.5H6"/></symbol>
-      <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2.8l8.5 4.7v9L12 21.2 3.5 16.5v-9Z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/></symbol>
-      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
-      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 17.5v-5M11.5 17.5v-10M16.5 17.5v-7"/></symbol>
-      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.5 17l6-6 4 4 7-7.5"/><path d="M15.5 7.5h5.5V13"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-play" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M10 9.2v5.6l4.6-2.8Z"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
-      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4.2M12 17v.01"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — stacked head, one wide report ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="wi-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="wi-head rv">
-        <p class="cos-eyebrow">Business Score &middot; Webfront analytics</p>
-        <h1 class="cos-h1" id="wi-h1">Webfront analytics <br><span class="dim">and customer behaviour insights.</span></h1>
-        <p class="cos-hero__intro">Track what visitors view, click, fill in and purchase across your Webfronts. Understand where customers drop off and find opportunities to improve conversions.</p>
-        <div class="cos-cta">
-          <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="/pages/products/webviews/page.html">Explore Webfronts</a>
-        </div>
-      </div>
-
-      <figure class="app wi-dash rv" id="dash" style="--d:.15s" role="img" aria-label="An example Business Score report for the Summer launch Webfront over the last 7 days: visitors, interactions and conversions, a line chart of visitors and interactions by day, traffic sources led by WhatsApp broadcasts, and a feed of recent visitor events. Illustrative figures.">
-        <div class="app__top app__top--slim">
-          <span class="app__crumb">Business Score <svg class="i"><use href="#i-chevr"/></svg> Webfronts <svg class="i"><use href="#i-chevr"/></svg> <b>Summer launch</b></span>
-          <span class="wi-tabs"><span>24 hours</span><b>7 days</b><span>30 days</span></span>
-          <span class="tag wi-ill">Illustrative figures</span>
-        </div>
-        <div class="wi-dash__body">
-          <div class="wi-kpis">
-            <div><span>Visitors</span><b><span data-n="24850">24,850</span></b><em>Unique, last 7 days</em></div>
-            <div><span>Interactions</span><b><span data-n="42120">42,120</span></b><em>Clicks, plays and form actions</em></div>
-            <div class="is-key"><span>Conversions</span><b><span data-n="3492">3,492</span></b><em>14.1% of visitors</em></div>
-          </div>
-          <div class="wi-dash__row">
-            <div class="wi-card wi-line">
-              <p class="wi-card__h"><b>Visitor activity</b><span class="wi-key"><i class="k-ink"></i>Visitors</span><span class="wi-key"><i class="k-lime"></i>Interactions</span></p>
-              <svg class="wi-line__svg" viewBox="0 0 600 180" preserveAspectRatio="none" aria-hidden="true">
-                <path class="wi-grid" d="M0 45H600M0 90H600M0 135H600"/>
-                <path class="wi-l wi-l--a" pathLength="100" d="M0 132 C 50 120, 80 104, 100 108 S 160 118, 200 98 S 260 70, 300 76 S 360 92, 400 70 S 460 44, 500 52 S 570 36, 600 30"/>
-                <path class="wi-l wi-l--b" pathLength="100" d="M0 150 C 50 140, 80 126, 100 118 S 160 96, 200 90 S 260 92, 300 84 S 360 64, 400 58 S 460 40, 500 36 S 570 24, 600 18"/>
-              </svg>
-              <p class="wi-days"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></p>
-            </div>
-            <div class="wi-side">
-              <div class="wi-card">
-                <p class="wi-card__h"><b>Traffic sources</b></p>
-                <ul class="wi-src">
-                  <li class="is-top"><span><svg class="i"><use href="#i-wa"/></svg>WhatsApp broadcast</span><span class="wi-bar"><i style="--v:.58"></i></span><b>58%</b></li>
-                  <li><span><svg class="i"><use href="#i-link"/></svg>Direct link / QR</span><span class="wi-bar"><i style="--v:.26"></i></span><b>26%</b></li>
-                  <li><span><svg class="i"><use href="#i-globe"/></svg>Social campaign</span><span class="wi-bar"><i style="--v:.16"></i></span><b>16%</b></li>
-                </ul>
-              </div>
-              <div class="wi-card">
-                <p class="wi-card__h"><b>Recent events</b><span class="wi-now"><i></i>Now</span></p>
-                <ul class="wi-feed">
-                  <li data-at="2"><svg class="i"><use href="#i-check"/></svg>Form submitted<em>just now</em></li>
-                  <li data-at="1"><svg class="i"><use href="#i-target"/></svg>Button clicked &middot; Register<em>2s ago</em></li>
-                  <li><svg class="i"><use href="#i-form"/></svg>Form started<em>14s ago</em></li>
-                  <li><svg class="i"><use href="#i-eye"/></svg>Webfront opened<em>45s ago</em></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 02 THE PROBLEM — one link, then the unknown ============ -->
-    <section class="cos-sec" id="after-the-click" aria-labelledby="ac-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">After the click</p>
-        <h2 class="cos-h2" id="ac-h">Know what happens <br><span class="dim">after someone opens your link.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Sending a landing page through WhatsApp is only the beginning. Business Score helps you understand what visitors do after they arrive: what they explore, where they leave and which actions lead to results.</p>
-        </div>
-      </div>
-
-      <figure class="wi-after rv" id="after" style="--d:.1s" aria-labelledby="afterCap">
-        <figcaption class="sr-only" id="afterCap">A WhatsApp message with a link to a Webfront is opened. Without behaviour analytics the next steps are unknown; with Business Score you can see that some visitors leave after the first screen, some click Register without submitting, and some convert. Illustrative figures.</figcaption>
-        <div class="wi-after__msg">
-          <p class="wi-after__k">The message</p>
-          <div class="wa-win wi-wa"><div class="wa-win__ui"><div class="wa-chat">
-            <div class="wa-head"><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">Y</span><span class="wa-top__who"><b>Your Brand</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-            <div class="wa-body">
-              <p class="wa-msg wa-msg--in">Our summer collection is here. Early access ends Sunday.<span class="wi-wa__link">yourbrand.wf/summer</span><span class="wa-meta">10:00</span></p>
-            </div>
-            <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
-          </div></div></div>
-          <p class="wi-after__open"><b>10,200</b> opened the link</p>
-        </div>
-        <span class="wi-after__go" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
-        <div class="wi-after__next">
-          <p class="wi-after__k">What happened next</p>
-          <ul class="wi-out">
-            <li data-lit="1"><span class="wi-out__q"><svg class="i"><use href="#i-arrow"/></svg></span><span class="wi-out__t"><b>Left after the first screen</b><small>3,880 visitors &middot; 38%</small></span><span class="wi-out__bar"><i style="--v:.38"></i></span></li>
-            <li data-lit="2"><span class="wi-out__q"><svg class="i"><use href="#i-target"/></svg></span><span class="wi-out__t"><b>Clicked Register, didn&rsquo;t submit</b><small>2,440 visitors &middot; 24%</small></span><span class="wi-out__bar"><i style="--v:.24"></i></span></li>
-            <li data-lit="3" class="wi-out--win"><span class="wi-out__q"><svg class="i"><use href="#i-check"/></svg></span><span class="wi-out__t"><b>Completed the form</b><small>1,680 visitors &middot; 16%</small></span><span class="wi-out__bar"><i style="--v:.16"></i></span></li>
-          </ul>
-          <p class="wi-note">Example Webfront &middot; illustrative figures</p>
-        </div>
-      </figure>
-
-      <ul class="wi-pts rv" style="--d:.1s">
-        <li><b>Visitors leave</b>See where people drop off before completing the action you intended.</li>
-        <li><b>Actions go unnoticed</b>Find out what visitors click, view and interact with on each section of a page.</li>
-        <li><b>Conversions stay unclear</b>See which steps and traffic sources lead to meaningful outcomes.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 03 WEBFRONT ANALYTICS — the page, annotated ============ -->
-    <section class="cos-sec" id="webfronts" aria-labelledby="wf-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Webfront analytics</p>
-        <h2 class="cos-h2" id="wf-h">Understand what visitors do <br><span class="dim">on your pages.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">See how visitors interact with the Webfronts you share through WhatsApp and other channels: what they view, what they tap and how far they go.</p>
-        </div>
-      </div>
-
-      <figure class="wi-page rv" id="page" style="--d:.1s" aria-labelledby="pageCap">
-        <figcaption class="sr-only" id="pageCap">A Webfront page with the share of clicks on each element: the Register now button 41%, the catalogue 25%, the WhatsApp chat button 18% and the video 16%. Beside it, average time on page, bounce rate and scroll depth. Illustrative figures.</figcaption>
-        <div class="wm-phone wi-phone">
-          <div class="wm-phone__screen"><div class="wm-phone__ui">
-            <div class="wa-web">
-              <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Your Brand</b><small><i class="wa-i wa-i--lock"></i>yourbrand.wf/summer</small></span><i class="wa-i wa-i--dots"></i></div>
-              <div class="wa-web__page wi-phone__body">
-                <p class="wi-pg__brand"><span>YB</span>Your Brand</p>
-                <div class="wi-pg__hero">
-                  <p class="wi-pg__t">The summer collection</p>
-                  <p class="wi-pg__s">Early access for members until Sunday.</p>
-                  <span class="wi-pg__cta wi-hot" data-lit="1">Register now<b class="wi-pin">41%</b></span>
-                </div>
-                <div class="wi-pg__vid wi-hot" data-lit="4"><svg class="i"><use href="#i-play"/></svg>Watch the lookbook<b class="wi-pin">16%</b></div>
-                <div class="wi-pg__cat wi-hot" data-lit="2">
-                  <span></span><span></span><span></span>
-                  <b class="wi-pin">25%</b>
-                  <em>Browse the catalogue</em>
-                </div>
-                <span class="wi-pg__chat wi-hot" data-lit="3"><svg class="i"><use href="#i-wa"/></svg>Chat with us<b class="wi-pin">18%</b></span>
-              </div>
-            </div>
-          </div></div>
-          <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
-        </div>
-
-        <div class="wi-page__side">
-          <div class="app wi-rank">
-            <p class="wi-card__h"><b>Top interactions</b><span>share of clicks</span></p>
-            <ol class="wi-rank__l">
-              <li class="is-top"><span>Register now</span><span class="wi-bar"><i style="--v:.82"></i></span><b>8,420</b></li>
-              <li><span>Catalogue</span><span class="wi-bar"><i style="--v:.52"></i></span><b>5,190</b></li>
-              <li><span>Chat with us</span><span class="wi-bar"><i style="--v:.38"></i></span><b>3,840</b></li>
-              <li><span>Lookbook video</span><span class="wi-bar"><i style="--v:.31"></i></span><b>3,120</b></li>
-            </ol>
-            <dl class="wi-m3">
-              <div><dt>Avg. time on page</dt><dd>2m 14s</dd></div>
-              <div><dt>Bounce rate</dt><dd>32.4%</dd></div>
-              <div><dt>Scroll depth</dt><dd>78%</dd></div>
-            </dl>
-          </div>
-          <ul class="wi-caps">
-            <li><b>Page views and visitors</b>Total views, unique visitors and repeat visits.</li>
-            <li><b>Traffic sources</b>Where visitors come from, when referral information is available.</li>
-            <li><b>Clicks and interactions</b>Which buttons, links and elements visitors use, when configured.</li>
-            <li><b>Page-to-page navigation</b>How visitors move between pages and steps in multi-page Webfronts.</li>
-          </ul>
-        </div>
-      </figure>
-      <p class="wi-note wi-note--sec rv">Example Webfront &middot; illustrative figures</p>
-    </section>
-
-    <!-- ============ 04 FORM ANALYTICS — a stepped funnel ============ -->
-    <section class="cos-sec" id="forms" aria-labelledby="fm-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Form analytics</p>
-        <h2 class="cos-h2" id="fm-h">See where visitors <br><span class="dim">abandon your forms.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Measure how visitors progress through forms and find the stages where they stop before submitting.</p>
-        </div>
-      </div>
-
-      <figure class="wi-fun rv" id="funnel" style="--d:.1s" aria-labelledby="funCap">
-        <figcaption class="sr-only" id="funCap">A registration form funnel: 5,400 opened the form, 4,120 started it, 2,810 reached the second step and 1,680 submitted. The largest drop is between the second step and submission. Illustrative figures.</figcaption>
-        <p class="wi-fun__h"><span class="wi-fun__k"><svg class="i"><use href="#i-form"/></svg>Registration form</span><span class="wi-note">Illustrative figures</span></p>
-        <ol class="wi-fun__cols">
-          <li style="--v:1"><span class="wi-fun__bar"><i></i></span><b>5,400</b><span>Form opened</span><small>100%</small></li>
-          <li style="--v:.76"><span class="wi-fun__drop">&minus;24%</span><span class="wi-fun__bar"><i></i></span><b>4,120</b><span>Form started</span><small>76% of opens</small></li>
-          <li style="--v:.52"><span class="wi-fun__drop">&minus;32%</span><span class="wi-fun__bar"><i></i></span><b>2,810</b><span>Reached step 2</span><small>52% of opens</small></li>
-          <li style="--v:.31" class="is-end"><span class="wi-fun__drop wi-fun__drop--big">&minus;40%</span><span class="wi-fun__bar"><i></i></span><b>1,680</b><span>Submitted</span><small>31% of opens</small></li>
-        </ol>
-        <p class="wi-fun__ins"><svg class="i"><use href="#i-search"/></svg><span><b>Many visitors start the form but leave before submitting.</b> The biggest drop is on the last step: worth a look at its length and required fields.</span></p>
-      </figure>
-
-      <ul class="wi-four rv" style="--d:.1s">
-        <li><b>Form starts</b>How many visitors begin filling in a form.</li>
-        <li><b>Form progress</b>Which stages visitors reach, where supported.</li>
-        <li><b>Abandonment</b>How many leave before a successful submission.</li>
-        <li><b>Completion</b>Starts compared with completed submissions.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 05 PRODUCT & CART — the catalogue, measured ============ -->
-    <section class="cos-sec" id="shopping" aria-labelledby="sh-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Product &amp; cart analytics</p>
-        <h2 class="cos-h2" id="sh-h">Track product views, <br><span class="dim">cart actions and purchases.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Understand how visitors move from exploring products to taking shopping actions inside your Webfronts.</p>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app wi-shop" role="img" aria-label="A Webfront catalogue with views and add-to-cart counts per product. The linen shirt has many views but few add-to-cart actions and is flagged. Beside it, the shopping funnel from 12,400 product views to 920 purchases. Illustrative figures.">
-          <div class="app__top app__top--slim">
-            <span class="app__crumb">Business Score <svg class="i"><use href="#i-chevr"/></svg> <b>Summer catalogue</b></span>
-            <span class="tag wi-ill">Illustrative figures</span>
-          </div>
-          <div class="wi-shop__body">
-            <div class="wi-prods">
-              <div class="wi-prod"><span class="wi-prod__img"><svg class="i"><use href="#i-box"/></svg></span><b>Canvas tote</b><p><span><svg class="i"><use href="#i-eye"/></svg>3,200</span><span><svg class="i"><use href="#i-cart"/></svg>1,150</span></p><span class="wi-prod__r">36% to cart</span></div>
-              <div class="wi-prod wi-prod--flag"><span class="wi-prod__img"><svg class="i"><use href="#i-box"/></svg></span><b>Linen shirt</b><p><span><svg class="i"><use href="#i-eye"/></svg>4,100</span><span><svg class="i"><use href="#i-cart"/></svg>290</span></p><span class="wi-prod__r"><svg class="i"><use href="#i-alert"/></svg>7% to cart</span></div>
-              <div class="wi-prod"><span class="wi-prod__img"><svg class="i"><use href="#i-box"/></svg></span><b>Straw hat</b><p><span><svg class="i"><use href="#i-eye"/></svg>2,600</span><span><svg class="i"><use href="#i-cart"/></svg>880</span></p><span class="wi-prod__r">34% to cart</span></div>
-              <div class="wi-prod"><span class="wi-prod__img"><svg class="i"><use href="#i-box"/></svg></span><b>Sandals</b><p><span><svg class="i"><use href="#i-eye"/></svg>2,500</span><span><svg class="i"><use href="#i-cart"/></svg>780</span></p><span class="wi-prod__r">31% to cart</span></div>
-            </div>
-            <div class="wi-shopfun">
-              <p class="ui-label">Shopping funnel</p>
-              <ol class="wi-sf">
-                <li><span><svg class="i"><use href="#i-eye"/></svg>Product view</span><b>12,400</b><em>100%</em></li>
-                <li><span><svg class="i"><use href="#i-cart"/></svg>Add to cart</span><b>3,100</b><em>25%</em></li>
-                <li><span><svg class="i"><use href="#i-arrow"/></svg>Checkout started</span><b>1,450</b><em>11.6%</em></li>
-                <li class="is-end"><span><svg class="i"><use href="#i-check"/></svg>Purchase</span><b>920</b><em>7.4%</em></li>
-              </ol>
-              <p class="wi-obs"><b>Observation</b>The linen shirt gets more views than any product, but relatively few add-to-cart actions.</p>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <ul class="wi-four rv" style="--d:.1s">
-        <li><b>Product views</b>Which products and catalogue items visitors look at.</li>
-        <li><b>Add-to-cart events</b>When visitors add items to their cart.</li>
-        <li><b>Checkout progress</b>Progress through checkout steps, where instrumented.</li>
-        <li><b>Purchases</b>Completed purchases connected to the journey, when tracking is configured.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 06 CUSTOMER JOURNEY — click to conversion ============ -->
-    <section class="cos-sec" id="journey" aria-labelledby="jr-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Customer journey</p>
-        <h2 class="cos-h2" id="jr-h">Follow the customer journey <br><span class="dim">from click to conversion.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Connect the steps visitors take across a Webfront experience to see how they progress toward a goal.</p>
-        </div>
-      </div>
-
-      <figure class="wi-jr rv" id="jr" style="--d:.1s" aria-labelledby="jrCap">
-        <figcaption class="sr-only" id="jrCap">A journey in five steps: 10,200 from a WhatsApp campaign, 9,450 visited the Webfront, 5,120 viewed a product, 1,840 added to cart and 790 purchased. Illustrative figures.</figcaption>
-        <ol class="wi-jr__l">
-          <li data-lit="1" style="--v:1"><p class="wi-jr__n">01</p><p class="wi-jr__t"><svg class="i"><use href="#i-wa"/></svg>WhatsApp campaign</p><span class="wi-jr__band"><i></i></span><b>10,200</b><small>received the link</small></li>
-          <li data-lit="2" style="--v:.926"><p class="wi-jr__n">02</p><p class="wi-jr__t"><svg class="i"><use href="#i-globe"/></svg>Webfront visit</p><span class="wi-jr__band"><i></i></span><b>9,450</b><small>92.6% opened it</small></li>
-          <li data-lit="3" style="--v:.502"><p class="wi-jr__n">03</p><p class="wi-jr__t"><svg class="i"><use href="#i-eye"/></svg>Product view</p><span class="wi-jr__band"><i></i></span><b>5,120</b><small>54% of visits</small></li>
-          <li data-lit="4" style="--v:.18"><p class="wi-jr__n">04</p><p class="wi-jr__t"><svg class="i"><use href="#i-cart"/></svg>Add to cart</p><span class="wi-jr__band"><i></i></span><b>1,840</b><small>36% of viewers</small></li>
-          <li data-lit="5" style="--v:.077" class="is-end"><p class="wi-jr__n">05</p><p class="wi-jr__t"><svg class="i"><use href="#i-check"/></svg>Purchase</p><span class="wi-jr__band"><i></i></span><b>790</b><small>7.7% of the campaign</small></li>
-        </ol>
-        <p class="wi-note">Example journey &middot; illustrative figures</p>
-      </figure>
-
-      <ul class="wi-four rv" style="--d:.1s">
-        <li><b>Entry points</b>Where visitors enter the journey, across channels.</li>
-        <li><b>Engagement</b>Which steps hold attention the longest.</li>
-        <li><b>Drop-off points</b>Where visitors leave before reaching the goal.</li>
-        <li><b>Successful paths</b>Which paths most often end in a conversion.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 07 CAMPAIGNS — similar traffic, different outcomes ============ -->
-    <section class="cos-sec" id="campaigns" aria-labelledby="cp-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Campaign performance</p>
-        <h2 class="cos-h2" id="cp-h">Measure campaign performance <br><span class="dim">beyond clicks.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Understand what happens after visitors arrive from campaign links, not just how many people click.</p>
-          <a class="cos-link os-link" href="/pages/products/campaigns/page.html">Create and send campaigns with Campaigns <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app wi-cmp" role="img" aria-label="Three campaigns compared. Summer WhatsApp promo and Product launch both brought about 8,000 visitors, but the summer promo led to 640 conversions against 210. Weekend flash sale converted 10.6% of a smaller audience. Illustrative figures.">
-          <div class="app__top app__top--slim">
-            <span class="app__crumb">Business Score <svg class="i"><use href="#i-chevr"/></svg> <b>Campaign comparison</b></span>
-            <span class="tag wi-ill">Illustrative figures</span>
-          </div>
-          <div class="wi-cmp__body">
-            <div class="wi-tbl">
-              <p class="wi-tbl__r wi-tbl__r--h"><span>Campaign</span><span>Visitors</span><span>Form starts</span><span>Conversions</span><span>Conversion rate</span></p>
-              <p class="wi-tbl__r is-pair"><span><b>Summer WhatsApp promo</b><small>Broadcast &middot; Oct 1</small></span><span>8,450</span><span>1,820</span><span class="wi-good">640</span><span><span class="wi-bar"><i style="--v:.71"></i></span>7.5%</span></p>
-              <p class="wi-tbl__r is-pair"><span><b>Product launch</b><small>Broadcast &middot; Oct 4</small></span><span>8,120</span><span>940</span><span>210</span><span><span class="wi-bar wi-bar--soft"><i style="--v:.24"></i></span>2.5%</span></p>
-              <p class="wi-tbl__r"><span><b>Weekend flash sale</b><small>Broadcast &middot; Oct 7</small></span><span>4,900</span><span>1,410</span><span class="wi-good">520</span><span><span class="wi-bar"><i style="--v:1"></i></span>10.6%</span></p>
-            </div>
-            <div class="wi-cmp__ins">
-              <p class="ui-label"><svg class="i"><use href="#i-search"/></svg>What stands out</p>
-              <p class="wi-cmp__t">Two campaigns brought almost the same number of visitors. One led to three times as many conversions.</p>
-              <p class="wi-cmp__p">The summer promo&rsquo;s visitors started the form twice as often. Its landing page is worth comparing with the launch page.</p>
-              <p class="wi-cmp__f">Based on the campaign links and conversion events you track.</p>
-            </div>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 08 INSIGHTS — observation → evidence → action ============ -->
-    <section class="cos-sec" id="insights" aria-labelledby="in-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Insights</p>
-        <h2 class="cos-h2" id="in-h">Turn customer behaviour <br><span class="dim">into actionable insights.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Business Score helps you interpret available behavioural data, spot patterns and find opportunities to improve customer journeys.</p>
-        </div>
-      </div>
-
-      <figure class="wi-ins rv" id="ins" style="--d:.1s" aria-labelledby="insCap">
-        <figcaption class="sr-only" id="insCap">An insight in three parts: the observation that many visitors start the registration form but leave, the evidence of a 59% drop between starting and submitting, and a suggested action to review the form's length and required fields. Suggestions are opportunities to investigate, not proof of cause.</figcaption>
-        <p class="wi-ins__h"><span class="wi-ai"><svg class="i"><use href="#i-spark"/></svg></span><b>Business Score insight</b><span>Summer launch &middot; registration form</span></p>
-        <ol class="wi-ins__l">
-          <li data-lit="1"><p class="wi-ins__k">Observation</p><p class="wi-ins__t">Many visitors start the registration form but leave before submitting.</p></li>
-          <li data-lit="2"><p class="wi-ins__k">Evidence</p><p class="wi-ins__t">4,120 started and 1,680 submitted: a 59% drop, most of it on the last step.</p><span class="wi-ins__mini" aria-hidden="true"><i style="--v:1"></i><i style="--v:.68"></i><i style="--v:.41"></i></span></li>
-          <li data-lit="3" class="is-act"><p class="wi-ins__k">Suggested action</p><p class="wi-ins__t">Review the last step&rsquo;s length, required fields and instructions, then compare completion next week.</p><span class="wi-ins__you"><svg class="i"><use href="#i-users"/></svg>Your team decides</span></li>
-        </ol>
-        <p class="wi-ins__f">Suggestions are opportunities to investigate, not proof of cause. They depend on the data your Webfronts track.</p>
-      </figure>
-    </section>
-
-    <!-- ============ 09 USE CASES — four teams, one line each ============ -->
-    <section class="cos-sec" id="teams" aria-labelledby="tm-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">For every team</p>
-        <h2 class="cos-h2" id="tm-h">Use behaviour analytics <br><span class="dim">across your business.</span></h2>
-      </div>
-
-      <ul class="wi-teams rv" style="--d:.1s">
-        <li><b>Marketing teams</b><span>Understand campaign engagement, landing-page performance and lead conversion.</span><em>Campaigns</em></li>
-        <li><b>Sales teams</b><span>Analyse lead-generation journeys and see where prospects abandon forms.</span><em>Lead funnels</em></li>
-        <li><b>Ecommerce teams</b><span>Track product views, cart actions, checkout progress and purchases, where supported.</span><em>Cart &amp; purchase</em></li>
-        <li><b>Product and growth teams</b><span>See how visitors use page elements and find ways to improve the experience.</span><em>Page interactions</em></li>
-      </ul>
-      <p class="wi-note wi-note--sec rv">For reporting across the whole business, see <a class="wi-link" href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a>.</p>
-    </section>
-
-    <!-- ============ 10 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Business Score, answered.</h2>
-          <p class="cos-body">Something else on your mind?</p>
-          <a class="cos-link os-link" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is Business Score?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Business Score is Chatberry&rsquo;s customer behaviour analytics for Webfronts. It helps you understand how visitors interact with your pages, from page views and clicks to form progress, shopping actions and conversions.</p></div></details>
-          <details class="os-qa"><summary>What can Business Score track on a Webfront?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Depending on configured events, it can track page views, visitor activity, button clicks, form interactions, product views, cart additions, and conversion events.</p></div></details>
-          <details class="os-qa"><summary>Can Business Score track visitors who abandon a form?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Where form-progress events are instrumented, Business Score can help measure form starts, progress, abandonment, and completed submissions. Field-level tracking depends on the implementation.</p></div></details>
-          <details class="os-qa"><summary>Can Business Score track add-to-cart events?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes, where product and cart events are configured in the Webfront experience. These events help businesses understand product engagement and shopping progression.</p></div></details>
-          <details class="os-qa"><summary>Can Business Score track conversions from WhatsApp campaigns?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Business Score can help connect campaign traffic to downstream actions when campaign links, referral information, and relevant conversion events are tracked correctly.</p></div></details>
-          <details class="os-qa"><summary>Does Business Score provide AI-powered recommendations?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Business Score can analyse available behavioural data and surface insights and suggested improvements. What it can recommend depends on the AI capabilities enabled and the data available.</p></div></details>
-          <details class="os-qa"><summary>Can Business Score compare different campaigns?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Where campaign attribution and event tracking are configured, businesses can compare visitor engagement and downstream conversion performance across campaigns.</p></div></details>
-          <details class="os-qa"><summary>Does Business Score only work with Webfronts?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>The core use case is analytics across Chatberry Webfronts. Extending tracking to other experiences depends on supported integrations and tracking capabilities.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 11 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">Business Score</p>
-      <h2 class="cos-h2 rv" id="cta-h">See what happens <br>after every click.</h2>
-      <p class="cos-body rv">Understand how visitors interact with your Webfronts, find where journeys break down and use behavioural insights to improve customer experiences.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="/pages/products/webviews/page.html">Explore Webfronts</a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Products <em>Business Score</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>See what happens</span></span><span class="ln"><span>after the click.</span></span></h1>
+      <p class="rv d2">Track what visitors view, tap, fill in and buy on your pages, and find out exactly where they drop off.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vfun"><div><span>Visited</span><i style="--w:100%"></i><b>100%</b></div><div><span>Viewed product</span><i style="--w:72%"></i><b>72%</b></div><div><span>Added to cart</span><i style="--w:38%"></i><b>38%</b></div><div><span>Paid</span><i style="--w:21%"></i><b>21%</b></div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Business Score</em></span>
+    <p class="stmt__txt" id="stmtTxt">Sending a link is only the start. Business Score shows what people do next, so you can fix the step where they leave.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      <div class="uses rv"><span>Funnels</span><span>Form analytics</span><span>Product views</span><span>Cart tracking</span><span>Campaign attribution</span></div>
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Visitor behaviour</h3><p>See which sections people view, what they tap and how far they scroll.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Form drop-offs</h3><p>Find the exact field where people stop filling in your forms.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Shopping actions</h3><p>Track product views, add-to-cart and purchases on your pages.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Campaign impact</h3><p>Measure what visitors from each campaign actually do, not just clicks.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Share</span><p class="row__d">Send your page through WhatsApp or any channel.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Track</span><p class="row__d">Visits, taps and actions are recorded.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Improve</span><p class="row__d">Fix weak steps and lift conversions.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Which pages does it track?<i></i></summary><p>Pages and forms you create and share through Chatberry.</p></details><details><summary>Can I see where forms are abandoned?<i></i></summary><p>Yes. See completion at every step.</p></details><details><summary>Does it connect to campaigns?<i></i></summary><p>Yes. See what visitors from each campaign do on your pages.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/webviews/page.html"><small>Products</small><b>Webviews</b><p>Describe the page, form or booking flow you need. AI builds it, you make it yours, and it goes live from Chatberry.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/products/analytics-bi/page.html"><small>Products</small><b>Analytics &amp; BI</b><p>Bring campaign, customer and team data together to see what is working, why it is happening and what to do next.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/solutions/customer-journeys/page.html"><small>Solutions</small><b>Customer Journeys</b><p>Create interactive pages with AI and share them right inside WhatsApp, so customers go from message to action in a tap.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Business Score working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Getting Started with WhatsApp Automation: A Practical Guide | Chatberry Blog</title>
-<meta name="description" content="What to automate first on WhatsApp, how to build your first journey on the official Business Platform, and how to measure whether it works.">
-<meta property="og:type" content="article">
+<title>WhatsApp automation for beginners: what to automate first | Chatberry</title>
+<meta name="description" content="A practical starting plan for WhatsApp automation: which conversations to automate first, how templates and sessions work, and how to tell if it is working.">
+<meta name="theme-color" content="#070707">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:locale" content="en_US">
-<meta property="og:title" content="Getting Started with WhatsApp Automation: A Practical Guide">
-<meta property="og:description" content="What to automate first on WhatsApp, how to build your first journey on the official Business Platform, and how to measure whether it works.">
-<meta property="article:published_time" content="2026-10-19">
-<meta property="article:modified_time" content="2026-10-30">
-<meta property="article:author" content="Chatberry Team">
-<meta property="article:section" content="WhatsApp Business API">
-<meta property="article:tag" content="WhatsApp Business API">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="WhatsApp automation for beginners: what to automate first | Chatberry">
+<meta property="og:description" content="A practical starting plan for WhatsApp automation: which conversations to automate first, how templates and sessions work, and how to tell if it is working.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Getting Started with WhatsApp Automation: A Practical Guide">
-<meta name="twitter:description" content="What to automate first on WhatsApp, how to build your first journey on the official Business Platform, and how to measure whether it works.">
-<link rel="alternate" type="application/rss+xml" title="Chatberry Blog" href="/pages/blog/feed.xml">
+<meta name="twitter:title" content="WhatsApp automation for beginners: what to automate first | Chatberry">
+<meta name="twitter:description" content="A practical starting plan for WhatsApp automation: which conversations to automate first, how templates and sessions work, and how to tell if it is working.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -26,168 +21,116 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="/pages/blog/blog.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<a class="bl-skip" href="#top">Skip to content</a>
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-<div class="frame">
-
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="bl bl-post" id="top" tabindex="-1">
-    <div class="bl-progress" aria-hidden="true"><span class="bl-progress__bar"></span></div>
-
-    <header class="bl-post__head">
-      <nav class="bl-crumbs" aria-label="Breadcrumb"><a href="/pages/blog/page.html">Blog</a><span aria-hidden="true">/</span><a href="/pages/blog/topic/whatsapp-api/page.html">WhatsApp Business API</a></nav>
-      <h1 class="bl-post__title">Getting Started with WhatsApp Automation: A Practical Guide</h1>
-      <p class="bl-post__lede">What to automate first on WhatsApp, how to build your first journey on the official Business Platform, and how to measure whether it works.</p>
-      <div class="bl-byline">
-        <img class="bl-av bl-av--md bl-av--logo" src="/assets/favicon.png" alt="" width="44" height="44" decoding="async">
-        <div class="bl-byline__txt">
-          <p class="bl-byline__who"><span class="bl-byline__name">Chatberry Team</span></p>
-          <p class="bl-meta"><span class="bl-tag">WhatsApp Business API</span><time datetime="2026-10-19">19 Oct 2026</time><span aria-hidden="true">&middot;</span><span>Updated <time datetime="2026-10-30">30 Oct 2026</time></span><span aria-hidden="true">&middot;</span><span>2 min read</span></p>
-        </div>
-      </div>
-    </header>
-
-    <div class="bl-post__body">
-      <aside class="bl-post__side" aria-label="Article">
-        <p class="bl-side__title">In this article</p>
-        <ol class="bl-toc">
-          <li><a href="#what-whatsapp-automation-actually-means">What WhatsApp automation actually means</a></li>
-          <li><a href="#five-steps-to-your-first-automated-journey">Five steps to your first automated journey</a></li>
-          <li><a href="#measuring-whether-it-works">Measuring whether it works</a></li>
-        </ol>
-        <p class="bl-side__title">Topic</p>
-        <a class="bl-side__topic" href="/pages/blog/topic/whatsapp-api/page.html">More on WhatsApp Business API <svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.6 8h10.4M9 4l4 4-4 4"/></svg></a>
-        <a class="bl-back" href="/pages/blog/page.html"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.4 8H3M7 4 3 8l4 4"/></svg>All articles</a>
-        <a class="bl-back bl-back--top" href="#top"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.4V3M4 7l4-4 4 4"/></svg>Back to top</a>
-      </aside>
-      <div class="bl-post__doc">
-        <details class="bl-toc-m">
-          <summary>In this article <span class="bl-toc-m__n">3 sections</span><span class="bl-toc-m__icon" aria-hidden="true"></span></summary>
-          <ol class="bl-toc">
-            <li><a href="#what-whatsapp-automation-actually-means">What WhatsApp automation actually means</a></li>
-            <li><a href="#five-steps-to-your-first-automated-journey">Five steps to your first automated journey</a></li>
-            <li><a href="#measuring-whether-it-works">Measuring whether it works</a></li>
-          </ol>
-        </details>
-        <article class="bl-prose">
-<p>Most businesses already talk to customers on WhatsApp. The problem is that every conversation is handled by hand: someone reads the message, looks up the customer, types a reply and remembers to follow up. <strong>WhatsApp automation</strong> takes the predictable parts of that work off your team, so people can spend their time on the conversations that need them.</p>
-<p>This guide walks through what to automate first, how to set it up on the official WhatsApp Business Platform, and how to know it is working.</p>
-<h2 id="what-whatsapp-automation-actually-means">What WhatsApp automation actually means</h2>
-<p>Automation is not a chatbot that tries to answer everything. It is a set of rules and journeys that react to events — a new lead, a booked appointment, an abandoned cart — and send the right message at the right moment.</p>
-<blockquote><p>Automate the predictable. Keep people for the exceptions.</p></blockquote>
-<p>A good setup usually combines three layers:</p>
+<main id="main">
+  <section class="phero phero--short phero--post">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv"><a href="/pages/blog/page.html">Blog</a> <em>WhatsApp automation</em></span>
+      <h1 class="h-l rv">WhatsApp automation for beginners: what to automate first</h1>
+      <p class="rv d1 meta">Chatberry Team · <time datetime="2026-10-19">19 Oct 2026</time> · 5 min read</p>
+    </div>
+  </section>
+  <div class="doc wrap">
+    <aside class="doc__toc"><b>On this page</b><ol><li><a href="#start-small">Start with the questions you answer every day</a></li><li><a href="#first-journeys">Five journeys worth automating first</a></li><li><a href="#templates">Templates, sessions and what they cost</a></li><li><a href="#human">Keep a person one tap away</a></li><li><a href="#measure">Measure outcomes, not messages</a></li><li><a href="#next">Your next step</a></li></ol></aside>
+    <article class="prose rv">
+<p class="lead">Most businesses don’t need a huge automation project. They need the five or six conversations they have every day to happen faster and more reliably. This guide shows where to start.</p>
+<h2 id="start-small">Start with the questions you answer every day</h2>
+<p>Open your WhatsApp chats from last week and count. You’ll find the same handful of messages again and again: prices, timings, location, order status, booking changes. These are your first automation candidates, because the answer rarely changes and customers want it immediately.</p>
+<p>A good first automation has three qualities:</p>
 <ul>
-<li><strong>Triggers</strong> — something happens in your business, such as a form submission or a payment.</li>
-<li><strong>Journeys</strong> — a sequence of messages, waits and decisions that follows from the trigger.</li>
-<li><strong>Handoff</strong> — a clear path to a human agent when the customer needs one.</li>
+<li>It happens often, at least a few times a day.</li>
+<li>The answer comes from information you already have, like a price list, a schedule or an order system.</li>
+<li>A slow reply costs you something: a missed booking, a cold lead or an annoyed customer.</li>
 </ul>
-<h2 id="five-steps-to-your-first-automated-journey">Five steps to your first automated journey</h2>
+<h2 id="first-journeys">Five journeys worth automating first</h2>
 <ol>
-<li>Connect an official WhatsApp Business API number.</li>
-<li>Pick one high-volume, predictable conversation, such as appointment reminders.</li>
-<li>Write and submit the message templates Meta needs to approve.</li>
-<li>Build the journey: trigger, messages, waits and a human handoff.</li>
-<li>Launch to a small group, measure, then widen it.</li>
+<li><b>Instant first reply.</b> Greet every new enquiry within seconds, ask one useful question, and route it to the right person.</li>
+<li><b>Appointment booking and reminders.</b> Let people pick a slot, then remind them the day before. No-shows drop noticeably when reminders arrive on WhatsApp.</li>
+<li><b>Order and delivery updates.</b> Confirm the order, share dispatch details and tell customers when it’s arriving.</li>
+<li><b>Payment reminders.</b> A polite nudge with a payment link works better than a phone call for most small dues.</li>
+<li><b>Feedback after service.</b> Ask for a rating while the experience is fresh, and send unhappy customers straight to a person.</li>
 </ol>
-<h3>Choosing the first use case</h3>
-<p>Start where volume is high and the answer is usually the same. Confirmations, reminders and order updates are ideal: they are easy to template, customers expect them, and the time saved is immediate.</p>
-<h4>Signs a conversation is ready to automate</h4>
-<ul>
-<li>Your team sends the same reply many times a day.</li>
-<li>The information comes from a system you already have.</li>
-<li>A delay costs you something — a missed booking, a lost cart.</li>
-</ul>
-<h3>Templates, sessions and costs</h3>
-<p>Business-initiated messages on the WhatsApp Business Platform use pre-approved templates, while replies inside an open customer session can be free-form. Meta's <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">WhatsApp pricing documentation</a> explains how each category is charged.</p>
-<div class="bl-table"><table>
-<thead><tr><th>Message type</th><th>Who starts it</th><th>Typical use</th><th>Needs a template?</th></tr></thead>
+<h2 id="templates">Templates, sessions and what they cost</h2>
+<p>On the official WhatsApp Business Platform, there are two kinds of conversations. When a customer messages you, a 24-hour customer service window opens and you can reply freely. When you start the conversation, for example with a reminder or an offer, you must use a template that WhatsApp has approved.</p>
+<div class="tbl"><table>
+<thead><tr><th>Category</th><th>Typical use</th><th>Template needed?</th></tr></thead>
 <tbody>
-<tr><td>Marketing</td><td>Business</td><td>Offers, announcements, re-engagement</td><td>Yes</td></tr>
-<tr><td>Utility</td><td>Business</td><td>Order updates, reminders, confirmations</td><td>Yes</td></tr>
-<tr><td>Authentication</td><td>Business</td><td>One-time passcodes</td><td>Yes</td></tr>
-<tr><td>Service</td><td>Customer</td><td>Replies inside an open conversation</td><td>No</td></tr>
-</tbody>
-</table></div>
-<h2 id="measuring-whether-it-works">Measuring whether it works</h2>
-<p>Don't measure success by how many messages you send. Measure the outcome the journey was built for: fewer no-shows, faster first replies, more recovered carts, less time spent on repetitive questions.</p>
-<p>When you are ready to try it on your own number, <a href="https://app.prisim.co.in/">get started with Chatberry</a> or <a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">book a demo on WhatsApp</a>.</p>
-        </article>
-        <div class="bl-post__foot">
-          <a class="bl-back" href="/pages/blog/page.html"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.4 8H3M7 4 3 8l4 4"/></svg>All articles</a>
-          <a class="bl-back bl-back--top" href="#top"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.4V3M4 7l4-4 4 4"/></svg>Back to top</a>
-        </div>
-      </div>
-    </div>
-    <a class="bl-totop" href="#top" aria-label="Back to top"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13.4V3M4 7l4-4 4 4"/></svg></a>
-
-    <section class="bl-cta" aria-labelledby="bl-cta-h">
-      <div class="bl-cta__grid" aria-hidden="true"></div>
-      <p class="bl-eyebrow">See it working</p>
-      <h2 class="bl-h2" id="bl-cta-h"><span class="dim">Put these ideas</span> to work in your business.</h2>
-      <p class="bl-cta__body">See how Chatberry connects WhatsApp, AI and automation into one customer journey &mdash; on a short call, with your own use case.</p>
-      <div class="bl-cta__acts">
-        <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book A Demo <svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.6 8h10.4M9 4l4 4-4 4"/></svg></a>
-        <a class="btn btn--dark btn--lg" href="https://wa.me/918147715267">Chat on WhatsApp</a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
-      </div>
-    </div>
-  </footer>
-  <!-- /chrome:foot -->
-
-</div>
-
-<script src="/index.js"></script>
-<script src="/pages/blog/blog.js"></script>
+<tr><td>Marketing</td><td>Offers, launches, re-engagement</td><td>Yes</td></tr>
+<tr><td>Utility</td><td>Order updates, reminders, confirmations</td><td>Yes</td></tr>
+<tr><td>Authentication</td><td>One-time passwords</td><td>Yes</td></tr>
+<tr><td>Service</td><td>Replies inside the 24-hour window</td><td>No</td></tr>
+</tbody></table></div>
+<p>Meta charges differently for each category and updates its rates from time to time, so check the current <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">WhatsApp pricing page</a> before you plan a large campaign.</p>
+<h2 id="human">Keep a person one tap away</h2>
+<p>Automation should make your team faster, not hide them. Every journey needs a clear way out: a “talk to someone” button, or a rule that hands the chat to a person when the customer is upset or the question is unusual. Customers forgive a bot that can’t help. They don’t forgive one that won’t let them reach a human.</p>
+<h2 id="measure">Measure outcomes, not messages</h2>
+<p>Sending more messages isn’t the goal. Pick one number per journey and watch it for a month:</p>
+<ul>
+<li>First reply time for new enquiries.</li>
+<li>No-show rate for appointments.</li>
+<li>Days to collect payments.</li>
+<li>Share of chats resolved without a person.</li>
+</ul>
+<p>If the number improves, add the next journey. If it doesn’t, look at where people drop off and fix that step first.</p>
+<h2 id="next">Your next step</h2>
+<p>Pick one journey from the list above and set it up this week. When you’re ready to try it on your own number, <a href="https://app.prisim.co.in/">get started with Chatberry</a> or <a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">book a demo on WhatsApp</a> and we’ll help you build it.</p></article>
+  </div>
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s build it.</span></span></h2>
+    <div class="end__btns rv d1"><a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo<br>on WhatsApp</a><a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a></div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

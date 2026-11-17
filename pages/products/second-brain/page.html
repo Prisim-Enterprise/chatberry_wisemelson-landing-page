@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Second Brain for Business | Remember, Remind &amp; Act | Chatberry</title>
-<meta name="description" content="Chatberry's Second Brain remembers tasks, commitments, follow-ups, and business context. Talk to it, use voice, get reminders, and keep work moving.">
+<title>Second Brain – AI that remembers, reminds and acts | Chatberry</title>
+<meta name="description" content="Chatberry Second Brain keeps track of tasks, promises, follow-ups and context. Talk or type to it and let it move work forward.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="The Second Brain — The second brain for your business.">
-<meta property="og:description" content="Meet the Second Brain for your business. Talk to Chatberry, let it remember tasks and commitments, and keep work moving with reminders, context, and action.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Second Brain – AI that remembers, reminds and acts | Chatberry">
+<meta property="og:description" content="Chatberry Second Brain keeps track of tasks, promises, follow-ups and context. Talk or type to it and let it move work forward.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Second Brain – AI that remembers, reminds and acts | Chatberry">
+<meta name="twitter:description" content="Chatberry Second Brain keeps track of tasks, promises, follow-ups and context. Talk or type to it and let it move work forward.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,715 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos sb" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
-      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 8 2.5 8h-17S6 15 6 9"/><path d="M10.2 20.5a2 2 0 0 0 3.6 0"/></symbol>
-      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-calcheck" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15l2 2 4-4"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 6A1.5 1.5 0 0 1 5 4.5h9A1.5 1.5 0 0 1 15.5 6v5A1.5 1.5 0 0 1 14 12.5H8.5L5.5 15v-2.5A1.5 1.5 0 0 1 3.5 11Z"/><path d="M18.5 8.5A1.5 1.5 0 0 1 20 10v6a1.5 1.5 0 0 1-1.5 1.5V21l-3-3.5h-4.8"/></symbol>
-      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h14a1.5 1.5 0 0 1 1.5 1.5V10a2 2 0 0 0 0 4v2.5A1.5 1.5 0 0 1 19 18H5a1.5 1.5 0 0 1-1.5-1.5V14a2 2 0 0 0 0-4Z"/><path d="M14 7v2M14 11v2M14 15v2"/></symbol>
-      <symbol id="i-team" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3"/><circle cx="4.8" cy="10.2" r="2.2"/><circle cx="19.2" cy="10.2" r="2.2"/><path d="M7.5 19.5c.6-3 2.4-4.5 4.5-4.5s3.9 1.5 4.5 4.5"/><path d="M1.6 18c.3-2 1.4-3.2 3-3.5M22.4 18c-.3-2-1.4-3.2-3-3.5"/></symbol>
-      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 17.5v-5M11.5 17.5v-10M16.5 17.5v-7"/></symbol>
-      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3.5 17l6-6 4 4 7-7.5"/><path d="M15.5 7.5h5.5V13"/></symbol>
-      <symbol id="i-stetho" viewBox="0 0 24 24"><path d="M6 3v5.5a4 4 0 0 0 8 0V3"/><path d="M10 12.5v2a5 5 0 0 0 10 0v-1.2"/><circle cx="20" cy="11" r="2"/></symbol>
-      <symbol id="i-claim" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5M9.5 14l2 2 3.5-3.5"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16.5l-5.5-5.5-8 8"/></symbol>
-      <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 2.8l8.5 4.7v9L12 21.2 3.5 16.5v-9Z"/><path d="M3.5 7.5L12 12l8.5-4.5M12 12v9.2"/></symbol>
-      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9.5" cy="20" r="1.3"/><circle cx="17.5" cy="20" r="1.3"/><path d="M2.5 3.5H5l2.4 11.2a1.5 1.5 0 0 0 1.5 1.2h8.3a1.5 1.5 0 0 0 1.5-1.1L20.5 7.5H6"/></symbol>
-      <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.2"/><path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7M3 12.5h18"/></symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></symbol>
-      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.8h3.4l1.8 4.4-2.2 1.5a11.5 11.5 0 0 0 6.3 6.3l1.5-2.2 4.4 1.8V19a1.6 1.6 0 0 1-1.7 1.6A16.4 16.4 0 0 1 3.4 5.5 1.6 1.6 0 0 1 5 3.8Z"/></symbol>
-      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></symbol>
-      <symbol id="i-erp" viewBox="0 0 24 24"><path d="M3 20.5h18"/><path d="M4.5 20.5V10l5 3.2V10l5 3.2V5.5h5v15"/></symbol>
-      <symbol id="i-code" viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M13.6 4l-3.2 16"/></symbol>
-      <symbol id="i-apps" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.8"/><circle cx="17" cy="7" r="3.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.8"/><path d="M17 13.5v7M13.5 17h7"/></symbol>
-      <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2.5 12h4l3-7 4.5 14 3-7h4.5"/></symbol>
-      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.2l8.6 4.4L12 12 3.4 7.6Z"/><path d="M3.4 12.4L12 16.8l8.6-4.4M3.4 16.6L12 21l8.6-4.4"/></symbol>
-      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10.2 13.8a4.6 4.6 0 0 0 6.5 0l3-3a4.6 4.6 0 0 0-6.5-6.5l-1 1"/><path d="M13.8 10.2a4.6 4.6 0 0 0-6.5 0l-3 3a4.6 4.6 0 0 0 6.5 6.5l1-1"/></symbol>
-      <symbol id="i-view" viewBox="0 0 24 24"><rect x="3.5" y="4" width="17" height="16" rx="2.2"/><path d="M3.5 9.2h17M9.5 9.2V20"/></symbol>
-      <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5.5" r="2.2"/><circle cx="6" cy="18.5" r="2.2"/><circle cx="18" cy="8.5" r="2.2"/><path d="M6 7.7v8.6M18 10.7c0 4-6.5 2.8-10.4 6.4"/></symbol>
-      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
-      <symbol id="i-board" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="5" height="15" rx="1.5"/><rect x="9.5" y="4.5" width="5" height="10" rx="1.5"/><rect x="15.5" y="4.5" width="5" height="12.5" rx="1.5"/></symbol>
-      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.6" cy="6.5" r="1.1"/><circle cx="4.6" cy="12" r="1.1"/><circle cx="4.6" cy="17.5" r="1.1"/></symbol>
-      <symbol id="i-hash" viewBox="0 0 24 24"><path d="M5 9h14M5 15h14M10 4l-2 16M16 4l-2 16"/></symbol>
-      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.9 9.2c-.6-.9-1.6-1.4-2.9-1.4-1.7 0-2.8.9-2.8 2.1 0 2.9 5.9 1.6 5.9 4.4 0 1.2-1.2 2.1-3.1 2.1-1.3 0-2.4-.6-3-1.5M12 6.2v1.6M12 16.8v1.6"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
-      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.8l7.5 3v5.6c0 4.7-3.2 8.4-7.5 9.6-4.3-1.2-7.5-4.9-7.5-9.6V5.8Z"/><path d="M9.2 12l2 2 3.6-3.6"/></symbol>
-      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M4 20l6.5-6.5M4 20v-5.5M4 20h5.5M20 4l-6.5 6.5M20 4v5.5M20 4h-5.5"/></symbol>
-      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6.5 8h11v3.4a5.5 5.5 0 0 1-11 0ZM12 16.9V21"/></symbol>
-      <symbol id="i-arch" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="1.6"/><rect x="13" y="3.5" width="7.5" height="4.5" rx="1.6"/><rect x="13" y="10" width="7.5" height="10.5" rx="1.6"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="1.6"/></symbol>
-      <symbol id="i-net" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.6"/><circle cx="4.6" cy="6" r="1.9"/><circle cx="19.4" cy="6" r="1.9"/><circle cx="4.6" cy="18" r="1.9"/><circle cx="19.4" cy="18" r="1.9"/><path d="M6.1 7.2l3.8 3M17.9 7.2l-3.8 3M6.1 16.8l3.8-3M17.9 16.8l-3.8-3"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-      <symbol id="i-flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.6 6H15a3.1 3.1 0 0 1 0 6.2H9a3.1 3.1 0 0 0 0 6.2h6.4"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
-      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></symbol>
-      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".7"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
-      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
-      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.8L4.8 13.5H12l-1 7.7 8.2-10.7H12Z"/></symbol>
-      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.6-4.4M4 3.6v3.6h3.6M4 13a8 8 0 0 0 14.6 4.4M20 20.4v-3.6h-3.6"/></symbol>
-      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/></symbol>
-      <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
-      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4 2.2 4H5"/></symbol>
-      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5V5M6 11l6-6 6 6"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="sb-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="os-hero-top">
-        <div class="cos-hero__head rv">
-          <p class="cos-eyebrow">The Second Brain</p>
-          <h1 class="cos-h1" id="sb-h1"><span class="dim">The second brain</span> <br>for your business.</h1>
-          <p class="cos-hero__intro">Talk to it. It remembers. It takes action.</p>
-          <p class="cos-body">Remember tasks, commitments, follow-ups, and important context &mdash; and keep work moving.</p>
-          <div class="cos-cta">
-            <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Start Free <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo</a>
-          </div>
-          <p class="os-note"><svg class="i"><use href="#i-check"/></svg>Start free. Pay as you use.</p>
-        </div>
-
-        <figure class="os-photo os-ph--hero rv" style="--d:.1s"><img src="/public/assets/img/second-brain/talking-at-desk.webp" alt="A professional at her desk speaking to the Second Brain on her phone, laptop open beside her, in a bright office." width="1152" height="928" loading="eager" decoding="async"></figure>
-      </div>
-
-      <figure class="cos-hero__ui rv" style="--d:.15s">
-        <ol class="sb-story" id="heroStory" aria-label="Talk, remember, remind, act">
-          <li><span>01</span>Talk</li><li><span>02</span>Remember</li><li><span>03</span>Remind</li><li><span>04</span>Act</li>
-        </ol>
-        <div class="ui-scroll">
-          <div class="app sb-hero" id="heroApp" style="--w:1336" role="img" aria-label="A spoken request &mdash; remind me tomorrow morning to call the distributor about the pending order &mdash; is transcribed, turned into a task for tomorrow at 10:00 AM, saved to memory, surfaced as a reminder the next morning and marked done.">
-            <div class="app__top">
-              <span class="ws-switch"><span class="ws-logo">N</span>Second Brain</span>
-              <span class="chip is-on"><svg class="i"><use href="#i-cal"/></svg>Today</span>
-              <span class="app__tools"><svg class="i"><use href="#i-bell"/></svg><span class="av av--violet">MI</span></span>
-            </div>
-
-            <div class="sb-hero__body">
-              <!-- talk -->
-              <div class="sb-talk">
-                <p class="ui-label">Talk</p>
-                <div class="sb-mic">
-                  <span class="sb-mic__btn"><svg class="i"><use href="#i-mic"/></svg></span>
-                  <span class="sb-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-                  <span class="sb-mic__state"><b class="sb-say-listen">Listening&hellip;</b><b class="sb-say-got">Got it</b></span>
-                </div>
-                <p class="os-msg os-msg--me sb-transcript" data-at="2"><svg class="i"><use href="#i-mic"/></svg>&ldquo;Remind me tomorrow morning to call the distributor about the pending order.&rdquo;</p>
-                <div class="sb-task" data-at="3">
-                  <p class="sb-task__ok"><svg class="i"><use href="#i-check"/></svg>Got it.</p>
-                  <p class="sb-task__title">Call distributor</p>
-                  <div class="sb-task__meta">
-                    <span class="tag tag--lime"><svg class="i"><use href="#i-clock"/></svg>Tomorrow &middot; 10:00 AM</span>
-                    <span class="tag">Pending order #A-2291</span>
-                    <span class="tag tag--amber">High</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- remember -->
-              <div class="sb-mem">
-                <div class="view__head"><p class="view__title">Memory</p><span class="seg"><span class="is-on">All</span><span>Tasks</span><span>Decisions</span></span></div>
-                <ul class="sb-memlist">
-                  <li class="sb-memrow sb-memrow--new">
-                    <span class="sb-kind"><svg class="i"><use href="#i-phone"/></svg></span>
-                    <div><b>Call distributor about the pending order</b><small>Task &middot; Tomorrow 10:00 AM &middot; you</small></div>
-                    <span class="sb-remembered">Remembered</span>
-                    <span class="tag tag--lime sb-done-tag"><svg class="i"><use href="#i-check"/></svg>Done</span>
-                  </li>
-                  <li class="sb-memrow"><span class="sb-kind"><svg class="i"><use href="#i-file"/></svg></span><div><b>Send the revised proposal to Kestrel</b><small>Task &middot; Friday &middot; Rahul</small></div><span class="tag">Task</span></li>
-                  <li class="sb-memrow"><span class="sb-kind"><svg class="i"><use href="#i-flag"/></svg></span><div><b>Campaign launch moved to Monday</b><small>Decision &middot; Marketing sync</small></div><span class="tag tag--cyan">Decision</span></li>
-                  <li class="sb-memrow"><span class="sb-kind"><svg class="i"><use href="#i-clock"/></svg></span><div><b>Ask operations about warehouse slots</b><small>Follow-up &middot; Wednesday &middot; Priya</small></div><span class="tag tag--amber">Follow-up</span></li>
-                  <li class="sb-memrow"><span class="sb-kind"><svg class="i"><use href="#i-flag"/></svg></span><div><b>Q4 pricing approved by Meera</b><small>Decision &middot; last week</small></div><span class="tag tag--cyan">Decision</span></li>
-                </ul>
-              </div>
-
-              <!-- remind / act -->
-              <aside class="app__panel sb-remind">
-                <p class="ui-label">Reminders</p>
-                <div class="sb-rem-card" data-at="5">
-                  <p class="sb-rem-card__when"><svg class="i"><use href="#i-bell"/></svg>Tomorrow &middot; 10:00 AM</p>
-                  <p class="sb-rem-card__what"><b>Reminder</b>Call distributor about the pending order.</p>
-                  <div class="sb-rem-card__act">
-                    <span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-check"/></svg>Mark done</span>
-                    <span class="mini-btn mini-btn--ghost"><svg class="i"><use href="#i-clock"/></svg>Snooze</span>
-                  </div>
-                  <p class="sb-rem-card__done"><svg class="i"><use href="#i-check"/></svg>Done &middot; completed 10:04 AM</p>
-                </div>
-                <div class="sb-rem-later">
-                  <p><svg class="i"><use href="#i-refresh"/></svg>Every Friday &middot; Review pending customer requests</p>
-                  <p><svg class="i"><use href="#i-clock"/></svg>Wednesday &middot; Ask operations about warehouse slots</p>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 02 THE PROBLEM ============ -->
-    <section class="cos-sec" id="problem" aria-labelledby="prob-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="prob-h">People shouldn&rsquo;t have to remember everything.</h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Tasks. Decisions. Follow-ups. Important context.</p>
-        </div>
-      </div>
-
-      <figure class="sb-thoughts" id="thoughts" aria-label="A person surrounded by things to remember &mdash; follow up with the client, send the proposal, check the campaign, ask the team, review the report, call the distributor, Friday's meeting &mdash; all moved into Chatberry's memory.">
-        <span class="sb-you" aria-hidden="true"><svg class="i"><use href="#i-user"/></svg></span>
-        <ul class="sb-thoughts__list">
-          <li class="sb-thought" style="--x:20;--y:14;--r:-3;--i:0">Follow up with the client</li>
-          <li class="sb-thought" style="--x:70;--y:10;--r:2;--i:1">Send the proposal</li>
-          <li class="sb-thought" style="--x:9;--y:47;--r:2;--i:2">Check the campaign</li>
-          <li class="sb-thought" style="--x:88;--y:42;--r:-2;--i:3">Ask the team</li>
-          <li class="sb-thought" style="--x:24;--y:82;--r:3;--i:4">Review the report</li>
-          <li class="sb-thought" style="--x:74;--y:84;--r:-3;--i:5">Call the distributor</li>
-          <li class="sb-thought" style="--x:49;--y:96;--r:1;--i:6">Don&rsquo;t forget Friday&rsquo;s meeting</li>
-        </ul>
-        <div class="sb-kept">
-          <img src="/assets/chatberry-icon.svg" alt="" width="32" height="32">
-          <b>Chatberry remembers.</b>
-          <small>7 things kept &middot; nothing dropped</small>
-          <ul class="sb-kept__list">
-            <li><svg class="i"><use href="#i-check"/></svg>Follow up with the client</li>
-            <li><svg class="i"><use href="#i-check"/></svg>Send the proposal</li>
-            <li><svg class="i"><use href="#i-check"/></svg>Check the campaign</li>
-            <li><svg class="i"><use href="#i-check"/></svg>Ask the team</li>
-            <li><svg class="i"><use href="#i-check"/></svg>Review the report</li>
-            <li><svg class="i"><use href="#i-check"/></svg>Call the distributor</li>
-            <li><svg class="i"><use href="#i-check"/></svg>Friday&rsquo;s meeting</li>
-          </ul>
-        </div>
-      </figure>
-
-      <p class="os-say os-say--center rv">Keep them in one place &mdash; <span class="dim">and let Chatberry keep them moving.</span></p>
-    </section>
-
-    <!-- ============ 03 TALK ============ -->
-    <section class="cos-sec" id="talk" aria-labelledby="talk-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Talk</p>
-          <h2 class="cos-h2" id="talk-h">Just talk to it.</h2>
-        </div>
-        <div class="sec-head__copy">
-          <p class="cos-body">Create tasks, ask questions, check progress, and take action through natural conversation.</p>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="ui-scroll">
-          <div class="app sb-talkapp" id="talkApp" style="--w:1336" role="img" aria-label="A conversation creates a follow-up task for the sales team, a recurring Friday reminder, and then moves the task to Friday when asked to move that to Friday &mdash; without repeating the context.">
-            <div class="sb-talkapp__body">
-              <div class="os-chat">
-                <p class="os-chat__head"><span class="os-ai-mark"><svg class="i"><use href="#i-spark"/></svg></span>Second Brain <span class="tag">Conversation</span></p>
-                <div class="os-chat__log">
-                  <p class="os-msg os-msg--me" data-at="1">Create a task for the sales team to follow up with everyone who hasn&rsquo;t responded to this campaign.</p>
-                  <div class="os-msg os-msg--ai os-typing" data-at="2" data-until="3"><i></i><i></i><i></i></div>
-                  <div class="os-msg os-msg--ai sb-card" data-at="3">
-                    <p class="sb-card__h"><svg class="i"><use href="#i-check"/></svg>Task created</p>
-                    <dl class="sb-dl">
-                      <dt>Assignee</dt><dd><span class="who"><span class="av av--lime">ST</span>Sales Team</span></dd>
-                      <dt>Task</dt><dd>Follow-up: non-responsive campaign contacts</dd>
-                      <dt>Due</dt><dd><span class="sb-due"><s>Tomorrow</s><b>Friday</b></span></dd>
-                      <dt>Context</dt><dd>Q4 Restock campaign &middot; 42 contacts</dd>
-                    </dl>
-                  </div>
-                  <p class="os-msg os-msg--me" data-at="4">Remind me every Friday to review pending customer requests.</p>
-                  <p class="os-msg os-msg--ai" data-at="5"><svg class="i os-ok"><use href="#i-refresh"/></svg><b>Recurring reminder created.</b> Every Friday &middot; 9:00 AM</p>
-                  <div class="sb-ctxmsg" data-at="6">
-                    <p class="os-msg os-msg--me">Move that to Friday.</p>
-                    <span class="sb-ref"><svg class="i"><use href="#i-link"/></svg>&ldquo;that&rdquo; &rarr; Follow-up: non-responsive campaign contacts</span>
-                  </div>
-                  <p class="os-msg os-msg--ai" data-at="7"><svg class="i os-ok"><use href="#i-check"/></svg><b>Done.</b> Due date moved to Friday.</p>
-                </div>
-                <div class="os-compose"><span>Tell your Second Brain&hellip;</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-mic"/></svg></span></div>
-              </div>
-
-              <div class="sb-understood">
-                <p class="ui-label">What it understood</p>
-                <div class="sb-u" data-at="3">
-                  <span class="sb-kind"><svg class="i"><use href="#i-users"/></svg></span>
-                  <div><b>Follow-up: non-responsive campaign contacts</b><small>Sales Team &middot; 42 contacts</small></div>
-                  <span class="tag sb-u__due"><s>Tomorrow</s><b>Friday</b></span>
-                </div>
-                <div class="sb-u" data-at="5">
-                  <span class="sb-kind"><svg class="i"><use href="#i-refresh"/></svg></span>
-                  <div><b>Review pending customer requests</b><small>You &middot; recurring</small></div>
-                  <span class="tag tag--lime">Every Fri</span>
-                </div>
-                <p class="sb-understood__note" data-at="6"><svg class="i"><use href="#i-spark"/></svg>No need to repeat yourself &mdash; it keeps the context of the conversation.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <p class="os-say rv">No forms. No hunting through menus. <span class="dim">Just tell it what you need.</span></p>
-    </section>
-
-    <!-- ============ 04 VOICE ============ -->
-    <section class="cos-sec" id="voice" aria-labelledby="voice-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Voice</p>
-          <h2 class="cos-h2" id="voice-h">When your hands are busy, just talk.</h2>
-        </div>
-        <div class="sec-head__copy">
-          <p class="cos-body">Use your voice to capture ideas, create tasks, ask questions, and get things done.</p>
-        </div>
-      </div>
-
-      <div class="sb-voice rv" style="--d:.1s">
-        <figure class="os-photo os-ph--voice"><img src="/public/assets/img/second-brain/on-the-move.webp" alt="A woman walking through the office between meetings, talking on her phone while carrying notebooks and a coffee." width="1152" height="928" loading="lazy" decoding="async"></figure>
-
-        <div class="app sb-voicebox" id="voiceApp" role="img" aria-label="Voice: add a reminder to review the new leads tomorrow afternoon becomes Review new leads, tomorrow at 3 PM. Then: what do I need to finish today? Six things need your attention.">
-          <div class="sb-mic sb-mic--compact">
-            <span class="sb-mic__btn"><svg class="i"><use href="#i-mic"/></svg></span>
-            <span class="sb-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
-            <span class="sb-mic__state"><b class="sb-say-listen">Listening&hellip;</b><b class="sb-say-got">Talk naturally</b></span>
-          </div>
-          <div class="os-chat__log">
-            <p class="os-msg os-msg--me" data-at="1"><svg class="i"><use href="#i-mic"/></svg>&ldquo;Add a reminder to review the new leads tomorrow afternoon.&rdquo;</p>
-            <div class="sb-task sb-task--slim" data-at="2">
-              <p class="sb-task__title">Review new leads</p>
-              <div class="sb-task__meta"><span class="tag tag--lime"><svg class="i"><use href="#i-clock"/></svg>Tomorrow &middot; 3:00 PM</span></div>
-            </div>
-            <p class="os-msg os-msg--me" data-at="3"><svg class="i"><use href="#i-mic"/></svg>&ldquo;What do I need to finish today?&rdquo;</p>
-            <div class="os-msg os-msg--ai sb-today" data-at="4">
-              <p><span class="os-num" data-n="6">6</span> things need your attention.</p>
-              <ul>
-                <li><span class="tag tag--rose">Overdue</span>Send revised proposal to Kestrel</li>
-                <li><span class="tag tag--rose">Overdue</span>Approve the October invoices</li>
-                <li><span class="tag tag--amber">Today</span>Call distributor &middot; 10:00 AM</li>
-                <li><span class="tag tag--amber">Today</span>Review new leads</li>
-                <li><span class="tag">Waiting</span>Brief from Marketing</li>
-                <li><span class="tag tag--cyan">Priority</span>Reply to Brightline</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 05 IT REMEMBERS ============ -->
-    <section class="cos-sec" id="remembers" aria-labelledby="mem-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Memory</p>
-          <h2 class="cos-h2" id="mem-h">It remembers what matters.</h2>
-        </div>
-        <div class="sec-head__copy">
-          <p class="cos-body">Your Second Brain keeps track of the tasks, commitments, follow-ups, decisions, and context you don&rsquo;t want to lose.</p>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app sb-week" id="weekApp" role="img" aria-label="A week of memory: Monday the new campaign was discussed, Tuesday the proposal was assigned to Rahul, Wednesday the customer had not responded, Thursday the follow-up was due, Friday it was still pending. The Second Brain asks whether to remind Rahul.">
-          <div class="sb-week__body">
-            <ol class="sb-tl" id="weekTl">
-              <li class="sb-day is-past"><span class="sb-day__d">Mon</span><span class="sb-day__dot"></span><div><b>Discussed the new campaign</b><small>Marketing sync &middot; Remembered</small></div></li>
-              <li class="sb-day is-past"><span class="sb-day__d">Tue</span><span class="sb-day__dot"></span><div><b>Proposal assigned to Rahul</b><small>Task &middot; due Thursday</small></div></li>
-              <li class="sb-day is-past"><span class="sb-day__d">Wed</span><span class="sb-day__dot"></span><div><b>Customer hasn&rsquo;t responded</b><small>Email opened &middot; no reply</small></div></li>
-              <li class="sb-day is-past"><span class="sb-day__d">Thu</span><span class="sb-day__dot"></span><div><b>Follow-up due</b><small>Rahul &middot; proposal follow-up</small></div></li>
-              <li class="sb-day is-on"><span class="sb-day__d">Fri</span><span class="sb-day__dot"></span><div><b>Follow-up still pending</b><small>1 day overdue</small></div></li>
-            </ol>
-            <div class="sb-nudge">
-              <p class="os-chat__head"><span class="os-ai-mark"><svg class="i"><use href="#i-spark"/></svg></span>Second Brain</p>
-              <div class="sb-nudge__body">
-                <p class="sb-nudge__msg">This follow-up is still pending. <b>Would you like me to remind Rahul?</b></p>
-                <div class="sb-nudge__act">
-                  <span class="mini-btn mini-btn--lime">Take Action <svg class="i"><use href="#i-arrow"/></svg></span>
-                  <span class="mini-btn mini-btn--ghost">Not now</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <ul class="os-labels rv" style="--d:.2s" aria-label="What it remembers">
-        <li>Tasks</li><li>Commitments</li><li>Decisions</li><li>Follow-ups</li><li>Context</li>
-      </ul>
-    </section>
-
-    <!-- ============ 06 IT DOESN'T JUST REMIND YOU ============ -->
-    <section class="cos-sec" id="follow-through" aria-labelledby="rem-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Follow-through</p>
-          <h2 class="cos-h2" id="rem-h">A reminder is only useful if something happens next.</h2>
-        </div>
-      </div>
-
-      <ol class="sb-life rv" id="life" style="--d:.1s" aria-label="A task's lifecycle">
-        <li class="sb-stage"><em><svg class="i"><use href="#i-plus"/></svg></em>Created</li>
-        <li class="sb-stage"><em><svg class="i"><use href="#i-user"/></svg></em>Assigned</li>
-        <li class="sb-stage"><em><svg class="i"><use href="#i-cal"/></svg></em>Due</li>
-        <li class="sb-stage sb-stage--warn"><em><svg class="i"><use href="#i-clock"/></svg></em>Still pending</li>
-        <li class="sb-stage"><em><svg class="i"><use href="#i-bell"/></svg></em>Reminder</li>
-        <li class="sb-stage"><em><svg class="i"><use href="#i-up"/></svg></em>Escalated</li>
-        <li class="sb-stage"><em><svg class="i"><use href="#i-check"/></svg></em>Completed</li>
-      </ol>
-
-      <div class="app sb-pend rv" style="--d:.2s" role="img" aria-label="Proposal follow-up, due yesterday, still pending. The Second Brain says Rahul is assigned and offers to remind him or reschedule.">
-        <div class="sb-pend__task">
-          <span class="sb-kind sb-kind--warn"><svg class="i"><use href="#i-file"/></svg></span>
-          <div><b>Proposal follow-up</b><small>Due yesterday &middot; Rahul Verma</small></div>
-          <span class="tag tag--rose">Still pending</span>
-        </div>
-        <div class="sb-pend__ai">
-          <span class="os-ai-mark"><svg class="i"><use href="#i-spark"/></svg></span>
-          <p>The proposal follow-up is still pending. Rahul is assigned to it. <b>Would you like me to remind him?</b></p>
-          <div class="sb-pend__act">
-            <span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-bell"/></svg>Remind Rahul</span>
-            <span class="mini-btn mini-btn--ghost"><svg class="i"><use href="#i-cal"/></svg>Reschedule</span>
-          </div>
-        </div>
-      </div>
-
-      <p class="os-say rv">It keeps work moving &mdash; <span class="dim">not just reminders coming.</span></p>
-    </section>
-
-    <!-- ============ 07 ASK YOUR BUSINESS ============ -->
-    <section class="cos-sec" id="ask" aria-labelledby="ask-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Ask</p>
-          <h2 class="cos-h2" id="ask-h">Ask your business anything.</h2>
-        </div>
-        <div class="sec-head__copy">
-          <p class="cos-body">Talk to your Second Brain to understand what happened, what&rsquo;s pending, and what needs attention.</p>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="ui-scroll">
-          <div class="app sb-ask" id="askApp" style="--w:1336" role="img" aria-label="Three questions answered from business memory: five things need attention today, three tasks are waiting on Sales, and the team decided to launch the campaign on Monday and review after three days.">
-            <div class="sb-ask__body">
-              <aside class="sb-qs">
-                <p class="ui-label">Ask</p>
-                <span class="sb-q" data-q="1"><svg class="i"><use href="#i-msg"/></svg>What needs my attention today?</span>
-                <span class="sb-q" data-q="2"><svg class="i"><use href="#i-msg"/></svg>What&rsquo;s waiting on the sales team?</span>
-                <span class="sb-q" data-q="3"><svg class="i"><use href="#i-msg"/></svg>What did we decide about the campaign?</span>
-                <p class="sb-qs__note"><svg class="i"><use href="#i-layers"/></svg>Answers come from your workspace&rsquo;s tasks, conversations and decisions.</p>
-              </aside>
-              <div class="os-chat__log sb-ask__log">
-                <p class="os-msg os-msg--me" data-at="1">What needs my attention today?</p>
-                <div class="os-msg os-msg--ai sb-answer" data-at="2">
-                  <p><span class="os-num" data-n="5">5</span> things need your attention.</p>
-                  <ul class="sb-breakdown">
-                    <li><b>2</b> overdue</li><li><b>1</b> due today</li><li><b>1</b> waiting on another team</li><li><b>1</b> high-priority customer follow-up</li>
-                  </ul>
-                </div>
-                <p class="os-msg os-msg--me" data-at="3">What&rsquo;s waiting on the sales team?</p>
-                <div class="os-msg os-msg--ai sb-answer" data-at="4">
-                  <p><span class="os-num" data-n="3">3</span> tasks are waiting on Sales.</p>
-                  <ul class="sb-breakdown">
-                    <li><b>2</b> customer follow-ups</li><li><b>1</b> proposal review</li>
-                  </ul>
-                </div>
-                <p class="os-msg os-msg--me" data-at="5">What did we decide about the campaign?</p>
-                <div class="os-msg os-msg--ai sb-answer" data-at="6">
-                  <p>The team decided to <b>launch the campaign on Monday</b> and review performance after the first three days.</p>
-                  <span class="sb-source"><svg class="i"><use href="#i-flag"/></svg>Decision &middot; Marketing sync, Tuesday</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <p class="os-say rv">Your business context becomes something you can talk to.</p>
-    </section>
-
-    <!-- ============ 08 FROM MEMORY TO ACTION ============ -->
-    <section class="cos-sec" id="loop" aria-labelledby="loop-h">
-      <div class="sb-loopwrap">
-        <figure class="sb-loop rv" id="loopFig" aria-label="The loop: talk, remember, understand, remind, act, follow up &mdash; and remember again.">
-          <svg class="sb-loop__ring" viewBox="0 0 520 520" aria-hidden="true"><circle cx="260" cy="260" r="200"/></svg>
-          <span class="sb-loop__dot" aria-hidden="true"></span>
-          <ol class="sb-loop__nodes">
-            <li style="--a:-90deg">Talk</li><li style="--a:-30deg">Remember</li><li style="--a:30deg">Understand</li>
-            <li style="--a:90deg">Remind</li><li style="--a:150deg">Act</li><li style="--a:210deg">Follow up</li>
-          </ol>
-          <div class="sb-loop__core"><svg class="i"><use href="#i-refresh"/></svg><b>Second Brain</b><small>Always on</small></div>
-        </figure>
-        <div class="sb-loopwrap__copy rv" style="--d:.1s">
-          <p class="cos-eyebrow">The loop</p>
-          <h2 class="cos-h2" id="loop-h">Remember less. <br>Get more done.</h2>
-          <p class="cos-body">Your Second Brain can connect conversations, tasks, workflows, teams, customer context, and business systems to help move work forward.</p>
-          <div class="os-links">
-            <a class="cos-link" href="/pages/products/ai-agents/page.html">AI Agents <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="cos-link" href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="cos-link" href="/pages/products/customer-os/page.html">Customer OS <svg class="i"><use href="#i-arrow"/></svg></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 09 FOR EVERYONE ============ -->
-    <section class="cos-sec" id="everyone" aria-labelledby="all-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="all-h">Everyone gets a brain that works with them.</h2>
-      </div>
-
-      <div class="sb-people rv" id="people" style="--d:.1s">
-        <article class="sb-person">
-          <span class="av av--lime av--lg">AN</span>
-          <p class="sb-person__say">&ldquo;Remind me to follow up with this customer tomorrow.&rdquo;</p>
-          <p class="sb-person__got"><svg class="i"><use href="#i-bell"/></svg>Reminder &middot; tomorrow 9:00 AM</p>
-        </article>
-        <article class="sb-person">
-          <span class="av av--cyan av--lg">JD</span>
-          <p class="sb-person__say">&ldquo;Create a task for the operations team.&rdquo;</p>
-          <p class="sb-person__got"><svg class="i"><use href="#i-check"/></svg>Task created &middot; Operations</p>
-        </article>
-        <article class="sb-person">
-          <span class="av av--amber av--lg">SK</span>
-          <p class="sb-person__say">&ldquo;What is still pending from my team?&rdquo;</p>
-          <p class="sb-person__got"><svg class="i"><use href="#i-list"/></svg>4 pending &middot; 2 overdue</p>
-        </article>
-        <article class="sb-person">
-          <span class="av av--violet av--lg">RV</span>
-          <p class="sb-person__say">&ldquo;What did we decide in yesterday&rsquo;s meeting?&rdquo;</p>
-          <p class="sb-person__got"><svg class="i"><use href="#i-flag"/></svg>Decision &middot; launch on Monday</p>
-        </article>
-        <article class="sb-person">
-          <span class="av av--lg">ML</span>
-          <p class="sb-person__say">&ldquo;Move all overdue follow-ups to tomorrow.&rdquo;</p>
-          <p class="sb-person__got"><svg class="i"><use href="#i-cal"/></svg>6 follow-ups moved &rarr; tomorrow</p>
-        </article>
-      </div>
-
-      <p class="os-say rv">One Second Brain. <span class="dim">Different people. Different work.</span></p>
-    </section>
-
-    <!-- ============ 10 TEAM MEMORY ============ -->
-    <section class="cos-sec" id="team-memory" aria-labelledby="tm-h">
-      <div class="sec-head rv">
-        <div>
-          <p class="cos-eyebrow">Team memory</p>
-          <h2 class="cos-h2" id="tm-h">From personal memory to business memory.</h2>
-        </div>
-        <div class="sec-head__copy">
-          <p class="cos-body">Important knowledge shouldn&rsquo;t disappear when a conversation ends or someone forgets.</p>
-        </div>
-      </div>
-
-      <figure class="sb-tiers rv" id="tiers" style="--d:.1s" aria-label="A decision &mdash; campaign launch moved to Monday &mdash; travels from a person to the team to the business: remembered, the relevant team notified, and a follow-up created.">
-        <div class="sb-tier" data-tier="1">
-          <p class="sb-tier__h"><svg class="i"><use href="#i-user"/></svg>Person</p>
-          <div class="sb-decision"><span class="tag tag--cyan">Decision</span><b>Campaign launch moved to Monday.</b><small>Said in a call by Meera</small></div>
-          <p class="sb-tier__out"><span class="sb-remembered">Remembered</span></p>
-        </div>
-        <span class="sb-tier__to" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
-        <div class="sb-tier" data-tier="2">
-          <p class="sb-tier__h"><svg class="i"><use href="#i-users"/></svg>Team</p>
-          <div class="sb-notify">
-            <p><span class="av-stack"><span class="av av--lime">MS</span><span class="av av--cyan">AN</span><span class="av av--amber">RV</span></span></p>
-            <b>Relevant team notified</b><small>Marketing &middot; Sales</small>
-          </div>
-        </div>
-        <span class="sb-tier__to" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
-        <div class="sb-tier" data-tier="3">
-          <p class="sb-tier__h"><svg class="i"><use href="#i-layers"/></svg>Business</p>
-          <div class="sb-notify">
-            <p><span class="sb-kind"><svg class="i"><use href="#i-check"/></svg></span></p>
-            <b>Follow-up created</b><small>Review performance &middot; Thursday</small>
-          </div>
-        </div>
-      </figure>
-
-      <p class="os-say os-say--center sb-say--big rv">What your business knows should not depend on who remembers it.</p>
-    </section>
-
-    <!-- ============ 11 HUMAN + AI ============ -->
-    <section class="cos-sec" id="human-ai" aria-labelledby="hai-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="hai-h">Work with AI. <br><span class="dim">Don&rsquo;t work around it.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Your Second Brain works alongside your people &mdash; remembering the details, handling follow-ups, and helping teams stay focused on the work that matters.</p>
-        </div>
-      </div>
-
-      <div class="sb-duo rv" style="--d:.1s">
-        <div class="sb-duo__side">
-          <figure class="os-photo os-ph--duo"><img src="/public/assets/img/second-brain/reminder-with-colleague.webp" alt="Two colleagues at a standing desk; one glances at a reminder about a Q3 budget proposal on a tablet while they talk." width="1152" height="928" loading="lazy" decoding="async"></figure>
-          <p class="sb-duo__name">You</p>
-          <ul class="sb-verbs"><li>Thinking</li><li>Deciding</li><li>Communicating</li></ul>
-        </div>
-        <div class="sb-duo__mid" aria-hidden="true"><span><svg class="i"><use href="#i-chat"/></svg>Conversation</span></div>
-        <div class="sb-duo__side sb-duo__side--ai">
-          <div class="sb-duo__brain"><img src="/assets/chatberry-icon.svg" alt="" width="32" height="32"><b>Second Brain</b></div>
-          <ul class="sb-duo__feed">
-            <li><span class="sb-duo__k">Remembered</span>Campaign launch moved to Monday</li>
-            <li><span class="sb-duo__k">Reminding</span>Rahul &middot; proposal follow-up &middot; 10:00 AM</li>
-            <li><span class="sb-duo__k">Acted</span>Follow-up created for Marketing</li>
-          </ul>
-          <ul class="sb-verbs sb-verbs--ai"><li>Remembering</li><li>Organizing</li><li>Reminding</li><li>Acting</li></ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 12 THE BIGGER PICTURE ============ -->
-    <section class="cos-sec" id="bigger" aria-labelledby="big-h">
-      <div class="sec-head rv">
-        <h2 class="cos-h2" id="big-h">Your business, with a memory.</h2>
-        <div class="sec-head__copy">
-          <p class="sb-lines">Every task remembered.<br>Every commitment tracked.<br>Every follow-up closer to completion.</p>
-        </div>
-      </div>
-
-      <figure class="sb-hub rv" style="--d:.1s" aria-label="The Second Brain connected to Customer OS, AI Agents, Workflows, Conversations, Teams, Knowledge and Analytics.">
-      <svg class="sb-hub__wires" viewBox="0 0 1336 420" preserveAspectRatio="none" aria-hidden="true">
-          <path pathLength="100" style="--d:0.05s" d="M668 210 L668 60"/>
-          <path pathLength="100" style="--d:0.11s" d="M668 210 L1075 116"/>
-          <path pathLength="100" style="--d:0.17s" d="M668 210 L1175 243"/>
-          <path pathLength="100" style="--d:0.23s" d="M668 210 L894 345"/>
-          <path pathLength="100" style="--d:0.29s" d="M668 210 L442 345"/>
-          <path pathLength="100" style="--d:0.35s" d="M668 210 L161 243"/>
-          <path pathLength="100" style="--d:0.41s" d="M668 210 L261 116"/>
-      </svg>
-        <ul class="sb-hub__nodes">
-          <li style="--x:668;--y:60"><a href="/pages/products/customer-os/page.html"><svg class="i"><use href="#i-users"/></svg>Customer OS</a></li>
-          <li style="--x:1075;--y:116"><a href="/pages/products/ai-agents/page.html"><svg class="i"><use href="#i-spark"/></svg>AI Agents</a></li>
-          <li style="--x:1175;--y:243"><a href="/pages/products/workflow-orchestration/page.html"><svg class="i"><use href="#i-flow"/></svg>Workflows</a></li>
-          <li style="--x:894;--y:345"><a href="/pages/products/omnichannel/page.html"><svg class="i"><use href="#i-msg"/></svg>Conversations</a></li>
-          <li style="--x:442;--y:345"><a href="/pages/products/team-management/page.html"><svg class="i"><use href="#i-team"/></svg>Teams</a></li>
-          <li style="--x:161;--y:243"><a href="/pages/products/knowledge-base/page.html"><svg class="i"><use href="#i-file"/></svg>Knowledge</a></li>
-          <li style="--x:261;--y:116"><a href="/pages/products/analytics-bi/page.html"><svg class="i"><use href="#i-trend"/></svg>Analytics</a></li>
-        </ul>
-        <div class="sb-hub__core"><img src="/assets/chatberry-icon.svg" alt="" width="32" height="32"><span><b>Second Brain</b><small>Memory layer</small></span></div>
-      </figure>
-
-      <p class="os-say os-say--center rv">A memory layer across your business.</p>
-    </section>
-
-    <!-- ============ 13 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Frequently asked questions</h2>
-          <p class="cos-body">Something else on your mind?</p>
-          <a class="cos-link os-link" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is Chatberry&rsquo;s Second Brain?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry&rsquo;s Second Brain is an AI-powered business memory and action layer that helps people remember tasks, commitments, follow-ups, decisions, and important context. Users can interact with it through conversation and voice to create tasks, ask questions, receive reminders, and take configured actions.</p></div></details>
-          <details class="os-qa"><summary>What can I do with the Second Brain?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>You can create tasks, set reminders, ask questions, check pending work, update tasks, reschedule actions, capture important information, and interact with business context through natural language or voice.</p></div></details>
-          <details class="os-qa"><summary>Can I talk to the Second Brain using voice?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Users can use voice to create tasks, set reminders, ask questions, check work, and perform supported actions without manually navigating through the interface.</p></div></details>
-          <details class="os-qa"><summary>Can the Second Brain remember tasks?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. It can remember tasks and their relevant context, including deadlines, assignments, status, and follow-up requirements.</p></div></details>
-          <details class="os-qa"><summary>What happens when a task is not completed?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Depending on the configured workflow, the Second Brain can remind the responsible person, surface overdue work, escalate the task, or help reschedule it.</p></div></details>
-          <details class="os-qa"><summary>Can I ask the Second Brain what I need to do?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. You can ask questions such as &ldquo;What needs my attention today?&rdquo; or &ldquo;What&rsquo;s overdue?&rdquo; and receive information based on the context available to your Chatberry workspace.</p></div></details>
-          <details class="os-qa"><summary>Can the Second Brain create tasks from conversations?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Users can describe an action naturally, and the Second Brain can create a task with relevant details such as the task description, assignee, timing, and configured workflow.</p></div></details>
-          <details class="os-qa"><summary>Can teams use the Second Brain?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. The Second Brain can support individual and team workflows, helping people create, assign, track, and follow up on work.</p></div></details>
-          <details class="os-qa"><summary>Is the Second Brain just a task manager?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>No. Task management is only one part of it. The Second Brain is designed to remember business context, help users understand what is happening, surface what needs attention, and support configured actions across the business.</p></div></details>
-          <details class="os-qa"><summary>Can the Second Brain work with other Chatberry features?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. It can work alongside Customer OS, AI Agents, Workflow Orchestration, Knowledge Base, Conversations, and other connected capabilities within Chatberry.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 14 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">The Second Brain</p>
-      <h2 class="cos-h2 rv" id="cta-h">Let your business <br>remember for you.</h2>
-      <p class="cos-body rv">Talk to your Second Brain. Give it the work. Let it keep things moving.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://app.prisim.co.in/">Start Free <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-      </div>
-      <p class="os-note os-note--center"><svg class="i"><use href="#i-check"/></svg>Start free. Pay as you use.</p>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Products <em>Second Brain</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>A memory for</span></span><span class="ln"><span>your whole business.</span></span></h1>
+      <p class="rv d2">Speak or type. It remembers the commitments, follow-ups and context your team cannot afford to forget, and helps act on them.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vchat"><div class="msg msg--in show">Remind Rahul to send the proposal tomorrow at 10.</div><div class="msg msg--out show">Done. I’ll nudge Rahul at 10:00 am and tell you once it’s sent.</div><div class="msg msg--in show">What’s still pending this week?</div><div class="msg msg--out show">3 follow-ups and 1 approval. Want me to list them?</div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Second Brain</em></span>
+    <p class="stmt__txt" id="stmtTxt">Tasks, promises, decisions and small details slip when they live in people’s heads. Second Brain holds them for you, then reminds the right person at the right time.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      <div class="uses rv"><span>Voice notes</span><span>Follow-ups</span><span>Daily summaries</span><span>Team reminders</span><span>Pending approvals</span></div>
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Just talk to it</h3><p>Create tasks, ask questions and check progress in plain language, by chat or by voice.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">It keeps the context</h3><p>Who promised what, to which customer, and by when: the details stay attached to the work.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Reminders that lead somewhere</h3><p>A reminder can assign a task, notify a teammate or start a workflow, not just ping you.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Ask your business anything</h3><p>Find out what happened, what is waiting and what needs your attention today.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Tell it</span><p class="row__d">Say what needs to happen, in your own words.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">It remembers</span><p class="row__d">Tasks, owners, dates and context are saved together.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">It follows up</span><p class="row__d">The right person is reminded, and you see when it is done.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Is Second Brain only for managers?<i></i></summary><p>No. Every team member can use it for their own tasks, while managers get a view across the team.</p></details><details><summary>Can I use voice?<i></i></summary><p>Yes. Speak naturally to capture ideas, create tasks or ask what is pending.</p></details><details><summary>Does it work with my other Chatberry data?<i></i></summary><p>Yes. It can use conversations, tasks and customer context already in Chatberry.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/ai-agents/page.html"><small>Products</small><b>AI Agents</b><p>AI agents that understand your business, answer customers, take action and hand over to your team when a person is needed.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/solutions/team-collaboration/page.html"><small>Solutions</small><b>Team Collaboration</b><p>Conversations, tasks, time tracking and activity in one workspace, so everyone knows what to do next.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/products/customer-os/page.html"><small>Products</small><b>Customer OS</b><p>Create the records, views and processes your business actually uses, then connect them to conversations, workflows and AI in one place.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Second Brain working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

@@ -1,61 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rss version="2.0">
   <channel>
     <title>Chatberry Blog</title>
     <link>/pages/blog/page.html</link>
-    <description>Guides and playbooks on WhatsApp, AI and automation for hospitals, clinics and growing businesses.</description>
-    <language>en</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:00:00 GMT</lastBuildDate>
-    <atom:link href="/pages/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Practical guides on WhatsApp, AI and automation for growing businesses.</description>
+    <language>en-in</language>
     <item>
-      <title>Getting Started with WhatsApp Automation: A Practical Guide</title>
+      <title>WhatsApp automation for beginners: what to automate first</title>
       <link>/pages/blog/getting-started-with-whatsapp-automation/page.html</link>
-      <guid isPermaLink="true">/pages/blog/getting-started-with-whatsapp-automation/page.html</guid>
-      <pubDate>Mon, 19 Oct 2026 00:00:00 GMT</pubDate>
-      <dc:creator>Chatberry Team</dc:creator>
-      <category>WhatsApp Business API</category>
-      <description>What to automate first on WhatsApp, how to build your first journey on the official Business Platform, and how to measure whether it works.</description>
-      <content:encoded><![CDATA[<p>Most businesses already talk to customers on WhatsApp. The problem is that every conversation is handled by hand: someone reads the message, looks up the customer, types a reply and remembers to follow up. <strong>WhatsApp automation</strong> takes the predictable parts of that work off your team, so people can spend their time on the conversations that need them.</p>
-<p>This guide walks through what to automate first, how to set it up on the official WhatsApp Business Platform, and how to know it is working.</p>
-<h2 id="what-whatsapp-automation-actually-means">What WhatsApp automation actually means</h2>
-<p>Automation is not a chatbot that tries to answer everything. It is a set of rules and journeys that react to events — a new lead, a booked appointment, an abandoned cart — and send the right message at the right moment.</p>
-<blockquote><p>Automate the predictable. Keep people for the exceptions.</p></blockquote>
-<p>A good setup usually combines three layers:</p>
+      <guid>/pages/blog/getting-started-with-whatsapp-automation/page.html</guid>
+      <pubDate>Mon, 19 Oct 2026 03:30:00 GMT</pubDate>
+      <description>A practical starting plan for WhatsApp automation: which conversations to automate first, how templates and sessions work, and how to tell if it is working.</description>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[
+<p class="lead">Most businesses don’t need a huge automation project. They need the five or six conversations they have every day to happen faster and more reliably. This guide shows where to start.</p>
+<h2 id="start-small">Start with the questions you answer every day</h2>
+<p>Open your WhatsApp chats from last week and count. You’ll find the same handful of messages again and again: prices, timings, location, order status, booking changes. These are your first automation candidates, because the answer rarely changes and customers want it immediately.</p>
+<p>A good first automation has three qualities:</p>
 <ul>
-<li><strong>Triggers</strong> — something happens in your business, such as a form submission or a payment.</li>
-<li><strong>Journeys</strong> — a sequence of messages, waits and decisions that follows from the trigger.</li>
-<li><strong>Handoff</strong> — a clear path to a human agent when the customer needs one.</li>
+<li>It happens often, at least a few times a day.</li>
+<li>The answer comes from information you already have, like a price list, a schedule or an order system.</li>
+<li>A slow reply costs you something: a missed booking, a cold lead or an annoyed customer.</li>
 </ul>
-<h2 id="five-steps-to-your-first-automated-journey">Five steps to your first automated journey</h2>
+<h2 id="first-journeys">Five journeys worth automating first</h2>
 <ol>
-<li>Connect an official WhatsApp Business API number.</li>
-<li>Pick one high-volume, predictable conversation, such as appointment reminders.</li>
-<li>Write and submit the message templates Meta needs to approve.</li>
-<li>Build the journey: trigger, messages, waits and a human handoff.</li>
-<li>Launch to a small group, measure, then widen it.</li>
+<li><b>Instant first reply.</b> Greet every new enquiry within seconds, ask one useful question, and route it to the right person.</li>
+<li><b>Appointment booking and reminders.</b> Let people pick a slot, then remind them the day before. No-shows drop noticeably when reminders arrive on WhatsApp.</li>
+<li><b>Order and delivery updates.</b> Confirm the order, share dispatch details and tell customers when it’s arriving.</li>
+<li><b>Payment reminders.</b> A polite nudge with a payment link works better than a phone call for most small dues.</li>
+<li><b>Feedback after service.</b> Ask for a rating while the experience is fresh, and send unhappy customers straight to a person.</li>
 </ol>
-<h3>Choosing the first use case</h3>
-<p>Start where volume is high and the answer is usually the same. Confirmations, reminders and order updates are ideal: they are easy to template, customers expect them, and the time saved is immediate.</p>
-<h4>Signs a conversation is ready to automate</h4>
-<ul>
-<li>Your team sends the same reply many times a day.</li>
-<li>The information comes from a system you already have.</li>
-<li>A delay costs you something — a missed booking, a lost cart.</li>
-</ul>
-<h3>Templates, sessions and costs</h3>
-<p>Business-initiated messages on the WhatsApp Business Platform use pre-approved templates, while replies inside an open customer session can be free-form. Meta's <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">WhatsApp pricing documentation</a> explains how each category is charged.</p>
-<div class="bl-table"><table>
-<thead><tr><th>Message type</th><th>Who starts it</th><th>Typical use</th><th>Needs a template?</th></tr></thead>
+<h2 id="templates">Templates, sessions and what they cost</h2>
+<p>On the official WhatsApp Business Platform, there are two kinds of conversations. When a customer messages you, a 24-hour customer service window opens and you can reply freely. When you start the conversation, for example with a reminder or an offer, you must use a template that WhatsApp has approved.</p>
+<div class="tbl"><table>
+<thead><tr><th>Category</th><th>Typical use</th><th>Template needed?</th></tr></thead>
 <tbody>
-<tr><td>Marketing</td><td>Business</td><td>Offers, announcements, re-engagement</td><td>Yes</td></tr>
-<tr><td>Utility</td><td>Business</td><td>Order updates, reminders, confirmations</td><td>Yes</td></tr>
-<tr><td>Authentication</td><td>Business</td><td>One-time passcodes</td><td>Yes</td></tr>
-<tr><td>Service</td><td>Customer</td><td>Replies inside an open conversation</td><td>No</td></tr>
-</tbody>
-</table></div>
-<h2 id="measuring-whether-it-works">Measuring whether it works</h2>
-<p>Don't measure success by how many messages you send. Measure the outcome the journey was built for: fewer no-shows, faster first replies, more recovered carts, less time spent on repetitive questions.</p>
-<p>When you are ready to try it on your own number, <a href="https://app.prisim.co.in/">get started with Chatberry</a> or book a demo on WhatsApp.</p>]]></content:encoded>
+<tr><td>Marketing</td><td>Offers, launches, re-engagement</td><td>Yes</td></tr>
+<tr><td>Utility</td><td>Order updates, reminders, confirmations</td><td>Yes</td></tr>
+<tr><td>Authentication</td><td>One-time passwords</td><td>Yes</td></tr>
+<tr><td>Service</td><td>Replies inside the 24-hour window</td><td>No</td></tr>
+</tbody></table></div>
+<p>Meta charges differently for each category and updates its rates from time to time, so check the current <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">WhatsApp pricing page</a> before you plan a large campaign.</p>
+<h2 id="human">Keep a person one tap away</h2>
+<p>Automation should make your team faster, not hide them. Every journey needs a clear way out: a “talk to someone” button, or a rule that hands the chat to a person when the customer is upset or the question is unusual. Customers forgive a bot that can’t help. They don’t forgive one that won’t let them reach a human.</p>
+<h2 id="measure">Measure outcomes, not messages</h2>
+<p>Sending more messages isn’t the goal. Pick one number per journey and watch it for a month:</p>
+<ul>
+<li>First reply time for new enquiries.</li>
+<li>No-show rate for appointments.</li>
+<li>Days to collect payments.</li>
+<li>Share of chats resolved without a person.</li>
+</ul>
+<p>If the number improves, add the next journey. If it doesn’t, look at where people drop off and fix that step first.</p>
+<h2 id="next">Your next step</h2>
+<p>Pick one journey from the list above and set it up this week. When you’re ready to try it on your own number, <a href="https://app.prisim.co.in/">get started with Chatberry</a> or <a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">book a demo on WhatsApp</a> and we’ll help you build it.</p>]]></content:encoded>
     </item>
   </channel>
 </rss>

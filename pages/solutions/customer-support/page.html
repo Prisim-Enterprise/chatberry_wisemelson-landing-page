@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Customer Support Software for Businesses | Chatberry</title>
-<meta name="description" content="Improve customer support with Chatberry AI chat, human handoff, a unified inbox, customer context, automated responses, and support analytics.">
+<title>Customer Support – Fast answers, human help when needed | Chatberry</title>
+<meta name="description" content="Support customers with AI chat, smooth hand-off to people, a shared inbox, customer context and support analytics.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Chatberry Customer Support — Support every customer. Without the wait.">
-<meta property="og:description" content="AI chat for common questions, a clear handoff to human agents, a shared inbox, customer context, business knowledge and support analytics in one workspace.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Customer Support – Fast answers, human help when needed | Chatberry">
+<meta property="og:description" content="Support customers with AI chat, smooth hand-off to people, a shared inbox, customer context and support analytics.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Customer Support – Fast answers, human help when needed | Chatberry">
+<meta name="twitter:description" content="Support customers with AI chat, smooth hand-off to people, a shared inbox, customer context and support analytics.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,650 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos cs" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".7"/></symbol>
-      <symbol id="i-inbox" viewBox="0 0 24 24"><path d="M3.5 13.5 6 5h12l2.5 8.5V19a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19Z"/><path d="M3.5 13.5h5l1.5 2.5h4l1.5-2.5h5"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 6A1.5 1.5 0 0 1 5 4.5h9A1.5 1.5 0 0 1 15.5 6v5A1.5 1.5 0 0 1 14 12.5H8.5L5.5 15v-2.5A1.5 1.5 0 0 1 3.5 11Z"/><path d="M18.5 8.5A1.5 1.5 0 0 1 20 10v6a1.5 1.5 0 0 1-1.5 1.5V21l-3-3.5h-4.8"/></symbol>
-      <symbol id="i-note" viewBox="0 0 24 24"><path d="M5.5 3.5h13A1.5 1.5 0 0 1 20 5v10l-5.5 5.5h-9A1.5 1.5 0 0 1 4 19V5a1.5 1.5 0 0 1 1.5-1.5Z"/><path d="M14.5 20.5V16a1 1 0 0 1 1-1H20M8 8.5h8M8 12h5"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15M15.5 4.5 19 8l-3.5 3.5M20 16H5M8.5 12.5 5 16l3.5 3.5"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16.5l-5.5-5.5-8 8"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5S9.5 6.1 12 3.5Z"/></symbol>
-      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.8 9.2c-.5-1-1.6-1.6-2.8-1.6-1.6 0-2.8.9-2.8 2.1 0 2.9 5.8 1.5 5.8 4.4 0 1.2-1.3 2.2-3 2.2-1.3 0-2.5-.7-3-1.7M12 6v1.6M12 16.4V18"/></symbol>
-      <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 4.5a4.5 4.5 0 0 0-4.3 5.9L4 16.6a2 2 0 0 0 2.8 2.8L13 13.2a4.5 4.5 0 0 0 5.9-4.3l-2.6 2.6-2.8-.8-.8-2.8Z"/></symbol>
-      <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.5 5 2.5-1.5-7.5"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5.5M12 16.3v.2"/></symbol>
-      <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.5 6h6a3.5 3.5 0 0 1 0 7h-5a3.5 3.5 0 0 0 0 7h6"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — AI answers, a person takes over ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="cs-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="cs-head rv">
-        <p class="cos-eyebrow">Customer Support</p>
-        <h1 class="cos-h1" id="cs-h1">Support every customer. <br><span class="dim">Without the wait.</span></h1>
-        <p class="cos-hero__intro">Help customers get instant answers with AI chat, bring in human agents when needed, and manage conversations across supported channels from one workspace.</p>
-        <div class="cos-cta">
-          <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-        </div>
-      </div>
-
-      <div class="cs-hero rv" id="hero" style="--d:.15s">
-        <figure class="app cs-hc" aria-labelledby="heroCap">
-          <figcaption class="sr-only" id="heroCap">AI customer support conversation transferred to a human agent (design concept). In the Chatberry agent console, a hotel guest asks on WhatsApp whether airport pickup is available and Chatberry AI answers. When she asks to change the dates of a group booking, the conversation is transferred to Mei Tan in the Bookings team with the reason shown, and Mei replies. A side panel shows the guest's details and her previous conversations.</figcaption>
-          <div class="app__top">
-            <span class="app__crumb"><svg class="i"><use href="#i-inbox"/></svg><b>Inbox</b><svg class="i"><use href="#i-chevr"/></svg>Sara Lopez</span>
-            <span class="cs-hc__tools"><span class="chip"><svg class="i"><use href="#i-swap"/></svg>Transfer</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-check"/></svg>Resolve</span></span>
-          </div>
-          <div class="cs-hc__body">
-            <div class="cs-hc__chat">
-              <p class="cs-chead"><span class="av av--amber">SL</span><span><b>Sara Lopez</b><small><svg class="i"><use href="#i-wa"/></svg>WhatsApp &middot; Harbour View Hotel</small></span><span class="tag tag--lime">Open</span></p>
-              <div class="cs-log">
-                <p class="cs-day">Today</p>
-                <p class="cs-b cs-b--in" data-at="1">Hi! Do you offer airport pickup?<small>10:02</small></p>
-                <div class="cs-b cs-b--ai" data-at="2"><p class="cs-ai"><svg class="i"><use href="#i-spark"/></svg>Chatberry AI</p><p>Yes. Airport pickup runs from 6 AM to 11 PM and can be added to any booking for $25 per car. Would you like me to add it?</p><small>10:02</small></div>
-                <p class="cs-b cs-b--in" data-at="3">Great. I also need to change the dates for our group of 8.<small>10:03</small></p>
-                <p class="cs-ev" data-at="4"><svg class="i"><use href="#i-swap"/></svg><span><b>Transferred to Mei Tan &middot; Bookings</b>Reason: group booking change &middot; history kept</span><time>10:03</time></p>
-                <p class="cs-typing" data-at="5" data-until="6" aria-hidden="true"><i></i><i></i><i></i></p>
-                <div class="cs-b cs-b--agent" data-at="6"><p class="cs-by"><span class="av av--cyan">MT</span>Mei Tan &middot; Bookings</p><p>Hi Sara, I&rsquo;m Mei from Bookings. I can see your stay for 14&ndash;16 Nov. Which new dates work for the group?</p><small>10:04</small></div>
-              </div>
-              <p class="os-compose">Reply as Mei&hellip;<span class="mini-btn"><svg class="i"><use href="#i-send"/></svg></span></p>
-            </div>
-            <aside class="cs-hc__side">
-              <p class="ui-label">Customer</p>
-              <p class="cs-who"><span class="av av--amber av--lg">SL</span><span><b>Sara Lopez</b><small>+44 &bull;&bull;&bull; 2190</small></span></p>
-              <dl class="cs-dl">
-                <div><dt>Channel</dt><dd><svg class="i"><use href="#i-wa"/></svg>WhatsApp</dd></div>
-                <div><dt>Booking</dt><dd>14&ndash;16 Nov &middot; 2 rooms</dd></div>
-                <div><dt>Assigned to</dt><dd><span class="av av--cyan">MT</span>Mei Tan</dd></div>
-              </dl>
-              <p class="ui-label cs-gap">Conversation history</p>
-              <ol class="cs-hist">
-                <li class="is-now"><b>Today</b>Airport pickup, date change<span class="cs-pill cs-pill--on">AI &rarr; Mei</span></li>
-                <li><b>2 Oct</b>Booking confirmed<span class="cs-pill">Arjun</span></li>
-                <li><b>28 Sep</b>Asked about parking<span class="cs-pill">AI</span></li>
-              </ol>
-            </aside>
-          </div>
-        </figure>
-
-        <div class="wm-phone cs-phone" role="img" aria-label="The same conversation as the guest sees it on WhatsApp: the AI answer about airport pickup, then Mei from Bookings joining the chat.">
-          <div class="wm-phone__screen"><div class="wm-phone__ui">
-            <div class="wa-chat">
-              <div class="wa-head"><div class="wm-status"></div><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">H</span><span class="wa-top__who"><b>Harbour View Hotel</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-              <div class="wa-body">
-                <p class="wa-day">Today</p>
-                <p class="wa-msg wa-msg--out" data-at="1">Hi! Do you offer airport pickup?<span class="wa-meta">10:02 <i class="wa-tick"></i></span></p>
-                <p class="wa-msg wa-msg--in" data-at="2">Yes. Airport pickup runs from 6 AM to 11 PM and can be added to any booking for $25 per car. Would you like me to add it?<span class="wa-meta">10:02</span></p>
-                <p class="wa-msg wa-msg--out" data-at="3">Great. I also need to change the dates for our group of 8.<span class="wa-meta">10:03 <i class="wa-tick"></i></span></p>
-                <p class="wa-msg wa-msg--in" data-at="6">Hi Sara, I&rsquo;m Mei from Bookings. I can see your stay for 14&ndash;16 Nov. Which new dates work for the group?<span class="wa-meta">10:04</span></p>
-              </div>
-              <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
-            </div>
-          </div></div>
-          <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
-        </div>
-      </div>
-      <p class="cs-fine rv">Design concept with fictional data. Channels, AI replies and handoff depend on your Chatberry setup.</p>
-    </section>
-
-    <!-- ============ 02 AI CHAT — three different conversations ============ -->
-    <section class="cos-sec" id="ai-chat" aria-labelledby="ai-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">AI chat</p>
-        <h2 class="cos-h2" id="ai-h">Give customers answers, <br><span class="dim">even when your team is busy.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Help customers get answers to common questions without waiting for an available agent. Chatberry AI can use your business knowledge to respond to customer queries, guide conversations, collect information, and help customers find the next step.</p>
-        </div>
-      </div>
-
-      <div class="cs-ex" role="group" aria-label="AI answering customer questions using business information: three example conversations">
-        <figure class="cs-ex__i cs-ex__i--a rv">
-          <span class="cs-ex__ai" aria-hidden="true"><svg class="i"><use href="#i-spark"/></svg>Answered by AI</span>
-          <div class="wm-phone cs-xp cs-exwa" role="img" aria-label="A shopper asks on WhatsApp about delivery time and returns; the store's AI answers with the delivery window and the return policy, then shares the return steps.">
-            <div class="wm-phone__screen"><div class="wm-phone__ui"><div class="wa-chat">
-              <div class="wa-head"><div class="wm-status"></div><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">O</span><span class="wa-top__who"><b>Oakline Home</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-              <div class="wa-body">
-                <p class="wa-day">Today</p>
-                <p class="wa-msg wa-msg--out">Hi, how long does delivery to Pune take? And can I return the lamp if it doesn&rsquo;t suit the room?<span class="wa-meta">18:40 <i class="wa-tick"></i></span></p>
-                <p class="wa-msg wa-msg--in">Hi! Delivery to Pune usually takes 3&ndash;5 working days. Lamps can be returned within 14 days of delivery if unused and in the original box.<span class="wa-meta">18:40</span></p>
-                <p class="wa-msg wa-msg--out">Perfect, how do I start a return?<span class="wa-meta">18:41 <i class="wa-tick"></i></span></p>
-                <div class="wa-msg wa-msg--in wa-card"><div class="wa-card__body">Reply with your order number and we&rsquo;ll book a pickup. Refunds go back to your original payment method.<span class="wa-meta">18:41</span></div><div class="wa-btns"><span class="wa-btn"><i class="wa-i wa-i--link"></i>Read the returns policy</span></div></div>
-              </div>
-              <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
-            </div></div></div>
-            <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
-          </div>
-          <figcaption class="cs-ex__c"><b>E-commerce &middot; WhatsApp</b>Answer questions about products, delivery, and return policies.</figcaption>
-        </figure>
-
-        <figure class="cs-ex__i cs-ex__i--b rv" style="--d:.08s">
-          <div class="wm-phone cs-xp cs-wg" role="img" aria-label="A website chat widget for a training academy: a visitor asks when the next course starts and what enrolment needs, and the AI assistant answers with the schedule and requirements.">
-            <div class="wm-phone__screen"><div class="wm-phone__ui">
-              <div class="cs-safari"><div class="wm-status"></div><p class="cs-safari__url"><i class="wa-i wa-i--lock"></i>brightpath.academy</p></div>
-              <p class="cs-wg__h"><span class="cs-wg__logo">B</span><span><b>Brightpath Academy</b><small>Ask us anything</small></span><svg class="i"><use href="#i-chev"/></svg></p>
-              <div class="cs-wg__l">
-                <p class="cs-b cs-b--me">When does the next Data Analytics batch start, and what do I need to enrol?</p>
-                <div class="cs-b cs-b--ai"><p class="cs-ai"><svg class="i"><use href="#i-spark"/></svg>AI assistant</p><p>The next weekday batch starts on 4 November, Monday to Thursday, 7&ndash;9 PM. To enrol you&rsquo;ll need the application form, a photo ID and basic spreadsheet skills.</p></div>
-                <p class="cs-qr"><span>Weekend batch</span><span>Fees</span><span>Talk to admissions</span></p>
-              </div>
-              <p class="cs-wg__in">Type your question&hellip;<svg class="i"><use href="#i-send"/></svg></p>
-            </div></div>
-            <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
-          </div>
-          <figcaption class="cs-ex__c"><b>Education &middot; Website chat</b>Explain course schedules, enrolment requirements, and class information.</figcaption>
-        </figure>
-
-        <figure class="cs-ex__i cs-ex__i--c rv" style="--d:.16s">
-          <div class="wm-phone cs-xp cs-dm" role="img" aria-label="A direct message to a fitness subscription service: a member asks whether a monthly plan renews automatically, and the AI explains renewals and how to change plan.">
-            <div class="wm-phone__screen"><div class="wm-phone__ui">
-              <div class="wm-status"></div>
-              <p class="cs-dm__h"><span class="wa-i wa-i--back cs-dm__back"></span><span class="av av--violet">SF</span><span><b>streamfit.studio</b><small>Business</small></span></p>
-              <div class="cs-dm__l">
-                <p class="cs-dm__me">Does my monthly plan renew automatically?</p>
-                <div class="cs-dm__ai"><p>Yes, monthly plans renew on the same date each month. You can switch to annual or turn off renewal any time under Account &rarr; Plan.</p><p class="cs-ai"><svg class="i"><use href="#i-spark"/></svg>AI reply</p></div>
-                <p class="cs-dm__me">Great, thanks!</p>
-              </div>
-              <p class="cs-dm__f">Message&hellip;</p>
-            </div></div>
-            <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
-          </div>
-          <figcaption class="cs-ex__c"><b>Subscriptions &middot; Instagram</b>Answer questions about plans, renewals, and service details.</figcaption>
-        </figure>
-      </div>
-      <p class="cs-fine rv">Example conversations with fictional businesses. AI answers depend on the knowledge and configuration you provide.</p>
-    </section>
-
-    <!-- ============ 03 HANDOFF — the signature timeline ============ -->
-    <section class="cos-sec cs-tint--green" id="handoff" aria-labelledby="ho-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">AI-to-human handoff</p>
-        <h2 class="cos-h2" id="ho-h">AI handles the routine. <br><span class="dim">Your team handles the rest.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Not every conversation should end with an automated answer. When a customer needs personal assistance, transfer the conversation to the appropriate human agent or department.</p>
-          <p class="cos-body">Keep the conversation history available so the agent can understand the situation and continue without making the customer repeat everything.</p>
-        </div>
-      </div>
-
-      <figure class="app cs-ho rv" id="ho" aria-labelledby="hoCap">
-        <figcaption class="sr-only" id="hoCap">One conversation from start to finish (design concept). A customer asks to return a jacket and Chatberry AI explains the return window. When the customer needs a refund outside that window, the conversation is transferred to Priya Nair in the Returns team, with the reason "refund exception". The earlier messages stay visible and Priya continues the conversation.</figcaption>
-        <div class="app__top">
-          <span class="app__crumb"><svg class="i"><use href="#i-chat"/></svg><b>Conversation</b><svg class="i"><use href="#i-chevr"/></svg>Daniel Okafor</span>
-          <span class="cs-src cs-src--wa"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</span>
-          <span class="cs-ho__own"><span class="cs-ho__seg">Handled by <b>Chatberry AI</b></span><svg class="i"><use href="#i-arrow"/></svg><span class="cs-ho__seg cs-ho__seg--on" data-lit="4">Now with <b>Priya Nair &middot; Returns</b></span></span>
-        </div>
-        <ol class="cs-ho__tl">
-          <li class="cs-ho__r" data-at="1"><time>14:10</time><span class="cs-ho__who"><span class="av av--amber">DO</span>Customer</span><p class="cs-b cs-b--in">Hi, the jacket I ordered is too small. Can I return it?</p></li>
-          <li class="cs-ho__r" data-at="2"><time>14:10</time><span class="cs-ho__who"><span class="cs-mark"><svg class="i"><use href="#i-spark"/></svg></span>Chatberry AI</span><p class="cs-b cs-b--ai">Yes. Unworn items can be returned within 30 days of delivery. Would you like the return steps, or an exchange for a larger size?</p></li>
-          <li class="cs-ho__r" data-at="3"><time>14:11</time><span class="cs-ho__who"><span class="av av--amber">DO</span>Customer</span><p class="cs-b cs-b--in">I&rsquo;d prefer a refund, but it&rsquo;s been 40 days. It was a gift and only just opened.</p></li>
-          <li class="cs-ho__ev" data-at="4">
-            <time>14:12</time>
-            <p><span class="cs-ho__x"><svg class="i"><use href="#i-swap"/></svg></span><span><b>Transferred to Priya &middot; Returns team</b><small>Reason: refund exception</small></span></p>
-            <span class="cs-ho__kept"><svg class="i"><use href="#i-check"/></svg>3 earlier messages kept</span>
-          </li>
-          <li class="cs-ho__r cs-ho__r--hu" data-at="5" data-until="6" aria-hidden="true"><time>14:13</time><span class="cs-ho__who"><span class="av av--cyan">PN</span>Priya Nair</span><p class="cs-typing"><i></i><i></i><i></i></p></li>
-          <li class="cs-ho__r cs-ho__r--hu" data-at="6"><time>14:13</time><span class="cs-ho__who"><span class="av av--cyan">PN</span>Priya Nair &middot; Returns</span><p class="cs-b cs-b--agent">Hi Daniel, Priya from Returns here. I&rsquo;ve read the conversation. As it was a gift, I can refund it as store credit today. Shall I set that up?</p></li>
-          <li class="cs-ho__r" data-at="7"><time>14:14</time><span class="cs-ho__who"><span class="av av--amber">DO</span>Customer</span><p class="cs-b cs-b--in">Yes please, thank you!</p></li>
-        </ol>
-      </figure>
-
-      <ul class="cs-pts cs-pts--4 rv" style="--d:.1s">
-        <li><b>Transfer when needed</b>Hand conversations to a person when human assistance is needed.</li>
-        <li><b>Route to the right team</b>Send customers to the appropriate team or agent.</li>
-        <li><b>Keep the context</b>Preserve conversation history through the handoff, where supported.</li>
-        <li><b>Take over and continue</b>Let agents pick up the conversation and carry it forward.</li>
-      </ul>
-      <p class="cs-more rv"><a class="cos-link" href="/pages/products/ai-agents/page.html">See how Chatberry AI Agents work <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 04 UNIFIED INBOX — the full workspace ============ -->
-    <section class="cos-sec" id="inbox" aria-labelledby="ib-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Unified customer inbox</p>
-        <h2 class="cos-h2" id="ib-h">All your customer conversations. <br><span class="dim">One workspace.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Bring conversations from supported channels into a shared inbox. Give your team one place to review incoming messages, manage assignments, respond to customers, and collaborate on ongoing conversations.</p>
-        </div>
-      </div>
-
-      <figure class="app cs-ib rv" id="ib" aria-labelledby="ibCap">
-        <figcaption class="sr-only" id="ibCap">Shared customer support inbox with conversations and assigned agents (design concept). The list shows conversations from WhatsApp, Instagram and web chat with unread counts, the agent responsible and a status for each. The selected WhatsApp conversation, about changing a delivery slot, has a saved-reply picker open above the reply box. The right panel shows customer details, the assignment and a control to transfer the conversation to another agent or team.</figcaption>
-        <div class="app__top">
-          <span class="app__crumb"><svg class="i"><use href="#i-inbox"/></svg><b>Inbox</b><svg class="i"><use href="#i-chevr"/></svg>Support</span>
-          <span class="cs-tabs" aria-hidden="true"><span>Mine <em>4</em></span><span>Unassigned <em>2</em></span><span class="is-on">All open <em>18</em></span></span>
-          <span class="cs-ib__tools"><span class="chip"><svg class="i"><use href="#i-search"/></svg>Search conversations</span><span class="cs-online"><span class="av av--cyan">MT</span><span class="av av--lime">AR</span><span class="av av--violet">DP</span><small>3 online</small></span></span>
-        </div>
-        <div class="cs-ib__body">
-          <div class="cs-ib__list">
-            <p class="cs-ib__f"><span class="chip is-on">All channels</span><span class="chip"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</span><span class="chip"><svg class="i"><use href="#i-ig"/></svg>Instagram</span><span class="chip"><svg class="i"><use href="#i-chat"/></svg>Web chat</span></p>
-            <ul class="cs-rows">
-              <li class="cs-row is-sel"><span class="av av--cyan">RM</span><p class="cs-row__n">Rahul Mehta<span class="cs-src cs-src--wa"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</span></p><time class="cs-row__t">now</time><p class="cs-row__p">Can I move my delivery to Saturday?</p><p class="cs-row__m"><span class="cs-asg"><span class="av av--cyan">MT</span>Mei Tan</span><span class="tag tag--lime">Open</span><span class="cs-unread" aria-label="1 unread">1</span></p></li>
-              <li class="cs-row"><span class="av av--violet">LP</span><p class="cs-row__n">Lena Park<span class="cs-src cs-src--ig"><svg class="i"><use href="#i-ig"/></svg>Instagram</span></p><time class="cs-row__t">4m</time><p class="cs-row__p">Is the linen sofa available in grey?</p><p class="cs-row__m"><span class="cs-asg cs-asg--none">Unassigned</span><span class="tag tag--amber">Waiting</span><span class="cs-unread" aria-label="2 unread">2</span></p></li>
-              <li class="cs-row"><span class="av">TR</span><p class="cs-row__n">Tom&aacute;s Rivera<span class="cs-src cs-src--web"><svg class="i"><use href="#i-chat"/></svg>Web chat</span></p><time class="cs-row__t">9m</time><p class="cs-row__p">Thanks, that answers it.</p><p class="cs-row__m"><span class="cs-asg"><span class="cs-mark cs-mark--s"><svg class="i"><use href="#i-spark"/></svg></span>Chatberry AI</span><span class="tag">AI replied</span></p></li>
-              <li class="cs-row"><span class="av av--lime">AK</span><p class="cs-row__n">Aisha Karim<span class="cs-src cs-src--wa"><svg class="i"><use href="#i-wa"/></svg>WhatsApp</span></p><time class="cs-row__t">15m</time><p class="cs-row__p">Could you resend the invoice for order #3301?</p><p class="cs-row__m"><span class="cs-asg"><span class="av av--violet">DP</span>Dev Patel</span><span class="tag tag--lime">Open</span><span class="cs-unread" aria-label="1 unread">1</span></p></li>
-              <li class="cs-row"><span class="av av--amber">OH</span><p class="cs-row__n">Omar Haddad<span class="cs-src cs-src--ig"><svg class="i"><use href="#i-ig"/></svg>Instagram</span></p><time class="cs-row__t">1h</time><p class="cs-row__p">Do you ship to Dubai?</p><p class="cs-row__m"><span class="cs-asg"><span class="av av--cyan">MT</span>Mei Tan</span><span class="tag tag--amber">Waiting</span></p></li>
-              <li class="cs-row"><span class="av">GL</span><p class="cs-row__n">Grace Liu<span class="cs-src cs-src--web"><svg class="i"><use href="#i-chat"/></svg>Web chat</span></p><time class="cs-row__t">2h</time><p class="cs-row__p">Great, see you on Friday.</p><p class="cs-row__m"><span class="cs-asg"><span class="av av--lime">AR</span>Arjun Rao</span><span class="tag tag--done"><svg class="i"><use href="#i-check"/></svg>Resolved</span></p></li>
-            </ul>
-          </div>
-
-          <div class="cs-ib__chat">
-            <p class="cs-chead"><span class="av av--cyan">RM</span><span><b>Rahul Mehta</b><small><svg class="i"><use href="#i-wa"/></svg>WhatsApp &middot; Order #4821</small></span><span class="tag tag--lime">Open</span></p>
-            <div class="cs-log">
-              <p class="cs-b cs-b--in">Hi, my order #4821 is due on Thursday. Can I move the delivery to Saturday?<small>11:20</small></p>
-              <div class="cs-b cs-b--ai"><p class="cs-ai"><svg class="i"><use href="#i-spark"/></svg>Chatberry AI</p><p>Delivery slots can be changed up to 24 hours before delivery. I&rsquo;ll connect you with our team to confirm Saturday.</p><small>11:20</small></div>
-              <p class="cs-ev cs-ev--s"><svg class="i"><use href="#i-swap"/></svg><span><b>Assigned to Mei Tan &middot; Orders</b></span><time>11:21</time></p>
-              <p class="cs-b cs-b--in">Thanks! Any time after 10 is fine.<small>11:22</small></p>
-            </div>
-            <div class="cs-comp">
-              <div class="cs-pick">
-                <p class="cs-pick__h"><span><svg class="i"><use href="#i-note"/></svg>Saved replies</span><span>/deliv</span></p>
-                <ul>
-                  <li data-lit="1"><b>/delivery-slot-changed</b><small>Hi {name}, I&rsquo;ve moved your delivery to&hellip;</small></li>
-                  <li><b>/delivery-times</b><small>Delivery usually takes 3&ndash;5 working days&hellip;</small></li>
-                  <li><b>/delivery-tracking</b><small>You can follow your order using the link&hellip;</small></li>
-                </ul>
-              </div>
-              <p class="cs-field"><span class="cs-field__ph" data-until="2">Type / for saved replies</span><span class="cs-field__t" data-at="2">Hi Rahul, I&rsquo;ve moved your delivery to Saturday, 10 AM &ndash; 2 PM. You&rsquo;ll get a confirmation shortly.</span><span class="mini-btn"><svg class="i"><use href="#i-send"/></svg></span></p>
-            </div>
-          </div>
-
-          <aside class="cs-ib__side">
-            <p class="ui-label">Customer</p>
-            <p class="cs-who"><span class="av av--cyan av--lg">RM</span><span><b>Rahul Mehta</b><small>+91 &bull;&bull;&bull; 4410</small></span></p>
-            <p class="cs-tags"><span class="cs-pill">Returning customer</span><span class="cs-pill">Order #4821</span></p>
-            <p class="ui-label cs-gap">Assignment</p>
-            <dl class="cs-dl">
-              <div><dt>Assigned to</dt><dd><span class="av av--cyan">MT</span>Mei Tan</dd></div>
-              <div><dt>Team</dt><dd>Orders</dd></div>
-              <div><dt>Status</dt><dd><span class="tag tag--lime">Open</span></dd></div>
-            </dl>
-            <div class="cs-xfer">
-              <p class="ui-label">Transfer conversation</p>
-              <p class="cs-xfer__sel"><span><svg class="i"><use href="#i-users"/></svg>Choose agent or team</span><svg class="i"><use href="#i-chev"/></svg></p>
-              <ul class="cs-xfer__l">
-                <li><span class="av av--lime">AR</span>Arjun Rao &middot; Orders</li>
-                <li><span class="av av--violet">DP</span>Dev Patel &middot; Finance</li>
-                <li><span class="cs-team"><svg class="i"><use href="#i-cal"/></svg></span>Bookings team</li>
-              </ul>
-            </div>
-          </aside>
-        </div>
-      </figure>
-      <p class="cs-fine rv">Design concept with fictional data. Available channels depend on your Chatberry setup.</p>
-
-      <ul class="cs-pts cs-pts--5 rv" style="--d:.1s">
-        <li><b>Status at a glance</b>View conversations and their current status.</li>
-        <li><b>Clear ownership</b>See which agent is responsible for each conversation.</li>
-        <li><b>Full history</b>Review previous messages before responding.</li>
-        <li><b>Saved replies</b>Use saved replies for common questions.</li>
-        <li><b>Transfers</b>Transfer conversations between team members.</li>
-      </ul>
-      <p class="cs-more rv"><a class="cos-link" href="/pages/solutions/team-collaboration/page.html">Coordinate agents with Team Collaboration <svg class="i"><use href="#i-arrow"/></svg></a><a class="cos-link" href="/pages/solutions/lead-engagement/page.html">Sales conversations in Lead Engagement <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 05 CUSTOMER CONTEXT — an education example ============ -->
-    <section class="cos-sec cs-tint--warm" id="context" aria-labelledby="cx-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Customer context</p>
-        <h2 class="cos-h2" id="cx-h">Know the customer <br><span class="dim">behind every conversation.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Give agents useful context before they respond. Access relevant customer details and previous interactions so your team can provide more informed, consistent support.</p>
-        </div>
-      </div>
-
-      <div class="cs-cx" id="cx">
-        <ol class="cs-cx__tl rv" aria-label="Activity timeline for Ananya Rao">
-          <li data-lit="1"><time>8 Oct &middot; Web chat</time><b>Course enquiry</b>Asked about the UX Design course</li>
-          <li data-lit="2"><time>8 Oct &middot; AI</time><b>Brochure shared</b>Fees, schedule and syllabus</li>
-          <li data-lit="3"><time>11 Oct &middot; Call</time><b>Spoke with Arjun</b>Interested in a weekend batch</li>
-          <li class="is-now" data-lit="4"><time>Today &middot; WhatsApp</time><b>Follow-up</b>Has the weekend batch opened?</li>
-        </ol>
-        <div class="cs-cx__grid">
-          <figure class="app cs-cx__chat rv" style="--d:.08s" aria-labelledby="cxCap">
-            <figcaption class="sr-only" id="cxCap">Customer support conversation with customer profile and interaction history (design concept). A student following up on a course enquiry asks on WhatsApp whether the weekend batch has opened. The admissions agent replies with the batch dates, using the earlier enquiry and call note shown in the student's profile and timeline.</figcaption>
-            <p class="cs-chead"><span class="av av--violet">AR</span><span><b>Ananya Rao</b><small><svg class="i"><use href="#i-wa"/></svg>WhatsApp &middot; Brightpath Academy</small></span><span class="tag tag--lime">Open</span></p>
-            <div class="cs-log">
-              <p class="cs-b cs-b--in">Hi, I spoke to someone last week about the UX Design course. Has the weekend batch opened yet?<small>09:15</small></p>
-              <div class="cs-b cs-b--agent"><p class="cs-by"><span class="av av--lime">AR</span>Arjun Rao &middot; Admissions</p><p>Hi Ananya, good to hear from you. Yes, the weekend batch we discussed opens on 9 Nov, Saturday and Sunday, 10 AM to 1 PM. Shall I hold a seat while you finish the application?</p><small>09:18</small></div>
-            </div>
-            <p class="cs-used"><span>Context used</span><span class="cs-pill">Enquiry &middot; 8 Oct</span><span class="cs-pill">Call note &middot; 11 Oct</span></p>
-          </figure>
-
-          <aside class="app cs-cx__pro rv" style="--d:.16s" aria-label="Student profile">
-            <p class="cs-who"><span class="av av--violet av--lg">AR</span><span><b>Ananya Rao</b><small>Prospective student</small></span></p>
-            <dl class="cs-dl">
-              <div><dt>Interested in</dt><dd>UX Design &middot; weekend</dd></div>
-              <div><dt>First contact</dt><dd><svg class="i"><use href="#i-chat"/></svg>Web chat, 8 Oct</dd></div>
-              <div><dt>Owner</dt><dd><span class="av av--lime">AR</span>Arjun Rao</dd></div>
-              <div><dt>Tags</dt><dd><span class="cs-pill">Brochure sent</span><span class="cs-pill">Weekend</span></dd></div>
-            </dl>
-            <p class="cs-note"><b>Call note &middot; 11 Oct</b>Works weekdays. Wants the weekend batch; will apply once dates are confirmed.</p>
-          </aside>
-        </div>
-      </div>
-
-      <ul class="cs-pts cs-pts--3 rv" style="--d:.1s">
-        <li><b>Returning shopper</b>Asks about an order they discussed earlier.</li>
-        <li><b>Student</b>Follows up on a previous course enquiry.</li>
-        <li><b>Agency client</b>Asks for an update on a campaign request.</li>
-      </ul>
-      <p class="cs-say rv">With customer history and relevant information alongside the conversation, <span class="dim">agents spend less time searching and more time helping.</span></p>
-    </section>
-
-    <!-- ============ 06 KNOWLEDGE BASE — information → answer → conversation ============ -->
-    <section class="cos-sec" id="knowledge" aria-labelledby="kb-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Knowledge base &amp; automated support</p>
-        <h2 class="cos-h2" id="kb-h">Give your AI the knowledge <br><span class="dim">to help customers.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Connect your business knowledge with AI-powered support so customers can receive more relevant answers to common questions. Use supported documents and website content to build a knowledge base, then connect it with automated flows to guide customers through common requests.</p>
-        </div>
-      </div>
-
-      <div class="cs-kb" role="group" aria-label="Business knowledge connected to an AI customer support conversation">
-        <div class="cs-kb__col rv">
-          <p class="cs-stage"><span>1</span>Business information</p>
-          <div class="app cs-card">
-            <p class="cs-doc"><span class="cs-doc__ic"><svg class="i"><use href="#i-file"/></svg></span><span><b>Membership guide.pdf</b><small>Document &middot; 12 pages</small></span></p>
-            <p class="cs-doc__x">&hellip; <mark>Day-pass holders may bring one guest per visit</mark>, who must sign in at reception &hellip;<small>Page 4</small></p>
-          </div>
-          <div class="app cs-card">
-            <p class="cs-doc"><span class="cs-doc__ic"><svg class="i"><use href="#i-globe"/></svg></span><span><b>lumenworkspaces.example</b><small>Website &middot; 3 pages added</small></span></p>
-            <ul class="cs-pages">
-              <li class="is-hit">/day-pass<svg class="i"><use href="#i-check"/></svg></li>
-              <li>/pricing</li>
-              <li>/faq</li>
-            </ul>
-          </div>
-        </div>
-        <span class="cs-kb__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
-        <div class="cs-kb__col rv" style="--d:.1s">
-          <p class="cs-stage"><span>2</span>AI response</p>
-          <div class="app cs-ans">
-            <p class="cs-ans__q"><svg class="i"><use href="#i-search"/></svg>&ldquo;Can I bring a friend on a day pass?&rdquo;</p>
-            <p class="cs-ai"><svg class="i"><use href="#i-spark"/></svg>Drafted from 2 sources</p>
-            <p class="cs-ans__t">Yes, each day pass includes one guest per visit<span class="cs-cite">1</span>. Your guest just signs in at reception. Day passes are $18 and can be booked online<span class="cs-cite">2</span>.</p>
-            <ol class="cs-ans__src">
-              <li><span class="cs-cite">1</span>Membership guide.pdf, page 4</li>
-              <li><span class="cs-cite">2</span>lumenworkspaces.example/day-pass</li>
-            </ol>
-          </div>
-        </div>
-        <span class="cs-kb__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
-        <div class="cs-kb__col rv" style="--d:.2s">
-          <p class="cs-stage"><span>3</span>Customer conversation</p>
-          <div class="app cs-kbc">
-            <p class="cs-chead"><span class="av av--lime">JW</span><span><b>Jun Watanabe</b><small><svg class="i"><use href="#i-chat"/></svg>Web chat</small></span></p>
-            <div class="cs-log">
-              <p class="cs-b cs-b--in">Can I bring a friend on a day pass?</p>
-              <div class="cs-b cs-b--ai"><p class="cs-ai"><svg class="i"><use href="#i-spark"/></svg>Chatberry AI</p><p>Yes, each day pass includes one guest per visit. Your guest just signs in at reception.</p></div>
-              <p class="cs-qr cs-qr--r"><span>Book a day pass</span><span>Talk to the team</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <ul class="cs-uses rv" aria-label="Example uses">
-        <li>Explain product and service information</li>
-        <li>Guide a customer through a booking enquiry</li>
-        <li>Answer common subscription questions</li>
-        <li>Collect information before routing a request to a team</li>
-        <li>Provide consistent answers to frequently asked questions</li>
-      </ul>
-      <p class="cs-fine rv"><svg class="i"><use href="#i-alert"/></svg>Answer quality depends on the knowledge available and how your setup is configured. AI uses the supported sources you add, not every system you have. <a class="cos-link cs-inline" href="/pages/products/knowledge-base/page.html">Explore the Knowledge Base <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 07 DEPARTMENT ROUTING — one request, the right team ============ -->
-    <section class="cos-sec cs-tint--cool" id="routing" aria-labelledby="rt-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Team collaboration &amp; department routing</p>
-        <h2 class="cos-h2" id="rt-h">Get every conversation <br><span class="dim">to the right team.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Make it easier for support teams to work together. Route conversations to the appropriate department, transfer chats between agents, and keep ownership clear as requests move through your organisation.</p>
-        </div>
-      </div>
-
-      <div class="cs-rt" id="rt" role="group" aria-label="Customer support conversation routed to the appropriate department">
-        <div class="app cs-rt__req" data-lit="1">
-          <p class="cs-stage"><span>1</span>Customer request</p>
-          <p class="cs-chead cs-chead--flat"><span class="av av--amber">AK</span><span><b>Aisha Karim</b><small><svg class="i"><use href="#i-wa"/></svg>WhatsApp</small></span></p>
-          <p class="cs-b cs-b--in">I was charged twice for my October invoice. Can someone check?</p>
-          <p class="cs-menu"><span>Topic chosen</span><b>Billing</b><span class="cs-menu__o">Technical</span><span class="cs-menu__o">Booking</span></p>
-        </div>
-        <span class="cs-kb__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
-        <div class="app cs-rt__rule" data-lit="2">
-          <p class="cs-stage"><span>2</span>Routing</p>
-          <p class="cs-rule"><svg class="i"><use href="#i-route"/></svg><span><small>Assignment rule</small><b>Topic is Billing &rarr; Finance team</b></span></p>
-          <p class="cs-rule__o">Other rules: Technical &rarr; Support &middot; Booking &rarr; Bookings &middot; Complex request &rarr; manual transfer to a specialist</p>
-          <p class="cs-rule__f">Rules set up by your admin</p>
-        </div>
-        <span class="cs-kb__arr" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></span>
-        <div class="cs-rt__teams">
-          <p class="cs-stage"><span>3</span>Owning team</p>
-          <ul class="cs-depts">
-            <li class="cs-dept is-on" data-lit="3"><span class="cs-dept__ic"><svg class="i"><use href="#i-coin"/></svg></span><span><b>Finance</b><small>Billing questions</small></span><span class="cs-dept__own"><span class="av av--violet">DP</span>Dev Patel<em>Owner</em></span></li>
-            <li class="cs-dept"><span class="cs-dept__ic"><svg class="i"><use href="#i-tool"/></svg></span><span><b>Support</b><small>Technical questions</small></span><span class="cs-dept__n">5 agents</span></li>
-            <li class="cs-dept"><span class="cs-dept__ic"><svg class="i"><use href="#i-cal"/></svg></span><span><b>Bookings</b><small>Booking enquiries</small></span><span class="cs-dept__n">3 agents</span></li>
-            <li class="cs-dept"><span class="cs-dept__ic"><svg class="i"><use href="#i-badge"/></svg></span><span><b>Specialist</b><small>Complex requests</small></span><span class="cs-dept__n">2 agents</span></li>
-          </ul>
-        </div>
-      </div>
-      <p class="cs-fine rv">Routing follows the assignment rules and transfers configured in your workspace.</p>
-
-      <div class="cs-rt__foot">
-        <figure class="cs-ph cs-photo rv"><img src="/public/assets/img/customer-support/team-at-shared-screen.webp" alt="A support lead and a colleague point at a conversation on a shared screen." width="1400" height="788" loading="lazy" decoding="async"></figure>
-        <div class="cs-rt__ex rv" style="--d:.1s">
-          <ul class="cs-rows2">
-            <li><span>Billing questions</span><b>Finance team</b></li>
-            <li><span>Technical questions</span><b>Support</b></li>
-            <li><span>Booking enquiries</span><b>The relevant service team</b></li>
-            <li><span>Complex customer requests</span><b>A specialist</b></li>
-          </ul>
-          <p class="cos-body">Help agents coordinate internally while keeping the customer-facing conversation organised.</p>
-          <p class="cs-more"><a class="cos-link" href="/pages/solutions/department-management/page.html">Department Management <svg class="i"><use href="#i-arrow"/></svg></a><a class="cos-link" href="/pages/solutions/team-collaboration/page.html">Team Collaboration <svg class="i"><use href="#i-arrow"/></svg></a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 08 ANALYTICS — an editorial composition ============ -->
-    <section class="cos-sec cs-tint--lav" id="analytics" aria-labelledby="an-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Customer support analytics</p>
-        <h2 class="cos-h2" id="an-h">Understand your support. <br><span class="dim">Improve every interaction.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Understand how your team handles conversations, identify bottlenecks, and see where customers may be waiting too long for a response.</p>
-        </div>
-      </div>
-
-      <div class="cs-an" aria-label="Customer support analytics showing response times and agent activity (illustrative data)" role="group">
-        <figure class="app cs-an__p cs-an__p--trend rv">
-          <figcaption class="cs-an__h"><span><b>Response times</b><small>Last 8 weeks &middot; median per week</small></span><span class="cs-ill">Illustrative data</span></figcaption>
-          <p class="cs-legend"><span><i class="cs-legend__a"></i>First response time <b>14 &rarr; 6 min</b></span><span><i class="cs-legend__b"></i>Average response time <b>22 &rarr; 12 min</b></span></p>
-          <div class="cs-chart">
-            <svg viewBox="0 0 640 200" preserveAspectRatio="none" aria-hidden="true">
-              <path class="cs-chart__g" d="M0 40H640M0 90H640M0 140H640M0 190H640"/>
-              <polyline class="cs-chart__b" points="20,25 106,32.5 191,47.5 277,55 363,70 449,77.5 534,92.5 620,100"/>
-              <polyline class="cs-chart__a" points="20,85 106,92.5 191,100 277,107.5 363,122.5 449,130 534,137.5 620,145"/>
-            </svg>
-            <p class="cs-chart__x" aria-hidden="true"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span></p>
-          </div>
-          <p class="sr-only">First response time fell from 14 to 6 minutes and average response time from 22 to 12 minutes over eight weeks, in this illustrative example.</p>
-        </figure>
-
-        <figure class="app cs-an__p cs-an__p--queue rv" style="--d:.08s">
-          <figcaption class="cs-an__h"><span><b>Unanswered conversations</b><small>Awaiting a response now</small></span><span class="cs-q__n">6</span></figcaption>
-          <ol class="cs-q">
-            <li class="is-long"><span class="cs-src cs-src--ig"><svg class="i"><use href="#i-ig"/></svg></span><span><b>Lena Park</b><small>Is the linen sofa available in grey?</small></span><time><svg class="i"><use href="#i-clock"/></svg>18 min</time></li>
-            <li><span class="cs-src cs-src--wa"><svg class="i"><use href="#i-wa"/></svg></span><span><b>Kofi Mensah</b><small>Can I add a second user to my plan?</small></span><time><svg class="i"><use href="#i-clock"/></svg>9 min</time></li>
-            <li><span class="cs-src cs-src--web"><svg class="i"><use href="#i-chat"/></svg></span><span><b>Website visitor</b><small>Do you offer group discounts?</small></span><time><svg class="i"><use href="#i-clock"/></svg>6 min</time></li>
-            <li><span class="cs-src cs-src--wa"><svg class="i"><use href="#i-wa"/></svg></span><span><b>Hannah Berg</b><small>Need to change my class time</small></span><time><svg class="i"><use href="#i-clock"/></svg>3 min</time></li>
-          </ol>
-          <p class="cs-an__more">+ 2 more &middot; oldest first</p>
-        </figure>
-
-        <figure class="app cs-an__p cs-an__p--load rv">
-          <figcaption class="cs-an__h"><span><b>Agent activity</b><small>Open conversations &middot; today</small></span></figcaption>
-          <ul class="cs-load">
-            <li class="is-hi"><span><span class="av av--cyan">MT</span>Mei Tan</span><i><b style="--v:.92"></b></i><em>11</em></li>
-            <li><span><span class="av av--lime">AR</span>Arjun Rao</span><i><b style="--v:.58"></b></i><em>7</em></li>
-            <li><span><span class="av av--violet">DP</span>Dev Patel</span><i><b style="--v:.42"></b></i><em>5</em></li>
-            <li><span><span class="av av--amber">PN</span>Priya Nair</span><i><b style="--v:.33"></b></i><em>4</em></li>
-          </ul>
-          <p class="cs-an__more">Mei has the most open conversations today.</p>
-        </figure>
-
-        <figure class="app cs-an__p cs-an__p--vol rv" style="--d:.08s">
-          <figcaption class="cs-an__h"><span><b>Conversation volume</b><small>This month</small></span><span class="cs-ill">Illustrative data</span></figcaption>
-          <div class="cs-vol">
-            <p class="cs-vol__big"><b>1,284</b><span>Total conversations</span></p>
-            <dl class="cs-vol__l">
-              <div><dt>Resolved</dt><dd>1,102</dd></div>
-              <div><dt>Unanswered</dt><dd>6</dd></div>
-              <div><dt>AI and human handoffs</dt><dd>214<small>Where measurable</small></dd></div>
-            </dl>
-          </div>
-        </figure>
-      </div>
-      <p class="cs-fine rv">All figures are illustrative data. Available metrics depend on your Chatberry setup.</p>
-
-      <dl class="cs-defs rv">
-        <div><dt>Total conversations</dt><dd>Handled during the selected period.</dd></div>
-        <div><dt>First response time</dt><dd>Time taken to send the first response.</dd></div>
-        <div><dt>Average response time</dt><dd>Average time taken to respond.</dd></div>
-        <div><dt>Resolved conversations</dt><dd>Conversations marked resolved.</dd></div>
-        <div><dt>Unanswered conversations</dt><dd>Conversations awaiting a response.</dd></div>
-        <div><dt>Agent activity</dt><dd>An overview of team activity and workload.</dd></div>
-        <div><dt>AI and human handoffs</dt><dd>Where measurable, how conversations move between AI and agents.</dd></div>
-      </dl>
-      <p class="cs-more rv"><a class="cos-link" href="/pages/products/analytics-bi/page.html">Explore Analytics <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 09 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Customer Support FAQs</h2>
-          <p class="cos-body">Need to track requests through to resolution?</p>
-          <p class="os-link"><a class="cos-link" href="/pages/solutions/ticket-management/page.html">See Ticket Management <svg class="i"><use href="#i-arrow"/></svg></a></p>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is AI-powered customer support?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>AI-powered customer support uses artificial intelligence to answer common questions, understand customer requests, and guide conversations. It can work alongside human agents to handle requests that need personal assistance.</p></div></details>
-          <details class="os-qa"><summary>Can Chatberry AI transfer a conversation to a human agent?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>AI-to-human handoff can be configured where supported, allowing a conversation to be handled by a human agent when further assistance is needed.</p></div></details>
-          <details class="os-qa"><summary>Can multiple agents manage customer conversations?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>A shared inbox and team management features can help multiple agents manage conversations, assign ownership, and transfer chats according to the team&rsquo;s workflow.</p></div></details>
-          <details class="os-qa"><summary>Can AI answer questions using my business knowledge?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry can use supported business knowledge sources, such as documents and website content, to help AI answer customer questions. Answer quality depends on the information available and how the system is configured.</p></div></details>
-          <details class="os-qa"><summary>Can conversations be routed to different departments?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Conversations can be routed to appropriate teams based on the available assignment and routing rules.</p></div></details>
-          <details class="os-qa"><summary>Can I track customer support performance?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Support analytics can help teams review available metrics such as response times, conversation volume, unresolved conversations, and agent activity.</p></div></details>
-          <details class="os-qa"><summary>Which channels can I manage through Chatberry?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry supports customer engagement through configured channels. The channels you can manage depend on the integrations and capabilities available in your Chatberry setup.</p></div></details>
-          <details class="os-qa"><summary>How is Customer Support different from Ticket Management?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Customer Support focuses on conversations, answering questions, assisting customers, and coordinating human and AI support. Ticket Management focuses on recording requests, assigning responsibility, tracking status, and managing issues through resolution.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 10 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <div class="cs-final__in">
-        <p class="cos-eyebrow">Customer Support</p>
-        <h2 class="cos-h2 rv" id="cta-h">Better answers. Faster support. <br><span class="dim">Happier customers.</span></h2>
-        <p class="cos-body rv">Bring AI chat, human agents, customer context, and team collaboration together to deliver a better support experience with Chatberry.</p>
-        <div class="cos-cta rv">
-          <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-        </div>
-        <div class="cs-fin rv" id="fin" role="img" aria-label="A short conversation: a customer asks about opening hours and AI answers, the customer then asks for a table booking with a birthday cake, the chat is handed to Mei in Bookings, and Mei confirms the booking and resolves the conversation.">
-          <p class="cs-b cs-b--in" data-lit="1">What time do you open on Fridays?</p>
-          <p class="cs-b cs-b--ai" data-lit="2"><span class="cs-ai"><svg class="i"><use href="#i-spark"/></svg>Chatberry AI</span>We&rsquo;re open 8 AM to 9 PM every day, Fridays included.</p>
-          <p class="cs-b cs-b--in" data-lit="3">Could you book a table for six at 7, with a birthday cake?</p>
-          <p class="cs-ev cs-ev--s" data-lit="4"><svg class="i"><use href="#i-swap"/></svg><span><b>Handed to Mei &middot; Bookings</b></span></p>
-          <p class="cs-b cs-b--agent" data-lit="5"><span class="cs-by"><span class="av av--cyan">MT</span>Mei Tan</span>All set: a table for six on Friday at 7 PM, and the cake is arranged.<span class="cs-done"><svg class="i"><use href="#i-check"/></svg>Resolved</span></p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Solutions <em>Customer Support</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>Support every customer,</span></span><span class="ln"><span>without the wait.</span></span></h1>
+      <p class="rv d2">AI answers routine questions instantly, your team takes over when it matters, and everything happens in one inbox.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vchat"><div class="msg msg--in show">My order hasn’t arrived yet 😟</div><div class="msg msg--out show">Sorry about that! Order #4821 is out for delivery and should reach you by 6 pm today.</div><div class="msg msg--in show">I’d like to speak to someone</div><div class="msg msg--out show">Connecting you to Priya from our support team now.</div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Customer Support</em></span>
+    <p class="stmt__txt" id="stmtTxt">Customers want answers now, but not every question needs a person. AI handles the routine and passes the rest to your team with full context.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Instant answers</h3><p>AI replies to common questions using your business knowledge.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Smooth hand-off</h3><p>Complex chats go to the right person with the history attached.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">One support inbox</h3><p>Every channel, every agent, one shared workspace.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Know the customer</h3><p>Past orders and conversations sit next to every chat.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Answer</span><p class="row__d">AI handles common questions instantly.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Escalate</span><p class="row__d">The right agent takes over when needed.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Resolve</span><p class="row__d">Track the issue to the end and learn from it.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Will customers know they are talking to AI?<i></i></summary><p>You decide how the AI introduces itself and when it passes chats to people.</p></details><details><summary>Can AI raise tickets?<i></i></summary><p>Yes. Conversations can become tickets automatically.</p></details><details><summary>Can I measure support quality?<i></i></summary><p>Yes. Track response times, resolutions and workload.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/ai-agents/page.html"><small>Products</small><b>AI Agents</b><p>AI agents that understand your business, answer customers, take action and hand over to your team when a person is needed.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/solutions/ticket-management/page.html"><small>Solutions</small><b>Ticket Management</b><p>Capture customer requests, route them to the right team, track progress and close issues faster.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/products/omnichannel/page.html"><small>Products</small><b>Omnichannel Inbox</b><p>See every customer conversation in one shared workspace, with the history and context your team needs to reply well.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Customer Support working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

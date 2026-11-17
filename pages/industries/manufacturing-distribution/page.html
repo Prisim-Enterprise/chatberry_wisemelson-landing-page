@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Manufacturing &amp; Distribution Management Software | Chatberry</title>
-<meta name="description" content="Connect WhatsApp customer conversations, webviews and forms, workflows, shop floor coordination, and business insights with Chatberry for manufacturing and distribution teams.">
+<title>Manufacturing &amp; Distribution – Customers, dealers and factory connected | Chatberry</title>
+<meta name="description" content="Connect WhatsApp customer and dealer conversations, order forms, workflows and shop floor coordination in Chatberry.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Chatberry for Manufacturing &amp; Distribution — Connect your customers, teams, and factory operations.">
-<meta property="og:description" content="Customer conversations, digital forms, workflows and shop floor coordination in one connected system.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Manufacturing &amp; Distribution – Customers, dealers and factory connected | Chatberry">
+<meta property="og:description" content="Connect WhatsApp customer and dealer conversations, order forms, workflows and shop floor coordination in Chatberry.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Manufacturing &amp; Distribution – Customers, dealers and factory connected | Chatberry">
+<meta name="twitter:description" content="Connect WhatsApp customer and dealer conversations, order forms, workflows and shop floor coordination in Chatberry.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,623 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos mf" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4.2M12 17v.01"/></symbol>
-      <symbol id="i-form" viewBox="0 0 24 24"><rect x="4.5" y="3.5" width="15" height="17" rx="2.2"/><path d="M8 8h8M8 12h8M8 16h5"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3.5 7.5A1.5 1.5 0 0 1 5 6h14a1.5 1.5 0 0 1 1.5 1.5V10a2 2 0 0 0 0 4v2.5A1.5 1.5 0 0 1 19 18H5a1.5 1.5 0 0 1-1.5-1.5V14a2 2 0 0 0 0-4Z"/><path d="M14 7v2M14 11v2M14 15v2"/></symbol>
-      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></symbol>
-      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 9a6 6 0 0 1 12 0c0 6 2.5 8 2.5 8h-17S6 15 6 9"/><path d="M10.2 20.5a2 2 0 0 0 3.6 0"/></symbol>
-      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3.5 20.5h17M6.5 17.5v-5M11.5 17.5v-10M16.5 17.5v-7"/></symbol>
-      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
-      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5Z"/><path d="M20 5.5A1.5 1.5 0 0 0 18.5 4H13v16h5.5a1.5 1.5 0 0 0 1.5-1.5Z"/></symbol>
-      <symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></symbol>
-      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v9h-11Z"/><path d="M13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></symbol>
-      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 4.5a4.5 4.5 0 0 0-4.3 5.8L4 16.5 7.5 20l6.2-6.2a4.5 4.5 0 0 0 5.8-4.3l-2.7 2.7-2.8-.7-.7-2.8Z"/></symbol>
-      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19.5 6v5.5c0 4.6-3.2 8.2-7.5 9.5-4.3-1.3-7.5-4.9-7.5-9.5V6Z"/><path d="m8.8 12 2.3 2.3 4.2-4.3"/></symbol>
-      <symbol id="i-flow" viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="6" rx="1.5"/><rect x="14" y="14" width="7" height="6" rx="1.5"/><path d="M6.5 10v4a3 3 0 0 0 3 3H14"/></symbol>
-      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15M15.5 4.5 19 8l-3.5 3.5M20 16H5M8.5 12.5 5 16l3.5 3.5"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — the dispatch bay, and the enquiry behind it ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="mf-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="mf-head rv">
-        <p class="cos-eyebrow">Manufacturing &amp; Distribution</p>
-        <h1 class="cos-h1" id="mf-h1">Connect your customers, <br><span class="dim">teams, and factory operations.</span></h1>
-        <p class="cos-hero__intro">Manage WhatsApp conversations, collect order details through webviews, coordinate shop floor activities, and keep teams aligned with connected workflows, all through Chatberry.</p>
-        <div class="cos-cta">
-          <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="https://app.prisim.co.in/">Start Free</a>
-        </div>
-        <p class="mf-for">From the first customer enquiry to the work getting done.</p>
-      </div>
-
-      <figure class="mf-hero rv" id="hero" style="--d:.15s" aria-labelledby="heroCap">
-        <img class="mf-hero__img" src="/public/assets/img/manufacturing/dispatch.jpg" alt="A warehouse worker loads a carton into a vehicle at a dispatch bay, with stacked pallets behind him." width="1500" height="813" decoding="async">
-        <figcaption class="sr-only" id="heroCap">A distributor asks on WhatsApp whether 2,000 one-inch PVC elbows are available for next week. The enquiry is assigned to Neha Joshi in sales, who replies that the stock is available and a quote will follow. A quotation record is created for Mehta Traders with Neha as owner.</figcaption>
-        <div class="mf-hero__ui">
-          <div class="wa-win mf-chat"><div class="wa-win__ui"><div class="wa-chat">
-            <div class="wa-head"><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--d">R</span><span class="wa-top__who"><b>Rohan Mehta</b><small>Mehta Traders</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-            <div class="wa-body">
-              <p class="wa-day">Today</p>
-              <p class="wa-msg wa-msg--in" data-at="1">Hi, do you have 1&Prime; PVC elbows in stock? We need 2,000 units for next week. What&rsquo;s your bulk price?<span class="wa-meta">11:08</span></p>
-              <p class="wa-msg wa-msg--out" data-at="3">Yes, 2,000 are available from current stock. I&rsquo;ll send the bulk price with a quote by 4 PM today.<span class="wa-meta">11:12 <i class="wa-tick"></i></span></p>
-            </div>
-            <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
-          </div></div></div>
-          <div class="app mf-rec" data-at="4">
-            <p class="mf-rec__k"><span class="mf-ico mf-ico--on"><svg class="i"><use href="#i-file"/></svg></span><span><b>Quote Q-2318</b><small>Mehta Traders &middot; 2,000 &times; 1&Prime; elbow</small></span></p>
-            <p class="mf-rec__r"><span class="av av--lime">NJ</span>Neha Joshi<span class="mf-st mf-st--warn">Due 4 PM</span></p>
-          </div>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 02 WHATSAPP — one enquiry, owned and answered ============ -->
-    <section class="cos-sec" id="whatsapp" aria-labelledby="wa-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">WhatsApp conversations</p>
-        <h2 class="cos-h2" id="wa-h">Turn customer conversations <br><span class="dim">into business progress.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Bring enquiries from customers, dealers, and distribution partners into one team inbox. Assign conversations, respond faster, and keep follow-ups from getting lost.</p>
-          <div class="cos-cta mf-cta-sm">
-            <a class="btn btn--lime" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat on WhatsApp <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <figure class="mf-wa-fig rv" id="wa" style="--d:.1s" aria-labelledby="waCap">
-        <figcaption class="sr-only" id="waCap">A dealer from Sharma Hardware asks for bulk pricing on 50 mm ball valves and whether they can be delivered to Nashik. The conversation moves from new enquiry to assigned to Neha Joshi to replied, with a quote request created. The team inbox beside it lists other enquiries: a dispatch update, a payment reminder reply and a dealer registration.</figcaption>
-        <ol class="mf-flowline" aria-hidden="true">
-          <li data-lit="1"><i></i>New enquiry</li>
-          <li data-lit="2"><i></i>Assigned</li>
-          <li data-lit="4"><i></i>Replied</li>
-        </ol>
-        <div class="mf-wa">
-          <div class="app mf-conv">
-            <p class="mf-chat__h"><span class="av av--violet">AS</span><span><b>Anil Sharma</b><small>Sharma Hardware &middot; Dealer, Nashik</small></span><span class="mf-st" data-until="2">New enquiry</span><span class="mf-st mf-st--ok" data-at="2"><svg class="i"><use href="#i-user"/></svg>Neha Joshi &middot; Sales</span></p>
-            <div class="mf-conv__log">
-              <p class="mf-b mf-b--in">Good morning. Can you share bulk pricing for 50 mm ball valves? We&rsquo;re looking at around 300 pieces a month.</p>
-              <p class="mf-b mf-b--in">Also, do you deliver to Nashik directly or through a transporter?</p>
-              <p class="mf-sys" data-at="2"><svg class="i"><use href="#i-swap"/></svg>Routed to Sales West &middot; assigned to Neha Joshi</p>
-              <p class="mf-b mf-b--out" data-at="3">Morning, Anil. For 300 a month we can offer our dealer slab. I&rsquo;ve started a quote and will share it today. Nashik is on our weekly route, so delivery is direct.</p>
-              <p class="mf-sys mf-sys--ok" data-at="4"><svg class="i"><use href="#i-file"/></svg>Quote request created &middot; follow-up set for Thu</p>
-            </div>
-            <p class="os-compose">Reply to Anil&hellip;<span class="mini-btn"><svg class="i"><use href="#i-send"/></svg></span></p>
-          </div>
-          <div class="app mf-inbox" role="img" aria-label="Team inbox with four conversations: Sharma Hardware bulk pricing, assigned to Neha; Kapoor Agencies dispatch update, assigned to Dispatch; Gupta Sales payment reminder reply, assigned to Accounts; and a new dealer registration, unassigned.">
-            <p class="app__top app__top--slim"><span class="app__crumb"><b>Team inbox</b></span><span class="mf-tabs"><b>Open</b><span>Mine</span></span></p>
-            <ul class="mf-inbox__l">
-              <li class="is-sel"><span class="av av--violet">AS</span><span><b>Sharma Hardware</b><small>Bulk pricing &middot; 50 mm valves</small></span><em>Neha</em></li>
-              <li><span class="av av--cyan">KA</span><span><b>Kapoor Agencies</b><small>When will order #4471 ship?</small></span><em>Dispatch</em></li>
-              <li><span class="av">GS</span><span><b>Gupta Sales</b><small>Replied to payment reminder</small></span><em>Accounts</em></li>
-              <li><span class="av av--lime">NR</span><span><b>New dealer</b><small>Wants to register in Pune</small></span><em class="mf-un">Unassigned</em></li>
-            </ul>
-          </div>
-        </div>
-      </figure>
-
-      <ul class="mf-six rv" style="--d:.1s">
-        <li><b>Availability &amp; pricing</b>Product availability and price enquiries.</li>
-        <li><b>Bulk &amp; dealer orders</b>Bulk-order and dealer enquiries, in one place.</li>
-        <li><b>Quotation requests</b>Turn a question into a tracked quote.</li>
-        <li><b>Order &amp; dispatch updates</b>Tell customers where their order is.</li>
-        <li><b>Payment reminders</b>Approved template reminders, with replies routed.</li>
-        <li><b>Repeat orders</b>Follow-ups and repeat-order engagement.</li>
-      </ul>
-      <p class="mf-fine rv">Shared team inbox &middot; Department and agent assignment &middot; AI-assisted replies &middot; Conversation history &middot; Campaigns and templates. <a class="cos-link mf-inline" href="/pages/products/omnichannel/page.html">Explore Live Chats <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link mf-inline" href="/pages/products/campaigns/page.html">Explore Campaigns <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 03 WEBVIEWS — from chat to a completed request ============ -->
-    <section class="cos-sec" id="webviews" aria-labelledby="wv-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Webviews &amp; forms</p>
-        <h2 class="cos-h2" id="wv-h">Move from chat <br><span class="dim">to completed forms and requests.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Give customers a simple way to share the details your team needs. Open a branded webview from a WhatsApp conversation and let customers submit enquiries, product requirements, dealer details, or order information.</p>
-          <div class="cos-cta mf-cta-sm">
-            <a class="btn btn--lime" href="https://app.prisim.co.in/">Start Free <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo</a>
-          </div>
-        </div>
-      </div>
-
-      <figure class="mf-wv rv" id="wv" style="--d:.1s" aria-labelledby="wvCap">
-        <figcaption class="sr-only" id="wvCap">A WhatsApp message asks the customer to share their requirements and opens a branded bulk-order form. The customer fills in company, product, quantity, delivery location and contact, and submits. The form confirms the request, and the sales team receives it with all the details.</figcaption>
-        <div class="mf-wv__col">
-          <p class="mf-wv__n"><span>1</span>The message</p>
-          <div class="wa-win mf-msg"><div class="wa-win__ui"><div class="wa-chat">
-            <div class="wa-head"><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">K</span><span class="wa-top__who"><b>Kestrel Industries</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-            <div class="wa-body">
-              <div class="wa-msg wa-msg--in wa-card">
-                <p class="wa-card__body">Thanks, Anil. To prepare an accurate quote, please share your requirements here. It takes about a minute.<span class="wa-meta">11:40</span></p>
-                <div class="wa-btns"><span class="wa-btn" data-lit="1"><i class="wa-i wa-i--link"></i>Share your requirements</span></div>
-              </div>
-            </div>
-          </div></div></div>
-        </div>
-
-        <div class="mf-wv__col mf-wv__col--phone">
-          <p class="mf-wv__n"><span>2</span>The webview</p>
-          <div class="wm-phone mf-phone">
-            <div class="wm-phone__screen"><div class="wm-phone__ui">
-              <div class="wa-web">
-                <div class="wa-web__bar"><div class="wm-status"></div><i class="wa-i wa-i--x"></i><span class="wa-web__t"><b>Kestrel Industries</b><small><i class="wa-i wa-i--lock"></i>kestrel.in/bulk-order</small></span><i class="wa-i wa-i--dots"></i></div>
-                <div class="wa-web__page">
-                  <p class="mf-toast" data-at="4"><span class="mf-toast__i"><svg class="i"><use href="#i-check"/></svg></span><span><b>Request received &middot; REQ-1186</b>Neha will share your quote today.</span></p>
-                  <div class="mf-phone__b">
-                    <p class="mf-phone__t">Bulk order enquiry</p>
-                    <p class="mf-phone__s">Kestrel Industries &middot; dealers &amp; distributors</p>
-                    <p class="mf-f"><span>Company name</span><b>Sharma Hardware</b></p>
-                    <p class="mf-f"><span>Product</span><b>Ball valve &middot; 50 mm, brass</b></p>
-                    <div class="mf-f2">
-                      <p class="mf-f"><span>Quantity</span><b class="mf-fill" data-lit="2">300 / month</b></p>
-                      <p class="mf-f"><span>Delivery</span><b class="mf-fill" data-lit="2">Nashik</b></p>
-                    </div>
-                    <p class="mf-f"><span>Contact</span><b class="mf-fill" data-lit="3">Anil Sharma &middot; +91 98&hellip;</b></p>
-                    <p class="mf-f"><span>Anything else?</span><b class="mf-fill mf-f--area" data-lit="3">Need ISI-marked stock and monthly invoicing.</b></p>
-                    <span class="mf-btn mf-btn--wide" data-lit="3"><span data-until="4">Submit request</span><span class="mf-sent" data-at="4"><svg class="i"><use href="#i-check"/></svg>Submitted</span></span>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-            <img class="wm-phone__frame" src="/public/assets/img/phone-frame.svg" alt="">
-          </div>
-        </div>
-
-        <div class="mf-wv__col">
-          <p class="mf-wv__n"><span>3</span>The team</p>
-          <div class="app mf-got" data-lit="5">
-            <p class="mf-got__h"><span class="mf-ico mf-ico--on"><svg class="i"><use href="#i-form"/></svg></span><span><b>REQ-1186 &middot; Bulk order</b><small>Received from webview &middot; 11:42</small></span></p>
-            <dl class="mf-kv">
-              <div><dt>Company</dt><dd>Sharma Hardware</dd></div>
-              <div><dt>Product</dt><dd>50 mm brass ball valve</dd></div>
-              <div><dt>Quantity</dt><dd>300 / month</dd></div>
-              <div><dt>Delivery</dt><dd>Nashik</dd></div>
-            </dl>
-            <p class="mf-next"><span><b>Owner</b> Neha Joshi &middot; Sales West</span><span class="mf-st mf-st--ok">Assigned</span></p>
-          </div>
-        </div>
-      </figure>
-
-      <ul class="mf-pills rv" style="--d:.1s">
-        <li>Dealer registration &amp; onboarding</li>
-        <li>Product or bulk-order enquiry</li>
-        <li>Quotation request</li>
-        <li>Delivery &amp; dispatch details</li>
-        <li>Service or maintenance request</li>
-        <li>Customer requirement forms</li>
-      </ul>
-      <p class="mf-fine mf-fine--c rv">Collect structured information without asking customers to type everything into a chat. Forms are configured for your process; the one above is an example. <a class="cos-link mf-inline" href="/pages/products/webviews/page.html">Explore Webviews <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 04 WORKFLOWS & AI — five steps, left to right ============ -->
-    <section class="cos-sec" id="workflows" aria-labelledby="fl-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Workflows &amp; AI</p>
-        <h2 class="cos-h2" id="fl-h">Connect every step, <br><span class="dim">from enquiry to action.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Build workflows that move information to the right team, trigger follow-ups, and keep customer and internal processes moving. Use AI where it can help answer questions, understand requests, or route work.</p>
-          <div class="cos-cta mf-cta-sm">
-            <a class="btn btn--lime" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat on WhatsApp</a>
-          </div>
-        </div>
-      </div>
-
-      <ol class="mf-steps rv" id="flow" style="--d:.1s" aria-label="Example workflow">
-        <li data-lit="1">
-          <p class="mf-steps__n"><span>01</span>Enquiry</p>
-          <p class="mf-steps__t">A distributor asks about a product on WhatsApp.</p>
-          <div class="mf-snip"><p class="mf-b mf-b--in">Need 500 m of 25 mm HDPE pipe. Available?</p></div>
-        </li>
-        <li data-lit="2">
-          <p class="mf-steps__n"><span>02</span>Webview</p>
-          <p class="mf-steps__t">The customer fills in product and quantity.</p>
-          <div class="mf-snip"><p class="mf-f"><span>Quantity</span><b>500 m &middot; 25 mm</b></p></div>
-        </li>
-        <li data-lit="3">
-          <p class="mf-steps__n"><span>03</span>Assignment</p>
-          <p class="mf-steps__t">The enquiry goes to the right sales team.</p>
-          <div class="mf-snip mf-snip--row"><span class="av av--cyan">VK</span><span><b>Vikram K.</b><small>Sales North</small></span><span class="mf-ai"><svg class="i"><use href="#i-spark"/></svg>Routed by region</span></div>
-        </li>
-        <li data-lit="4">
-          <p class="mf-steps__n"><span>04</span>Follow-up</p>
-          <p class="mf-steps__t">A reminder is set if the quote isn&rsquo;t sent.</p>
-          <div class="mf-snip mf-snip--row"><span class="mf-ico mf-ico--warn"><svg class="i"><use href="#i-bell"/></svg></span><span><b>Quote due</b><small>Remind Vikram at 3 PM</small></span></div>
-        </li>
-        <li data-lit="5" class="is-end">
-          <p class="mf-steps__n"><span>05</span>Customer update</p>
-          <p class="mf-steps__t">The customer hears as the request moves on.</p>
-          <div class="mf-snip"><p class="mf-b mf-b--out">Your quote is ready. Order confirmed for Monday dispatch.</p></div>
-        </li>
-      </ol>
-
-      <div class="mf-int rv" style="--d:.1s">
-        <p class="mf-int__k">Internal workflows, too</p>
-        <ul class="mf-ticks">
-          <li>Route maintenance requests to the responsible team.</li>
-          <li>Notify supervisors about pending work.</li>
-          <li>Send follow-ups when a quotation needs attention.</li>
-          <li>Remind teams about unresolved requests.</li>
-          <li>Update customers when an order reaches a configured stage.</li>
-        </ul>
-      </div>
-      <p class="mf-fine rv">Example workflow. Each step is configured for your process. <a class="cos-link mf-inline" href="/pages/products/workflow-orchestration/page.html">Explore Workflow Orchestration <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link mf-inline" href="/pages/products/ai-agents/page.html">Explore AI Agents <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 05 SHOP FLOOR — one line, one work order, one handover ============ -->
-    <section class="cos-sec" id="shop-floor" aria-labelledby="sf-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Shop floor management</p>
-        <h2 class="cos-h2" id="sf-h">Bring daily shop floor activities <br><span class="dim">into a connected workflow.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Coordinate work orders, shift updates, maintenance requests, quality checks, and operational tasks. Give workers and supervisors a clearer way to report progress, raise issues, and follow up on pending work.</p>
-          <div class="cos-cta mf-cta-sm">
-            <a class="btn btn--lime" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat on WhatsApp</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="mf-floor rv" id="floor" style="--d:.1s">
-        <figure class="mf-line" aria-labelledby="lineCap">
-          <figcaption class="mf-line__h"><span class="ui-label">Line 2 &middot; Shift A &middot; Tue 14 Oct</span><span id="lineCap" class="mf-line__cap">Five stations from moulding to packing. Assembly reports a jammed feeder, then returns to running.</span></figcaption>
-          <ol class="mf-line__l">
-            <li><span class="mf-line__dot"></span><b>Moulding</b><small>Running</small></li>
-            <li><span class="mf-line__dot"></span><b>Trimming</b><small>Running</small></li>
-            <li class="mf-line__x"><span class="mf-line__dot"></span><b>Assembly</b><small data-until="2">Running</small><small class="mf-warn" data-at="2" data-until="3">Feeder jammed</small><small data-at="3">Running again</small></li>
-            <li><span class="mf-line__dot"></span><b>Quality check</b><small>Batch 18 passed</small></li>
-            <li><span class="mf-line__dot"></span><b>Packing</b><small>1,240 of 2,000</small></li>
-          </ol>
-        </figure>
-
-        <div class="mf-floor__grid">
-          <div class="app mf-wo">
-            <div class="app__top app__top--slim">
-              <span class="app__crumb">Work orders <svg class="i"><use href="#i-chevr"/></svg> <b>WO-0412</b></span>
-              <span class="mf-st mf-st--prog mf-wo__st" data-until="3">In progress</span><span class="mf-st mf-st--ok mf-wo__st" data-at="3"><svg class="i"><use href="#i-check"/></svg>Back on track</span>
-            </div>
-            <div class="mf-wo__b">
-              <p class="mf-wo__t">1&Prime; PVC elbow &middot; 2,000 units for Mehta Traders</p>
-              <ol class="mf-tri">
-                <li data-lit="1"><i></i>Task assigned</li>
-                <li data-lit="2"><i></i>Issue reported</li>
-                <li data-lit="3"><i></i>Status updated</li>
-              </ol>
-              <dl class="mf-kv mf-kv--4">
-                <div><dt>Owner</dt><dd><span class="av av--lime">AR</span>Arjun Rao</dd></div>
-                <div><dt>Priority</dt><dd>High</dd></div>
-                <div><dt>Target</dt><dd>Fri 17 Oct</dd></div>
-                <div><dt>Station</dt><dd>Line 2 &middot; Assembly</dd></div>
-              </dl>
-              <ul class="mf-notes">
-                <li data-at="1"><span class="av av--lime">AR</span><p><b>Arjun Rao &middot; 07:10</b>Assigned to Line 2, Shift A. Target 1,000 today.</p></li>
-                <li data-at="2" class="mf-notes--warn"><span class="av av--cyan">SF</span><p><b>Sam Fernandes &middot; 10:25</b>Feeder jammed on assembly. Maintenance request MR-88 raised.</p></li>
-                <li data-at="3" class="mf-notes--ok"><span class="av av--cyan">SF</span><p><b>Sam Fernandes &middot; 11:05</b>Feeder cleared, line running. 40 minutes lost.</p></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="app mf-ho" role="img" aria-label="Shift handover from Shift A to Shift B on Line 2: 1,240 elbows packed and batch 18 passed quality; pending are 760 units and the quality check on batch 19; unresolved is the assembly feeder, under watch by maintenance.">
-            <p class="mf-ho__h"><b>Shift handover</b><span>Line 2 &middot; A &rarr; B &middot; 15:00</span></p>
-            <div class="mf-ho__g">
-              <p class="mf-ho__k mf-ho__k--ok">Completed</p>
-              <ul><li>1,240 elbows packed</li><li>Batch 18 passed QC</li></ul>
-            </div>
-            <div class="mf-ho__g">
-              <p class="mf-ho__k">Pending</p>
-              <ul><li>760 units for WO-0412</li><li>QC on batch 19</li></ul>
-            </div>
-            <div class="mf-ho__g">
-              <p class="mf-ho__k mf-ho__k--warn">Unresolved</p>
-              <ul><li>Assembly feeder under watch &middot; Maintenance</li></ul>
-            </div>
-            <p class="mf-ho__f"><span class="av av--lime">AR</span>Handed over by Arjun Rao<span class="av av--violet">PD</span>to Priya Das</p>
-          </div>
-        </div>
-      </div>
-
-      <ul class="mf-seven rv" style="--d:.1s">
-        <li><b>Work orders</b>Task assignments with owners and dates.</li>
-        <li><b>Shift handovers</b>Production updates passed on in writing.</li>
-        <li><b>Downtime reports</b>Recorded by the people on the line.</li>
-        <li><b>Maintenance requests</b>Raised, routed and tracked to closure.</li>
-        <li><b>Quality inspections</b>Checks recorded against each batch.</li>
-        <li><b>Material requests</b>And the pending tasks around them.</li>
-        <li><b>Supervisor view</b>Progress and unresolved issues in one place.</li>
-      </ul>
-      <p class="mf-fine rv">Start with the workflows your team needs most, then expand as your operations evolve. Chatberry coordinates the people and tasks around your equipment; it doesn&rsquo;t control machinery. <a class="cos-link mf-inline" href="/pages/products/workflow-orchestration/page.html">Explore Workflow Orchestration <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link mf-inline" href="/pages/products/ticketing/page.html">Explore Ticketing <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 06 TEAM WORKSPACE — one view per role ============ -->
-    <section class="cos-sec" id="teams" aria-labelledby="tm-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Team workspace</p>
-        <h2 class="cos-h2" id="tm-h">Keep every team clear <br><span class="dim">on what needs to happen next.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Connect customer-facing teams with the people responsible for operations. Assign conversations and tasks, organise work by department, and give managers visibility into pending requests and progress.</p>
-        </div>
-      </div>
-
-      <div class="mf-roles rv" id="roles" style="--d:.1s">
-        <div class="mf-roles__tabs" role="tablist" aria-label="Team views" aria-orientation="vertical">
-          <button class="mf-roles__t" type="button" role="tab" id="rt1" aria-controls="rp1" aria-selected="true"><span class="mf-ico"><svg class="i"><use href="#i-msg"/></svg></span><span><b>Sales &amp; customer service</b><small>Enquiries, quotations, follow-ups and conversations.</small></span></button>
-          <button class="mf-roles__t" type="button" role="tab" id="rt2" aria-controls="rp2" aria-selected="false" tabindex="-1"><span class="mf-ico"><svg class="i"><use href="#i-box"/></svg></span><span><b>Operations</b><small>Work orders, material requests and pending activities.</small></span></button>
-          <button class="mf-roles__t" type="button" role="tab" id="rt3" aria-controls="rp3" aria-selected="false" tabindex="-1"><span class="mf-ico"><svg class="i"><use href="#i-wrench"/></svg></span><span><b>Maintenance &amp; quality</b><small>Issues, inspections and corrective actions.</small></span></button>
-          <button class="mf-roles__t" type="button" role="tab" id="rt4" aria-controls="rp4" aria-selected="false" tabindex="-1"><span class="mf-ico"><svg class="i"><use href="#i-chart"/></svg></span><span><b>Managers</b><small>Team activity, unresolved work and overall progress.</small></span></button>
-        </div>
-        <div class="mf-roles__panes">
-          <div class="app mf-roles__p is-on" role="tabpanel" id="rp1" aria-labelledby="rt1">
-            <p class="app__top app__top--slim"><span class="app__crumb">Sales West <svg class="i"><use href="#i-chevr"/></svg> <b>My work</b></span><span class="mf-pv__n">4 open</span></p>
-            <ul class="mf-pv">
-              <li><span class="mf-ico mf-ico--on"><svg class="i"><use href="#i-file"/></svg></span><span><b>Quote Q-2318 &middot; Mehta Traders</b><small>2,000 &times; 1&Prime; elbow</small></span><span class="mf-st mf-st--warn">Due 4 PM</span></li>
-              <li><span class="mf-ico"><svg class="i"><use href="#i-form"/></svg></span><span><b>REQ-1186 &middot; Sharma Hardware</b><small>Bulk order from webview</small></span><span class="mf-st">New</span></li>
-              <li><span class="mf-ico"><svg class="i"><use href="#i-msg"/></svg></span><span><b>Gupta Sales</b><small>Asked for a revised delivery date</small></span><span class="mf-st mf-st--warn">Reply due</span></li>
-              <li><span class="mf-ico"><svg class="i"><use href="#i-bell"/></svg></span><span><b>Patil Traders</b><small>Repeat-order follow-up</small></span><span class="mf-st">Thu</span></li>
-            </ul>
-          </div>
-          <div class="app mf-roles__p" role="tabpanel" id="rp2" aria-labelledby="rt2">
-            <p class="app__top app__top--slim"><span class="app__crumb">Operations <svg class="i"><use href="#i-chevr"/></svg> <b>Today</b></span><span class="mf-pv__n">6 open</span></p>
-            <ul class="mf-pv">
-              <li><span class="mf-ico mf-ico--on"><svg class="i"><use href="#i-box"/></svg></span><span><b>WO-0412 &middot; 1&Prime; PVC elbow</b><small>Line 2 &middot; 1,240 of 2,000</small></span><span class="mf-st mf-st--prog">In progress</span></li>
-              <li><span class="mf-ico"><svg class="i"><use href="#i-box"/></svg></span><span><b>WO-0415 &middot; 50 mm ball valve</b><small>Line 1 &middot; starts Shift B</small></span><span class="mf-st">Scheduled</span></li>
-              <li><span class="mf-ico mf-ico--warn"><svg class="i"><use href="#i-truck"/></svg></span><span><b>Material request &middot; brass rod</b><small>Stores &middot; requested 09:40</small></span><span class="mf-st mf-st--warn">Pending</span></li>
-              <li><span class="mf-ico"><svg class="i"><use href="#i-truck"/></svg></span><span><b>Dispatch &middot; order #4471</b><small>Kapoor Agencies &middot; Wed</small></span><span class="mf-st mf-st--ok">Packed</span></li>
-            </ul>
-          </div>
-          <div class="app mf-roles__p" role="tabpanel" id="rp3" aria-labelledby="rt3">
-            <p class="app__top app__top--slim"><span class="app__crumb">Maintenance &amp; quality <svg class="i"><use href="#i-chevr"/></svg> <b>Open</b></span><span class="mf-pv__n">3 open</span></p>
-            <ul class="mf-pv">
-              <li><span class="mf-ico mf-ico--warn"><svg class="i"><use href="#i-wrench"/></svg></span><span><b>MR-88 &middot; Assembly feeder</b><small>Line 2 &middot; cleared, under watch</small></span><span class="mf-st mf-st--prog">Monitoring</span></li>
-              <li><span class="mf-ico"><svg class="i"><use href="#i-shield"/></svg></span><span><b>QC &middot; batch 19</b><small>Due before 18:00 dispatch</small></span><span class="mf-st">Scheduled</span></li>
-              <li><span class="mf-ico mf-ico--bad"><svg class="i"><use href="#i-alert"/></svg></span><span><b>Corrective action &middot; CA-07</b><small>Burrs on batch 16 &middot; root cause</small></span><span class="mf-st mf-st--bad">Overdue</span></li>
-              <li><span class="mf-ico mf-ico--on"><svg class="i"><use href="#i-shield"/></svg></span><span><b>QC &middot; batch 18</b><small>Passed &middot; Priya Das</small></span><span class="mf-st mf-st--ok">Passed</span></li>
-            </ul>
-          </div>
-          <div class="app mf-roles__p" role="tabpanel" id="rp4" aria-labelledby="rt4">
-            <p class="app__top app__top--slim"><span class="app__crumb">Overview <svg class="i"><use href="#i-chevr"/></svg> <b>This week</b></span><span class="tag">Sample data</span></p>
-            <div class="mf-mgr">
-              <p class="mf-mgr__r mf-mgr__r--h"><span>Team</span><span>Open</span><span>Done this week</span><span>Overdue</span></p>
-              <p class="mf-mgr__r"><span>Sales</span><span>14</span><span>38</span><span class="is-warn">3</span></p>
-              <p class="mf-mgr__r"><span>Operations</span><span>9</span><span>22</span><span>0</span></p>
-              <p class="mf-mgr__r"><span>Maintenance</span><span>4</span><span>11</span><span class="is-warn">1</span></p>
-              <p class="mf-mgr__r"><span>Quality</span><span>2</span><span>17</span><span>0</span></p>
-            </div>
-            <p class="mf-next mf-next--in"><span><b>Needs attention</b> 3 quotes past their due time in Sales</span><span class="mini-btn mini-btn--lime">Open list</span></p>
-          </div>
-        </div>
-      </div>
-      <p class="os-say os-say--center rv">One connected operation, <br><span class="dim">with views that make sense for each role.</span></p>
-    </section>
-
-    <!-- ============ 07 ANALYTICS — two sides of the business ============ -->
-    <section class="cos-sec" id="analytics" aria-labelledby="an-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Analytics &amp; insights</p>
-        <h2 class="cos-h2" id="an-h">See what is moving forward, <br><span class="dim">and what needs attention.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Bring customer engagement and operational activity into clearer view. Track conversations and campaigns alongside work progress, pending tasks, and operational trends using connected data.</p>
-          <div class="cos-cta mf-cta-sm">
-            <a class="btn btn--lime" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-            <a class="btn btn--line" href="https://app.prisim.co.in/">Start Free</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="mf-an rv" style="--d:.1s">
-        <div class="mf-an__g">
-          <p class="mf-an__k">Customer &amp; commercial</p>
-          <figure class="mf-card">
-            <figcaption class="mf-card__h"><b>Where enquiries came from</b><span>October &middot; 412 enquiries</span></figcaption>
-            <ul class="mf-hb">
-              <li class="is-top"><span>WhatsApp, direct</span><span class="mf-bar"><i style="--v:1"></i></span><b>186</b></li>
-              <li><span>Campaign replies</span><span class="mf-bar"><i style="--v:.6"></i></span><b>112</b></li>
-              <li><span>Website webview</span><span class="mf-bar"><i style="--v:.39"></i></span><b>72</b></li>
-              <li><span>Dealer referrals</span><span class="mf-bar"><i style="--v:.23"></i></span><b>42</b></li>
-            </ul>
-          </figure>
-          <figure class="mf-card">
-            <figcaption class="mf-card__h"><b>Webview forms: opened vs submitted</b><span>last 6 weeks</span></figcaption>
-            <div class="mf-cols" aria-hidden="true">
-              <p><i style="--v:.62"></i><i class="is-on" style="--v:.4"></i></p>
-              <p><i style="--v:.7"></i><i class="is-on" style="--v:.46"></i></p>
-              <p><i style="--v:.66"></i><i class="is-on" style="--v:.44"></i></p>
-              <p><i style="--v:.84"></i><i class="is-on" style="--v:.5"></i></p>
-              <p><i style="--v:.9"></i><i class="is-on" style="--v:.62"></i></p>
-              <p><i style="--v:1"></i><i class="is-on" style="--v:.7"></i></p>
-            </div>
-            <p class="mf-key"><span><i></i>Opened</span><span><i class="is-on"></i>Submitted</span></p>
-            <p class="mf-note-in"><b>What this tells you</b>Most customers who open the bulk-order form go on to submit it, so the form itself isn&rsquo;t the bottleneck.</p>
-          </figure>
-        </div>
-        <div class="mf-an__g">
-          <p class="mf-an__k">Operations</p>
-          <figure class="mf-card">
-            <figcaption class="mf-card__h"><b>Work orders by status</b><span>this week &middot; 46</span></figcaption>
-            <p class="mf-stack" aria-hidden="true"><i class="s1" style="--v:.54"></i><i class="s2" style="--v:.28"></i><i class="s3" style="--v:.11"></i><i class="s4" style="--v:.07"></i></p>
-            <ul class="mf-legend">
-              <li><i class="s1"></i>Completed<b>25</b></li>
-              <li><i class="s2"></i>In progress<b>13</b></li>
-              <li><i class="s3"></i>Scheduled<b>5</b></li>
-              <li><i class="s4"></i>Delayed<b>3</b></li>
-            </ul>
-          </figure>
-          <figure class="mf-card">
-            <figcaption class="mf-card__h"><b>Downtime by recorded reason</b><span>hours &middot; October</span></figcaption>
-            <ul class="mf-hb">
-              <li class="is-top"><span>Feeder jams</span><span class="mf-bar"><i style="--v:1"></i></span><b>6.5</b></li>
-              <li><span>Material wait</span><span class="mf-bar"><i style="--v:.62"></i></span><b>4.0</b></li>
-              <li><span>Changeovers</span><span class="mf-bar"><i style="--v:.46"></i></span><b>3.0</b></li>
-              <li><span>Power</span><span class="mf-bar"><i style="--v:.15"></i></span><b>1.0</b></li>
-            </ul>
-            <p class="mf-note-in"><b>What this tells you</b>Feeder jams on Line 2 cost the most time this month. A good place to schedule preventive maintenance.</p>
-          </figure>
-        </div>
-      </div>
-      <p class="mf-fine mf-fine--c rv">Sample data. Reports show only what your connected channels, forms and records capture; downtime here is what teams recorded. <a class="cos-link mf-inline" href="/pages/products/analytics-bi/page.html">Explore Analytics &amp; BI <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 08 KNOWLEDGE & AI — a quiet, useful answer ============ -->
-    <section class="cos-sec" id="knowledge" aria-labelledby="kn-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Knowledge &amp; AI assistance</p>
-        <h2 class="cos-h2" id="kn-h">Help teams find <br><span class="dim">the information they need.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Connect relevant business information so AI-assisted experiences can help answer common questions, support customer conversations, and make useful information easier to access.</p>
-        </div>
-      </div>
-
-      <div class="mf-kn rv" id="kn" style="--d:.1s">
-        <figure class="app mf-ask" aria-labelledby="knCap">
-          <figcaption class="sr-only" id="knCap">A new sales executive asks what details are needed for a bulk-order quotation. The assistant lists product and size, quantity and frequency, delivery location, GST number, and payment terms, citing the Sales SOP for bulk quotations, and offers to send the customer the requirements form.</figcaption>
-          <p class="mf-chat__h"><span class="mf-mark"><svg class="i"><use href="#i-spark"/></svg></span><span><b>Ask Chatberry</b><small>Answers from your connected knowledge</small></span></p>
-          <div class="mf-ask__log">
-            <p class="mf-b mf-b--q" data-at="1"><span class="av av--cyan">VK</span>What details do we need for a bulk-order quotation?</p>
-            <div class="mf-b mf-b--a" data-at="2">
-              <p>You&rsquo;ll need five things before pricing:</p>
-              <ol class="mf-ans">
-                <li>Product and size</li>
-                <li>Quantity, and whether it&rsquo;s a one-off or monthly</li>
-                <li>Delivery location</li>
-                <li>The customer&rsquo;s GST number</li>
-                <li>Preferred payment terms</li>
-              </ol>
-              <p class="mf-src"><svg class="i"><use href="#i-file"/></svg>From: Sales SOP &middot; Bulk quotations, v3</p>
-            </div>
-            <p class="mf-sugg" data-at="3"><span class="mf-btn mf-btn--sm"><svg class="i"><use href="#i-form"/></svg>Send the requirements form</span><span class="mf-chip">Open the SOP</span></p>
-          </div>
-        </figure>
-        <ul class="mf-uses">
-          <li><svg class="i"><use href="#i-check"/></svg>Answer common product and policy questions.</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Help customer-facing teams find relevant information.</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Support product and process enquiries.</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Summarise connected records, where supported.</li>
-          <li><svg class="i"><use href="#i-check"/></svg>Help identify the next step in a conversation or request.</li>
-        </ul>
-      </div>
-      <p class="mf-fine rv">Example answer. Responses depend on the knowledge and integrations you connect. <a class="cos-link mf-inline" href="/pages/products/knowledge-base/page.html">Explore Knowledge Base <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link mf-inline" href="/pages/products/ai-agents/page.html">Explore AI Agents <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 09 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Your questions, answered.</h2>
-          <p class="cos-body">Something else on your mind?</p>
-          <a class="cos-link os-link" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat on WhatsApp <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>How can Chatberry help manufacturing and distribution businesses?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry helps teams manage customer conversations, collect structured information through webviews and forms, coordinate workflows, support shop floor processes, and review activity through connected insights.</p></div></details>
-          <details class="os-qa"><summary>Can we manage customer enquiries through WhatsApp?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Teams can use WhatsApp conversations to respond to product enquiries, handle dealer and bulk-order requests, share updates, and coordinate follow-ups using the features and workflows configured for their business.</p></div></details>
-          <details class="os-qa"><summary>Can customers fill out forms from WhatsApp?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry webviews can provide a mobile-friendly experience for collecting details such as product requirements, dealer information, quotation requests, and other business inputs.</p></div></details>
-          <details class="os-qa"><summary>Can Chatberry support shop floor management?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry can be configured to coordinate operational workflows such as work orders, shift handovers, maintenance requests, quality checks, and task updates. The exact setup depends on the processes and data sources your business needs.</p></div></details>
-          <details class="os-qa"><summary>Can different departments manage their own work?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry supports team coordination features such as user management, departments, permissions, assignment, and routing, depending on the configuration.</p></div></details>
-          <details class="os-qa"><summary>Can AI help answer customer and employee questions?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>AI-assisted experiences can help with questions and requests using connected knowledge and configured workflows. Responses and actions depend on the information and integrations available to the system.</p></div></details>
-          <details class="os-qa"><summary>Can we track customer and operational performance?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>You can review supported campaign, conversation, webview, and operational information through available analytics and connected data. The metrics depend on the events and data sources configured.</p></div></details>
-          <details class="os-qa"><summary>Does Chatberry replace our manufacturing ERP or machine-control system?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Chatberry is a connected engagement, workflow, and coordination layer. Existing ERP, inventory, production, or machine systems can remain in place, with integrations considered where available and appropriate.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 10 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">Manufacturing &amp; Distribution</p>
-      <h2 class="cos-h2 rv" id="cta-h">From the first enquiry <br>to the work getting done.</h2>
-      <p class="cos-body rv">Bring customer conversations, digital forms, workflows, and internal coordination together with Chatberry. Start with the process that matters most, and build from there.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="https://app.prisim.co.in/">Start Free</a>
-      </div>
-      <p class="mf-final rv" aria-hidden="true"><span class="mf-final__i"><svg class="i"><use href="#i-truck"/></svg></span><b>Order #4471</b>Dispatched &middot; Kapoor Agencies updated on WhatsApp</p>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Industries <em>Manufacturing &amp; Distribution</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>Customers, dealers</span></span><span class="ln"><span>and factory, connected.</span></span></h1>
+      <p class="rv d2">Handle dealer and customer chats, collect orders through simple forms, coordinate the shop floor and keep every team aligned.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vkan"><div class="vkan__col"><b>Order</b><span>Dealer #112</span><span>Dealer #87</span></div><div class="vkan__col"><b>Approved</b><span>Dealer #64</span></div><div class="vkan__col"><b>Production</b><span>Batch 2201</span></div><div class="vkan__col"><b>Dispatched</b><span>Dealer #41</span></div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Manufacturing &amp; Distribution</em></span>
+    <p class="stmt__txt" id="stmtTxt">Orders arrive on WhatsApp, details get lost and the factory finds out late. Connect conversations to the work that follows.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      <div class="uses rv"><span>Dealer orders</span><span>Catalogues</span><span>Payment reminders</span><span>Work orders</span><span>Dispatch updates</span></div>
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">One inbox for dealers</h3><p>Enquiries from customers, dealers and distributors in one place.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Chats become orders</h3><p>Branded order and request forms opened from WhatsApp.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Enquiry to action</h3><p>Workflows send details to the right team automatically.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Shop floor in the loop</h3><p>Work orders, shift updates and quality checks connected.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Receive</span><p class="row__d">Orders and enquiries arrive from every channel.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Process</span><p class="row__d">Forms and workflows capture and route details.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Deliver</span><p class="row__d">Teams coordinate production and dispatch.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Can dealers order on WhatsApp?<i></i></summary><p>Yes. Share order forms and catalogues in the chat.</p></details><details><summary>Can the factory team use it?<i></i></summary><p>Yes. Work orders and updates can be managed in Chatberry.</p></details><details><summary>Can we send payment reminders?<i></i></summary><p>Yes. Automate reminders based on due dates.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/workflow-orchestration/page.html"><small>Products</small><b>Workflow Orchestration</b><p>Drag together triggers, conditions, AI and actions to automate processes exactly the way your business runs them.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/products/webviews/page.html"><small>Products</small><b>Webviews</b><p>Describe the page, form or booking flow you need. AI builds it, you make it yours, and it goes live from Chatberry.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/solutions/department-management/page.html"><small>Solutions</small><b>Department Management</b><p>Create departments around how your business works, assign the right people and tools, and manage access from one place.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Manufacturing &amp; Distribution working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

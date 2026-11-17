@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Team Collaboration Software for Teams | Chatberry</title>
-<meta name="description" content="Bring team chat, task management, time tracking, activity insights, and access controls together with Chatberry Team Collaboration.">
+<title>Team Collaboration – Keep work moving together | Chatberry</title>
+<meta name="description" content="Team chat, tasks, time tracking, activity insights and access control in one Chatberry workspace.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Team Collaboration Software for Teams | Chatberry">
-<meta property="og:description" content="Bring team chat, task management, time tracking, activity insights, and access controls together with Chatberry Team Collaboration.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Team Collaboration – Keep work moving together | Chatberry">
+<meta property="og:description" content="Team chat, tasks, time tracking, activity insights and access control in one Chatberry workspace.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Team Collaboration – Keep work moving together | Chatberry">
+<meta name="twitter:description" content="Team chat, tasks, time tracking, activity insights and access control in one Chatberry workspace.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,612 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos tc" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="M20.5 16.5l-5.5-5.5-8 8"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
-      <symbol id="i-board" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="5" height="15" rx="1.5"/><rect x="9.5" y="4.5" width="5" height="10" rx="1.5"/><rect x="15.5" y="4.5" width="5" height="12.5" rx="1.5"/></symbol>
-      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11.5l-2.2 4 2.2 4H5"/></symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-      <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6.5h16M7 12h10M10 17.5h4"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15M15.5 4.5 19 8l-3.5 3.5M20 16H5M8.5 12.5 5 16l3.5 3.5"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-hash" viewBox="0 0 24 24"><path d="M9.5 4 7.5 20M16.5 4l-2 16M4.5 9h16M3.5 15h16"/></symbol>
-      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.5l7 2.6v5.4c0 4.4-2.9 7.7-7 9-4.1-1.3-7-4.6-7-9V6.1Z"/><path d="M9 12l2.2 2.2L15.2 10"/></symbol>
-      <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11"/><circle cx="4.8" cy="6.5" r="1"/><circle cx="4.8" cy="12" r="1"/><circle cx="4.8" cy="17.5" r="1"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — a team, and the workspace it shares ============ -->
-    <section class="cos-hero" id="overview" aria-labelledby="tc-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="tc-head rv">
-        <p class="cos-eyebrow">Team Collaboration</p>
-        <h1 class="cos-h1" id="tc-h1">Bring your team together. <br><span class="dim">Keep work moving.</span></h1>
-        <p class="cos-hero__intro">Connect team conversations, tasks, time tracking, and activity insights in one workspace. Give managers a clearer view of what is happening across the team and help everyone stay accountable.</p>
-        <div class="cos-cta">
-          <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-        </div>
-      </div>
-
-      <div class="tc-hero rv" id="hero" style="--d:.15s">
-        <figure class="tc-photo tc-ph--hero"><img src="/public/assets/img/team-collaboration/team-at-shared-table.webp" alt="Three colleagues work together at a shared table, one pointing at a laptop while the others lean in." width="928" height="1152" decoding="async"></figure>
-
-        <figure class="app tc-ws" aria-labelledby="heroCap">
-          <figcaption class="sr-only" id="heroCap">Chatberry team workspace (design concept). In the Operations team chat, Sara asks who can take the Oakline return before the customer drops it off at 3 PM, and Leo replies that he will take it. Beside the chat, the task "Process Oakline return" now has Leo Martin as owner, due today at 3:00 PM. Below, the team's week shows 18 tasks completed, 7 in progress and 2 overdue.</figcaption>
-          <div class="app__top app__top--slim">
-            <span class="app__crumb"><svg class="i"><use href="#i-hash"/></svg><b>operations</b><svg class="i"><use href="#i-chevr"/></svg>Team chat</span>
-            <span class="tc-avs" aria-hidden="true"><span class="av av--cyan">SO</span><span class="av av--violet">LM</span><span class="av av--lime">RD</span><span class="av">+3</span></span>
-          </div>
-          <div class="tc-ws__body">
-            <div class="tc-ws__chat">
-              <div class="tc-m"><span class="av av--cyan">SO</span><div><p class="tc-m__h"><b>Sara Okoye</b><small>Support &middot; 11:02</small></p><p>Can someone take the Oakline return today? The customer drops it off at 3 PM.</p></div></div>
-              <div class="tc-m" data-at="1"><span class="av av--violet">LM</span><div><p class="tc-m__h"><b>Leo Martin</b><small>Operations &middot; 11:04</small></p><p>I&rsquo;ll take it. Added it to my tasks.</p></div></div>
-              <p class="tc-mini-compose"><span>Message #operations</span><svg class="i"><use href="#i-send"/></svg></p>
-            </div>
-            <div class="tc-ws__task">
-              <p class="ui-label"><svg class="i"><use href="#i-check"/></svg>Task</p>
-              <p class="tc-ws__t">Process Oakline return</p>
-              <dl class="tc-dl tc-dl--sm">
-                <div><dt>Owner</dt><dd><span class="tc-none" data-until="2">Unassigned</span><span class="tc-own" data-at="2"><span class="av av--violet">LM</span>Leo Martin</span></dd></div>
-                <div><dt>Due</dt><dd><svg class="i"><use href="#i-clock"/></svg>Today, 3:00 PM</dd></div>
-                <div><dt>Status</dt><dd><span class="tag">To do</span></dd></div>
-              </dl>
-            </div>
-          </div>
-          <div class="tc-ws__sum">
-            <p class="ui-label">Team this week</p>
-            <p class="tc-ws__n"><span><b>18</b>Completed</span><span><b>7</b>In progress</span><span class="tc-warn"><b>2</b>Overdue</span></p>
-            <span class="tc-spark" aria-hidden="true"><i style="--v:.45"></i><i style="--v:.6"></i><i style="--v:.5"></i><i style="--v:.85"></i><i style="--v:.7"></i></span>
-          </div>
-        </figure>
-      </div>
-      <p class="tc-fine rv">Product panels are a design concept with fictional data.</p>
-    </section>
-
-    <!-- ============ 02 INTERNAL CHAT — one conversation beside its task ============ -->
-    <section class="cos-sec tc-tint--soft" id="chat" aria-labelledby="ch-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Internal team chat</p>
-        <h2 class="cos-h2" id="ch-h">Keep team conversations <br><span class="dim">close to the work.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Give your team a shared place to discuss tasks, ask questions, share updates, and coordinate next steps. Keep internal communication organised so important details do not disappear across disconnected conversations.</p>
-        </div>
-      </div>
-
-      <figure class="app tc-ch rv" id="ch" style="--d:.1s" aria-labelledby="chCap">
-        <figcaption class="sr-only" id="chCap">Internal team conversation beside a related task (design concept). In the #operations space, Maya Lin from Sales tells Rohan Das that Harbor Foods confirmed a 40-unit order and asks whether Operations can deliver by Friday. Rohan says stock is fine but he needs the loading-bay window. Maya shares the order confirmation and will ask the customer. Rohan moves the related task, "Confirm delivery slot for Harbor Foods", from To do to In progress. The task panel shows Rohan as owner, Maya as requester, due Thursday 15 October, and a checklist with one of three steps done.</figcaption>
-        <div class="tc-ch__rail" aria-hidden="true">
-          <p class="ui-label">Spaces</p>
-          <span class="tc-sp"><svg class="i"><use href="#i-hash"/></svg>sales</span>
-          <span class="tc-sp is-on"><svg class="i"><use href="#i-hash"/></svg>operations</span>
-          <span class="tc-sp"><svg class="i"><use href="#i-hash"/></svg>support</span>
-          <p class="ui-label tc-gap">Direct</p>
-          <span class="tc-sp"><span class="av av--amber">NI</span>Neha Iyer</span>
-          <span class="tc-sp"><span class="av av--cyan">SO</span>Sara Okoye<em>2</em></span>
-        </div>
-        <div class="tc-ch__conv">
-          <p class="app__top app__top--slim"><span class="app__crumb"><svg class="i"><use href="#i-hash"/></svg><b>operations</b>&middot; 6 members</span><span class="tc-linked"><svg class="i"><use href="#i-check"/></svg>1 linked task</span></p>
-          <div class="tc-ch__log">
-            <p class="tc-day">Tuesday 13 October</p>
-            <div class="tc-m"><span class="av av--rose">ML</span><div><p class="tc-m__h"><b>Maya Lin</b><small>Sales &middot; 10:12</small></p><p><span class="tc-at">@Rohan</span> Harbor Foods confirmed the 40-unit order. Can Operations commit to delivery by Friday?</p></div></div>
-            <div class="tc-m" data-at="1"><span class="av av--lime">RD</span><div><p class="tc-m__h"><b>Rohan Das</b><small>Operations &middot; 10:15</small></p><p>Stock is fine. I need their loading-bay window before I can book transport.</p></div></div>
-            <div class="tc-m" data-at="2"><span class="av av--rose">ML</span><div><p class="tc-m__h"><b>Maya Lin</b><small>Sales &middot; 10:16</small></p><p>The address is on the order. I&rsquo;ll ask them for the window today.</p><p class="tc-file"><svg class="i"><use href="#i-file"/></svg>Harbor Foods &ndash; order confirmation.pdf</p></div></div>
-            <div class="tc-m" data-at="3"><span class="av av--lime">RD</span><div><p class="tc-m__h"><b>Rohan Das</b><small>Operations &middot; 10:18</small></p><p>Thanks. Due date is Thursday so we have a day spare.</p></div></div>
-            <p class="tc-sys" data-at="4"><svg class="i"><use href="#i-swap"/></svg>Rohan moved <b>Confirm delivery slot</b> from To do to In progress</p>
-          </div>
-          <p class="os-compose"><span>Message #operations</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg></span></p>
-        </div>
-        <div class="tc-ch__task">
-          <p class="ui-label"><svg class="i"><use href="#i-check"/></svg>Related task</p>
-          <p class="tc-ch__t">Confirm delivery slot for Harbor Foods</p>
-          <dl class="tc-dl">
-            <div><dt>Owner</dt><dd><span class="av av--lime">RD</span>Rohan Das</dd></div>
-            <div><dt>Requested by</dt><dd><span class="av av--rose">ML</span>Maya Lin &middot; Sales</dd></div>
-            <div><dt>Status</dt><dd><span class="tag" data-until="4">To do</span><span class="tag tag--lime" data-at="4">In progress</span></dd></div>
-            <div><dt>Due</dt><dd><svg class="i"><use href="#i-cal"/></svg>Thu 15 Oct</dd></div>
-          </dl>
-          <p class="ui-label tc-gap">Checklist &middot; 1 of 3</p>
-          <ul class="tc-cl">
-            <li class="is-done"><span class="tc-chk is-done"></span>Stock checked</li>
-            <li><span class="tc-chk"></span>Loading window from customer</li>
-            <li><span class="tc-chk"></span>Book transport</li>
-          </ul>
-          <p class="tc-ch__from"><svg class="i"><use href="#i-msg"/></svg>Discussed in #operations</p>
-        </div>
-      </figure>
-
-      <ul class="tc-pts tc-pts--4 rv" style="--d:.1s">
-        <li><b>Team messaging</b>Communicate with teammates in shared spaces or direct messages.</li>
-        <li><b>Updates and coordination</b>Share updates and agree next steps on the work in front of you.</li>
-        <li><b>Customer requests, internally</b>Discuss customer requests with the people who can resolve them.</li>
-        <li><b>Linked to the work</b>Keep conversations connected to related tasks, where supported.</li>
-      </ul>
-      <p class="tc-fine rv">Design concept with fictional data. Internal chat stays inside your team; customer conversations live in <a class="cos-link tc-inline" href="/pages/solutions/customer-support/page.html">Customer Support <svg class="i"><use href="#i-arrow"/></svg></a></p>
-
-      <div class="tc-strip rv">
-        <p>See how your team can work together in one place.</p>
-        <a class="cos-link" href="/pages/products/team-management/page.html">Explore Team Collaboration <svg class="i"><use href="#i-arrow"/></svg></a>
-      </div>
-    </section>
-
-    <!-- ============ 03 TASKS — a board with one task opened ============ -->
-    <section class="cos-sec" id="tasks" aria-labelledby="kb-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Task management</p>
-        <h2 class="cos-h2" id="kb-h">Know who owns what <br><span class="dim">and what comes next.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Assign responsibilities, track progress, and keep important work moving. Give each task a clear owner and help managers identify delays before they become bigger problems.</p>
-        </div>
-      </div>
-
-      <figure class="app tc-kb rv" id="kb" style="--d:.1s" aria-labelledby="kbCap">
-        <figcaption class="sr-only" id="kbCap">Task board showing ownership, due dates and work status (design concept). Three columns: To do with four tasks, In progress, and Completed. "Stock count: Warehouse B" moves from In progress to Completed. The selected task, "Confirm delivery slot for Harbor Foods", is open on the right: owner Rohan Das, due Thursday 15 October, high priority, next action "Book transport for the 7 to 9 AM window", and an activity history from creation in #operations to the customer's loading window being added.</figcaption>
-        <div class="app__top">
-          <span class="app__crumb"><svg class="i"><use href="#i-board"/></svg><b>Tasks</b><svg class="i"><use href="#i-chevr"/></svg>Operations board</span>
-          <span class="tc-views" aria-hidden="true"><span class="is-on"><svg class="i"><use href="#i-board"/></svg>Board</span><span><svg class="i"><use href="#i-list"/></svg>List</span><span><svg class="i"><use href="#i-cal"/></svg>Calendar</span></span>
-          <span class="tc-tools"><span class="chip"><svg class="i"><use href="#i-filter"/></svg>All owners</span><span class="chip">Due this week</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-plus"/></svg>New task</span></span>
-        </div>
-        <div class="tc-kb__body">
-          <div class="tc-scroll">
-            <div class="tc-kb__cols">
-              <div class="tc-col">
-                <p class="tc-col__h"><i class="tc-st"></i><b>To do</b><span>4</span></p>
-                <article class="tc-card"><p class="tc-card__t">Quote follow-up: Slate &amp; Co.</p><p class="tc-card__m"><span class="tc-pri tc-pri--md">Medium</span><span class="tc-cmt"><svg class="i"><use href="#i-msg"/></svg>2</span></p><p class="tc-card__f"><span class="av av--rose">ML</span><span class="tc-due">Fri 16 Oct</span></p></article>
-                <article class="tc-card"><p class="tc-card__t">Return label for Oakline</p><p class="tc-card__f"><span class="av av--cyan">SO</span><span class="tc-due tc-due--today">Today</span></p></article>
-                <article class="tc-card"><p class="tc-card__t">Order packaging for Q4</p><p class="tc-card__s">Supplier list attached</p><p class="tc-card__f"><span class="av av--violet">LM</span><span class="tc-due">Mon 19 Oct</span></p></article>
-                <article class="tc-card tc-card--open"><p class="tc-card__t">Update winter price list</p><p class="tc-card__f"><span class="tc-noown">No owner yet</span><span class="tc-due">Wed 21 Oct</span></p></article>
-              </div>
-              <div class="tc-col">
-                <p class="tc-col__h"><i class="tc-st tc-st--2"></i><b>In progress</b><span data-until="1">3</span><span data-at="1">2</span></p>
-                <article class="tc-card is-sel"><p class="tc-card__t">Confirm delivery slot for Harbor Foods</p><p class="tc-card__m"><span class="tc-pri tc-pri--hi">High</span><span class="tc-sub">2/3</span></p><span class="proc__bar"><i style="--v:.66"></i></span><p class="tc-card__f"><span class="av av--lime">RD</span><span class="tc-due">Thu 15 Oct</span></p></article>
-                <article class="tc-card" data-until="1"><p class="tc-card__t">Stock count: Warehouse B</p><span class="proc__bar"><i style="--v:.9"></i></span><p class="tc-card__f"><span class="av av--violet">LM</span><span class="tc-due">Fri 16 Oct</span></p></article>
-                <article class="tc-card"><p class="tc-card__t">Vendor invoice check</p><p class="tc-card__s">Waiting on two invoices</p><p class="tc-card__f"><span class="av av--amber">NI</span><span class="tc-due tc-due--late">Overdue 1 day</span></p></article>
-              </div>
-              <div class="tc-col tc-col--done">
-                <p class="tc-col__h"><i class="tc-st tc-st--3"></i><b>Completed</b><span data-until="1">2</span><span data-at="1">3</span></p>
-                <article class="tc-card tc-card--moved" data-at="1"><p class="tc-card__t">Stock count: Warehouse B</p><p class="tc-card__f"><span class="av av--violet">LM</span><span class="tc-donel"><svg class="i"><use href="#i-check"/></svg>Completed today</span></p></article>
-                <article class="tc-card tc-card--done"><p class="tc-card__t">Supplier onboarding call</p><p class="tc-card__f"><span class="av av--amber">NI</span><span class="tc-donel"><svg class="i"><use href="#i-check"/></svg>Tue 13 Oct</span></p></article>
-                <article class="tc-card tc-card--done"><p class="tc-card__t">Delivery: Kestrel order</p><p class="tc-card__f"><span class="av av--lime">RD</span><span class="tc-donel"><svg class="i"><use href="#i-check"/></svg>Mon 12 Oct</span></p></article>
-              </div>
-            </div>
-          </div>
-          <aside class="tc-kb__open">
-            <p class="ui-label">Operations &middot; Task</p>
-            <p class="tc-kb__t">Confirm delivery slot for Harbor Foods</p>
-            <dl class="tc-dl">
-              <div><dt>Owner</dt><dd><span class="av av--lime">RD</span>Rohan Das</dd></div>
-              <div><dt>Due</dt><dd><svg class="i"><use href="#i-cal"/></svg>Thu 15 Oct</dd></div>
-              <div><dt>Priority</dt><dd><span class="tc-pri tc-pri--hi">High</span></dd></div>
-            </dl>
-            <div class="tc-next">
-              <p class="tc-next__k"><svg class="i"><use href="#i-arrow"/></svg>Next action</p>
-              <p class="tc-next__t">Book transport for the 7&ndash;9 AM window</p>
-            </div>
-            <p class="ui-label tc-gap">Activity</p>
-            <ol class="tc-hist">
-              <li><b>Maya created the task</b><small>From #operations &middot; Tue 10:12</small></li>
-              <li><b>Rohan moved it to In progress</b><small>Tue 10:18</small></li>
-              <li><b>Rohan checked &ldquo;Stock checked&rdquo;</b><small>Tue 14:40</small></li>
-              <li class="is-new"><b>Maya added the loading window: 7&ndash;9 AM</b><small>Wed 09:12</small></li>
-            </ol>
-            <p class="tc-kb__a"><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-check"/></svg>Mark complete</span><span class="mini-btn mini-btn--ghost">Comment</span></p>
-          </aside>
-        </div>
-      </figure>
-      <p class="tc-fine rv">Design concept with fictional data. <span class="tc-swipe">Swipe the board to see every column.</span></p>
-
-      <ul class="tc-pts tc-pts--5 rv" style="--d:.1s">
-        <li><b>Clear assignment</b>Assign tasks to team members.</li>
-        <li><b>Status at a glance</b>Track To Do, In Progress, and Completed work.</li>
-        <li><b>Due dates</b>Set due dates and follow-up reminders, where supported.</li>
-        <li><b>What needs attention</b>Review overdue tasks and upcoming priorities.</li>
-        <li><b>Progress across teams</b>See progress across individuals and departments.</li>
-      </ul>
-      <p class="tc-fine rv">Handling structured customer requests with status and resolution steps? <a class="cos-link tc-inline" href="/pages/solutions/ticket-management/page.html">See Ticket Management <svg class="i"><use href="#i-arrow"/></svg></a></p>
-    </section>
-
-    <!-- ============ 04 TIME — a day of recorded time ============ -->
-    <section class="cos-sec tc-tint--cool" id="time" aria-labelledby="tt-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Time tracking</p>
-        <h2 class="cos-h2" id="tt-h">Understand where <br><span class="dim">your team&rsquo;s time goes.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">See how much time is recorded against work and tasks. Give managers a clearer picture of working hours, time allocation, and how recorded work is spread through the day.</p>
-        </div>
-      </div>
-
-      <figure class="app tc-tt rv" id="tt" style="--d:.1s" aria-labelledby="ttCap">
-        <figcaption class="sr-only" id="ttCap">Team timeline showing recorded work time and task allocation for Tuesday 13 October (design concept, illustrative data). Rows show four team members between 9:00 and 18:00. Green segments are recorded time entries against tasks; grey segments are gaps with no recorded entry. A side panel shows this week's tracked time by task and one task that took longer than its estimate.</figcaption>
-        <div class="app__top">
-          <span class="app__crumb"><svg class="i"><use href="#i-clock"/></svg><b>Time</b><svg class="i"><use href="#i-chevr"/></svg>Recorded time</span>
-          <span class="tc-views" aria-hidden="true"><span class="is-on">Day</span><span>Week</span></span>
-          <span class="tc-tools"><span class="chip"><svg class="i"><use href="#i-cal"/></svg>Tue 13 Oct</span><span class="chip"><svg class="i"><use href="#i-users"/></svg>All teams</span></span>
-        </div>
-        <div class="tc-tt__body">
-          <div class="tc-tt__main">
-            <p class="tc-legend"><span><i class="tc-sw tc-sw--rec"></i>Recorded time (time entries)</span><span><i class="tc-sw tc-sw--gap"></i>Gap / unclassified</span></p>
-            <div class="tc-scroll">
-              <div class="tc-tl">
-                <div class="tc-tl__axis" aria-hidden="true"><span></span><span class="tc-tl__hours"><i>9:00</i><i>10:00</i><i>11:00</i><i>12:00</i><i>13:00</i><i>14:00</i><i>15:00</i><i>16:00</i><i>17:00</i><i>18:00</i></span><span>Recorded</span></div>
-                <div class="tc-tl__row">
-                  <p class="tc-tl__who"><span class="av av--lime">RD</span><span><b>Rohan Das</b><small>Operations</small></span></p>
-                  <p class="tc-tl__track"><span class="sr-only">Recorded 9:00&ndash;10:30 Harbor Foods delivery; gap 10:30&ndash;11:00; recorded 11:00&ndash;13:00 Stock count; gap 13:00&ndash;14:00; recorded 14:00&ndash;16:45 Transport booking.</span>
-                    <i class="tc-seg" style="--s:0;--e:1.5"><em>Harbor Foods delivery</em></i><i class="tc-seg tc-seg--gap" style="--s:1.5;--e:2"></i><i class="tc-seg" style="--s:2;--e:4"><em>Stock count</em></i><i class="tc-seg tc-seg--gap" style="--s:4;--e:5"></i><i class="tc-seg" style="--s:5;--e:7.75"><em>Transport booking</em></i></p>
-                  <p class="tc-tl__tot"><b>6h 15m</b></p>
-                </div>
-                <div class="tc-tl__row">
-                  <p class="tc-tl__who"><span class="av av--rose">ML</span><span><b>Maya Lin</b><small>Sales</small></span></p>
-                  <p class="tc-tl__track"><span class="sr-only">Recorded 9:30&ndash;12:00 Client calls; gap 12:00&ndash;13:00; recorded 13:00&ndash;15:15 Quotes and proposals; gap 15:15&ndash;16:00; recorded 16:00&ndash;17:00 Pipeline review.</span>
-                    <i class="tc-seg" style="--s:.5;--e:3"><em>Client calls</em></i><i class="tc-seg tc-seg--gap" style="--s:3;--e:4"></i><i class="tc-seg" style="--s:4;--e:6.25"><em>Quotes &amp; proposals</em></i><i class="tc-seg tc-seg--gap" style="--s:6.25;--e:7"></i><i class="tc-seg" style="--s:7;--e:8"><em>Pipeline review</em></i></p>
-                  <p class="tc-tl__tot"><b>5h 45m</b></p>
-                </div>
-                <div class="tc-tl__row">
-                  <p class="tc-tl__who"><span class="av av--cyan">SO</span><span><b>Sara Okoye</b><small>Support</small></span></p>
-                  <p class="tc-tl__track"><span class="sr-only">Recorded 9:00&ndash;11:30 Ticket queue; gap 11:30&ndash;12:00; recorded 12:00&ndash;14:00 Oakline return; gap 14:00&ndash;15:00; recorded 15:00&ndash;17:30 Ticket queue.</span>
-                    <i class="tc-seg" style="--s:0;--e:2.5"><em>Ticket queue</em></i><i class="tc-seg tc-seg--gap" style="--s:2.5;--e:3"></i><i class="tc-seg" style="--s:3;--e:5"><em>Oakline return</em></i><i class="tc-seg tc-seg--gap" style="--s:5;--e:6"></i><i class="tc-seg" style="--s:6;--e:8.5"><em>Ticket queue</em></i></p>
-                  <p class="tc-tl__tot"><b>7h 00m</b></p>
-                </div>
-                <div class="tc-tl__row">
-                  <p class="tc-tl__who"><span class="av av--violet">LM</span><span><b>Leo Martin</b><small>Operations</small></span></p>
-                  <p class="tc-tl__track"><span class="sr-only">Recorded 10:00&ndash;12:30 Vendor follow-ups; gap 12:30&ndash;13:30; recorded 13:30&ndash;15:00 Stock count; gap 15:00&ndash;16:00 unclassified; recorded 16:00&ndash;18:00 Dispatch prep.</span>
-                    <i class="tc-seg" style="--s:1;--e:3.5"><em>Vendor follow-ups</em></i><i class="tc-seg tc-seg--gap" style="--s:3.5;--e:4.5"></i><i class="tc-seg" style="--s:4.5;--e:6"><em>Stock count</em></i><i class="tc-seg tc-seg--gap" style="--s:6;--e:7"></i><i class="tc-seg" style="--s:7;--e:9"><em>Dispatch prep</em></i></p>
-                  <p class="tc-tl__tot"><b>6h 00m</b></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <aside class="tc-tt__side">
-            <p class="ui-label">This week &middot; tracked time by task</p>
-            <ul class="tc-bars">
-              <li><span>Ticket queue</span><i><b style="--v:1"></b></i><em>22h</em></li>
-              <li><span>Delivery &amp; transport</span><i><b style="--v:.64"></b></i><em>14h</em></li>
-              <li><span>Client calls</span><i><b style="--v:.5"></b></i><em>11h</em></li>
-              <li><span>Stock count</span><i><b style="--v:.41"></b></i><em>9h</em></li>
-              <li class="tc-bars__gap"><span>Unclassified</span><i><b style="--v:.27"></b></i><em>6h</em></li>
-            </ul>
-            <div class="tc-long">
-              <p class="tc-long__k"><svg class="i"><use href="#i-flag"/></svg>Longer than estimated</p>
-              <p><b>Transport booking</b> &middot; 2h 45m recorded against a 1h 30m estimate</p>
-            </div>
-          </aside>
-        </div>
-      </figure>
-      <p class="tc-fine rv"><span class="tc-ill">Illustrative data</span> Time shown comes from recorded time entries against tasks. It is not screen, keystroke or background activity monitoring, and a time entry does not mean someone was &ldquo;active&rdquo;.</p>
-
-      <ul class="tc-pts tc-pts--5 rv" style="--d:.1s">
-        <li><b>By team member</b>View recorded time by team member.</li>
-        <li><b>Daily and weekly</b>Review daily and weekly time summaries.</li>
-        <li><b>Against tasks</b>Understand time recorded against tasks and activities.</li>
-        <li><b>Across teams</b>Compare time allocation across teams.</li>
-        <li><b>Over estimate</b>Identify tasks that take longer than expected, when the required data is available.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 05 ACTIVITY — what the team is working on ============ -->
-    <section class="cos-sec tc-tint--soft" id="activity" aria-labelledby="ac-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Team activity analytics</p>
-        <h2 class="cos-h2" id="ac-h">See what your team <br><span class="dim">is working on.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Move beyond task assignments and understand how work progresses across your team. Review activity, completed work, pending tasks, and individual contributions from one place.</p>
-        </div>
-      </div>
-
-      <div class="tc-ac rv" id="ac" style="--d:.1s">
-        <figure class="app tc-ac__chart" aria-labelledby="acChart">
-          <figcaption class="sr-only" id="acChart">Task completion timeline for the Operations team over six weeks (illustrative data). Tasks completed per week: week 36, 14; week 37, 18; week 38, 16; week 39, 21; week 40, 19; week 41, 24. Tasks opened per week: 17, 19, 20, 18, 22, 21.</figcaption>
-          <p class="tc-pnl__h"><span><b>Task completion</b><small>Operations &middot; last 6 weeks</small></span><span class="tc-legend tc-legend--sm"><span><i class="tc-sw tc-sw--rec"></i>Completed</span><span><i class="tc-sw tc-sw--line"></i>Opened</span></span></p>
-          <svg class="tc-cht" viewBox="0 0 620 250" aria-hidden="true">
-            <g class="tc-cht__grid"><path d="M40 20H610M40 75H610M40 130H610M40 185H610"/></g>
-            <g class="tc-cht__y"><text x="30" y="24">30</text><text x="30" y="79">20</text><text x="30" y="134">10</text><text x="30" y="189">0</text></g>
-            <g class="tc-cht__bars">
-              <rect x="70" y="108" width="46" height="77" rx="5"/>
-              <rect x="164" y="86" width="46" height="99" rx="5"/>
-              <rect x="258" y="97" width="46" height="88" rx="5"/>
-              <rect x="352" y="69.5" width="46" height="115.5" rx="5"/>
-              <rect x="446" y="80.5" width="46" height="104.5" rx="5"/>
-              <rect class="is-now" x="540" y="53" width="46" height="132" rx="5"/>
-            </g>
-            <path class="tc-cht__line" pathLength="1" d="M93 91.5L187 80.5L281 75L375 86L469 64L563 69.5"/>
-            <g class="tc-cht__dots"><circle cx="93" cy="91.5" r="4"/><circle cx="187" cy="80.5" r="4"/><circle cx="281" cy="75" r="4"/><circle cx="375" cy="86" r="4"/><circle cx="469" cy="64" r="4"/><circle cx="563" cy="69.5" r="4"/></g>
-            <g class="tc-cht__x"><text x="93" y="212">Wk 36</text><text x="187" y="212">Wk 37</text><text x="281" y="212">Wk 38</text><text x="375" y="212">Wk 39</text><text x="469" y="212">Wk 40</text><text x="563" y="212">Wk 41</text></g>
-            <text class="tc-cht__v" x="563" y="45">24</text>
-          </svg>
-          <p class="tc-pnl__f">Completed = tasks moved to Completed that week. Opened = tasks created that week.</p>
-        </figure>
-
-        <figure class="app tc-ac__load" aria-labelledby="acLoad">
-          <figcaption class="sr-only" id="acLoad">Workload comparison this week (illustrative data). Rohan Das: 9 completed, 3 in progress, 1 overdue. Leo Martin: 7 completed, 4 in progress, 0 overdue. Sara Okoye: 11 completed, 2 in progress, 0 overdue. Neha Iyer: 4 completed, 3 in progress, 2 overdue.</figcaption>
-          <p class="tc-pnl__h"><span><b>Workload</b><small>This week</small></span></p>
-          <p class="tc-legend tc-legend--sm"><span><i class="tc-sw tc-sw--rec"></i>Completed</span><span><i class="tc-sw tc-sw--prog"></i>In progress</span><span><i class="tc-sw tc-sw--late"></i>Overdue</span></p>
-          <ul class="tc-wl">
-            <li class="is-sel"><span class="tc-wl__who"><span class="av av--lime">RD</span>Rohan</span><span class="tc-wl__bar"><i style="--n:9"></i><i class="p" style="--n:3"></i><i class="o" style="--n:1"></i></span><em>9 &middot; 3 &middot; <b>1</b></em></li>
-            <li><span class="tc-wl__who"><span class="av av--violet">LM</span>Leo</span><span class="tc-wl__bar"><i style="--n:7"></i><i class="p" style="--n:4"></i></span><em>7 &middot; 4 &middot; 0</em></li>
-            <li><span class="tc-wl__who"><span class="av av--cyan">SO</span>Sara</span><span class="tc-wl__bar"><i style="--n:11"></i><i class="p" style="--n:2"></i></span><em>11 &middot; 2 &middot; 0</em></li>
-            <li><span class="tc-wl__who"><span class="av av--amber">NI</span>Neha</span><span class="tc-wl__bar"><i style="--n:4"></i><i class="p" style="--n:3"></i><i class="o" style="--n:2"></i></span><em>4 &middot; 3 &middot; <b>2</b></em></li>
-          </ul>
-        </figure>
-
-        <figure class="app tc-ac__mgr" aria-labelledby="acMgr">
-          <figcaption class="sr-only" id="acMgr">Manager view: Neha Iyer, Operations manager, has selected Rohan Das. This week Rohan completed 9 tasks, has 3 in progress and 1 needing attention, with 31 hours 20 minutes of recorded time. His next due task is Confirm delivery slot for Harbor Foods on Thursday.</figcaption>
-          <div class="tc-mgr">
-            <span class="av av--amber av--lg">NI</span>
-            <p><small>Viewing as</small><b>Neha Iyer</b><small>Operations manager</small></p>
-          </div>
-          <div class="tc-sel">
-            <p class="tc-sel__who"><span class="av av--lime">RD</span><span><b>Rohan Das</b><small>Operations &middot; this week</small></span></p>
-            <dl class="tc-sel__n">
-              <div><dt>Completed</dt><dd>9</dd></div>
-              <div><dt>In progress</dt><dd>3</dd></div>
-              <div class="tc-warn"><dt>Needs attention</dt><dd>1</dd></div>
-              <div><dt>Recorded time</dt><dd>31h 20m</dd></div>
-            </dl>
-            <p class="tc-sel__next"><svg class="i"><use href="#i-cal"/></svg>Next due: <b>Confirm delivery slot</b> &middot; Thu</p>
-          </div>
-        </figure>
-
-        <figure class="app tc-ac__log" aria-labelledby="acLog">
-          <figcaption class="sr-only" id="acLog">Recent activity log: Rohan completed Delivery: Kestrel order; Sara moved Oakline return to In progress; Maya's quote review is one day overdue; Leo commented on Stock count; Neha reassigned Vendor follow-ups to Leo.</figcaption>
-          <p class="tc-pnl__h"><span><b>Recent activity</b><small>Operations &amp; Sales</small></span></p>
-          <ol class="tc-log">
-            <li><span class="tc-log__i tc-log__i--done"><svg class="i"><use href="#i-check"/></svg></span><p><b>Rohan</b> completed <b>Delivery: Kestrel order</b><small>10:42</small></p></li>
-            <li><span class="tc-log__i"><svg class="i"><use href="#i-swap"/></svg></span><p><b>Sara</b> moved <b>Oakline return</b> to In progress<small>10:15</small></p></li>
-            <li class="tc-log--late"><span class="tc-log__i tc-log__i--late"><svg class="i"><use href="#i-flag"/></svg></span><p><b>Quote review: Slate &amp; Co.</b> is 1 day overdue<small>Owner Maya &middot; Delayed</small></p></li>
-            <li><span class="tc-log__i"><svg class="i"><use href="#i-msg"/></svg></span><p><b>Leo</b> commented on <b>Stock count</b><small>09:58</small></p></li>
-            <li><span class="tc-log__i"><svg class="i"><use href="#i-user"/></svg></span><p><b>Neha</b> reassigned <b>Vendor follow-ups</b> to Leo<small>Yesterday</small></p></li>
-          </ol>
-        </figure>
-      </div>
-      <p class="tc-fine rv"><span class="tc-ill">Illustrative data</span> Summaries are built from task updates and recorded time, not from whether someone appears online. <a class="cos-link tc-inline" href="/pages/products/analytics-bi/page.html">Go wider with Analytics <svg class="i"><use href="#i-arrow"/></svg></a></p>
-
-      <ul class="tc-pts tc-pts--3 rv" style="--d:.1s">
-        <li><b>Completed and pending</b>Track completed and pending work, and review individual and team activity summaries.</li>
-        <li><b>History and workload</b>See recent task updates and completion history, and understand workload distribution.</li>
-        <li><b>Delays and trends</b>Identify delayed work and bottlenecks, and review activity trends over time.</li>
-      </ul>
-
-      <div class="tc-strip rv">
-        <p>Get a clearer view of your team&rsquo;s work.</p>
-        <a class="btn btn--lime" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-      </div>
-    </section>
-
-    <!-- ============ 06 ACCESS — roles and permissions ============ -->
-    <section class="cos-sec" id="access" aria-labelledby="pm-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Access &amp; permissions</p>
-        <h2 class="cos-h2" id="pm-h">Give every team member <br><span class="dim">the right access.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Keep collaboration organised while maintaining control over who can access team information and manage work. Set permissions around each person&rsquo;s role and responsibilities.</p>
-        </div>
-      </div>
-
-      <figure class="app tc-pm rv" style="--d:.1s" aria-labelledby="pmCap">
-        <figcaption class="sr-only" id="pmCap">Team access settings showing role-based permissions (design concept). A table lists access areas against three example roles, Owner, Manager and Team member, with a check for allowed and a dash for not allowed.</figcaption>
-        <div class="app__top">
-          <span class="app__crumb"><svg class="i"><use href="#i-shield"/></svg><b>Settings</b><svg class="i"><use href="#i-chevr"/></svg>Roles &amp; permissions</span>
-          <span class="tc-tools"><span class="chip"><svg class="i"><use href="#i-users"/></svg>Operations</span></span>
-        </div>
-        <div class="tc-pm__body">
-          <aside class="tc-pm__side" aria-hidden="true">
-            <p class="ui-label">People</p>
-            <p class="tc-role"><span class="tc-avs"><span class="av av--ink">AS</span></span><span><b>Owner</b><small>1 person</small></span></p>
-            <p class="tc-role"><span class="tc-avs"><span class="av av--amber">NI</span><span class="av av--rose">ML</span></span><span><b>Manager</b><small>2 people</small></span></p>
-            <p class="tc-role"><span class="tc-avs"><span class="av av--lime">RD</span><span class="av av--violet">LM</span><span class="av av--cyan">SO</span><span class="av">+5</span></span><span><b>Team member</b><small>8 people</small></span></p>
-          </aside>
-          <div class="tc-scroll tc-pm__wrap">
-            <table class="tc-tbl">
-              <caption class="sr-only">Example permissions by role</caption>
-              <thead><tr><th scope="col">Access area</th><th scope="col">Owner</th><th scope="col">Manager</th><th scope="col">Team member</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Team chat and spaces</th><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td></tr>
-                <tr><th scope="row">View tasks</th><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-part">Assigned &amp; shared</span></td></tr>
-                <tr><th scope="row">Create and assign tasks</th><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-n" aria-hidden="true"></span><span class="sr-only">Not allowed</span></td></tr>
-                <tr><th scope="row">Record own time</th><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td></tr>
-                <tr><th scope="row">Team time and activity summaries</th><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-part">Own team</span></td><td><span class="tc-n" aria-hidden="true"></span><span class="sr-only">Not allowed</span></td></tr>
-                <tr><th scope="row">Manage roles and permissions</th><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-n" aria-hidden="true"></span><span class="sr-only">Not allowed</span></td><td><span class="tc-n" aria-hidden="true"></span><span class="sr-only">Not allowed</span></td></tr>
-                <tr><th scope="row">Departments and workspace settings</th><td><span class="tc-y"><svg class="i"><use href="#i-check"/></svg><span class="sr-only">Allowed</span></span></td><td><span class="tc-n" aria-hidden="true"></span><span class="sr-only">Not allowed</span></td><td><span class="tc-n" aria-hidden="true"></span><span class="sr-only">Not allowed</span></td></tr>
-              </tbody>
-            </table>
-            <p class="tc-pm__key" aria-hidden="true"><span><span class="tc-y"><svg class="i"><use href="#i-check"/></svg></span>Allowed</span><span><span class="tc-n"></span>Not allowed</span><span><span class="tc-part">Text</span>Limited scope</span></p>
-          </div>
-        </div>
-      </figure>
-      <p class="tc-fine rv">Shown roles are examples; available permissions depend on your plan and setup. <a class="cos-link tc-inline" href="/pages/solutions/department-management/page.html">Organise teams with Department Management <svg class="i"><use href="#i-arrow"/></svg></a></p>
-
-      <ul class="tc-pts tc-pts--5 rv" style="--d:.1s">
-        <li><b>Roles</b>Manage team roles and permissions.</li>
-        <li><b>Departments</b>Organise access by department, where supported.</li>
-        <li><b>Relevant areas</b>Control access to relevant information and work areas.</li>
-        <li><b>Manager visibility</b>Give managers visibility into their teams.</li>
-        <li><b>Owner controls</b>Maintain appropriate owner-level controls.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 07 DEPARTMENTS — one task, three teams ============ -->
-    <section class="cos-sec tc-tint--green" id="departments" aria-labelledby="dp-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Team &amp; department coordination</p>
-        <h2 class="cos-h2" id="dp-h">Connect teams <br><span class="dim">without losing ownership.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Help departments work together without losing track of responsibilities. Make handoffs clearer, keep updates accessible, and ensure everyone knows what needs to happen next.</p>
-          <p class="cos-body">For example, a sales team can hand a confirmed request to operations, while a support team can coordinate internally to resolve an issue.</p>
-        </div>
-      </div>
-
-      <div class="tc-dp" id="dp">
-        <div class="tc-dp__vis rv" style="--d:.1s">
-          <figure class="tc-trip">
-            <img src="/public/assets/img/team-collaboration/handoff-sales.webp" alt="A salesperson smiles at her desk, taking notes after a client call." width="458" height="571" loading="lazy" decoding="async">
-            <img src="/public/assets/img/team-collaboration/handoff-ops.webp" alt="An operations lead checks stock on a tablet beside warehouse shelving." width="458" height="571" loading="lazy" decoding="async">
-            <img src="/public/assets/img/team-collaboration/handoff-support.webp" alt="A support teammate with a headset works at a quiet workstation." width="458" height="569" loading="lazy" decoding="async">
-          </figure>
-          <ol class="tc-hand" aria-label="Handoff of one shared task">
-            <li data-lit="1"><small>Sales</small><b>Maya Lin</b><span>Confirms the order, hands it to Operations</span></li>
-            <li data-lit="2"><small>Operations</small><b>Rohan Das</b><span>Books delivery, flags Support</span></li>
-            <li data-lit="3"><small>Support</small><b>Sara Okoye</b><span>Updates the customer on timing</span></li>
-          </ol>
-        </div>
-
-        <figure class="app tc-dp__task rv" style="--d:.18s" aria-labelledby="dpCap">
-          <figcaption class="sr-only" id="dpCap">Shared task panel (design concept). "Harbor Foods: 40-unit order" is in progress with Operations. The handoff history shows Maya Lin in Sales handing it to Rohan Das in Operations on Tuesday, Rohan booking transport and handing a follow-up to Sara Okoye in Support on Wednesday, and Sara's next action to confirm the delivery time with the customer.</figcaption>
-          <p class="tc-pnl__h"><span><b>Harbor Foods: 40-unit order</b><small>Shared across Sales, Operations, Support</small></span><span class="tag tag--lime">In progress</span></p>
-          <dl class="tc-dl">
-            <div><dt>Current owner</dt><dd><span class="av av--lime">RD</span>Rohan Das &middot; Operations</dd></div>
-            <div><dt>Next action</dt><dd>Delivery Thu, 7&ndash;9 AM</dd></div>
-          </dl>
-          <p class="ui-label tc-gap">Handoff history</p>
-          <ol class="tc-hist tc-hist--hand">
-            <li data-lit="1"><b>Sales &rarr; Operations</b><small>Maya handed over the confirmed order &middot; Tue 10:12</small></li>
-            <li data-lit="2"><b>Operations</b><small>Rohan booked transport for Thursday &middot; Wed 11:30</small></li>
-            <li data-lit="3"><b>Operations &rarr; Support</b><small>Sara to confirm timing with the customer &middot; Wed 11:32</small></li>
-          </ol>
-        </figure>
-      </div>
-
-      <ul class="tc-pts tc-pts--4 rv" style="--d:.1s">
-        <li><b>Across departments</b>Coordinate work across departments.</li>
-        <li><b>Clear handoffs</b>Make responsibilities clear during handoffs.</li>
-        <li><b>Visible status</b>Keep task status and updates visible.</li>
-        <li><b>Fewer follow-ups</b>Reduce unnecessary follow-ups between teams.</li>
-      </ul>
-      <p class="tc-fine rv">Design concept with fictional data. <a class="cos-link tc-inline" href="/pages/solutions/workflow-development/page.html">Automate supported handoffs with Workflow Development <svg class="i"><use href="#i-arrow"/></svg></a> <a class="cos-link tc-inline" href="/pages/solutions/ticket-management/page.html">Track customer requests in Ticket Management <svg class="i"><use href="#i-arrow"/></svg></a></p>
-
-      <div class="tc-strip rv">
-        <p>Give your team the structure to work better.</p>
-        <a class="btn btn--line" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-      </div>
-    </section>
-
-    <!-- ============ 08 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">Team Collaboration FAQs</h2>
-          <p class="cos-body">Working with customers rather than with each other?</p>
-          <a class="cos-link os-link" href="/pages/solutions/customer-support/page.html">Explore Customer Support <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is team collaboration software?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Team collaboration software helps employees communicate, coordinate tasks, share updates and manage work together. Chatberry Team Collaboration brings internal communication, task ownership, recorded time and team activity into one organised workspace.</p></div></details>
-          <details class="os-qa"><summary>Can managers track team activity in Chatberry?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Managers can review activity summaries, recent task updates, completed work and pending tasks for the teams they manage. What appears depends on how your team uses tasks and time entries in your setup.</p></div></details>
-          <details class="os-qa"><summary>Can Chatberry track the time spent by team members?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Where time tracking is enabled in your setup, team members can record time against tasks and activities, and managers can review daily and weekly summaries of that recorded time. The figures come from recorded time entries, not from screen or keystroke monitoring.</p></div></details>
-          <details class="os-qa"><summary>Can managers see what tasks each team member has completed?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Where your team tracks work as tasks, managers can review each person's assignments, current statuses, completion history and outstanding work.</p></div></details>
-          <details class="os-qa"><summary>Can I control what each team member can access?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Access is managed through roles, such as owner, manager and team member, and can be organised by department where supported. The exact permissions available depend on your plan and setup.</p></div></details>
-          <details class="os-qa"><summary>Does Chatberry support internal team chat?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Team Collaboration includes internal chat for discussing work, sharing updates and coordinating tasks with teammates. Where supported in your setup, a conversation can be connected to the related task so the context stays together.</p></div></details>
-          <details class="os-qa"><summary>Can teams manage work across departments?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Teams can hand work from one department to another with a clear owner, status and next action at each step. How handoffs run depends on the task and workflow setup in your workspace.</p></div></details>
-          <details class="os-qa"><summary>How is Team Collaboration different from Customer Support?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Customer Support focuses on conversations between your business and its customers. Team Collaboration focuses on internal communication, task coordination, team activity and accountability.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 09 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">Team Collaboration</p>
-      <h2 class="cos-h2 rv" id="cta-h">Better collaboration. Clearer ownership. <br><span class="dim">More control.</span></h2>
-      <p class="cos-body rv">Bring team communication, task tracking, recorded time, and activity insights together in one organised workspace.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with Us</a>
-      </div>
-      <figure class="app tc-fin rv" style="--d:.1s" aria-labelledby="finCap">
-        <figcaption class="sr-only" id="finCap">A compact view of the team workspace (design concept): six Operations team members, the latest chat message from Rohan confirming transport is booked for Thursday at 7 AM, and three tasks completed today.</figcaption>
-        <div class="tc-fin__team">
-          <span class="tc-avs" aria-hidden="true"><span class="av av--lime">RD</span><span class="av av--violet">LM</span><span class="av av--cyan">SO</span><span class="av av--rose">ML</span><span class="av av--amber">NI</span><span class="av">+1</span></span>
-          <p><b>#operations</b><small>6 members</small></p>
-        </div>
-        <div class="tc-fin__msg">
-          <span class="av av--lime">RD</span>
-          <p><b>Rohan</b> Transport is booked for Thursday, 7 AM.</p>
-        </div>
-        <ul class="tc-fin__done">
-          <li><span class="tc-chk is-done"></span>Confirm delivery slot</li>
-          <li><span class="tc-chk is-done"></span>Stock count: Warehouse B</li>
-          <li><span class="tc-chk is-done"></span>Process Oakline return</li>
-        </ul>
-      </figure>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Solutions <em>Team Collaboration</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>One team.</span></span><span class="ln"><span>Work keeps moving.</span></span></h1>
+      <p class="rv d2">Conversations, tasks, time tracking and activity in one workspace, so everyone knows what to do next.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vteam"><div><i>PS</i><span><b>Priya</b>Sales lead</span><em class="on">Available</em></div><div><i>AT</i><span><b>Arjun</b>Support</span><em class="on">Available</em></div><div><i>MJ</i><span><b>Meera</b>Operations</span><em class="">Away</em></div><div><i>RK</i><span><b>Rahul</b>Sales</span><em class="on">Available</em></div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Team Collaboration</em></span>
+    <p class="stmt__txt" id="stmtTxt">Work slows down when updates live in personal chats and memory. Keep conversations next to the work and everyone stays in step.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Chat next to the work</h3><p>Discuss tasks and share updates in one place.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Clear task owners</h3><p>Assign, track and spot delays early.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Time tracking</h3><p>See where your team’s hours go.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Activity overview</h3><p>Review progress, completed work and pending tasks.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Plan</span><p class="row__d">Create tasks with owners and dates.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Collaborate</span><p class="row__d">Discuss and update in context.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Review</span><p class="row__d">See progress and remove blockers.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>Is there team chat?<i></i></summary><p>Yes. Channels, messages and mentions are built in.</p></details><details><summary>Can I track time?<i></i></summary><p>Yes. Team members can record time against tasks.</p></details><details><summary>Can I limit access?<i></i></summary><p>Yes. Permissions follow each person’s role.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/chatberry-meet/page.html"><small>Products</small><b>Chatberry Meet</b><p>Chat with your team, jump on a call, host a meeting or run a webinar, without juggling different apps.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/products/second-brain/page.html"><small>Products</small><b>Second Brain</b><p>Speak or type. It remembers the commitments, follow-ups and context your team cannot afford to forget, and helps act on them.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/solutions/department-management/page.html"><small>Solutions</small><b>Department Management</b><p>Create departments around how your business works, assign the right people and tools, and manage access from one place.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Team Collaboration working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

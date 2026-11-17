@@ -36,10 +36,21 @@ Then open http://localhost:4321.
 
 | Path | What it is |
 | --- | --- |
-| `index.html`, `home/` | Home page |
-| `nav/nav.js` | Top menu, shared by every page |
-| `pages/` | Product, solution, industry, blog and legal pages |
-| `public/assets/`, `assets/` | Images, icons and share images |
+| `index.html` | Home page (written by hand) |
+| `assets/site.css`, `assets/site.js` | Shared design and interactions for every page |
+| `scripts/site/content.cjs` | Text for every product, solution, industry and partner page |
+| `scripts/site/build.cjs` | Builds `pages/` (plus blog, legal, coming-soon and 404) from the content file |
+| `pages/` | Generated pages; don't edit these by hand |
+| `assets/` | Logo, icons and favicons |
+| `public/assets/img/` | Share images for link previews |
 | `scripts/set-site-url.cjs` | Adds the site address to every page and writes `sitemap.xml` |
+
+## Changing page text
+
+1. Edit `scripts/site/content.cjs` (or the blog post and legal text in `build.cjs` / the legal pages).
+2. Run `node scripts/site/build.cjs`.
+3. Commit and push. Vercel redeploys automatically.
+
+If you've already run `set-site-url.cjs`, run it again after building so the new pages get their share tags.
 
 All enquiries (demo, contact, guides, partners) open a WhatsApp chat to +91 81477 15267.

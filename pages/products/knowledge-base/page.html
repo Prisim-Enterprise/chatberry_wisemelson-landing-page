@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Knowledge Base for Businesses | Chatberry</title>
-<meta name="description" content="Train AI with business documents, website content, FAQs, and structured data. Manage customer information and support automated communication with Chatberry.">
+<title>Knowledge Base – Teach AI your business | Chatberry</title>
+<meta name="description" content="Give AI your documents, website content, FAQs and business data so it can answer accurately and power automated communication.">
+<meta name="theme-color" content="#070707">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chatberry">
-<meta property="og:title" content="Knowledge Base — An AI knowledge base for businesses.">
-<meta property="og:description" content="Bring documents, website content, FAQs, customer records and structured data together, and make relevant business knowledge available to connected AI and workflows.">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Knowledge Base – Teach AI your business | Chatberry">
+<meta property="og:description" content="Give AI your documents, website content, FAQs and business data so it can answer accurately and power automated communication.">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Knowledge Base – Teach AI your business | Chatberry">
+<meta name="twitter:description" content="Give AI your documents, website content, FAQs and business data so it can answer accurately and power automated communication.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/assets/chatberry-icon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -17,526 +21,118 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/index.css">
-<link rel="stylesheet" href="page.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=3">
 </head>
 <body>
-<div class="frame">
+<a class="sr" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<header class="top" id="top">
+  <a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a>
+  <div class="top__r">
+    <a class="pill hide-s" href="https://app.prisim.co.in/">Sign in</a>
+    <button class="pill" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu <span class="burger" aria-hidden="true"><i></i><i></i></span></button>
+  </div>
+</header>
+<nav class="menu menu--wide" id="menu" aria-label="Main menu">
+  <ul class="menu__big">
+    <li><a href="/"><small>01</small>Home</a></li>
+    <li><a href="/#features"><small>02</small>Platform</a></li>
+    <li><a href="/#industries"><small>03</small>Industries</a></li>
+    <li><a href="/pages/partners/page.html"><small>04</small>Partners</a></li>
+    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo."><small>06</small>Book a demo</a></li>
+  </ul>
+  <div class="menu__side">
+    <div><h3>Products</h3><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li><li><a href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a></li><li><a href="/pages/products/omnichannel/page.html">Omnichannel Inbox</a></li><li><a href="/pages/products/voice-calling/page.html">Voice Calling</a></li><li><a href="/pages/products/campaigns/page.html">Campaigns</a></li><li><a href="/pages/products/drip-marketing/page.html">Drip Marketing</a></li><li><a href="/pages/products/webviews/page.html">Webviews</a></li><li><a href="/pages/products/ticketing/page.html">Ticketing</a></li><li><a href="/pages/products/chatberry-meet/page.html">Chatberry Meet</a></li><li><a href="/pages/products/knowledge-base/page.html">Knowledge Base</a></li><li><a href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a></li><li><a href="/pages/products/business-score/page.html">Business Score</a></li></ul></div>
+    <div><h3>Solutions</h3><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li><li><a href="/pages/solutions/customer-support/page.html">Customer Support</a></li><li><a href="/pages/solutions/department-management/page.html">Department Management</a></li><li><a href="/pages/solutions/lead-capture/page.html">Lead Capture</a></li><li><a href="/pages/solutions/lead-engagement/page.html">Lead Engagement</a></li><li><a href="/pages/solutions/lead-management/page.html">Lead Management</a></li><li><a href="/pages/solutions/lead-nurturing/page.html">Lead Nurturing</a></li><li><a href="/pages/solutions/media-library/page.html">Media Library</a></li><li><a href="/pages/solutions/team-collaboration/page.html">Team Collaboration</a></li><li><a href="/pages/solutions/ticket-management/page.html">Ticket Management</a></li><li><a href="/pages/solutions/workflow-development/page.html">Workflow Development</a></li></ul></div>
+    <div><h3>Industries</h3><ul class="one"><li><a href="/pages/industries/education/page.html">Education</a></li><li><a href="/pages/industries/hospitality/page.html">Hospitality</a></li><li><a href="/pages/industries/manufacturing-distribution/page.html">Manufacturing &amp; Distribution</a></li><li><a href="/pages/industries/real-estate/page.html">Real Estate</a></li></ul></div>
+    <a class="pill pill--red" href="https://app.prisim.co.in/" style="justify-self:start">Start for free</a>
+  </div>
+</nav>
 
-  <!-- chrome:nav -->
-  <link rel="stylesheet" href="/theme.css">
-  <div class="wmnav-space" aria-hidden="true"></div>
-  <div id="wm-nav"></div>
-  <script src="/nav/nav.js?v=188eb34b3c" defer></script>
-  <!-- /chrome:nav -->
-
-  <main class="cos kb" id="top">
-
-    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
-      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9.5l6 6 6-6"/></symbol>
-      <symbol id="i-chevr" viewBox="0 0 24 24"><path d="M9 5.5l6.5 6.5L9 18.5"/></symbol>
-      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
-      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
-      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-      <symbol id="i-file" viewBox="0 0 24 24"><path d="M7.5 3H14l5 5v11.5A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-15A1.5 1.5 0 0 1 7.5 3Z"/><path d="M14 3v5h5"/></symbol>
-      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17"/><path d="M12 3.5c2.4 2.3 3.7 5.2 3.7 8.5S14.4 18.2 12 20.5c-2.4-2.3-3.7-5.2-3.7-8.5S9.6 5.8 12 3.5Z"/></symbol>
-      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
-      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5.8" rx="7.5" ry="2.8"/><path d="M4.5 5.8v12.4c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8V5.8"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/></symbol>
-      <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5.5h16a1.5 1.5 0 0 1 1.5 1.5v9a1.5 1.5 0 0 1-1.5 1.5h-9.5L6 21v-3.5H4A1.5 1.5 0 0 1 2.5 16V7A1.5 1.5 0 0 1 4 5.5Z"/></symbol>
-      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.2 20.8l4.5-1.1A8.8 8.8 0 1 0 12 3.2Z"/><path d="M9.2 9c.2 2.6 2.5 4.9 5.1 5.1"/></symbol>
-      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M11 3l1.8 4.9L17.7 9.7l-4.9 1.8L11 16.4 9.2 11.5 4.3 9.7 9.2 7.9Z"/><path d="M18 15l.8 2.1 2.2.8-2.2.8-.8 2.1-.8-2.1-2.2-.8 2.2-.8Z"/></symbol>
-      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.8L4.8 13.5H12l-1 7.7 8.2-10.7H12Z"/></symbol>
-      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9.5" cy="8" r="3.6"/><path d="M3 20.5c.7-3.8 3.4-5.8 6.5-5.8s5.8 2 6.5 5.8"/><path d="M16.5 5a3.3 3.3 0 0 1 0 6.4M19 15c1.7.7 2.6 2.5 2.9 5"/></symbol>
-      <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4.5 20.5c1-4 4-6 7.5-6s6.5 2 7.5 6"/></symbol>
-      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.2V12l3.2 2"/></symbol>
-      <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M14.9 9.2c-.6-.9-1.6-1.4-2.9-1.4-1.7 0-2.8.9-2.8 2.1 0 2.9 5.9 1.6 5.9 4.4 0 1.2-1.2 2.1-3.1 2.1-1.3 0-2.4-.6-3-1.5M12 6.2v1.6M12 16.8v1.6"/></symbol>
-      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21 19.5H3Z"/><path d="M12 10v4.2M12 17v.01"/></symbol>
-      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5v-3a4 4 0 0 1 8 0v3"/></symbol>
-      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
-      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3.2l8.6 4.4L12 12 3.4 7.6Z"/><path d="M3.4 12.4L12 16.8l8.6-4.4M3.4 16.6L12 21l8.6-4.4"/></symbol>
-      <symbol id="i-flow" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M8.6 6H15a3.1 3.1 0 0 1 0 6.2H9a3.1 3.1 0 0 0 0 6.2h6.4"/></symbol>
-      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.6-4.4M4 3.6v3.6h3.6M4 13a8 8 0 0 0 14.6 4.4M20 20.4v-3.6h-3.6"/></symbol>
-      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19.5V5M6 11l6-6 6 6"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M20.5 3.5L10 14"/><path d="M20.5 3.5l-6.4 17-3.9-6.6-6.7-3.9Z"/></symbol>
-    </defs></svg>
-
-    <!-- ============ 01 HERO — editorial head, one scene below ============ -->
-    <section class="cos-hero kb-hero" id="overview" aria-labelledby="kb-h1">
-      <div class="cos-hero__grid" aria-hidden="true"></div>
-
-      <div class="kb-head rv">
-        <p class="cos-eyebrow">Knowledge Base</p>
-        <h1 class="cos-h1" id="kb-h1">AI knowledge base <br><span class="dim">for businesses.</span></h1>
-        <p class="cos-hero__intro">Bring your business documents, website content, FAQs, customer records and structured data together. Give connected AI access to relevant business knowledge, and use your data to support personalised communication and automated workflows.</p>
-        <div class="cos-cta">
-          <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn--line btn--lg" href="/pages/products/ai-agents/page.html">Explore AI Agents</a>
-        </div>
-      </div>
-
-      <figure class="kb-scene rv" id="heroScene" style="--d:.15s" aria-labelledby="heroCap">
-        <figcaption class="sr-only" id="heroCap">Three sources in a knowledge base: a pricing document, the pricing page on your website, and a customers table. An AI assistant answers a business question using all three, and each source it used is marked.</figcaption>
-        <div class="app kb-src">
-          <p class="kb-src__h"><svg class="i"><use href="#i-layers"/></svg><b>Knowledge base</b><span>3 sources shown</span></p>
-          <div class="kb-src__i" data-lit="3">
-            <p class="kb-src__k"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span><b>Plans &amp; pricing 2026.pdf</b><em>Document</em></p>
-            <p class="kb-src__t">Premium: unlimited team members, priority support and monthly performance reports.</p>
-          </div>
-          <div class="kb-src__i" data-lit="3">
-            <p class="kb-src__k"><span class="kb-ft kb-ft--web"><svg class="i"><use href="#i-globe"/></svg></span><b>yourbrand.com/pricing</b><em>Website</em></p>
-            <p class="kb-src__t">Plans renew on the same date each month. You can cancel any time before your renewal date.</p>
-          </div>
-          <div class="kb-src__i" data-lit="3">
-            <p class="kb-src__k"><span class="kb-ft kb-ft--data"><svg class="i"><use href="#i-table"/></svg></span><b>Customers</b><em>Collection &middot; 1,240 records</em></p>
-            <div class="kb-mini" role="presentation">
-              <p class="kb-mini__h"><span>Name</span><span>Plan</span><span>Renews</span></p>
-              <p><span>Maya Rao</span><span>Premium</span><span>Oct 18</span></p>
-              <p><span>Leo Park</span><span>Premium</span><span>Oct 24</span></p>
-              <p><span>Ana Novak</span><span>Premium</span><span>Oct 29</span></p>
-            </div>
-          </div>
-        </div>
-
-        <p class="kb-scene__via" aria-hidden="true"><svg class="i"><use href="#i-arrow"/></svg></p>
-
-        <div class="app kb-ask">
-          <p class="kb-ask__h"><span class="kb-ai"><svg class="i"><use href="#i-spark"/></svg></span><b>Chatberry AI</b><span class="tag tag--lime"><svg class="i"><use href="#i-layers"/></svg>Using your knowledge base</span></p>
-          <div class="kb-ask__log">
-            <p class="kb-me" data-at="1">Which Premium customers renew this month, and what does their plan include?</p>
-            <p class="kb-typing" data-at="2" data-until="3" aria-hidden="true"><i></i><i></i><i></i></p>
-            <div class="kb-ai-msg" data-at="3">
-              <p>Three Premium customers renew this month: <b>Maya Rao</b> (Oct 18), <b>Leo Park</b> (Oct 24) and <b>Ana Novak</b> (Oct 29).</p>
-              <p>Their plan includes unlimited team members, priority support and monthly performance reports. Plans renew on the same date each month.</p>
-              <p class="kb-cite"><span>Sources</span><span class="kb-chip"><svg class="i"><use href="#i-table"/></svg>Customers</span><span class="kb-chip"><svg class="i"><use href="#i-file"/></svg>Plans &amp; pricing 2026.pdf</span><span class="kb-chip"><svg class="i"><use href="#i-globe"/></svg>/pricing</span></p>
-            </div>
-          </div>
-          <p class="os-compose">Ask about your business&hellip;<span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg></span></p>
-        </div>
-      </figure>
-    </section>
-
-    <!-- ============ 02 THE PROBLEM — scattered sources come together ============ -->
-    <section class="cos-sec" id="why" aria-labelledby="why-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Why it matters</p>
-        <h2 class="cos-h2" id="why-h">Why businesses need <br><span class="dim">an AI knowledge base.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Business information often lives across documents, websites, spreadsheets, customer records and separate applications. Chatberry helps organise it and make it useful across connected AI experiences and business workflows.</p>
-        </div>
-      </div>
-
-      <figure class="kb-scatter rv" id="scatter" style="--d:.1s" aria-labelledby="scatterCap">
-        <figcaption class="sr-only" id="scatterCap">A document in a shared drive, a page on a website and a customer spreadsheet sit apart in separate tools, then move together into one organised Chatberry knowledge workspace.</figcaption>
-        <p class="kb-scatter__label"><svg class="i"><use href="#i-layers"/></svg>One organised knowledge workspace</p>
-        <div class="kb-scatter__row">
-          <div class="kb-tool">
-            <p class="kb-tool__k">Shared drive</p>
-            <div class="app kb-doc">
-              <p class="kb-doc__t">Returns &amp; refunds policy</p>
-              <p class="kb-doc__m">PDF &middot; 4 pages &middot; edited in May</p>
-              <p class="kb-doc__p">Items can be returned within 30 days of delivery. Refunds go back to the original payment method within 5&ndash;7 working days.</p>
-              <p class="kb-doc__p kb-doc__p--faint">Exchanges are free for Premium customers&hellip;</p>
-            </div>
-          </div>
-          <div class="kb-tool">
-            <p class="kb-tool__k">Website</p>
-            <div class="app kb-web">
-              <p class="kb-url"><svg class="i"><use href="#i-lock"/></svg>yourbrand.com/delivery</p>
-              <div class="kb-web__b">
-                <p class="kb-web__t">Delivery information</p>
-                <p class="kb-doc__p">Standard delivery takes 2&ndash;4 working days. Express orders placed before 2 PM arrive the next day.</p>
-              </div>
-            </div>
-          </div>
-          <div class="kb-tool">
-            <p class="kb-tool__k">Spreadsheet</p>
-            <div class="app kb-sheet">
-              <p class="kb-sheet__h"><span>Customer</span><span>Plan</span><span>Last order</span></p>
-              <p><span>Maya Rao</span><span>Premium</span><span>Oct 3</span></p>
-              <p><span>Leo Park</span><span>Standard</span><span>Sep 28</span></p>
-              <p><span>Sara Lopez</span><span>Premium</span><span>Sep 21</span></p>
-              <p><span>Omar Haddad</span><span>Standard</span><span>Sep 14</span></p>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <ul class="kb-pts rv" style="--d:.1s">
-        <li><b>Scattered information</b>Bring business knowledge into one organised workspace.</li>
-        <li><b>Limited AI context</b>Give connected AI access to relevant, business-specific information.</li>
-        <li><b>Manual follow-ups</b>Use available business data in configured customer workflows.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 03 ADD INFORMATION — one asymmetric workspace ============ -->
-    <section class="cos-sec" id="sources" aria-labelledby="src-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Add your information</p>
-        <h2 class="cos-h2" id="src-h">Add documents, website content, <br><span class="dim">FAQs and business data.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Bring the information your business already uses into one organised knowledge workspace.</p>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app kb-ws" id="workspace" role="img" aria-label="The knowledge workspace: a document library with file types and status, imported website pages, and a customers collection table. A new returns policy document is added and becomes ready.">
-          <div class="app__top">
-            <span class="app__crumb">Knowledge base <svg class="i"><use href="#i-chevr"/></svg> <b>All sources</b></span>
-            <span class="kb-search"><svg class="i"><use href="#i-search"/></svg>Search documents, pages and records</span>
-            <span class="kb-ws__add"><span class="kb-n">4</span><span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-plus"/></svg>Add source</span></span>
-          </div>
-          <div class="kb-ws__body">
-            <div class="kb-side">
-              <p class="ui-label">Sources</p>
-              <p class="kb-side__i is-on"><svg class="i"><use href="#i-layers"/></svg>All sources<em>67</em></p>
-              <p class="kb-side__i"><svg class="i"><use href="#i-file"/></svg>Documents<em>31</em></p>
-              <p class="kb-side__i"><svg class="i"><use href="#i-globe"/></svg>Website<em>18</em></p>
-              <p class="kb-side__i"><svg class="i"><use href="#i-msg"/></svg>FAQs<em>14</em></p>
-              <p class="kb-side__i"><svg class="i"><use href="#i-db"/></svg>Collections<em>4</em></p>
-            </div>
-
-            <div class="kb-ws__main">
-              <div class="kb-lib">
-                <p class="kb-panel__h"><span class="kb-n">1</span><b>Documents &amp; files</b><span>31 files</span></p>
-                <div class="kb-lib__r kb-lib__r--h"><span>Name</span><span>Type</span><span>Updated</span><span>Status</span></div>
-                <div class="kb-lib__r kb-lib__r--new" data-at="1">
-                  <span class="kb-lib__n"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span>Returns policy 2026.pdf</span><span>PDF</span><span>Just now</span>
-                  <span><span class="kb-st kb-st--proc" data-at="1" data-until="2">Processing</span><span class="kb-st kb-st--ok" data-at="2"><svg class="i"><use href="#i-check"/></svg>Ready</span></span>
-                </div>
-                <div class="kb-lib__r"><span class="kb-lib__n"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span>Plans &amp; pricing 2026.pdf</span><span>PDF</span><span>Oct 2</span><span><span class="kb-st kb-st--ok"><svg class="i"><use href="#i-check"/></svg>Ready</span></span></div>
-                <div class="kb-lib__r"><span class="kb-lib__n"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span>Product guide &ndash; Series X.docx</span><span>DOCX</span><span>Sep 26</span><span><span class="kb-st kb-st--ok"><svg class="i"><use href="#i-check"/></svg>Ready</span></span></div>
-                <div class="kb-lib__r"><span class="kb-lib__n"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span>Warranty terms.pdf</span><span>PDF</span><span>Sep 12</span><span><span class="kb-st kb-st--ok"><svg class="i"><use href="#i-check"/></svg>Ready</span></span></div>
-                <div class="kb-lib__r"><span class="kb-lib__n"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span>Store opening hours.xlsx</span><span>XLSX</span><span>Aug 30</span><span><span class="kb-st kb-st--ok"><svg class="i"><use href="#i-check"/></svg>Ready</span></span></div>
-                <div class="kb-lib__r"><span class="kb-lib__n"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span>Setup manual v4.pdf</span><span>PDF</span><span>Aug 18</span><span><span class="kb-st kb-st--old">Review</span></span></div>
-              </div>
-
-              <div class="kb-site">
-                <p class="kb-panel__h"><span class="kb-n">2</span><b>Website content</b><span>yourbrand.com</span></p>
-                <ul class="kb-pages">
-                  <li><svg class="i"><use href="#i-globe"/></svg><span><b>/pricing</b>Plans and what&rsquo;s included</span></li>
-                  <li><svg class="i"><use href="#i-globe"/></svg><span><b>/delivery</b>Delivery times and costs</span></li>
-                  <li><svg class="i"><use href="#i-globe"/></svg><span><b>/returns</b>Returns and refunds</span></li>
-                  <li><svg class="i"><use href="#i-globe"/></svg><span><b>/services</b>Service descriptions</span></li>
-                </ul>
-                <p class="kb-site__f"><svg class="i"><use href="#i-refresh"/></svg>18 pages imported &middot; last import Oct 9</p>
-              </div>
-
-              <div class="kb-coll">
-                <p class="kb-panel__h"><span class="kb-n">3</span><b>Structured data</b><span class="kb-tabs"><b>Customers</b><span>Products</span><span>Subscriptions</span><span>Orders</span></span></p>
-                <div class="kb-coll__r kb-coll__r--h"><span>Customer</span><span>Email</span><span>Plan</span><span>Status</span><span>Renews</span><span>Lifetime value</span></div>
-                <div class="kb-coll__r"><span><span class="av av--lime">MR</span>Maya Rao</span><span>maya@example.com</span><span>Premium</span><span><span class="kb-st kb-st--ok">Active</span></span><span>Oct 18</span><span>$588</span></div>
-                <div class="kb-coll__r"><span><span class="av av--cyan">LP</span>Leo Park</span><span>leo@example.com</span><span>Standard</span><span><span class="kb-st kb-st--ok">Active</span></span><span>Oct 24</span><span>$228</span></div>
-                <div class="kb-coll__r"><span><span class="av av--violet">SL</span>Sara Lopez</span><span>sara@example.com</span><span>Premium</span><span><span class="kb-st kb-st--due">Payment pending</span></span><span>Oct 10</span><span>$441</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </figure>
-
-      <ol class="kb-key rv" style="--d:.1s">
-        <li><span class="kb-n">1</span><p><b>Documents and files</b>Upload guides, policies, manuals, FAQs and other supported files.</p></li>
-        <li><span class="kb-n">2</span><p><b>Website content</b>Import product details, service descriptions, policies and other published pages.</p></li>
-        <li><span class="kb-n">3</span><p><b>Structured data</b>Organise customer, product, subscription and transaction records in collections, where supported.</p></li>
-        <li><span class="kb-n">4</span><p><b>Knowledge management</b>Add new information and keep existing content current as your business changes.</p></li>
-      </ol>
-    </section>
-
-    <!-- ============ 04 AI USES YOUR KNOWLEDGE — conversation-led ============ -->
-    <section class="cos-sec" id="train" aria-labelledby="tr-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Business-specific answers</p>
-        <h2 class="cos-h2" id="tr-h">Train AI using <br><span class="dim">your business knowledge.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Give connected AI the information it needs to answer questions about your products, services, policies and business processes.</p>
-        </div>
-      </div>
-
-      <figure class="kb-talk rv" id="talk" style="--d:.1s" aria-labelledby="talkCap">
-        <figcaption class="sr-only" id="talkCap">A customer asks on the website chat what the Premium plan includes. The AI assistant answers from the Premium plan record in the Plans collection, which is shown alongside and marked as used in this answer.</figcaption>
-        <div class="app kb-chat">
-          <p class="kb-chat__h"><span class="kb-brand">YB</span><span><b>Your Brand</b><small>Website chat &middot; AI assistant</small></span><span class="tag">Online</span></p>
-          <div class="kb-chat__log">
-            <p class="kb-q" data-at="1"><b>Customer</b>What does your premium plan include?</p>
-            <p class="kb-typing" data-at="2" data-until="3" aria-hidden="true"><i></i><i></i><i></i></p>
-            <div class="kb-a" data-at="3">
-              <p>The Premium plan includes <b>unlimited team members</b>, <b>priority support</b> and <b>monthly performance reports</b>, for $49 a month.</p>
-              <p>Would you like me to compare it with the Standard plan?</p>
-              <p class="kb-from"><svg class="i"><use href="#i-check"/></svg>Answered from <b>Premium &middot; Plans collection</b></p>
-            </div>
-          </div>
-          <p class="os-compose">Type a message&hellip;<span class="mini-btn mini-btn--lime"><svg class="i"><use href="#i-send"/></svg></span></p>
-        </div>
-
-        <div class="kb-talk__side">
-          <div class="app kb-rec" data-lit="3">
-            <p class="kb-rec__h"><svg class="i"><use href="#i-db"/></svg><span>Plans <svg class="i"><use href="#i-chevr"/></svg> <b>Premium</b></span><span class="kb-rec__used"><svg class="i"><use href="#i-check"/></svg>Used in this answer</span></p>
-            <dl class="kb-kv">
-              <div><dt>Price</dt><dd>$49 / month</dd></div>
-              <div><dt>Team members</dt><dd>Unlimited</dd></div>
-              <div><dt>Support</dt><dd>Priority</dd></div>
-              <div><dt>Reports</dt><dd>Monthly performance</dd></div>
-              <div><dt>Last updated</dt><dd>Oct 2 &middot; Priya Shah</dd></div>
-            </dl>
-          </div>
-          <p class="kb-talk__note">The answer comes from a plan record. Customer-specific details are only used when the relevant record is available and permitted.</p>
-        </div>
-      </figure>
-
-      <ul class="kb-ben rv" style="--d:.1s">
-        <li><svg class="i"><use href="#i-check"/></svg><p><b>Business-specific answers</b>Respond to relevant questions using available business information.</p></li>
-        <li><svg class="i"><use href="#i-check"/></svg><p><b>Consistent information</b>Connected AI experiences reference the same maintained knowledge.</p></li>
-        <li><svg class="i"><use href="#i-check"/></svg><p><b>Relevant context</b>Make knowledge available to AI agents and supported workflows.</p></li>
-      </ul>
-    </section>
-
-    <!-- ============ 05 DATA & AUTOMATION — one horizontal workflow ============ -->
-    <section class="cos-sec" id="automation" aria-labelledby="au-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Business data &amp; automation</p>
-        <h2 class="cos-h2" id="au-h">Manage business data and <br><span class="dim">automate customer communication.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Connect business knowledge, customer records and structured data to support customer management, personalised communication and everyday business workflows.</p>
-        </div>
-      </div>
-
-      <figure class="os-figure rv" style="--d:.1s">
-        <div class="app kb-flow" id="flow" role="img" aria-label="A workflow in three steps. A subscription record shows Maya Rao's payment as pending. A configured trigger checks that the payment has been pending for three days and that she has opted in to WhatsApp. A personalised WhatsApp reminder is sent.">
-          <div class="kb-flow__p">
-            <p class="kb-flow__k"><span>1</span>Customer record</p>
-            <div class="kb-cust">
-              <p class="kb-cust__who"><span class="av av--lg av--lime">MR</span><span><b>Maya Rao</b><small>Subscriptions &middot; Premium</small></span></p>
-              <dl class="kb-kv">
-                <div class="kb-hot"><dt>Payment status</dt><dd><span class="kb-st kb-st--due"><svg class="i"><use href="#i-clock"/></svg>Pending</span></dd></div>
-                <div><dt>Amount</dt><dd>$49.00</dd></div>
-                <div><dt>Due date</dt><dd>Oct 10</dd></div>
-                <div><dt>Preferred channel</dt><dd><svg class="i"><use href="#i-wa"/></svg>WhatsApp</dd></div>
-                <div><dt>Marketing opt-in</dt><dd>Yes</dd></div>
-              </dl>
-            </div>
-          </div>
-          <span class="kb-flow__go" aria-hidden="true"><svg class="i"><use href="#i-chevr"/></svg></span>
-          <div class="kb-flow__p">
-            <p class="kb-flow__k"><span>2</span>Configured trigger</p>
-            <div class="kb-rule">
-              <p class="kb-rule__r"><span class="kb-rule__w">When</span>Payment status is <b>Pending</b></p>
-              <p class="kb-rule__r" data-lit="1"><span class="kb-rule__w">And</span>Pending for <b>3 days</b><svg class="i kb-ok"><use href="#i-check"/></svg></p>
-              <p class="kb-rule__r" data-lit="2"><span class="kb-rule__w">And</span>Customer opted in to <b>WhatsApp</b><svg class="i kb-ok"><use href="#i-check"/></svg></p>
-              <p class="kb-rule__r kb-rule__r--then" data-lit="3"><span class="kb-rule__w">Then</span>Send template <b>Payment reminder</b></p>
-            </div>
-            <p class="kb-rule__on"><span class="toggle" aria-hidden="true"></span>Workflow on</p>
-          </div>
-          <span class="kb-flow__go" aria-hidden="true"><svg class="i"><use href="#i-chevr"/></svg></span>
-          <div class="kb-flow__p kb-flow__p--msg">
-            <p class="kb-flow__k"><span>3</span>Personalised message</p>
-            <div class="wa-win kb-wa"><div class="wa-win__ui"><div class="wa-chat">
-              <div class="wa-head"><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--brand">Y</span><span class="wa-top__who"><b>Your Brand</b><small>Business account</small></span><span class="wa-top__act"><i class="wa-i wa-i--video"></i><i class="wa-i wa-i--call"></i></span></div></div>
-              <div class="wa-body">
-                <div class="wa-msg wa-msg--in wa-card" data-lit="4">
-                  <p class="wa-card__body">Hi Maya! Your <b>$49</b> payment for the <b>Premium plan</b> is still pending. Would you like to complete it now?<span class="wa-meta">09:00</span></p>
-                  <div class="wa-btns"><span class="wa-btn"><i class="wa-i wa-i--link"></i>Complete payment</span></div>
-                </div>
-              </div>
-            </div></div></div>
-          </div>
-        </div>
-      </figure>
-      <p class="kb-fine rv">The Knowledge Base supplies the record. The workflow and your connected channel send the message &mdash; built with <a class="kb-link" href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration</a>. For multi-step journeys, see <a class="kb-link" href="/pages/products/drip-marketing/page.html">Drip Marketing</a>.</p>
-
-      <ul class="kb-six rv" style="--d:.1s">
-        <li><b>Customer data and CRM records</b>Organise leads, customers and interactions in tables and collections.</li>
-        <li><b>Payment and subscription reminders</b>Use connected payment or subscription data to trigger timely reminders.</li>
-        <li><b>Personalised communication</b>Use customer details, purchases and preferences in messages and follow-ups.</li>
-        <li><b>AI-powered data and actions</b>Let connected AI agents retrieve records and assist with configured tasks.</li>
-        <li><b>Data-driven workflows</b>Use record changes to trigger follow-ups, updates and other configured actions.</li>
-        <li><b>Knowledge gaps</b>Use recurring questions to find information that needs adding or improving.</li>
-      </ul>
-    </section>
-
-    <!-- ============ 06 KEEP IT CURRENT — three-stage process ============ -->
-    <section class="cos-sec" id="updates" aria-labelledby="upd-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Continuous improvement</p>
-        <h2 class="cos-h2" id="upd-h">Keep your business knowledge <br><span class="dim">up to date.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">As your business changes, maintain your knowledge base and use available data to see where information needs attention.</p>
-        </div>
-      </div>
-
-      <ol class="kb-steps rv" id="steps" style="--d:.1s">
-        <li class="kb-step" data-lit="1">
-          <p class="kb-step__n">01</p>
-          <p class="kb-step__t">Add new information</p>
-          <p class="kb-step__p">Upload new documents, import updated website content and maintain structured records.</p>
-          <div class="app kb-snip">
-            <p class="kb-snip__r"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span><span><b>Shipping policy v3.pdf</b><small>Uploaded today &middot; replaces v2</small></span><span class="kb-st kb-st--new"><svg class="i"><use href="#i-up"/></svg>New</span></p>
-          </div>
-        </li>
-        <li class="kb-step" data-lit="2">
-          <p class="kb-step__n">02</p>
-          <p class="kb-step__t">See what needs attention</p>
-          <p class="kb-step__p">Use interaction patterns and business data to spot recurring questions, gaps or outdated content.</p>
-          <div class="app kb-snip">
-            <p class="kb-snip__k">Recurring questions &middot; last 30 days</p>
-            <p class="kb-gap"><span><b>Do you ship to Canada?</b><small>Asked 14 times</small></span><span class="kb-st kb-st--due">No answer found</span></p>
-            <p class="kb-gap"><span><b>Can I pause my subscription?</b><small>Asked 9 times</small></span><span class="kb-st kb-st--old">May be outdated</span></p>
-            <p class="kb-gap kb-gap--ok"><span><b>What are your weekend hours?</b><small>Asked 6 times</small></span><span class="kb-st">Answered</span></p>
-          </div>
-        </li>
-        <li class="kb-step kb-step--end" data-lit="3">
-          <p class="kb-step__n">03</p>
-          <p class="kb-step__t">Update knowledge and workflows</p>
-          <p class="kb-step__p">Update the information and make it available to connected AI and configured automations.</p>
-          <div class="app kb-snip kb-snip--live">
-            <p class="kb-snip__r"><span class="kb-ft kb-ft--doc"><svg class="i"><use href="#i-file"/></svg></span><span><b>Shipping policy &middot; v3</b><small>Now covers Canada and international orders</small></span><span class="kb-st kb-st--ok"><svg class="i"><use href="#i-check"/></svg>Live</span></p>
-            <p class="kb-snip__use"><span>Available to</span><span class="kb-chip"><svg class="i"><use href="#i-spark"/></svg>Website chat agent</span><span class="kb-chip"><svg class="i"><use href="#i-spark"/></svg>Support agent</span></p>
-          </div>
-        </li>
-      </ol>
-      <p class="kb-fine rv">Updates are made through your team&rsquo;s knowledge management process; the AI model doesn&rsquo;t retrain itself after every conversation. For wider reporting, see <a class="kb-link" href="/pages/products/analytics-bi/page.html">Analytics &amp; BI</a>.</p>
-    </section>
-
-    <!-- ============ 07 CONNECTED — one featured preview, two supporting ============ -->
-    <section class="cos-sec" id="connected" aria-labelledby="cn-h">
-      <div class="sec-head rv">
-        <p class="cos-eyebrow">Connected AI &amp; workflows</p>
-        <h2 class="cos-h2" id="cn-h">Connect business knowledge <br><span class="dim">to AI agents and workflows.</span></h2>
-        <div class="sec-head__copy">
-          <p class="cos-body">Make relevant business information available to connected AI capabilities, customer experiences and configured automations.</p>
-        </div>
-      </div>
-
-      <div class="kb-bento rv" style="--d:.1s">
-        <figure class="kb-b kb-b--big">
-          <figcaption><span><b>AI replies</b>Answer customer questions using available business knowledge.</span><a class="cos-link" href="/pages/products/ai-agents/page.html">AI Agents <svg class="i"><use href="#i-arrow"/></svg></a></figcaption>
-          <div class="wa-win kb-reply" role="img" aria-label="A WhatsApp conversation: a customer asks whether delivery is available on Sundays and the AI agent answers from the delivery page on the website."><div class="wa-win__ui"><div class="wa-chat">
-            <div class="wa-head"><div class="wa-top"><span class="wa-top__back"><i class="wa-i wa-i--back"></i></span><span class="wa-av wa-av--a">OH</span><span class="wa-top__who"><b>Omar Haddad</b><small>WhatsApp &middot; handled by Support agent</small></span><span class="kb-reply__ai"><svg class="i"><use href="#i-spark"/></svg>AI</span></div></div>
-            <div class="wa-body">
-              <p class="wa-msg wa-msg--in">Hi, do you deliver on Sundays? I need my order by the weekend.</p>
-              <div class="wa-msg wa-msg--out">
-                <p>We don&rsquo;t deliver on Sundays, but Express orders placed before 2 PM on Friday arrive on Saturday. Would you like to switch your order to Express?</p>
-                <p class="kb-from"><svg class="i"><use href="#i-check"/></svg>Answered from <b>yourbrand.com/delivery</b></p>
-              </div>
-              <p class="wa-msg wa-msg--in">Yes please.</p>
-              <p class="wa-sys kb-hand"><svg class="i"><use href="#i-user"/></svg>Order change handed to the order team</p>
-            </div>
-            <div class="wa-input"><i class="wa-i wa-i--plus"></i><span class="wa-input__f">Message<i class="wa-i wa-i--sticker"></i></span><i class="wa-i wa-i--camera"></i><i class="wa-i wa-i--mic"></i></div>
-          </div></div></div>
-        </figure>
-
-        <figure class="kb-b">
-          <figcaption><span><b>Customer records</b>Use relevant details through supported data connections and permissions.</span><a class="cos-link" href="/pages/products/integrations/page.html">Integrations <svg class="i"><use href="#i-arrow"/></svg></a></figcaption>
-          <div class="app kb-prof" role="img" aria-label="A lead record for Leo Park with plan, last order and interactions visible to AI agents, while payment details are not shared with AI.">
-            <p class="kb-prof__who"><span class="av av--lg av--cyan">LP</span><span><b>Leo Park</b><small>Leads &middot; added from website form</small></span></p>
-            <div class="kb-prof__cols">
-              <p><span>Visible to AI agents</span><b><svg class="i"><use href="#i-eye"/></svg>Name, plan, last order, open questions</b></p>
-              <p><span>Not shared with AI</span><b class="kb-prof__no"><svg class="i"><use href="#i-lock"/></svg>Payment details</b></p>
-            </div>
-          </div>
-        </figure>
-
-        <figure class="kb-b">
-          <figcaption><span><b>Automated workflows</b>Combine triggers, integrations and data for configured follow-ups.</span><a class="cos-link" href="/pages/products/workflow-orchestration/page.html">Workflow Orchestration <svg class="i"><use href="#i-arrow"/></svg></a></figcaption>
-          <div class="app kb-wf" role="img" aria-label="A workflow: when a new record is added to the Leads collection, assign it to the sales team and send a welcome message.">
-            <p class="kb-wf__r"><span class="kb-wf__i"><svg class="i"><use href="#i-bolt"/></svg></span><span><small>When</small><b>New record in Leads</b></span></p>
-            <p class="kb-wf__r"><span class="kb-wf__i kb-wf__i--a"><svg class="i"><use href="#i-users"/></svg></span><span><small>Then</small><b>Assign to Sales team</b></span></p>
-            <p class="kb-wf__r"><span class="kb-wf__i kb-wf__i--a"><svg class="i"><use href="#i-send"/></svg></span><span><small>And</small><b>Send welcome message</b></span></p>
-          </div>
-        </figure>
-      </div>
-    </section>
-
-    <!-- ============ 08 FAQ ============ -->
-    <section class="cos-sec" id="faq" aria-labelledby="faq-h">
-      <div class="os-faq">
-        <div class="os-faq__intro rv">
-          <p class="cos-eyebrow">FAQ</p>
-          <h2 class="cos-h2" id="faq-h">AI knowledge bases, answered.</h2>
-          <p class="cos-body">Something else on your mind?</p>
-          <a class="cos-link os-link" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%20would%20like%20to%20know%20more." target="_blank" rel="noopener">Chat with us <svg class="i"><use href="#i-arrow"/></svg></a>
-        </div>
-        <div class="os-faq__list rv" style="--d:.1s">
-          <details class="os-qa"><summary>What is an AI knowledge base?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>An AI knowledge base is an organised source of information that connected AI systems can use to answer questions and support tasks. Chatberry helps businesses organise documents, website content, FAQs, and structured data for use across supported AI experiences and workflows.</p></div></details>
-          <details class="os-qa"><summary>How can I train AI with my business documents?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Upload supported documents and organise the relevant information in your knowledge base. Connect that knowledge to the AI capabilities you want to use so they can reference available business information.</p></div></details>
-          <details class="os-qa"><summary>Can I add website content and structured data?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Yes. Website content can be imported through supported ingestion capabilities, while structured business information can be organised in tables and collections.</p></div></details>
-          <details class="os-qa"><summary>Can I manage customer and CRM records?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>The Knowledge Base can organise structured customer and business records where supported. CRM integrations and workflows can use relevant information according to their configuration and permissions.</p></div></details>
-          <details class="os-qa"><summary>Can I automate payment and subscription reminders?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Payment or subscription data from a supported source can trigger reminders through configured workflows, provided the required data, conditions, and messaging channel are available.</p></div></details>
-          <details class="os-qa"><summary>Can AI learn from customer interactions?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Available interaction patterns can help identify recurring questions and knowledge gaps. How these insights are collected and incorporated depends on the configured product capabilities.</p></div></details>
-          <details class="os-qa"><summary>Does the Knowledge Base update automatically?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>New information can be added and existing information updated through the supported knowledge management process. Automatic updates depend on the specific ingestion and workflow capabilities enabled in the setup.</p></div></details>
-          <details class="os-qa"><summary>Can multiple AI agents use the same knowledge?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Business knowledge can be made available to multiple connected AI experiences where the relevant integrations, permissions, and configurations are supported.</p></div></details>
-          <details class="os-qa"><summary>What types of information can I add?<span class="os-qa__icon" aria-hidden="true"></span></summary>
-            <div class="os-qa__a"><p>Supported sources may include documents, website content, FAQs, and structured data. Available formats and ingestion options depend on the platform&rsquo;s supported capabilities.</p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 09 FINAL CALL TO ACTION ============ -->
-    <section class="cos-final" aria-labelledby="cta-h">
-      <div class="cos-final__grid" aria-hidden="true"></div>
-      <p class="cos-eyebrow">Knowledge Base</p>
-      <h2 class="cos-h2 rv" id="cta-h">Build a knowledge base <br>that powers your business AI.</h2>
-      <p class="cos-body rv">Bring business information together, give AI the context it needs, and connect your knowledge to customer communication and automated workflows.</p>
-      <div class="cos-cta rv">
-        <a class="btn btn--lime btn--lg" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a Demo <svg class="i"><use href="#i-arrow"/></svg></a>
-        <a class="btn btn--line btn--lg" href="/pages/products/ai-agents/page.html">Explore AI Agents</a>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- chrome:foot -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
-  <style>.wmf{font-family:"Geist",system-ui,sans-serif;letter-spacing:normal;-webkit-font-smoothing:antialiased;text-align:left}.wmf a{color:inherit;text-decoration:none}.wmf a:hover{opacity:.72}.wmf img{max-width:none}@media (max-width:639px){.wmf__cols{grid-auto-flow:column;grid-auto-columns:46%;overflow-x:auto;scroll-snap-type:x mandatory}}</style>
-  <footer class="wmf" style="width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw);box-sizing:border-box;background:#0B0B0C;color:#fff;padding:clamp(64px,8vw,104px) 0 36px">
-    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,56px);box-sizing:border-box;display:flex;flex-direction:column;gap:64px">
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:28px">
-        <div style="display:flex;flex-direction:column;gap:14px">
-          <span class="cb-brand" style="display:inline-flex;align-items:center;gap:12px;align-self:flex-start"><svg width="44" height="44" viewBox="0 0 32 32" aria-hidden="true" style="flex:none;display:block"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="16" cy="17.6" r="1.6" fill="#1A1A1A"/><circle cx="20.5" cy="17.6" r="1.6" fill="#1A1A1A"/></svg><span style="display:grid;gap:6px"><span style="font-family:Geist,system-ui,sans-serif;font-weight:600;font-size:28px;line-height:1;letter-spacing:-.03em;color:#FFFFFF">Chatberry</span><span style="display:inline-flex;align-items:center;gap:7px;font-family:Geist,system-ui,sans-serif;font-weight:500;font-size:11px;line-height:1;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.62);white-space:nowrap">Product by <img src="/assets/prisim-logo-white.png" alt="Prisim" style="height:26px;width:auto;display:block;max-width:none"></span></span></span>
-          <p style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:clamp(30px,3.6vw,44px);line-height:1.05">Let’s build something smarter.</p>
-        </div>
-        <a href="https://app.prisim.co.in/" style="font-size:16px;font-weight:500;background:#fff;color:#0A0A0A;padding:15px 26px;border-radius:999px">Start for free</a>
-      </div>
-      <div class="wmf__cols" style="scrollbar-width:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px">
-        <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">PRODUCT</span>
-            <a href="/pages/products/customer-os/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Customer OS</a><a href="/pages/products/ai-agents/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">AI Agents</a><a href="/pages/products/ticketing/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Ticketing</a><a href="/pages/products/analytics-bi/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Business Intelligence</a><a href="/pages/products/chatberry-meet/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Chatberry Meet</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">SOLUTIONS</span>
-            <a href="/pages/industries/manufacturing-distribution/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Distribution</a><a href="/pages/industries/hospitality/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Hospitality</a><a href="/pages/industries/education/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Education</a><a href="/pages/industries/real-estate/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Real Estate</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">RESOURCES</span>
-            <a href="/pages/blog/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Blogs</a>
-          </div>
-      
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <span style="font:500 11px 'Geist Mono',monospace;letter-spacing:.08em;color:rgba(255,255,255,.5)">COMPANY</span>
-            <a href="https://wa.me/918147715267" style="font-size:14px;color:rgba(255,255,255,.85)">Contact Us</a><a href="/pages/partners/page.html" style="font-size:14px;color:rgba(255,255,255,.85)">Partners</a><a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo." style="font-size:14px;color:rgba(255,255,255,.85)">Book a Demo</a>
-          </div>
-      </div>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:rgba(255,255,255,.5)">
-        <span>© 2026 Prisim. All rights reserved.</span>
-        <div style="display:flex;gap:20px"><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms &amp; Conditions</a></div>
+<main id="main">
+  <section class="phero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="phero__copy">
+      <span class="lbl rv">Products <em>Knowledge Base</em></span>
+      <h1 class="h-xl h-xl--p"><span class="ln"><span>Teach AI</span></span><span class="ln"><span>what you know.</span></span></h1>
+      <p class="rv d2">Bring documents, website pages, FAQs and business data into one knowledge base that your AI agents and workflows can use.</p>
+      <div class="hero__ctas rv d3">
+        <a class="arw" href="https://app.prisim.co.in/">Start for free <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
+        <a class="arw" href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book a demo <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></a>
       </div>
     </div>
-  </footer>
-  <!-- /chrome:foot -->
+    <div class="phero__art rv d2" aria-hidden="true"><div class="panel" data-tilt><div class="vdoc"><div style="--i:0"><i>PDF</i><span>Price list 2026</span><em>Ready</em></div><div style="--i:1"><i>WEB</i><span>Return policy</span><em>Ready</em></div><div style="--i:2"><i>FAQ</i><span>Delivery questions</span><em>Ready</em></div><div style="--i:3"><i>CSV</i><span>Product catalogue</span><em>Syncing</em></div></div></div></div>
+  </section>
 
-</div>
+  <section class="stmt stmt--p" aria-label="Overview">
+    <div class="stmt__orb" aria-hidden="true"></div>
+    <span class="lbl rv">01 / Overview <em>Knowledge Base</em></span>
+    <p class="stmt__txt" id="stmtTxt">Business knowledge hides in documents, spreadsheets and people’s heads. The Knowledge Base organises it so AI can give customers the right answer.</p>
+  </section>
 
-<script src="/index.js"></script>
-<script src="page.js"></script>
+  <section class="bento-sec" aria-labelledby="f-h">
+    <div class="sec-head">
+      <div><span class="lbl rv">02 / What you get <em>Features</em></span>
+      <h2 class="h-l" id="f-h"><span class="ln"><span>Built to</span></span><span class="ln"><span>make it easy.</span></span></h2></div>
+      <div class="uses rv"><span>Product details</span><span>Policies</span><span>Price lists</span><span>FAQs</span><span>Process guides</span></div>
+    </div>
+    <div class="bento bento--p">
+      <article class="tile ftile f1 rv d0"><span class="ftile__n">01</span><div><h3 class="ftile__t">Add anything useful</h3><p>Upload documents, link website pages, add FAQs and import structured data.</p></div></article>
+      <article class="tile ftile f2 rv d1"><span class="ftile__n">02</span><div><h3 class="ftile__t">Accurate AI answers</h3><p>AI replies using your products, policies and processes, not guesswork.</p></div></article>
+      <article class="tile ftile f3 rv d0"><span class="ftile__n">03</span><div><h3 class="ftile__t">Data that powers messages</h3><p>Use customer and product data to personalise communication and workflows.</p></div></article>
+      <article class="tile ftile f4 rv d1"><span class="ftile__n">04</span><div><h3 class="ftile__t">Easy to keep current</h3><p>Update content as your business changes and see what needs attention.</p></div></article>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="s-h">
+    <div class="swoosh" aria-hidden="true"><i></i><i></i></div>
+    <div class="steps__veil" aria-hidden="true"></div>
+    <div class="sec-head"><div><span class="lbl rv">03 / How it works <em>3 steps</em></span>
+      <h2 class="h-l" id="s-h"><span class="ln"><span>Simple from</span></span><span class="ln"><span>day one.</span></span></h2></div></div>
+    <ol class="rows"><li class="row rv"><div><span class="row__n">(01)</span><span class="row__t">Collect</span><p class="row__d">Add documents, pages, FAQs and data.</p></div></li><li class="row rv"><div><span class="row__n">(02)</span><span class="row__t">Connect</span><p class="row__d">Make it available to AI agents and workflows.</p></div></li><li class="row rv"><div><span class="row__n">(03)</span><span class="row__t">Maintain</span><p class="row__d">Keep it fresh as things change.</p></div></li></ol>
+  </section>
+
+  <section class="faq" aria-labelledby="q-h">
+    <div><span class="lbl rv">04 / Questions <em>FAQ</em></span>
+    <h2 class="h-l" id="q-h"><span class="ln"><span>Good</span></span><span class="ln"><span>questions.</span></span></h2></div>
+    <div class="faq__list rv"><details><summary>What can I upload?<i></i></summary><p>Documents, website content, FAQs and structured business data.</p></details><details><summary>Will AI make things up?<i></i></summary><p>AI answers are grounded in the knowledge you provide, and you can review conversations.</p></details><details><summary>How do I update it?<i></i></summary><p>Edit or replace content at any time and changes apply going forward.</p></details></div>
+  </section>
+
+  <section class="related wrap" aria-labelledby="r-h"><span class="lbl rv">05 / Keep exploring <em>Related</em></span><h2 class="h-m rv" id="r-h" style="margin:22px 0 34px">Works well with</h2><div class="related__grid"><a class="relc rv d0" href="/pages/products/ai-agents/page.html"><small>Products</small><b>AI Agents</b><p>AI agents that understand your business, answer customers, take action and hand over to your team when a person is needed.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d1" href="/pages/solutions/content-engine/page.html"><small>Solutions</small><b>Content Engine</b><p>Use your business information to create templates, replies and campaign messages that are accurate, consistent and quick.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a><a class="relc rv d2" href="/pages/solutions/customer-support/page.html"><small>Solutions</small><b>Customer Support</b><p>AI answers routine questions instantly, your team takes over when it matters, and everything happens in one inbox.</p><span><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg></span></a></div></section>
+
+  <section class="end end--p" aria-labelledby="e-h">
+    <div class="end__glow" aria-hidden="true"></div>
+    <span class="lbl rv">Get started <em>Today</em></span>
+    <h2 id="e-h"><span class="ln"><span>Let&rsquo;s talk.</span></span></h2>
+    <p class="rv">See Knowledge Base working on your own business. It takes one message to start.</p>
+    <div class="end__btns rv d1">
+      <a class="mag" data-mag href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">Book<br>a demo</a>
+      <a class="mag mag--ghost" data-mag href="https://app.prisim.co.in/">Start<br>for free</a>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot__grid">
+    <div class="foot__about"><a class="brand" href="/" aria-label="Chatberry home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="#FF2E2E"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="#140303"/><circle cx="16" cy="17.6" r="1.6" fill="#140303"/><circle cx="20.5" cy="17.6" r="1.6" fill="#140303"/></svg><span><b>Chatberry</b><small>Product by <img src="/assets/prisim-logo-white.png" alt="Prisim"></small></span></a><p>Every customer conversation, handled. Offered and supported by Prisim.</p></div>
+    <div><h4>Product</h4><ul><li><a href="/pages/products/customer-os/page.html">Customer OS</a></li><li><a href="/pages/products/second-brain/page.html">Second Brain</a></li><li><a href="/pages/products/team-management/page.html">Team Management</a></li><li><a href="/pages/products/integrations/page.html">Integrations</a></li><li><a href="/pages/products/mcp/page.html">MCP</a></li><li><a href="/pages/products/ai-agents/page.html">AI Agents</a></li></ul></div>
+    <div><h4>Solutions</h4><ul><li><a href="/pages/solutions/ai-lead-qualification/page.html">AI Lead Qualification</a></li><li><a href="/pages/solutions/analytics/page.html">Analytics</a></li><li><a href="/pages/solutions/campaign-management/page.html">Campaign Management</a></li><li><a href="/pages/solutions/content-engine/page.html">Content Engine</a></li><li><a href="/pages/solutions/custom-solutions/page.html">Custom Solutions</a></li><li><a href="/pages/solutions/customer-journeys/page.html">Customer Journeys</a></li></ul></div>
+    <div><h4>Company</h4><ul>
+      <li><a href="/pages/partners/page.html">Partners</a></li>
+      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="https://wa.me/918147715267">Contact us</a></li>
+      <li><a href="https://app.prisim.co.in/">Sign in</a></li>
+    </ul></div>
+  </div>
+  <div class="foot__legal">
+    <span>© 2026 Prisim. All rights reserved.</span>
+    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+  </div>
+  <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
+</footer>
+<a class="wa" href="https://wa.me/918147715267" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
+<script src="/assets/site.js?v=3" defer></script>
 </body>
 </html>

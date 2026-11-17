@@ -74,9 +74,9 @@
       var t = i / (N - 1), z = -i * depth;
       var body, leaf;
       if (i === 0) { body = 'url(#b3dFront)'; leaf = '#5BC27D'; }
-      else if (i === N - 1) { body = '#1A0204'; leaf = '#0F2A18'; }
-      else { body = mix('9E0B10', '230305', t); leaf = mix('2E7A48', '10301B', t); }
-      var defs = i === 0 ? '<defs><radialGradient id="b3dFront" cx=".32" cy=".3" r=".85"><stop offset="0" stop-color="#FF8A7E"/><stop offset=".32" stop-color="#FF2E2E"/><stop offset=".78" stop-color="#C70E13"/><stop offset="1" stop-color="#7A060A"/></radialGradient><linearGradient id="b3dSheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>' : '';
+      else if (i === N - 1) { body = '#040A22'; leaf = '#0F2A18'; }
+      else { body = mix('1F3FA8', '050C2E', t); leaf = mix('2E7A48', '10301B', t); }
+      var defs = i === 0 ? '<defs><radialGradient id="b3dFront" cx=".32" cy=".3" r=".85"><stop offset="0" stop-color="#8FA8F5"/><stop offset=".32" stop-color="#4169E1"/><stop offset=".78" stop-color="#2A4FC4"/><stop offset="1" stop-color="#13287A"/></radialGradient><linearGradient id="b3dSheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>' : '';
       var sheen = i === 0 ? '<path d="' + BUBBLE + '" fill="url(#b3dSheen)" opacity=".5"/>' : '';
       html += '<svg viewBox="0 0 32 32" style="transform:translateZ(' + z.toFixed(2) + 'px)">' + defs +
         '<path d="' + BUBBLE + DOTS + '" fill="' + body + '" fill-rule="evenodd"/>' +

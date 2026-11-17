@@ -12,7 +12,7 @@ const WA = 'https://wa.me/918147715267';
 const DEMO = WA + '?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.';
 const APP = 'https://app.prisim.co.in/';
 const ARROW = '<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 11 11 3M4.5 3H11v6.5"/></svg>';
-const ICON = (fill = '#FF2E2E', dot = '#140303') => `<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="${fill}"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="${dot}"/><circle cx="16" cy="17.6" r="1.6" fill="${dot}"/><circle cx="20.5" cy="17.6" r="1.6" fill="${dot}"/></svg>`;
+const ICON = (fill = '#4169E1', dot = '#03081A') => `<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 7.5C9.6 7.5 4.5 12 4.5 17.6c0 2.9 1.4 5.5 3.6 7.3L7 29.5l5.2-2.4c1.2.4 2.5.6 3.8.6 6.4 0 11.5-4.5 11.5-10.1S22.4 7.5 16 7.5z" fill="${fill}"/><path d="M16.5 8c.2-3 2-5 5.5-5.5-.4 3.2-2.4 5.2-5.5 5.5z" fill="#4CAF6E"/><circle cx="11.5" cy="17.6" r="1.6" fill="${dot}"/><circle cx="16" cy="17.6" r="1.6" fill="${dot}"/><circle cx="20.5" cy="17.6" r="1.6" fill="${dot}"/></svg>`;
 
 const GROUPS = { products: 'Products', solutions: 'Solutions', industries: 'Industries' };
 const list = g => Object.keys(P).filter(k => k.startsWith(g + '/'));
@@ -43,7 +43,7 @@ function head(title, desc, extra = '') {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=3">
+<link rel="stylesheet" href="/assets/site.css?v=6">
 ${extra}</head>
 <body>
 <a class="sr" href="#main">Skip to content</a>
@@ -77,7 +77,7 @@ function header() {
     <div><h3>Products</h3><ul>${li('products')}</ul></div>
     <div><h3>Solutions</h3><ul>${li('solutions')}</ul></div>
     <div><h3>Industries</h3><ul class="one">${li('industries')}</ul></div>
-    <a class="pill pill--red" href="${APP}" style="justify-self:start">Start for free</a>
+    <a class="pill pill--accent" href="${APP}" style="justify-self:start">Start for free</a>
   </div>
 </nav>
 `;
@@ -103,7 +103,7 @@ function footer() {
   <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
 </footer>
 <a class="wa" href="${WA}" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
-<script src="/assets/site.js?v=3" defer></script>
+<script src="/assets/site.js?v=6" defer></script>
 </body>
 </html>
 `;
@@ -115,7 +115,7 @@ const VIS = {
   stream: v => `<div class="stream stream--dark">${(v || [['W', 'Rahul', 'Is the 2BHK still available?', 'WhatsApp'], ['I', 'Ananya', 'Do you deliver to Pune?', 'Instagram'], ['@', 'Vikram', 'Need an invoice copy', 'Website'], ['W', 'Meera', 'Reschedule to Friday?', 'WhatsApp']]).map(([i, n, t, c]) => `<div class="stream__row"><i>${esc(i)}</i><span><b>${esc(n)}</b> · ${esc(t)}</span><em>${esc(c)}</em></div>`).join('')}</div>`,
   eq: () => `<div class="veq"><span class="tile__big">Send</span><div class="eq"><i></i><i></i><i></i><i></i><i></i><i></i></div><ul class="vstats"><li><b>Delivered</b><span style="--w:94%"></span></li><li><b>Read</b><span style="--w:78%"></span></li><li><b>Replied</b><span style="--w:41%"></span></li></ul></div>`,
   tix: () => `<div class="tix"><div><i></i><span>Refund for order #4821</span><em>Due today</em></div><div><i></i><span>AC not cooling, room 204</span><em>Arjun</em></div><div><i></i><span>Invoice correction</span><em>In progress</em></div><div><i></i><span>Address change request</span><em>Resolved</em></div></div>`,
-  spark: () => `<div class="vspark"><div class="vspark__n"><b>Replies this week</b><span>+18% vs last week</span></div><svg class="spark" viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF2E2E" stop-opacity=".45"/><stop offset="1" stop-color="#FF2E2E" stop-opacity="0"/></linearGradient></defs><path class="f" style="fill:url(#sf)" d="M0 130 C40 120 60 125 90 104 S150 110 180 82 240 92 270 60 330 64 360 34 400 22 400 22 V150 H0Z"/><path class="l" d="M0 130 C40 120 60 125 90 104 S150 110 180 82 240 92 270 60 330 64 360 34 400 22 400 22"/></svg></div>`,
+  spark: () => `<div class="vspark"><div class="vspark__n"><b>Replies this week</b><span>+18% vs last week</span></div><svg class="spark" viewBox="0 0 400 150" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4169E1" stop-opacity=".45"/><stop offset="1" stop-color="#4169E1" stop-opacity="0"/></linearGradient></defs><path class="f" style="fill:url(#sf)" d="M0 130 C40 120 60 125 90 104 S150 110 180 82 240 92 270 60 330 64 360 34 400 22 400 22 V150 H0Z"/><path class="l" d="M0 130 C40 120 60 125 90 104 S150 110 180 82 240 92 270 60 330 64 360 34 400 22 400 22"/></svg></div>`,
   tags: () => `<div class="tags tags--hero">${['Google Sheets', 'Razorpay', 'Shopify', 'WooCommerce', 'Zoho CRM', 'Calendly', 'Webhooks', 'REST API', 'Google Workspace'].map(t => `<span>${t}</span>`).join('')}<span class="tags__core">${ICON()}</span></div>`,
   flow: v => { const n = v || ['Trigger', 'Condition', 'AI step', 'Action']; return `<div class="vflow">${n.map((t, i) => `<div class="vflow__n${i === 2 ? ' is-ai' : ''}"><small>${['WHEN', 'IF', 'THEN', 'DO'][i] || 'STEP'}</small>${esc(t)}</div>`).join('<i class="vflow__l"></i>')}</div>`; },
   kanban: v => `<div class="vkan">${(v || [['New', 'Rahul S.', 'Ananya K.'], ['Qualified', 'Vikram P.'], ['Visit', 'Meera J.'], ['Won', 'Kavya R.']]).map(([h, ...c]) => `<div class="vkan__col"><b>${esc(h)}</b>${c.map(x => `<span>${esc(x)}</span>`).join('')}</div>`).join('')}</div>`,
@@ -255,7 +255,7 @@ const POST = {
 <p>Pick one journey from the list above and set it up this week. When you’re ready to try it on your own number, <a href="${APP}">get started with Chatberry</a> or <a href="${DEMO}">book a demo on WhatsApp</a> and we’ll help you build it.</p>`,
 };
 function blogIndex(topic) {
-  const card = `<a class="bcard rv" href="/pages/blog/${POST.slug}/page.html"><div class="bcard__img" aria-hidden="true"><span>WhatsApp</span>${ICON('#fff', '#FF2E2E')}</div><div class="bcard__body"><span class="lbl">WhatsApp automation <em>Latest</em></span><h2>${esc(POST.title)}</h2><p>${esc(POST.desc)}</p><small>Chatberry Team · ${POST.dateH} · ${POST.read}</small><span class="arw">Read article ${ARROW}</span></div></a>`;
+  const card = `<a class="bcard rv" href="/pages/blog/${POST.slug}/page.html"><div class="bcard__img" aria-hidden="true"><span>WhatsApp</span>${ICON('#fff', '#4169E1')}</div><div class="bcard__body"><span class="lbl">WhatsApp automation <em>Latest</em></span><h2>${esc(POST.title)}</h2><p>${esc(POST.desc)}</p><small>Chatberry Team · ${POST.dateH} · ${POST.read}</small><span class="arw">Read article ${ARROW}</span></div></a>`;
   const t = topic ? 'WhatsApp automation articles' : 'Blog';
   return head(topic ? 'WhatsApp automation articles' : 'Blog', 'Practical guides on WhatsApp, AI and automation for growing businesses, from the Chatberry team.', `<link rel="alternate" type="application/rss+xml" title="Chatberry Blog" href="/pages/blog/feed.xml">\n`) + `<main id="main">
   <section class="phero phero--short">

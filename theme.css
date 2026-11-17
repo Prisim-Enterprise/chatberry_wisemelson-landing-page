@@ -13,9 +13,9 @@
 /* ---------- 1. tokens: the framed system's names, homepage values ---------- */
 :root {
   --ink:       #EDEDED;
-  --lime:      #B7DC3D;   /* the homepage's green signal (accents, dots, rings, small fills) */
-  --lime-soft: #1B1F0D;   /* hover grounds */
-  --lime-ico:  #CAE07F;   /* small marks, bullets, focus rings */
+  --lime:      #FF2E2E;   /* the homepage's green signal (accents, dots, rings, small fills) */
+  --lime-soft: #1F0D0D;   /* hover grounds */
+  --lime-ico:  #FF2E2E;   /* small marks, bullets, focus rings */
   --muted:     #949490;   /* readable grey (5.1:1 on white) */
   --nav-link:  #C4C4C0;
   --rule:      #1B1B17;
@@ -30,7 +30,7 @@
   --hp-band:   #161613;
   --hp-band-soft: #10100B;
   --hp-serif-grey: #858585;
-  --hp-green-ink: #CAE07F;
+  --hp-green-ink: #FF2E2E;
   --hp-spring: cubic-bezier(.34,1.4,.64,1);
   --hp-out:    cubic-bezier(.16,1,.3,1);
   --hp-sh-ring: 0 0 0 1px rgba(0,0,0,.06);
@@ -39,15 +39,15 @@
 }
 /* the product-page scopes redefine these on main.cos — follow them there */
 :root, .cos, .legal, .pg, .bl {
-  --lime-tint: #1D210E;
-  --lime-ink:  #CAE07F;
-  --lime-wash: #131709;
+  --lime-tint: #210E0E;
+  --lime-ink:  #FF2E2E;
+  --lime-wash: #170909;
   --ui-text:   #EDEDED;
   --ease:      cubic-bezier(.22,1,.36,1);
 }
 
 body { color: var(--ink); letter-spacing: normal; }
-::selection { background: #B7DC3D; color: #EDEDED; }
+::selection { background: #FF2E2E; color: #EDEDED; }
 
 /* ---------- 2. the frame dissolves: no hairlines, sections carry the rhythm ---------- */
 .frame { border-left: 0; border-right: 0; }
@@ -119,7 +119,7 @@ main.cos > .cos-final {
 }
 .cos-eyebrow::before, .pg__eyebrow::before, .legal__eyebrow::before {
   width: 7px; height: 7px; border-radius: 50%;
-  background: #B7DC3D; box-shadow: none;
+  background: #FF2E2E; box-shadow: none;
 }
 
 /* ---------- 4. buttons: pills ---------- */
@@ -131,7 +131,7 @@ main.cos > .cos-final {
   transition: transform .4s var(--hp-spring), box-shadow .4s ease, background-color .2s ease;
 }
 .btn--lime { background: #EDEDED; color: #090909; }
-.btn--lime .ico, .btn--lime .i, .btn--lime .cta-arr { color: #B7DC3D; }
+.btn--lime .ico, .btn--lime .i, .btn--lime .cta-arr { color: #FF2E2E; }
 .btn--lime:hover { box-shadow: 0 14px 28px -14px rgba(0,0,0,.45); }
 .btn--dark, .btn--line {
   background: #090909; color: #EDEDED;

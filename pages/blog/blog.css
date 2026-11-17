@@ -17,8 +17,8 @@
 
 .bl {
   --pad: calc(67 * var(--u));
-  --lime-tint: #1D210E;
-  --lime-ink:  #CAE07F;
+  --lime-tint: #210E0E;
+  --lime-ink:  #FF2E2E;
   --faint:     #676767;
   --soft:      #11110c;          /* B6 off-white: placeholders, table heads */
   --ease: cubic-bezier(.2, .8, .2, 1);
@@ -443,7 +443,7 @@
   cursor: pointer;
   transition: background-color .16s ease, color .16s ease, border-color .16s ease;
 }
-.bl-pages button:hover:not(:disabled) { border-color: var(--lime-ico); background: #131709; color: var(--ink); }
+.bl-pages button:hover:not(:disabled) { border-color: var(--lime-ico); background: #170909; color: var(--ink); }
 .bl-pages button[aria-current="page"] { border-color: var(--ink); background: var(--ink); color: var(--lime); }
 .bl-pages button:disabled { opacity: .45; cursor: default; }
 .bl-pages .edge { padding: 0 calc(18 * var(--u)); }
@@ -724,7 +724,7 @@ body:has(.navshell.is-nav-open) .bl-progress { display: none; }
   color: var(--nav-link);
   transition: border-color .16s ease, background-color .16s ease, color .16s ease;
 }
-.bl-author__links a:hover { border-color: var(--lime-ico); background: #131709; color: var(--ink); }
+.bl-author__links a:hover { border-color: var(--lime-ico); background: #170909; color: var(--ink); }
 .bl-author__links a:focus-visible { outline: 2px solid var(--lime-ico); outline-offset: 2px; }
 .bl-author__links .i { width: max(18px, calc(18 * var(--u))); height: max(18px, calc(18 * var(--u))); }
 .bl-author + .bl-post__foot { margin-top: calc(40 * var(--u)); }

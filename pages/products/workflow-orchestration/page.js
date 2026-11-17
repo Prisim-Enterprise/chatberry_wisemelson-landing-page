@@ -166,8 +166,8 @@
   }
 
   /* decision map: the selected intent lights its branch */
-  var br = $all('#dec .wo-br');
-  picker({ box: $('#dec'), items: $all('#dec .wo-br__k'), every: 2600,
+  var br = $all('#efcbcb .wo-br');
+  picker({ box: $('#efcbcb'), items: $all('#efcbcb .wo-br__k'), every: 2600,
            onShow: function (n) { br.forEach(function (b, k) { b.classList.toggle('is-on', k === n); }); } });
 
   /* live execution: each run shows exactly where it is */

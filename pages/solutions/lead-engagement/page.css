@@ -20,14 +20,14 @@
   --ui-text:  #cfcfcf;
   --ui-muted: #919191;
   --ui-faint: #676767;
-  --lime-tint: #1D210E;
-  --lime-ink:  #CAE07F;
-  --lime-wash: #131709;
+  --lime-tint: #210E0E;
+  --lime-ink:  #FF2E2E;
+  --lime-wash: #170909;
   --amber:  #392803;  --amber-ink:  #ffc86d;
   --rose:   #290802;  --rose-ink:   #b23a2c;
   --cyan:   #09262d;  --cyan-ink:   #69d3f0;
   --violet: #160925;  --violet-ink: #8a5dbf;
-  --wa:     #21260e;  --wa-ink:     #c8e07a;
+  --wa:     #270d0d;  --wa-ink:     #ff2e2e;
   --ui-shadow: 0 1px 2px rgba(17, 19, 24, .04), 0 32px 64px -40px rgba(17, 19, 24, .26);
   --ease: cubic-bezier(.2, .8, .2, 1);
 
@@ -404,7 +404,7 @@ html:not(.cos-js) .le [data-until] { display: none; }
 .cos-js .le [data-at]:not(.is-shown),
 .cos-js .le [data-until]:not(.is-shown) { display: none; }
 
-.le-tint--green { background: #171e07; }
+.le-tint--green { background: #1f0606; }
 .le-tint--blue  { background: #091419; }
 .le-tint--lav   { background: #0d0717; }
 .le-tint--warm  { background: #18150d; }
@@ -422,7 +422,7 @@ html:not(.cos-js) .le [data-until] { display: none; }
 .le-b small { display: flex; align-items: center; justify-content: flex-end; gap: calc(4 * var(--k)); margin-top: calc(4 * var(--k)); font-size: calc(11 * var(--k)); color: var(--ui-muted); }
 .le-b small .i { width: calc(13 * var(--k)); height: calc(13 * var(--k)); color: var(--lime-ink); stroke-width: 2.2; }
 .le-b--in { align-self: flex-start; border-bottom-left-radius: calc(4 * var(--k)); background: #090909; box-shadow: 0 1px 1px rgba(17, 19, 24, .06); }
-.le-b--out { align-self: flex-end; border-bottom-right-radius: calc(4 * var(--k)); background: #293f0e; }
+.le-b--out { align-self: flex-end; border-bottom-right-radius: calc(4 * var(--k)); background: #400d0d; }
 .le-sugg { align-self: stretch; margin: 0; padding: calc(12 * var(--k)) calc(14 * var(--k)); border: 1px dashed var(--lime-ico); border-radius: calc(12 * var(--k)); background: var(--lime-wash); font-size: calc(13.5 * var(--k)); line-height: 1.5; color: var(--ink); transition: opacity .45s ease, transform .45s var(--ease); }
 .le-sugg p { margin: 0; }
 .le-sugg__k { display: flex; align-items: center; gap: calc(6 * var(--k)); margin-bottom: calc(4 * var(--k)) !important; font-size: calc(11 * var(--k)); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--lime-ink); }
@@ -469,14 +469,14 @@ figure.le-ib { --k: var(--u); margin: calc(64 * var(--u)) 0 0; }
 .le-row__t { display: grid; justify-items: end; gap: calc(6 * var(--k)); font-size: calc(11.5 * var(--k)); color: var(--ui-faint); }
 .le-dot { width: calc(8 * var(--k)); height: calc(8 * var(--k)); border-radius: 50%; background: var(--lime-ico); }
 .le-row.is-sel { background: var(--lime-wash); box-shadow: inset 3px 0 0 var(--lime-ico); }
-.le-row--new { background: #121506; }
+.le-row--new { background: #150606; }
 .le-chat { display: flex; flex-direction: column; min-width: 0; }
 .le-chat > .le-chat__h { padding: calc(13 * var(--k)) calc(18 * var(--k)); border-bottom: 1px solid var(--ui-line); }
 .le-ctx { padding: calc(18 * var(--k)); border-left: 1px solid var(--ui-line); }
 .le-peer { display: flex; align-items: center; gap: calc(10 * var(--k)); padding: calc(10 * var(--k)) calc(12 * var(--k)); border: 1px solid var(--ui-line); border-radius: calc(12 * var(--k)); transition: opacity .45s ease; }
 .le-peer b { display: block; font-size: calc(13 * var(--k)); font-weight: 600; color: var(--ink); }
 .le-peer small { display: block; font-size: calc(11.5 * var(--k)); color: var(--ui-muted); }
-.le-live { width: calc(8 * var(--k)); height: calc(8 * var(--k)); margin-left: auto; border-radius: 50%; background: var(--lime-ico); box-shadow: 0 0 0 calc(3 * var(--k)) rgba(183,220,61, .35); }
+.le-live { width: calc(8 * var(--k)); height: calc(8 * var(--k)); margin-left: auto; border-radius: 50%; background: var(--lime-ico); box-shadow: 0 0 0 calc(3 * var(--k)) rgba(255,46,46, .35); }
 #overview .le-fine { margin-top: calc(20 * var(--u)); }
 
 /* ---------- 02 problem: photo + four editorial statements ---------- */
@@ -561,7 +561,7 @@ figure.le-ch { display: grid; grid-template-columns: calc(640 * var(--u)) calc(1
 .le-ep__t p { margin: calc(5 * var(--u)) 0 0; font-size: calc(14 * var(--u)); line-height: calc(21 * var(--u)); color: var(--muted); }
 .le-wire { width: 100%; height: 100%; overflow: visible; }
 .le-wire path { fill: none; stroke: var(--lime-ico); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
-.le-in { --k: var(--u); align-self: center; border-color: var(--lime-ico); box-shadow: 0 0 0 calc(6 * var(--u)) rgba(183,220,61, .2), var(--ui-shadow); }
+.le-in { --k: var(--u); align-self: center; border-color: var(--lime-ico); box-shadow: 0 0 0 calc(6 * var(--u)) rgba(255,46,46, .2), var(--ui-shadow); }
 .le-in__l { margin: 0; padding: 0; list-style: none; }
 .le-in__l li { display: flex; align-items: center; gap: calc(12 * var(--k)); padding: calc(12 * var(--k)) calc(16 * var(--k)); border-bottom: 1px solid var(--ui-line); transition: opacity .45s ease, transform .45s var(--ease); }
 .le-in__l li > span:nth-child(2) { min-width: 0; }
@@ -656,8 +656,8 @@ figure.le-an { --k: var(--u); margin: calc(64 * var(--u)) 0 0; padding: calc(24 
 .le-bars em { font-style: normal; font-weight: 600; text-align: right; color: var(--ink); }
 .le-line { display: block; width: 100%; height: calc(150 * var(--u)); }
 .le-line__g { fill: none; stroke: #181c21; stroke-width: 1; vector-effect: non-scaling-stroke; }
-.le-line__a { fill: rgba(183,220,61, .22); }
-.le-line__p { fill: none; stroke: #8DAF1F; stroke-width: 2.2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.le-line__a { fill: rgba(255,46,46, .22); }
+.le-line__p { fill: none; stroke: #B31B1B; stroke-width: 2.2; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
 .le-axis { display: flex; justify-content: space-between; margin-top: calc(8 * var(--u)) !important; font-size: calc(11.5 * var(--u)); color: var(--ui-faint); }
 .le-stack { display: flex; gap: 3px; height: calc(14 * var(--u)); margin-bottom: calc(10 * var(--u)) !important; overflow: hidden; border-radius: 99px; }
 .le-stack i { flex: 0 0 calc(var(--v) * 1% - 2px); }
@@ -709,7 +709,7 @@ figure.le-an { --k: var(--u); margin: calc(64 * var(--u)) 0 0; padding: calc(24 
   .cos-js .le-tv [data-lit]:not(.is-lit) { opacity: 0; transform: translateY(8px); }
   .cos-js .le-peer:not(.is-lit) { opacity: .3; }
   .cos-js .le-live { animation: lePulse 1.8s ease-in-out infinite; }
-  @keyframes lePulse { 50% { box-shadow: 0 0 0 calc(6 * var(--k)) rgba(183,220,61, 0); } }
+  @keyframes lePulse { 50% { box-shadow: 0 0 0 calc(6 * var(--k)) rgba(255,46,46, 0); } }
 
   /* channels: entry points light, rows land in the inbox */
   .cos-js .le-ep:not(.is-lit) { opacity: .35; }
@@ -821,7 +821,7 @@ figure.le-an { --k: var(--u); margin: calc(64 * var(--u)) 0 0; padding: calc(24 
   .le-kind { font-size: 10.5px; padding: 3px 8px; }
   .le-ep__t p { font-size: 14.5px; line-height: 22px; }
   .le-wire { display: none; }
-  .le-in { --k: .86px; position: relative; margin-top: 34px; box-shadow: 0 0 0 5px rgba(183,220,61, .2), var(--ui-shadow); overflow: visible; }
+  .le-in { --k: .86px; position: relative; margin-top: 34px; box-shadow: 0 0 0 5px rgba(255,46,46, .2), var(--ui-shadow); overflow: visible; }
   .le-in::before { content: ""; position: absolute; left: 50%; top: -30px; width: 2px; height: 24px; background: var(--lime-ico); }
   .le-in__l { overflow: hidden; }
 

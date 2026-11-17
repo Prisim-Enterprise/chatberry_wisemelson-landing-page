@@ -20,14 +20,14 @@
   --ui-text:  #cfcfcf;
   --ui-muted: #919191;
   --ui-faint: #676767;
-  --lime-tint: #1D210E;
-  --lime-ink:  #CAE07F;
-  --lime-wash: #131709;
+  --lime-tint: #210E0E;
+  --lime-ink:  #FF2E2E;
+  --lime-wash: #170909;
   --amber:  #392803;  --amber-ink:  #ffc86d;
   --rose:   #290802;  --rose-ink:   #b23a2c;
   --cyan:   #09262d;  --cyan-ink:   #69d3f0;
   --violet: #160925;  --violet-ink: #8a5dbf;
-  --wa:     #21260e;  --wa-ink:     #c8e07a;
+  --wa:     #270d0d;  --wa-ink:     #ff2e2e;
   --ui-shadow: 0 1px 2px rgba(17, 19, 24, .04), 0 32px 64px -40px rgba(17, 19, 24, .26);
   --ease: cubic-bezier(.2, .8, .2, 1);
 
@@ -507,7 +507,7 @@ figure.cp-build { margin: calc(72 * var(--u)) 0 0; }
 .cp-steps small { display: block; font-size: calc(12.5 * var(--k)); color: var(--ui-muted); }
 .cp-steps em { font-style: normal; font-family: var(--font-head); font-size: calc(16 * var(--k)); font-weight: 600; color: var(--ink); }
 .cp-steps em .i { width: calc(18 * var(--k)); height: calc(18 * var(--k)); color: var(--lime-ink); }
-.cp-steps li.is-on { border-color: var(--lime-ico); box-shadow: 0 0 0 calc(4 * var(--k)) rgba(183,220,61, .25); }
+.cp-steps li.is-on { border-color: var(--lime-ico); box-shadow: 0 0 0 calc(4 * var(--k)) rgba(255,46,46, .25); }
 .cp-prev { padding: calc(22 * var(--k)) calc(20 * var(--k)); border-left: 1px solid var(--ui-line); background: #0e0e0b; }
 .cp-prev__k { margin-bottom: calc(10 * var(--k)) !important; font-size: calc(11 * var(--k)); font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ui-faint); }
 /* the WhatsApp template preview: a narrow window, so --p follows a 300-pt screen to keep the text readable */
@@ -565,7 +565,7 @@ figure.cp-build { margin: calc(72 * var(--u)) 0 0; }
 .cp-matrix { display: grid; grid-template-columns: calc(130 * var(--k)) repeat(3, minmax(0, 1fr)); gap: calc(6 * var(--k)); font-size: calc(13 * var(--k)); }
 .cp-matrix b { display: flex; align-items: center; font-weight: 600; color: var(--ink); }
 .cp-matrix > b:nth-child(-n+4) { justify-content: center; font-size: calc(12 * var(--k)); color: var(--ui-muted); }
-.cp-matrix i { display: grid; place-items: center; height: calc(42 * var(--k)); border-radius: calc(9 * var(--k)); background: rgba(202,224,127, var(--v)); font-style: normal; font-weight: 600; color: var(--ink); }
+.cp-matrix i { display: grid; place-items: center; height: calc(42 * var(--k)); border-radius: calc(9 * var(--k)); background: rgba(255,46,46, var(--v)); font-style: normal; font-weight: 600; color: var(--ink); }
 .cp-hist { display: flex; align-items: flex-end; gap: calc(8 * var(--k)); height: calc(150 * var(--k)); padding-bottom: calc(4 * var(--k)); border-bottom: 1px solid var(--ui-line); }
 .cp-hist i { flex: 1; height: calc(var(--v) * 100%); border-radius: calc(6 * var(--k)) calc(6 * var(--k)) 0 0; background: #292922; transform-origin: bottom; }
 .cp-hist i:nth-child(-n+2) { background: var(--lime-ico); }
@@ -580,7 +580,7 @@ figure.cp-build { margin: calc(72 * var(--u)) 0 0; }
 .cp-rec__tag .i { width: calc(13 * var(--k)); height: calc(13 * var(--k)); }
 .cp-rec__t { margin-top: calc(14 * var(--k)) !important; font-family: var(--font-head); font-size: calc(22 * var(--k)); line-height: 1.35; font-weight: 500; letter-spacing: -0.02em; color: var(--ink); }
 .cp-rec__why { margin-top: calc(8 * var(--k)) !important; font-size: calc(13.5 * var(--k)); color: var(--ui-muted); }
-.cp-rec__you { display: flex; align-items: center; gap: calc(8 * var(--k)); margin-top: calc(16 * var(--k)) !important; padding-top: calc(14 * var(--k)); border-top: 1px solid #313A15; font-size: calc(13.5 * var(--k)); font-weight: 600; color: var(--ink); }
+.cp-rec__you { display: flex; align-items: center; gap: calc(8 * var(--k)); margin-top: calc(16 * var(--k)) !important; padding-top: calc(14 * var(--k)); border-top: 1px solid #3B1414; font-size: calc(13.5 * var(--k)); font-weight: 600; color: var(--ink); }
 .cp-rec__you .i { width: calc(16 * var(--k)); height: calc(16 * var(--k)); color: var(--lime-ink); }
 
 /* ---------- 04 schedule ---------- */

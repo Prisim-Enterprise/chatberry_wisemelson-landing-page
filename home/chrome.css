@@ -1,7 +1,0 @@
-/* Homepage: footer snapping and phone spacing. Written by tools/build-home.py — do not edit. */
-/* the footer is a snap point only once the page has rendered: before that it is the only one,
-   the browser snaps to it and stays there while the page fills in above (you land at the bottom) */
-.wmf { scroll-snap-align: none; }
-html.wm-ready .wmf { scroll-snap-align: start; }
-/* under 640px the page keeps its sticky CTA bar: room for it below the footer */
-@media (max-width: 639px) { .wmf { padding-bottom: 120px !important; } }

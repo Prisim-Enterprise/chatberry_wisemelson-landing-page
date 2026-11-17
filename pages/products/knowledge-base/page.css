@@ -20,14 +20,14 @@
   --ui-text:  #cfcfcf;
   --ui-muted: #919191;
   --ui-faint: #676767;
-  --lime-tint: #1D210E;
-  --lime-ink:  #CAE07F;
-  --lime-wash: #131709;
+  --lime-tint: #210E0E;
+  --lime-ink:  #FF2E2E;
+  --lime-wash: #170909;
   --amber:  #392803;  --amber-ink:  #ffc86d;
   --rose:   #290802;  --rose-ink:   #b23a2c;
   --cyan:   #09262d;  --cyan-ink:   #69d3f0;
   --violet: #160925;  --violet-ink: #8a5dbf;
-  --wa:     #21260e;  --wa-ink:     #c8e07a;
+  --wa:     #270d0d;  --wa-ink:     #ff2e2e;
   --ui-shadow: 0 1px 2px rgba(17, 19, 24, .04), 0 32px 64px -40px rgba(17, 19, 24, .26);
   --ease: cubic-bezier(.2, .8, .2, 1);
 
@@ -437,7 +437,7 @@ figure.kb-scene { position: relative; display: grid; grid-template-columns: calc
 .kb-src__h .i { width: calc(15 * var(--k)); height: calc(15 * var(--k)); color: var(--lime-ink); }
 .kb-src__h b { font-family: var(--font-head); font-size: calc(15 * var(--k)); font-weight: 600; letter-spacing: -0.02em; color: var(--ink); }
 .kb-src__h span { margin-left: auto; font-size: calc(12 * var(--k)); color: var(--ui-faint); }
-.kb-src__i { margin: calc(12 * var(--k)) calc(12 * var(--k)) 0; padding: calc(12 * var(--k)) calc(14 * var(--k)); border: 1px solid var(--lime-ico); border-radius: calc(12 * var(--k)); background: var(--lime-wash); box-shadow: 0 0 0 calc(3 * var(--k)) rgba(183,220,61, .22); transition: border-color .4s ease, background-color .4s ease, box-shadow .4s ease; }
+.kb-src__i { margin: calc(12 * var(--k)) calc(12 * var(--k)) 0; padding: calc(12 * var(--k)) calc(14 * var(--k)); border: 1px solid var(--lime-ico); border-radius: calc(12 * var(--k)); background: var(--lime-wash); box-shadow: 0 0 0 calc(3 * var(--k)) rgba(255,46,46, .22); transition: border-color .4s ease, background-color .4s ease, box-shadow .4s ease; }
 .kb-src__k { display: flex; align-items: center; gap: calc(9 * var(--k)); }
 .kb-src__k b { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: calc(13.5 * var(--k)); font-weight: 600; color: var(--ink); }
 .kb-src__k em { margin-left: auto; flex: none; font-style: normal; font-size: calc(11.5 * var(--k)); color: var(--ui-faint); }
@@ -543,15 +543,15 @@ figure.kb-talk { display: grid; grid-template-columns: minmax(0, 1fr) calc(420 *
 .kb-chat__log { display: flex; flex: 1; flex-direction: column; gap: calc(12 * var(--k)); padding: calc(22 * var(--k)) calc(20 * var(--k)); min-height: calc(300 * var(--k)); }
 .kb-q { align-self: flex-start; max-width: 76%; padding: calc(12 * var(--k)) calc(15 * var(--k)); border-radius: calc(16 * var(--k)) calc(16 * var(--k)) calc(16 * var(--k)) calc(4 * var(--k)); background: #1a1a15; font-size: calc(15 * var(--k)); line-height: 1.45; color: var(--ink); }
 .kb-q b { display: block; margin-bottom: calc(3 * var(--k)); font-size: calc(11.5 * var(--k)); font-weight: 600; color: var(--ui-muted); }
-.kb-a { align-self: flex-end; max-width: 82%; padding: calc(14 * var(--k)) calc(16 * var(--k)); border: 1px solid #354512; border-radius: calc(16 * var(--k)) calc(16 * var(--k)) calc(4 * var(--k)) calc(16 * var(--k)); background: var(--lime-wash); }
+.kb-a { align-self: flex-end; max-width: 82%; padding: calc(14 * var(--k)) calc(16 * var(--k)); border: 1px solid #461111; border-radius: calc(16 * var(--k)) calc(16 * var(--k)) calc(4 * var(--k)) calc(16 * var(--k)); background: var(--lime-wash); }
 .kb-a p { font-size: calc(15 * var(--k)); line-height: 1.5; color: var(--ink); }
 .kb-a p + p { margin-top: calc(8 * var(--k)) !important; }
 .kb-a b { font-weight: 600; }
-.kb-a .kb-from { display: flex; align-items: center; gap: calc(6 * var(--k)); margin-top: calc(12 * var(--k)) !important; padding-top: calc(10 * var(--k)); border-top: 1px solid #313A15; font-size: calc(12 * var(--k)); color: var(--ui-muted); }
+.kb-a .kb-from { display: flex; align-items: center; gap: calc(6 * var(--k)); margin-top: calc(12 * var(--k)) !important; padding-top: calc(10 * var(--k)); border-top: 1px solid #3B1414; font-size: calc(12 * var(--k)); color: var(--ui-muted); }
 .kb-from .i { width: calc(13 * var(--k)); height: calc(13 * var(--k)); color: var(--lime-ink); stroke-width: 2.4; }
 .kb-from b { color: var(--ink); }
 .kb-talk__side { display: grid; gap: calc(16 * var(--u)); }
-.kb-rec { border-color: var(--lime-ico); box-shadow: 0 0 0 calc(4 * var(--k)) rgba(183,220,61, .25), var(--ui-shadow); transition: border-color .4s ease, box-shadow .4s ease; }
+.kb-rec { border-color: var(--lime-ico); box-shadow: 0 0 0 calc(4 * var(--k)) rgba(255,46,46, .25), var(--ui-shadow); transition: border-color .4s ease, box-shadow .4s ease; }
 .kb-rec__h { display: flex; flex-wrap: wrap; align-items: center; gap: calc(8 * var(--k)); padding: calc(14 * var(--k)) calc(16 * var(--k)); border-bottom: 1px solid var(--ui-line); font-size: calc(13 * var(--k)); color: var(--ui-muted); }
 .kb-rec__h > .i { width: calc(15 * var(--k)); height: calc(15 * var(--k)); color: var(--violet-ink); }
 .kb-rec__h > span:first-of-type { display: inline-flex; align-items: center; gap: calc(5 * var(--k)); }
@@ -611,7 +611,7 @@ figure.kb-talk { display: grid; grid-template-columns: minmax(0, 1fr) calc(420 *
 .kb-snip__k { margin-bottom: calc(6 * var(--k)) !important; font-size: calc(10.5 * var(--k)); font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ui-faint); }
 .kb-gap { display: flex; align-items: center; justify-content: space-between; gap: calc(10 * var(--k)); padding: calc(9 * var(--k)) 0; border-top: 1px solid var(--ui-line); }
 .kb-gap--ok { opacity: .6; }
-.kb-snip--live { border-color: var(--lime-ico); box-shadow: 0 0 0 calc(4 * var(--k)) rgba(183,220,61, .25), var(--ui-shadow); }
+.kb-snip--live { border-color: var(--lime-ico); box-shadow: 0 0 0 calc(4 * var(--k)) rgba(255,46,46, .25), var(--ui-shadow); }
 .kb-snip__use { display: flex; flex-wrap: wrap; align-items: center; gap: calc(6 * var(--k)); margin-top: calc(12 * var(--k)) !important; padding-top: calc(10 * var(--k)); border-top: 1px solid var(--ui-line); }
 .kb-snip__use > span:first-child { margin-right: calc(2 * var(--k)); font-size: calc(11.5 * var(--k)); color: var(--ui-muted); }
 

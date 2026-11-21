@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Chatberry Blog</title>
+    <link>/blog/</link>
+    <description>Practical guides on WhatsApp, AI and automation for growing businesses.</description>
+    <language>en-in</language>
+    <item>
+      <title>WhatsApp automation for beginners: what to automate first</title>
+      <link>/blog/getting-started-with-whatsapp-automation/</link>
+      <guid>/blog/getting-started-with-whatsapp-automation/</guid>
+      <pubDate>Mon, 19 Oct 2026 03:30:00 GMT</pubDate>
+      <description>A practical starting plan for WhatsApp automation: which conversations to automate first, how templates and sessions work, and how to tell if it is working.</description>
+      <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[
+<p class="lead">Most businesses don’t need a huge automation project. They need the five or six conversations they have every day to happen faster and more reliably. This guide shows where to start.</p>
+<h2 id="start-small">Start with the questions you answer every day</h2>
+<p>Open your WhatsApp chats from last week and count. You’ll find the same handful of messages again and again: prices, timings, location, order status, booking changes. These are your first automation candidates, because the answer rarely changes and customers want it immediately.</p>
+<p>A good first automation has three qualities:</p>
+<ul>
+<li>It happens often, at least a few times a day.</li>
+<li>The answer comes from information you already have, like a price list, a schedule or an order system.</li>
+<li>A slow reply costs you something: a missed booking, a cold lead or an annoyed customer.</li>
+</ul>
+<h2 id="first-journeys">Five journeys worth automating first</h2>
+<ol>
+<li><b>Instant first reply.</b> Greet every new enquiry within seconds, ask one useful question, and route it to the right person.</li>
+<li><b>Appointment booking and reminders.</b> Let people pick a slot, then remind them the day before. No-shows drop noticeably when reminders arrive on WhatsApp.</li>
+<li><b>Order and delivery updates.</b> Confirm the order, share dispatch details and tell customers when it’s arriving.</li>
+<li><b>Payment reminders.</b> A polite nudge with a payment link works better than a phone call for most small dues.</li>
+<li><b>Feedback after service.</b> Ask for a rating while the experience is fresh, and send unhappy customers straight to a person.</li>
+</ol>
+<h2 id="templates">Templates, sessions and what they cost</h2>
+<p>On the official WhatsApp Business Platform, there are two kinds of conversations. When a customer messages you, a 24-hour customer service window opens and you can reply freely. When you start the conversation, for example with a reminder or an offer, you must use a template that WhatsApp has approved.</p>
+<div class="tbl"><table>
+<thead><tr><th>Category</th><th>Typical use</th><th>Template needed?</th></tr></thead>
+<tbody>
+<tr><td>Marketing</td><td>Offers, launches, re-engagement</td><td>Yes</td></tr>
+<tr><td>Utility</td><td>Order updates, reminders, confirmations</td><td>Yes</td></tr>
+<tr><td>Authentication</td><td>One-time passwords</td><td>Yes</td></tr>
+<tr><td>Service</td><td>Replies inside the 24-hour window</td><td>No</td></tr>
+</tbody></table></div>
+<p>Meta charges differently for each category and updates its rates from time to time, so check the current <a href="https://developers.facebook.com/docs/whatsapp/pricing" target="_blank" rel="noopener">WhatsApp pricing page</a> before you plan a large campaign.</p>
+<h2 id="human">Keep a person one tap away</h2>
+<p>Automation should make your team faster, not hide them. Every journey needs a clear way out: a “talk to someone” button, or a rule that hands the chat to a person when the customer is upset or the question is unusual. Customers forgive a bot that can’t help. They don’t forgive one that won’t let them reach a human.</p>
+<h2 id="measure">Measure outcomes, not messages</h2>
+<p>Sending more messages isn’t the goal. Pick one number per journey and watch it for a month:</p>
+<ul>
+<li>First reply time for new enquiries.</li>
+<li>No-show rate for appointments.</li>
+<li>Days to collect payments.</li>
+<li>Share of chats resolved without a person.</li>
+</ul>
+<p>If the number improves, add the next journey. If it doesn’t, look at where people drop off and fix that step first.</p>
+<h2 id="next">Your next step</h2>
+<p>Pick one journey from the list above and set it up this week. When you’re ready to try it on your own number, <a href="https://app.prisim.co.in/">get started with Chatberry</a> or <a href="https://wa.me/918147715267?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.">book a demo on WhatsApp</a> and we’ll help you build it.</p>]]></content:encoded>
+    </item>
+  </channel>
+</rss>

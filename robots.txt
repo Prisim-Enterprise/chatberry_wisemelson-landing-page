@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /pages/coming-soon/
 
 # After deploying, run: node scripts/set-site-url.cjs https://your-address
 # That adds the Sitemap line here and creates sitemap.xml.

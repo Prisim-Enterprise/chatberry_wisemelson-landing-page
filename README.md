@@ -11,18 +11,21 @@ Click the button above, or in Vercel choose **Add New → Project** and import t
 - no install or build command
 - publish the whole repository folder (not just `public/`)
 - `404.html` for unknown addresses
-- `/pages/<name>/` opens `/pages/<name>/page.html`
+- clean addresses ending in `/`, such as `/products/customer-os/`
+- old `/pages/...` addresses redirect to the new ones
 
 Every push to `main` redeploys the site.
 
 ## After the first deploy
 
-Set the site's final address so link previews (WhatsApp, LinkedIn) and the Google sitemap work:
+Set the site's final address. This adds canonical links, link previews (WhatsApp, LinkedIn), structured data for Google, `sitemap.xml` and the Sitemap line in `robots.txt`:
 
 ```
 node scripts/set-site-url.cjs https://your-final-address
 git add -A && git commit -m "Set site URL" && git push
 ```
+
+Then add the site to [Google Search Console](https://search.google.com/search-console) and submit `https://your-final-address/sitemap.xml`.
 
 ## Run locally
 
@@ -39,18 +42,20 @@ Then open http://localhost:4321.
 | `index.html` | Home page (written by hand) |
 | `assets/site.css`, `assets/site.js` | Shared design and interactions for every page |
 | `scripts/site/content.cjs` | Text for every product, solution, industry and partner page |
-| `scripts/site/build.cjs` | Builds `pages/` (plus blog, legal, coming-soon and 404) from the content file |
-| `pages/` | Generated pages; don't edit these by hand |
+| `scripts/site/seo.cjs` | Google titles, descriptions and heading keywords for those pages |
+| `scripts/site/build.cjs` | Builds the pages below from the content files |
+| `products/`, `solutions/`, `industries/`, `partners/`, `blog/`, `coming-soon/` | Generated pages; don't edit these by hand |
+| `privacy-policy/`, `terms-of-service/` | Legal pages. Edit the text inside `<article>` directly; the build keeps it |
 | `assets/` | Logo, icons and favicons |
 | `public/assets/img/` | Share images for link previews |
-| `scripts/set-site-url.cjs` | Adds the site address to every page and writes `sitemap.xml` |
+| `scripts/set-site-url.cjs` | Adds the site address, share tags and structured data to every page, and writes `sitemap.xml` |
 
 ## Changing page text
 
-1. Edit `scripts/site/content.cjs` (or the blog post and legal text in `build.cjs` / the legal pages).
+1. Edit `scripts/site/content.cjs` for page text, `scripts/site/seo.cjs` for Google titles and descriptions, `build.cjs` for the blog post, or the legal pages directly.
 2. Run `node scripts/site/build.cjs`.
 3. Commit and push. Vercel redeploys automatically.
 
-If you've already run `set-site-url.cjs`, run it again after building so the new pages get their share tags.
+If you've already run `set-site-url.cjs`, run it again after building, because the build rewrites the pages.
 
 All enquiries (demo, contact, guides, partners) open a WhatsApp chat to +91 81477 15267.

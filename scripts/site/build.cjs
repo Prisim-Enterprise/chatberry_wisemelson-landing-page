@@ -1,13 +1,15 @@
 #!/usr/bin/env node
 // Builds every inner page of the Chatberry site from scripts/site/content.cjs.
 //   node scripts/site/build.cjs
-// Writes pages/**/page.html, the blog, legal, coming-soon and 404 pages, and pages/blog/feed.xml.
+// Writes <group>/<name>/index.html (products, solutions, industries, partners), the blog,
+// the legal pages, coming-soon and 404. Search titles and descriptions come from seo.cjs.
 const fs = require('fs'), path = require('path');
 const root = path.resolve(__dirname, '..', '..');
 const P = require('./content.cjs');
+const SEO = require('./seo.cjs');
 const W = (rel, html) => { const f = path.join(root, rel); fs.mkdirSync(path.dirname(f), { recursive: true }); fs.writeFileSync(f, html); };
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-const url = slug => '/pages/' + slug + '/page.html';
+const url = slug => '/' + slug + '/';
 const WA = 'https://wa.me/918147715267';
 const DEMO = WA + '?text=Hi%20Chatberry%2C%20I%27d%20like%20to%20book%20a%20demo.';
 const APP = 'https://app.prisim.co.in/';
@@ -43,7 +45,7 @@ function head(title, desc, extra = '') {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=6">
+<link rel="stylesheet" href="/assets/site.css?v=7">
 ${extra}</head>
 <body>
 <a class="sr" href="#main">Skip to content</a>
@@ -70,7 +72,7 @@ function header() {
     <li><a href="/#features"><small>02</small>Platform</a></li>
     <li><a href="/#industries"><small>03</small>Industries</a></li>
     <li><a href="${url('partners')}"><small>04</small>Partners</a></li>
-    <li><a href="/pages/blog/page.html"><small>05</small>Blog</a></li>
+    <li><a href="/blog/"><small>05</small>Blog</a></li>
     <li><a href="${DEMO}"><small>06</small>Book a demo</a></li>
   </ul>
   <div class="menu__side">
@@ -91,19 +93,19 @@ function footer() {
     <div><h4>Solutions</h4><ul>${li('solutions', 6)}</ul></div>
     <div><h4>Company</h4><ul>
       <li><a href="${url('partners')}">Partners</a></li>
-      <li><a href="/pages/blog/page.html">Blog</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="${WA}">Contact us</a></li>
       <li><a href="${APP}">Sign in</a></li>
     </ul></div>
   </div>
   <div class="foot__legal">
     <span>© 2026 Prisim. All rights reserved.</span>
-    <div><a href="/pages/legal/privacy-policy/page.html">Privacy Policy</a><a href="/pages/legal/terms-of-service/page.html">Terms of Service</a></div>
+    <div><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-of-service/">Terms of Service</a></div>
   </div>
   <div class="foot__word" aria-hidden="true">Chatberry<span>.</span></div>
 </footer>
 <a class="wa" href="${WA}" aria-label="Chat with us on WhatsApp"><i><svg viewBox="0 0 24 24"><path d="M12 2.2A9.7 9.7 0 0 0 3.7 16.9L2.3 21.8l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.7c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 19.9zm4.4-6c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8 1c-.1.2-.3.2-.5.1a6.6 6.6 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1c0 1.2.9 2.4 1 2.6.1.2 1.8 2.7 4.3 3.8 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.5-.3z"/></svg></i><span>WhatsApp us</span></a>
-<script src="/assets/site.js?v=6" defer></script>
+<script src="/assets/site.js?v=7" defer></script>
 </body>
 </html>
 `;
@@ -133,7 +135,7 @@ const vis = (k, v) => (VIS[k] || VIS.chat)(v);
 
 /* ---------------- page template ---------------- */
 function page(slug) {
-  const d = P[slug], grp = slug.split('/')[0], gname = GROUPS[grp] || d.label || 'Chatberry';
+  const d = { ...P[slug], ...SEO[slug] }, grp = slug.split('/')[0], gname = GROUPS[grp] || d.label || 'Chatberry';
   const words = d.h1.map(l => `<span class="ln"><span>${esc(l)}</span></span>`).join('');
   const cta = d.cta || ['Book a demo', DEMO];
   const pains = d.pains ? `
@@ -148,8 +150,7 @@ function page(slug) {
   <section class="phero">
     <div class="hero__glow" aria-hidden="true"></div>
     <div class="phero__copy">
-      <span class="lbl rv">${esc(gname)} <em>${esc(d.name)}</em></span>
-      <h1 class="h-xl h-xl--p">${words}</h1>
+      <h1 class="h-xl h-xl--p"><span class="lbl rv h1kw">${esc(d.name)} <em>${esc(d.kw || gname)}</em></span>${words}</h1>
       <p class="rv d2">${esc(d.lede)}</p>
       <div class="hero__ctas rv d3">
         <a class="arw" href="${APP}">Start for free ${ARROW}</a>
@@ -210,6 +211,7 @@ ${pains}
 const POST = {
   slug: 'getting-started-with-whatsapp-automation', date: '2026-10-19', dateH: '19 Oct 2026', read: '5 min read',
   title: 'WhatsApp automation for beginners: what to automate first',
+  seoTitle: 'WhatsApp Automation: A Beginner’s Guide',
   desc: 'A practical starting plan for WhatsApp automation: which conversations to automate first, how templates and sessions work, and how to tell if it is working.',
   body: `
 <p class="lead">Most businesses don’t need a huge automation project. They need the five or six conversations they have every day to happen faster and more reliably. This guide shows where to start.</p>
@@ -255,19 +257,18 @@ const POST = {
 <p>Pick one journey from the list above and set it up this week. When you’re ready to try it on your own number, <a href="${APP}">get started with Chatberry</a> or <a href="${DEMO}">book a demo on WhatsApp</a> and we’ll help you build it.</p>`,
 };
 function blogIndex(topic) {
-  const card = `<a class="bcard rv" href="/pages/blog/${POST.slug}/page.html"><div class="bcard__img" aria-hidden="true"><span>WhatsApp</span>${ICON('#fff', '#4169E1')}</div><div class="bcard__body"><span class="lbl">WhatsApp automation <em>Latest</em></span><h2>${esc(POST.title)}</h2><p>${esc(POST.desc)}</p><small>Chatberry Team · ${POST.dateH} · ${POST.read}</small><span class="arw">Read article ${ARROW}</span></div></a>`;
+  const card = `<a class="bcard rv" href="/blog/${POST.slug}/"><div class="bcard__img" aria-hidden="true"><span>WhatsApp</span>${ICON('#fff', '#4169E1')}</div><div class="bcard__body"><span class="lbl">WhatsApp automation <em>Latest</em></span><h2>${esc(POST.title)}</h2><p>${esc(POST.desc)}</p><small>Chatberry Team · ${POST.dateH} · ${POST.read}</small><span class="arw">Read article ${ARROW}</span></div></a>`;
   const t = topic ? 'WhatsApp automation articles' : 'Blog';
-  return head(topic ? 'WhatsApp automation articles' : 'Blog', 'Practical guides on WhatsApp, AI and automation for growing businesses, from the Chatberry team.', `<link rel="alternate" type="application/rss+xml" title="Chatberry Blog" href="/pages/blog/feed.xml">\n`) + `<main id="main">
+  return head(topic ? 'WhatsApp Automation Articles' : 'WhatsApp Automation Blog', topic ? 'Every Chatberry article on WhatsApp automation: templates, chatbots, campaigns and the WhatsApp Business API, explained for growing Indian businesses.' : 'Practical guides on WhatsApp marketing, AI chatbots and automation for growing businesses in India, written by the Chatberry team at Prisim.', `<link rel="alternate" type="application/rss+xml" title="Chatberry Blog" href="/blog/feed.xml">\n`) + `<main id="main">
   <section class="phero phero--short">
     <div class="hero__glow" aria-hidden="true"></div>
     <div class="phero__copy">
-      <span class="lbl rv">${topic ? 'Blog / Topic' : 'Blog'} <em>${topic ? 'WhatsApp automation' : 'Guides'}</em></span>
-      <h1 class="h-xl h-xl--p"><span class="ln"><span>${topic ? 'WhatsApp' : 'Ideas you can'}</span></span><span class="ln"><span>${topic ? 'automation.' : 'use today.'}</span></span></h1>
+      <h1 class="h-xl h-xl--p"><span class="lbl rv h1kw">${topic ? 'Blog / Topic' : 'Blog'} <em>WhatsApp automation ${topic ? 'articles' : 'guides'}</em></span><span class="ln"><span>${topic ? 'WhatsApp' : 'Ideas you can'}</span></span><span class="ln"><span>${topic ? 'automation.' : 'use today.'}</span></span></h1>
       <p class="rv d2">Practical, step-by-step writing on WhatsApp, AI and automation for growing businesses.</p>
     </div>
   </section>
   <section class="blist wrap" aria-label="${esc(t)}">
-    <div class="chipsnav rv"><a href="/pages/blog/page.html"${topic ? '' : ' aria-current="page"'}>All <span>1</span></a><a href="/pages/blog/topic/whatsapp-api/page.html"${topic ? ' aria-current="page"' : ''}>WhatsApp automation <span>1</span></a></div>
+    <div class="chipsnav rv"><a href="/blog/"${topic ? '' : ' aria-current="page"'}>All <span>1</span></a><a href="/blog/topic/whatsapp-api/"${topic ? ' aria-current="page"' : ''}>WhatsApp automation <span>1</span></a></div>
     ${card}
     <p class="blist__more rv">More articles coming soon.</p>
   </section>
@@ -276,11 +277,11 @@ function blogIndex(topic) {
 }
 function blogPost() {
   const toc = [...POST.body.matchAll(/<h2 id="([^"]+)">([^<]+)<\/h2>/g)].map(m => `<li><a href="#${m[1]}">${m[2]}</a></li>`).join('');
-  return head(POST.title, POST.desc) + `<main id="main">
+  return head(POST.seoTitle, POST.desc) + `<main id="main">
   <section class="phero phero--short phero--post">
     <div class="hero__glow" aria-hidden="true"></div>
     <div class="phero__copy">
-      <span class="lbl rv"><a href="/pages/blog/page.html">Blog</a> <em>WhatsApp automation</em></span>
+      <span class="lbl rv"><a href="/blog/">Blog</a> <em>WhatsApp automation</em></span>
       <h1 class="h-l rv">${esc(POST.title)}</h1>
       <p class="rv d1 meta">Chatberry Team · <time datetime="${POST.date}">${POST.dateH}</time> · ${POST.read}</p>
     </div>
@@ -302,13 +303,13 @@ function feed() {
 <rss version="2.0">
   <channel>
     <title>Chatberry Blog</title>
-    <link>/pages/blog/page.html</link>
+    <link>/blog/</link>
     <description>Practical guides on WhatsApp, AI and automation for growing businesses.</description>
     <language>en-in</language>
     <item>
       <title>${esc(POST.title)}</title>
-      <link>/pages/blog/${POST.slug}/page.html</link>
-      <guid>/pages/blog/${POST.slug}/page.html</guid>
+      <link>/blog/${POST.slug}/</link>
+      <guid>/blog/${POST.slug}/</guid>
       <pubDate>${new Date(POST.date + 'T09:00:00+05:30').toUTCString()}</pubDate>
       <description>${esc(POST.desc)}</description>
       <content:encoded xmlns:content="http://purl.org/rss/1.0/modules/content/"><![CDATA[${POST.body}]]></content:encoded>
@@ -334,7 +335,7 @@ function legal(file) {
     doc = doc.slice(0, doc.indexOf('</article>'));
   }
   const toc = [...doc.matchAll(/<h2 class="legal__group" id="([^"]+)">([^<]+)<\/h2>/g)].map(m => `<li><a href="#${m[1]}">${m[2]}</a></li>`).join('');
-  const other = file.includes('privacy') ? ['Terms of Service', '/pages/legal/terms-of-service/page.html'] : ['Privacy Policy', '/pages/legal/privacy-policy/page.html'];
+  const other = file.includes('privacy') ? ['Terms of Service', '/terms-of-service/'] : ['Privacy Policy', '/privacy-policy/'];
   return head(title, desc) + `<main id="main">
   <section class="phero phero--short">
     <div class="hero__glow" aria-hidden="true"></div>
@@ -370,9 +371,9 @@ function simple(kind) {
 
 /* ---------------- write everything ---------------- */
 let n = 0;
-for (const slug of Object.keys(P)) { W(`pages/${slug}/page.html`, page(slug)); n++; }
-W('pages/blog/page.html', blogIndex(false)); W('pages/blog/topic/whatsapp-api/page.html', blogIndex(true));
-W(`pages/blog/${POST.slug}/page.html`, blogPost()); W('pages/blog/feed.xml', feed());
-for (const f of ['pages/legal/privacy-policy/page.html', 'pages/legal/terms-of-service/page.html']) W(f, legal(f));
-W('pages/coming-soon/page.html', simple('soon')); W('404.html', simple('404'));
+for (const slug of Object.keys(P)) { W(`${slug}/index.html`, page(slug)); n++; }
+W('blog/index.html', blogIndex(false)); W('blog/topic/whatsapp-api/index.html', blogIndex(true));
+W(`blog/${POST.slug}/index.html`, blogPost()); W('blog/feed.xml', feed());
+for (const f of ['privacy-policy/index.html', 'terms-of-service/index.html']) W(f, legal(f));
+W('coming-soon/index.html', simple('soon')); W('404.html', simple('404'));
 console.log(`built ${n} pages + blog (3) + legal (2) + coming-soon + 404`);

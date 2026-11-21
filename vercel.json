@@ -4,13 +4,17 @@
   "buildCommand": null,
   "installCommand": null,
   "outputDirectory": ".",
-  "cleanUrls": false,
-  "trailingSlash": false,
+  "cleanUrls": true,
+  "trailingSlash": true,
   "redirects": [
-    { "source": "/index.html", "destination": "/", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/pages/:path+", "destination": "/pages/:path+/page.html" }
+    { "source": "/pages/legal/:name/page", "destination": "/:name/", "permanent": true },
+    { "source": "/pages/legal/:name/page.html", "destination": "/:name/", "permanent": true },
+    { "source": "/pages/legal/:name/", "destination": "/:name/", "permanent": true },
+    { "source": "/pages/legal/:name", "destination": "/:name/", "permanent": true },
+    { "source": "/pages/:path*/page", "destination": "/:path*/", "permanent": true },
+    { "source": "/pages/:path*/page.html", "destination": "/:path*/", "permanent": true },
+    { "source": "/pages/:path*/", "destination": "/:path*/", "permanent": true },
+    { "source": "/pages/:path*", "destination": "/:path*/", "permanent": true }
   ],
   "headers": [
     {
@@ -22,7 +26,7 @@
       ]
     },
     {
-      "source": "/(public|assets|home/assets)/(.*)",
+      "source": "/(public|assets)/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
       ]

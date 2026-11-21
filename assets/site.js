@@ -14,7 +14,7 @@
   function startLoader(done) {
     var loader = $('.loader');
     if (!loader || doc.classList.contains('no-loader')) { done(); return; }
-    var n = $('#ldN'), bar = $('#ldBar'), t0 = performance.now(), dur = 1700;
+    var n = $('#ldN'), bar = $('#ldBar'), t0 = performance.now(), dur = 1000;
     (function tick(now) {
       var p = clamp((now - t0) / dur, 0, 1), e = 1 - Math.pow(1 - p, 3), v = Math.round(e * 100);
       n.textContent = String(v).padStart(3, '0');
